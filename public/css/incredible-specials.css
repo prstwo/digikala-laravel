@@ -1,0 +1,53 @@
+.incredible-specials-container{
+    background: #ef394e;
+    padding: 2% 5%;
+    width: 100%;
+}
+.incredible-specials{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+.specials-title{
+    width: 20%;
+    padding: 0 3%;
+}
+.specials-title a img{
+    max-width: 100%;
+    height: auto;
+}
+.specials-button{
+    width: 70%;
+    padding: 9px 15px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.specials-button i{
+    height: fit-content;
+}
+
+.specials{
+    width: 80%;
+    position: relative;
+}
+.specials .product-items{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.specials .product-items .product-item-container-3{
+    width: 23.5% !important;
+    margin: .5%;
+    background-color: white;
+}

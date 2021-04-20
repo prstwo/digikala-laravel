@@ -1,0 +1,135 @@
+.digi-footer{
+    background: #eceff1;
+    line-height: 22px;
+    padding: 80px 10px 0;
+    background: #eceff1;
+    position: relative;
+    line-height: 22px;
+    overflow: hidden;
+
+}
+.footer-jumpup{
+    background-color: #f5f5f5;
+    border-top: 1px solid #eceff1;
+    border-bottom: 1px solid #cfd8dc;
+    height: 59px;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.429rem;
+    line-height: 1.1;
+    color: #4a4a4a;
+}
+.footer-jumpup-icon{
+    color: hsla(0,0%,74.5%,.41);
+    border-radius: 50%;
+
+}
+.footer-jumpup-icon.fa{
+    font-size:100%;
+    font-size: 36px;
+}
+.footer-innerbox{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.footer-badge{
+    width:16.3%
+}
+.footer-feature-item{
+    text-align: center;
+    position: relative;
+    padding-top: 80px;
+    font-size: 13px;
+    font-size: .929rem;
+    line-height: 1.692;
+    color: #606060;
+    letter-spacing: .2px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+.feature-item-1{
+    background-image: url('images/24hours.svg')  ;
+    background-repeat: no-repeat;
+    background-size: auto 58px;
+}
+.headline-links-title{
+    font-size: 1.14rem;
+    line-height: 22px;
+    color: #4a5f73;
+}
+.middle-bar, .footer-address {
+    max-width: 1450px;
+    margin: auto;
+}
+.footer-links{
+    flex: 0 0 calc(100% - 450px);
+    max-width: calc(100% - 450px);
+    padding: 0 10px;
+}
+.footer-links-ul a{
+    color: #4b4b4b;
+    font-weight: 300;
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 1.571;
+    letter-spacing: -.1px;
+    text-decoration: none;
+}
+.footer-form{
+    width: 333px;
+}
+.newsletter-input{
+    border: 1px solid #c8c8c8;
+    border-left: none;
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background: #fff;
+    color: #717171;
+    font-size: 1rem;
+    line-height: 1.571;
+    padding: 11px 12px;
+    letter-spacing: -.8px;
+}
+.newsletter-btn{
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .3px;
+    font-size: 1rem;
+    line-height: 1.571;
+    background-color: #00bfd6;
+    border-radius: 8px 0 0 8px;
+    text-align: center;
+    width: 87px;
+    border: none;
+    padding: 11px 24px;
+}
+
+.footer-social>span {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.571;
+    margin-bottom: 21px;
+    font-weight: 400;
+    color: #5d5959;
+}
+.footer-social-images .social-icon{
+    width: 32px;
+    height: 32px;
+    opacity: .5;
+}
+.footer-address{
+    font-size: 1rem;
+    line-height: 27px;
+}
+
+.footer-copyright-text{
+    color: #4a4a4a;
+    text-align: center;
+    border-top: 1px solid #b0bec5;
+    font-size: 12px;
+}

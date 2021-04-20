@@ -1,0 +1,59 @@
+/*
+This file is used as general stylesheet
+*/
+*, :before , :after{
+    box-sizing: inherit;
+}
+@font-face {
+    font-family: 'yekan';
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.eot');
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.eot?#iefix') format('embedded-opentype'),
+		 url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.woff') format('woff'),
+		 url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.ttf') format('truetype');
+    font-weight: normal;
+  }
+  
+
+html, body{
+    font-size: 1rem;
+}
+body{
+   direction: rtl;
+   width: 100%;
+   margin: 0;
+   color: #515151;
+   font-family: 'yekan';
+   box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ a:link{
+    color: inherit;
+}
+a:hover, a:active{
+    color: inherit;
+}
+/* slider arrow classes */
+.arrow-right, .arrow-left, .arrow-right-2, .arrow-left-2{
+    position: absolute;
+    cursor: pointer;
+}
+.arrow-left, .arrow-left-2{
+    left: 0;
+    top: calc(100% / 2);
+}
+.arrow-right, .arrow-right-2{
+    right: 0;
+    top: calc(100% / 2);
+}
+
+.arrow-right .fa, .arrow-left .fa, .arrow-right-2 .fa, .arrow-left-2 .fa{
+    font-size: 2rem;
+    color: #dfdfdf;
+    transition: color 0.3s;
+}
+.arrow-right .fa:active, .arrow-left .fa:active, .arrow-right-2 .fa:active, .arrow-left-2 .fa:active{
+    color: black;
+}
