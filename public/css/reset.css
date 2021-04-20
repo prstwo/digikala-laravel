@@ -12,7 +12,7 @@ This file is used as general stylesheet
 		 url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.ttf') format('truetype');
     font-weight: normal;
   }
-  
+
 
 html, body{
     font-size: 1rem;
@@ -36,24 +36,24 @@ a:hover, a:active{
     color: inherit;
 }
 /* slider arrow classes */
-.arrow-right, .arrow-left, .arrow-right-2, .arrow-left-2{
+.arrow-right, .arrow-left, .arrow-right-2, .arrow-left-2, .arrow-right-3, .arrow-left-3{
     position: absolute;
     cursor: pointer;
 }
-.arrow-left, .arrow-left-2{
+.arrow-left, .arrow-left-2, .arrow-left-3{
     left: 0;
     top: calc(100% / 2);
 }
-.arrow-right, .arrow-right-2{
+.arrow-right, .arrow-right-2, .arrow-right-3{
     right: 0;
     top: calc(100% / 2);
 }
 
-.arrow-right .fa, .arrow-left .fa, .arrow-right-2 .fa, .arrow-left-2 .fa{
+.arrow-right .fa, .arrow-left .fa, .arrow-right-2 .fa, .arrow-left-2 .fa , .arrow-right-3 .fa, .arrow-left-3 .fa{
     font-size: 2rem;
     color: #dfdfdf;
     transition: color 0.3s;
 }
-.arrow-right .fa:active, .arrow-left .fa:active, .arrow-right-2 .fa:active, .arrow-left-2 .fa:active{
+.arrow-right .fa:active, .arrow-left .fa:active, .arrow-right-2 .fa:active, .arrow-left-2 .fa:active, .arrow-right-3 .fa:active, .arrow-left-3 .fa:active{
     color: black;
 }

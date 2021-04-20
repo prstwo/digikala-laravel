@@ -145,6 +145,9 @@ a.nav-link-title{
     font-weight: 400;
     color: #81858b;
 }
+.submenu-list-link:hover{
+    color: #ef394e;
+}
 .submenu-list-link ul{
     display: flex;
     -ms-flex-direction: column;
@@ -159,7 +162,7 @@ a.nav-link-title{
 .border-right-add{
     border-right: solid 1px  #f0f0f1;;
 }
-.submenu-titles:hover, .submenu-titles a:hover,.submenu-list:hover , .submenu-lists div:hover, .submenu-lists a:hover{  
+.submenu-titles:hover, .submenu-titles a:hover,.submenu-list:hover , .submenu-lists div:hover, .submenu-lists a:hover .submenu-lists{
     color: #ef394e;
 }
 .submenu-promotion, .submenu-digiplus{
@@ -288,7 +291,7 @@ a.nav-link-title{
     margin-right: 7px;
 }
 .digiclub-history-text{
-    font-size: 0.85rem; 
+    font-size: 0.85rem;
 }
 .digiclub-history-text:hover{
     color:inherit
