@@ -1,3 +1,9 @@
+.page-section{
+    background-color: #fff;
+    margin: 16px 0 0;
+    padding: 9px 33px 11px 33px;
+    max-width: 100%;
+}
 .products-container{
     width: 100%;
     background-color: white;
