@@ -24,7 +24,6 @@ document.querySelector('.nav-container').addEventListener('click',function(e){
                 if(!elem.contains(e.target)){
                     elem.classList.remove('show');
                     document.querySelector('.overlay').classList.remove('active');
-
                 }
             })
         }
