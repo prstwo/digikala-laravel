@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: row;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .specials .product-items .product-item-container-3{
     width: 23.5% !important;

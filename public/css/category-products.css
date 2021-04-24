@@ -1,9 +1,4 @@
-.page-section{
-    background-color: #fff;
-    margin: 16px 0 0;
-    padding: 9px 33px 11px 33px;
-    max-width: 100%;
-}
+
 .products-container{
     width: 100%;
     background-color: white;
@@ -20,6 +15,7 @@
     text-align: right;
     display: flex;
     flex-direction: row;
+    margin-bottom:6px;
 }
 span.head-title{
     font-size: 1.4rem;
@@ -63,7 +59,7 @@ span.head-title::after{
     background-color: #dfdfdf;
 }
 .boxes{
-    position: relative;
+    position: static;
 }
 .boxes, .items{
     display: flex;

@@ -1,11 +1,4 @@
-.promotion-cats-container{
-    width: 100%;
-    background-color: white;
-    margin: 2% 0;
-    box-shadow: 0 2px 5px 1px rgb(0 0 0 / 10%);
-    border-radius: 5px;
-    font-family: inherit;
-}
+
 .promotion-cats{
     display: flex;
     flex-direction: row;

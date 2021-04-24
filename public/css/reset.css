@@ -36,24 +36,63 @@ a:hover, a:active{
     color: inherit;
 }
 /* slider arrow classes */
-.arrow-right, .arrow-left, .arrow-right-2, .arrow-left-2, .arrow-right-3, .arrow-left-3{
+.arrow-right, .arrow-left, .arrow-right-2, .arrow-left-2, .arrow-right-3, .arrow-left-3, .arrow-right-5, .arrow-left-5{
     position: absolute;
     cursor: pointer;
 }
-.arrow-left, .arrow-left-2, .arrow-left-3{
-    left: 0;
-    top: calc(100% / 2);
+.arrow-left, .arrow-left-2, .arrow-left-3, .arrow-left-5{
+    left:0;
+    top: calc((100% / 2) - 30px);
+    color: #a8a8a8;
+    background-color: #fff;
+    -webkit-box-shadow: 1.5px 0 4px 0 rgb(0 0 0 / 15%);
+    box-shadow: 1.5px 0 4px 0 rgb(0 0 0 / 15%);
+    border-radius: 0 8px 8px 0;
+    width: 49px;
+    height: 90px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
-.arrow-right, .arrow-right-2, .arrow-right-3{
+.arrow-right, .arrow-right-2, .arrow-right-3, .arrow-right-5{
     right: 0;
-    top: calc(100% / 2);
+    top: calc((100% / 2) - 30px);
+    color: #a8a8a8;
+    background-color: #fff;
+    -webkit-box-shadow:-1.5px 0 4px 0 rgb(0 0 0 / 15%);
+    box-shadow: -1.5px 0 4px 0 rgb(0 0 0 / 15%);
+    border-radius: 8px 0 0 8px;
+    width: 49px;
+    height: 90px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
-.arrow-right .fa, .arrow-left .fa, .arrow-right-2 .fa, .arrow-left-2 .fa , .arrow-right-3 .fa, .arrow-left-3 .fa{
+.arrow-right .fa, .arrow-left .fa, .arrow-right-2 .fa, .arrow-left-2 .fa , .arrow-right-3 .fa, .arrow-left-3 ,
+.arrow-right-5 .fa, .arrow-left-5 .fa{
     font-size: 2rem;
     color: #dfdfdf;
     transition: color 0.3s;
 }
-.arrow-right .fa:active, .arrow-left .fa:active, .arrow-right-2 .fa:active, .arrow-left-2 .fa:active, .arrow-right-3 .fa:active, .arrow-left-3 .fa:active{
+.arrow-right .fa:active, .arrow-left .fa:active, .arrow-right-2 .fa:active, .arrow-left-2 .fa:active, .arrow-right-3 .fa:active, .arrow-left-3 .fa:active,
+.arrow-right-5 .fa:active, .arrow-left-5 .fa:active{
     color: black;
+}
+.page-section-standard {
+    width: 100%;
+    background-color: white;
+    margin: 2% 0;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    font-family: inherit;
+    padding: 9px 33px 11px  11px;
+}
+main{
+    background: #f5f5f5;
+}
+.page-section{
+    margin: 16px 0 0;
+    padding: 9px 33px 11px 33px;
+    max-width: 100%;
 }

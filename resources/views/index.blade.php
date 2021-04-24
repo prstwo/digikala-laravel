@@ -26,6 +26,10 @@
 <body>
 
 <div>
+    <?php
+
+    ?>
+
     <!-- header component-->
     <header class="sticky top-0 righ-0 left-0 z-50 bg-white">
         <div class="px-4 py-3 flex flex-row flex-wrap justify-between">
@@ -60,7 +64,7 @@
     <!-- navigation component -->
     <nav>
         <div class="nav-container">
-            <div class="nav py-3 px-4" id="navbar">
+            <div class="nav pt-3 px-4" id="navbar">
                 <div class="nav-items">
                     <ul class="nav-ul flex relative h-12">
                         <li class="nav-link">
@@ -1046,7 +1050,7 @@
                         </a>
                     </div>
                     <div class="specials">
-                        <div class="product-items">
+                        <div class="product-items ">
                             <!--product item component-->
                             <?php
                             $productItemContainer3 = [
@@ -1100,10 +1104,10 @@
                             @endforeach
 
                         </div>
-                        <div class="arrow-right-2">
+                        <div class="arrow-right-2 mr-2">
                             <i class="fa fa-chevron-right" aria-hidden="true"></i>
                         </div>
-                        <div class="arrow-left-2">
+                        <div class="arrow-left-2 ml-2">
                             <i class="fa fa-chevron-left" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -1112,8 +1116,8 @@
             </section>
         </div>
         <!--products component-->
-        <div class="page-section">
-            <section class="products-container">
+        <div class="page-section relative">
+            <section class="page-section-standard relative">
                 <div class="products">
                     <div class="head">
                         <span class="head-title">
@@ -1123,7 +1127,7 @@
                             <a href="#products-page"> مشاهده همه</a>
                         </div>
                     </div>
-                    <div class="boxes">
+                    <div class="boxes static">
                         <div class="items">
                             <!-- product item component -->
 
@@ -1195,8 +1199,17 @@
             </section>
 
         </div>
-        <div class="page-section">
-            <section class="swiper-brands-container pt-1">
+        <!--brands component -->
+        <div class="page-section ">
+            <section class="swiper-brands-container page-section-standard pt-1 relative">
+                <div class="head">
+                        <span class="head-title">
+                            برندهای ویژه
+                        </span>
+                    <div class="head-link">
+
+                    </div>
+                </div>
                 <div class="swiper-brands flex flex-row ">
                     <div class="swiper-brands-image-container">
                         <a href="#brand-page" class="banner-brand-link">
@@ -1223,13 +1236,23 @@
                             <img src="images/pakshoma.png" alt="brand">
                         </a>
                     </div>
+                    <div class="swiper-brands-image-container">
+                        <a href="#brand-page" class="banner-brand-link">
+                            <img src="images/panoramic.png" alt="brand">
+                        </a>
+                    </div>
                 </div>
-
+                <div class="arrow-right-5">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+                <div class="arrow-left-5">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
             </section>
         </div>
         <!--promotion categories component-->
         <div class="page-section">
-            <div class="promotion-cats-container">
+            <div class="page-section-standard">
                 <div class="cat-head">
                     <div class="cat-title">
                         بیش از ۲،۰۰۰،۰۰۰ کالا در دسته‌بندی‌های مختلف
