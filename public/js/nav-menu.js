@@ -1,3 +1,42 @@
+
+
+/* document.querySelector('.nav-container').addEventListener('mouseover',function(e){
+
+    document.querySelector('.overlay').classList.remove('active');
+    document.querySelectorAll('.submenu').forEach((submenuElement)=>{
+        submenuElement.classList.remove('show');
+    })
+    if(e.target.classList.contains('toggle')){
+        let linkTitle=e.target;
+        document.querySelector('.overlay').classList.add('active');
+
+        let elem=linkTitle.nextElementSibling;
+
+        elem.classList.add('show');
+        if(linkTitle.nextElementSibling.classList.contains('show')){
+            document.querySelector('.overlay').addEventListener('click', function(e){
+                if(!elem.contains(e.target)){
+                    elem.classList.remove('show');
+                    document.querySelector('.overlay').classList.remove('active');
+                }
+            })
+        }
+    }
+});
+document.querySelectorAll('.submenu').forEach((submenuEle)=>{
+    submenuEle.addEventListener('mouseleave',function(submenuE){
+
+        document.querySelector('.overlay').classList.remove('active');
+
+        submenuE.target.classList.remove('show');
+    })
+
+
+    */
+
+   // ----------------
+
+
 /* document.querySelectorAll('.nav-link-title').forEach((navlink)=>{
          navlink.addEventListener('mouseover',function(e){
             e.target.nextElementSibling.classList.add('show');
@@ -12,7 +51,7 @@
 
         });  */
 
-document.querySelector('.nav-container').addEventListener('click',function(e){
+/*document.querySelector('.nav-container').addEventListener('click',function(e){
     if(e.target.classList.contains('toggle')){
         let linkTitle=e.target;
         document.querySelector('.overlay').classList.toggle('active');
@@ -28,8 +67,20 @@ document.querySelector('.nav-container').addEventListener('click',function(e){
             })
         }
     }
-});
+});*/
 
+       /*
+        if(linkTitle.nextElementSibling.classList.contains('show')){
+            document.querySelector('.overlay').addEventListener('click', function(e){
+                if(!elem.contains(e.target)){
+                    elem.classList.remove('show');
+                    document.querySelector('.overlay').classList.remove('active');
+                }
+            })
+        }
+       *
+
+})*/
 /*
 let submenus = document.querySelectorAll('.submenu');
 for(var i=0;i<submenus.length;i++){

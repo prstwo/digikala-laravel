@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keyword" content="digikala, دیجی کالا">
     <meta name="description" content="this is home page of digikala">
+    <title>digikala</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -20,11 +21,8 @@
     <link rel="stylesheet" type="text/css" href="css/carousel.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
 
-    <title>digikala</title>
-
 </head>
 <body>
-    <div class="overlay"></div>
 
     <div>
         <header class="sticky top-0 righ-0 left-0 z-50 bg-white">
@@ -40,7 +38,9 @@
                         <input type="text" class="w-full h-full py-3  pl-2 pr-1 search-input" placeholder="جستجو در دیجی‌کالا …">
                     </div>
                 </div>
-                <div class="header-action"></div>
+                <div class="header-action">
+
+                </div>
             </div>
 
         </header>
@@ -132,6 +132,8 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <div class="overlay"></div>
+
                             </li>
                             <!--اینا خودشون یه کامئوننت جدا هستن که باید بعد روشون کار کنم - شروع-->
                             <li class="nav-link  border-right-add">
@@ -245,6 +247,7 @@
                                         </a>
                                     </div>
                                 </div>
+                                <div class="overlay"></div>
                             </li>
                             <li class="nav-link">
                                 <a href="#supermarket" class="nav-link-title">
@@ -289,6 +292,7 @@
                                         </a>
                                     </div>
                                 </div>
+                                <div class="overlay"></div>
                                 <!--digi club-->
                             <li class="nav-link ">
                                 <a href="#supermarket" class="nav-link-title toggle">
@@ -354,8 +358,10 @@
                                         </a>
                                     </div>
                                 </div>
+                                <div class="overlay"></div>
 
-                            </li>
+
+                        </li>
                             <li class="nav-link">
                                 <a href="#supermarket" class="nav-link-title">
                                     <i class="fa fa-paypal"></i> دیجی پی
@@ -406,8 +412,8 @@
 
                                         </div>
                                     </div>
-                                    <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-5xl font-bold text-gray-200	 transform hover:translate-x-0.5 rounded-full e leading-tight text-center z-10 inset-y-0 right-0 my-auto">‹</label>
-                                    <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-5xl font-bold text-gray-200	transform hover:translate-x-0.5	 rounded-full  leading-tight text-center z-10 inset-y-0 left-0 my-auto">›</label>
+                                    <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-5xl font-bold text-gray-200	 transform hover:translate-x-0.5 rounded-full e leading-tight text-center z-9 inset-y-0 right-0 my-auto">‹</label>
+                                    <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-5xl font-bold text-gray-200	transform hover:translate-x-0.5	 rounded-full  leading-tight text-center z-9 inset-y-0 left-0 my-auto">›</label>
 
                                     <!--Slide 2-->
                                     <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
@@ -416,8 +422,8 @@
                                             <img src="images/maintop-2.jpg" alt="product img" class="rounded-lg">
                                         </div>
                                     </div>
-                                    <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-5xl font-bold text-gray-200  transform hover:translate-x-0.5  rounded-full   leading-tight text-center z-10 inset-y-0 right-0 my-auto">‹</label>
-                                    <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-5xl font-bold text-gray-200  transform hover:translate-x-0.5  rounded-full  leading-tight text-center z-10 inset-y-0 left-0 my-auto">›</label>
+                                    <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-5xl font-bold text-gray-200  transform hover:translate-x-0.5  rounded-full   leading-tight text-center z-9 inset-y-0 right-0 my-auto">‹</label>
+                                    <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-5xl font-bold text-gray-200  transform hover:translate-x-0.5  rounded-full  leading-tight text-center z-9 inset-y-0 left-0 my-auto">›</label>
 
                                     <!--Slide 3-->
                                     <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
@@ -427,8 +433,8 @@
 
                                         </div>
                                     </div>
-                                    <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-5xl font-bold text-gray-200 transform hover:translate-x-0.5 rounded-full  leading-tight text-center z-10 inset-y-0 right-0 my-auto">‹</label>
-                                    <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-5xl font-bold text-gray-200 transform hover:translate-x-0.5 rounded-full leading-tight text-center z-10 inset-y-0 left-0 my-auto">›</label>
+                                    <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-5xl font-bold text-gray-200 transform hover:translate-x-0.5 rounded-full  leading-tight text-center z-9 inset-y-0 right-0 my-auto">‹</label>
+                                    <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-5xl font-bold text-gray-200 transform hover:translate-x-0.5 rounded-full leading-tight text-center z-9 inset-y-0 left-0 my-auto">›</label>
 
                                     <!-- Add additional indicators for each slide-->
                                     <ol class="carousel-indicators">
@@ -1392,7 +1398,6 @@
             </div>
         </footer>
     </div>
-
     <script src="js/nav-menu.js"></script>
     <script src="js/icredible-specials.js"></script>
     <script src="js/category-products.js"></script>
