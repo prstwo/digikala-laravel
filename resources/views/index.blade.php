@@ -500,237 +500,57 @@
                     <div class="specials">
                         <div class="product-items">
                             <!--product item component-->
-                            <div class="product-item-container-3">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-1.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
+                            <?php
+                            $productItemContainer3 = [
+                                ['img'=>'"images/phone-1.jpg"','product-title'=>'گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
+                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت', 'old-price'=>'۸,۰۰۰,۰۰۰',
+                                    'discount'=>' ۱۵٪', 'new-price'=>'۷,۲۲۹,۰۰۰'],
+                                ['img'=>'"images/phone-2.jpg"','product-title'=>' کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus', 'old-price'=>'۹۹,۰۰۰ ',
+                                    'discount'=>' ٪۵۴', 'new-price'=>'۴۵,۵۰۰ '],
+                                ['img'=>'"images/phone-3.jpg"','product-title'=>' کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus', 'old-price'=>'۹۹,۰۰۰ ',
+                                    'discount'=>' ٪۶', 'new-price'=>'۴۵,۵۰۰ '],
+                                ['img'=>'"images/phone-4.jpg"','product-title'=>'کاور نیلکین مدل Camshield مناسب برای گوشی موبایل شیائومی POCO X3 NFC', 'old-price'=>'۹۹,۰۰۰ ',
+                                    'discount'=>'٪۳۰ ', 'new-price'=>'۲۰۴,۷۹۰ '],
+                                ['img'=>'"images/phone-5.jpg"','product-title'=>' کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus', 'old-price'=>'۹۹,۰۰۰ ',
+                                    'discount'=>' ٪۵۴', 'new-price'=>'۴۵,۵۰۰ '],
+                                ['img'=>'"images/phone-6.jpg"','product-title'=>' کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus', 'old-price'=>'۹۹,۰۰۰ ',
+                                    'discount'=>' ٪۵۴', 'new-price'=>'۴۵,۵۰۰ '],
+                                ['img'=>'"images/phone-7.jpg"','product-title'=>' کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus', 'old-price'=>'۹۹,۰۰۰ ',
+                                    'discount'=>' ٪۳۰', 'new-price'=>'۴۵,۵۰۰ '],
+                                ['img'=>'"images/phone-8.jpg"','product-title'=>'کاور جویروم مدل Chi مناسب برای گوشی موبایل اپل iPhone 7 Plus', 'old-price'=>'۳۷,۰۰۰  ',
+                                    'discount'=>' ٪۵۴', 'new-price'=>'۲۹,۵۰۰ ']
+                            ]
+                            ?>
+                            @foreach($productItemContainer3 as $productItem3 )
+                                <div class="product-item-container-3">
+                                    <div class="product-item">
+                                        <div>
+                                            <a href="#product-page">
+                                                <img src={!!$productItem3['img']!!}} alt="a product example" class="product-img">
+                                            </a>
                                         </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
+                                        <div class="product-title">
+                                            <a href="#product-page">
+                                                {{$productItem3['product-title']}}
+                                            </a>
+                                        </div>
+                                        <div class="product-price">
+                                            <div class="product-old-price">
+                                                <del> {{$productItem3['old-price']}}</del>
+                                                <span class="old-price-discount">
+                                                 {{$productItem3['discount']}}
+                                            </span>
+                                            </div>
+                                            <div class="product-new-price">
+                                                {{$productItem3['new-price']}}
+                                                <span class="new-price-currency">تومان</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!--product item component-->
-                            <div class="product-item-container-3">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-7.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
 
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
-                                        </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--product item component-->
-                            <div class="product-item-container-3">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-8.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
+                            @endforeach
 
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
-                                        </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--product item component-->
-                            <div class="product-item-container-3">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-1.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
-                                        </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--product item component-->
-                            <div class="product-item-container-3">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-5.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
-                                        </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--product item component-->
-                            <div class="product-item-container-3">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-1.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
-                                        </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--product item component-->
-                            <div class="product-item-container-3">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-4.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
-                                        </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--product item component-->
-                            <div class="product-item-container-3">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-6.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
-                                        </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="arrow-right-2">
                             <i class="fa fa-chevron-right" aria-hidden="true"></i>
@@ -1267,21 +1087,21 @@
                         </a>
                     </div>
                     <ul class="footer-links-ul">
-                        <li class="mt-3">
-                            <a href="#sefaresh" >
-                                نحوه ثبت سفارش
-                            </a>
-                        </li>
-                        <li class="mt-3">
-                            <a href="#ersal-sefaresh">
-                                رویه ارسال سفارش
-                            </a>
-                        </li>
-                        <li class="mt-3">
-                            <a href="#payment">
-                                شیوه های پرداخت
-                            </a>
-                        </li>
+                        <?php
+                        $footerLinksUl1=[
+                            ['name'=>' نحوه ثبت سفارش'],
+                            ['name'=>' رویه ارسال سفارش'],
+                            ['name'=>'شیوه های پرداخت']
+                        ]
+                        ?>
+                        @foreach ($footerLinksUl1 as $footerlink1)
+                            <li class="mt-3">
+                                <a href="sefaresh">
+                                    {{$footerlink1['name']}}
+                                </a>
+                            </li>
+                        @endforeach
+
                     </ul>
                 </nav>
                 <nav class="footer-links-col">
@@ -1291,31 +1111,21 @@
                         </a>
                     </div>
                     <ul class="footer-links-ul">
-                        <li class="mt-3">
-                            <a href="#sefaresh" >
-                                پاسخ به پرسش‌های متداول
-                            </a>
-                        </li>
-                        <li class="mt-3">
-                            <a href="#ersal-sefaresh">
-                                رویه‌های بازگرداندن کالا
-                            </a>
-                        </li>
-                        <li class="mt-3">
-                            <a href="#payment">
-                                شرایط استفاده
-                            </a>
-                        </li>
-                        <li class="mt-3">
-                            <a href="#payment">
-                                حریم خصوصی
-                            </a>
-                        </li>
-                        <li class="mt-3">
-                            <a href="#payment">
-                                گزارش باگ
-                            </a>
-                        </li>
+                        <?php
+                        $footerLinksUl2=[
+                            ['name'=>' پاسخ به پرسش‌های متداول'],
+                            ['name'=>' شرایط استفاده'],
+                            ['name'=>' حریم خصوصی'],
+                            ['name'=>' گزارش باگ'],
+                        ]
+                        ?>
+                        @foreach ($footerLinksUl2 as $footerlink2)
+                                <li class="mt-3">
+                                    <a href="sefaresh">
+                                        {{$footerlink2['name']}}
+                                    </a>
+                                </li>
+                        @endforeach
                     </ul>
                 </nav>
                 <nav class="footer-links-col">
@@ -1325,36 +1135,23 @@
                         </a>
                     </div>
                     <ul class="footer-links-ul">
-                        <li class="mt-3">
-                            <a href="#sefaresh" >
-                                اتاق خبر دیجی‌کالا
-                            </a>
-                        </li>
-                        <li class="mt-3">
-                            <a href="#ersal-sefaresh">
-                                فروش در دیجی‌کالا
-                            </a>
-                        </li>
-                        <li class="mt-3">
-                            <a href="#payment">
-                                فرصت‌های شغلی
-                            </a>
-                        </li>
-                        <li class="mt-3">
-                            <a href="#payment">
-                                تماس با دیجی‌کالا
-                            </a>
-                        </li>
-                        <li class="mt-3">
-                            <a href="#payment">
-                                درباره دیجی‌کالا
-                            </a>
-                        </li>
-                        <li class="mt-3">
-                            <a href="#payment">
-                                راهنمای هویت بصری
-                            </a>
-                        </li>
+                        <?php
+                        $footerLinksUl3 = [
+                            ['name'=>' اتاق خبر دیجی‌کالا'],
+                            ['name'=>' فروش در دیجی کالا  '],
+                            ['name'=>' فرصت های شغلی  '],
+                            ['name'=>' تماس با دیجی کالا    '],
+                            ['name'=>'راهنمای هویت بصری ']
+                        ];
+                        ?>
+                        @foreach ($footerLinksUl3 as $footerlink3)
+                            <li class="mt-3">
+                                <a href="sefaresh">
+                                   {{$footerlink3['name']}}
+                                </a>
+                            </li>
+                        @endforeach
+
                     </ul>
                 </nav>
             </div>
