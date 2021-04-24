@@ -25,25 +25,38 @@
 <body>
 
     <div>
+        <!-- header component-->
         <header class="sticky top-0 righ-0 left-0 z-50 bg-white">
-            <div class="px-4 py-3 flex flex-wrap">
-                <div class="header-right-side flex content-center">
-                    <div class="mr-2 ml-6 w-100">
+            <div class="px-4 py-3 flex flex-row flex-wrap justify-between">
+                <div class="header-right-side flex content-center flex-grow">
+                    <div class="mr-2 ml-6 w-100 flex items-center">
                         <a href="digikala">
                             <img src="images/digikala.svg" alt="digikala">
                         </a>
                     </div>
-                    <div class="px-0 w-3/4 header-search">
-                        <i class="fa fa-search w-11 h-search-btn"></i>
-                        <input type="text" class="w-full h-full py-3  pl-2 pr-1 search-input" placeholder="جستجو در دیجی‌کالا …">
+                    <div class="px-0  header-search">
+                        <i class="fa fa-search w-11 h-search-btn relative"></i>
+                        <input type="text" class="w-full h-full py-3  pl-2 pr-1 search-input" placeholder="جستجو در دیجی&zwnj;کالا …">
                     </div>
                 </div>
-                <div class="header-action">
+                <div class="header-action  flex flex-row">
+                    <div class="header-btn-container px-3 py-0">
+                        <div class="header-btn">
+                            <a href="#account" class="header-btn-a py-3 px-3 text-sm rounded-md flex items-center flex-shrink-0">
+                                <i class="fa fa-user-o leading-7 ml-2"></i>
+                                ورود به حساب کاربری
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-btn-container header-btn-cart-container px-3 py-0 flex items-center">
+                        <i class="fa fa-shopping-cart text-2xl	leading-7 ml-2"></i>
+                    </div>
 
                 </div>
             </div>
 
         </header>
+        <!-- navigation component -->
         <nav>
             <div class="nav-container">
                 <div class="nav py-3 px-4" id="navbar">
@@ -395,7 +408,7 @@
                 </div>
             </div>
         </nav>
-        <div class="">
+        <main class="">
             <!-- main top container -->
             <article class="main-top-container">
                 <div class="main-top">
@@ -1045,6 +1058,18 @@
                 </section>
 
             </div>
+            <div class="page-section">
+                <section class="swipper-brands pt-1">
+                    <div>
+                        <div class="swiper-brands-image-container">
+                            <a href="#brand-page" class="banner-brand-link">
+                                <img src="images/huawei.jpg" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
             <!--promotion categories component-->
             <div class="page-section">
                 <div class="promotion-cats-container">
@@ -1165,12 +1190,10 @@
                     </div>
                 </div>
             </div>
-            <!--footer component-->
-            <footer>
 
-            </footer>
+        </main>
+        <!--footer component-->
 
-        </div>
         <footer class="digi-footer mt-13">
             <div class="footer-jumpup absolute w-full flex flex-row flex-wrap justify-center">
             <span>
@@ -1387,13 +1410,79 @@
                 </div>
 
             </nav>
-            <div class="footer-more-info"></div>
-            <div class="footer-copyright px-3">
-                <div class="footer-copyright-text pt-10 pb-4">
+            <div class="footer-more-info px-3 py-5">
+                <div class="footer-description-content flex flex-nowrap px-4	">
+                    <div class="footer-content ml-4">
+                        <article class="mt-7 footer-seo" >
+                            <h1 class="mb-4">فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین</h1>
+                            <p>
+                                دیجی‌کالا به عنوان یکی از قدیمی‌ترین فروشگاه های اینترنتی
+                                با بیش از یک دهه تجربه، با پایبندی به سه اصل، پرداخت در محل،
+                                7 روز ضمانت بازگشت کالا و تضمین اصل‌بودن کالا موفق شده تا همگام
+                                با فروشگاه‌های معتبر جهان، به بزرگ‌ترین فروشگاه اینترنتی
+                                ایران تبدیل شود. به محض ورود به سایت دیجی‌کالا با دنیایی از کالا رو به رو می‌شوید!
+                                هر آنچه که نیاز دارید و به ذهن شما خطور می‌کند در اینجا پیدا خواهید کرد.
+                            </p>
+                        </article>
+                    </div>
+                    <aside>
+                        <ul class="flex flex-row items-center footer-safety-partner">
+                            <li class="safety-partner-1">
+                                <img src="images/etehadiye.png" alt="">
+                            </li>
+                            <li class="safety-partner-2">
+                                <img src="images/namad.aspx" alt="">
 
-                    استفاده از مطالب فروشگاه اینترنتی دیجی‌کالا فقط برای مقاصد غیرتجاری و با ذکر منبع
-                    بلامانع است. کلیه حقوق این سایت متعلق به شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) می‌باشد.
+                            </li>
+                            <li class="safety-partner-3">
+                                <img src="images/sabt-neshan.aspx" alt="">
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="footer-partners-container w-full">
+                    <nav class="w-full">
+                        <ul class="my-2 w-full flex flex-row flex-nowrap justify-around">
+                            <li>
+                                <a href="#partner-page">
+                                    <img src="images/digikala-mag.svg" alt="partner">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#partner-page">
+                                    <img src="images/digikala-mag.svg" alt="partner">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#partner-page">
+                                    <img src="images/digipay.svg" alt="partner">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#partner-page">
+                                    <img src="images/digiclub.svg" alt="partner">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#partner-page">
+                                    <img src="images/digikala-affilaiate.svg" alt="partner">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#partner-page">
+                                    <img src="images/fidiboo.svg" alt="partner">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-copyright px-3">
+                    <div class="footer-copyright-text pt-10 pb-4">
 
+                        استفاده از مطالب فروشگاه اینترنتی دیجی‌کالا فقط برای مقاصد غیرتجاری و با ذکر منبع
+                        بلامانع است. کلیه حقوق این سایت متعلق به شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) می‌باشد.
+
+                    </div>
                 </div>
             </div>
         </footer>

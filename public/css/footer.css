@@ -1,7 +1,7 @@
 .digi-footer{
     background: #eceff1;
     line-height: 22px;
-    padding: 80px 10px 0;
+    padding: 80px 0 0 0;
     background: #eceff1;
     position: relative;
     line-height: 22px;
@@ -142,7 +142,49 @@
     font-size: 1rem;
     line-height: 27px;
 }
+.footer-description-content{
 
+}
+.footer-more-info{
+    background-color: #d7dee0;
+}
+.footer-seo h1{
+    font-size: 1.143rem;
+    line-height: 1.375;
+    color: #5d5959;
+    margin: .67em 0;
+}
+.footer-seo p{
+    color: #535353;
+    font-size: .857rem;
+    line-height: 2.17;
+}
+.footer-safety-partner li{
+    margin-left: 8px;
+    width: 150px;
+    height: 140px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #e5e5ea;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.footer-partners-container{
+    display: flex;
+    text-align: center;
+    margin-top: 15px;
+    vertical-align: middle;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
 .footer-copyright-text{
     color: #4a4a4a;
     text-align: center;
