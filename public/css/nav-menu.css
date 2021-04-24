@@ -332,3 +332,21 @@ a.nav-link-title{
     border-radius: 8px;
     overflow: hidden;
 }
+.submenu-items-side{
+
+}
+.nav-new-ads{
+    max-width: 285px;
+    min-height: 240px;
+    width: 100%;
+    position: relative;
+}
+.adplacement-badge-banner{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    height: 19px;
+    width: 37px;
+    display: flex;
+    flex-direction: row-reverse;
+}

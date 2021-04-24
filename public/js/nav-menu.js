@@ -1,148 +1,55 @@
-
-
-/* document.querySelector('.nav-container').addEventListener('mouseover',function(e){
-
-    document.querySelector('.overlay').classList.remove('active');
-    document.querySelectorAll('.submenu').forEach((submenuElement)=>{
-        submenuElement.classList.remove('show');
+let submenuItems=document.querySelectorAll('.js-nav-submenu-items');
+function kalayeDigital(){
+    submenuItems.forEach((item)=>{
+        item.style.display='none'
     })
-    if(e.target.classList.contains('toggle')){
-        let linkTitle=e.target;
-        document.querySelector('.overlay').classList.add('active');
-
-        let elem=linkTitle.nextElementSibling;
-
-        elem.classList.add('show');
-        if(linkTitle.nextElementSibling.classList.contains('show')){
-            document.querySelector('.overlay').addEventListener('click', function(e){
-                if(!elem.contains(e.target)){
-                    elem.classList.remove('show');
-                    document.querySelector('.overlay').classList.remove('active');
-                }
-            })
-        }
-    }
-});
-document.querySelectorAll('.submenu').forEach((submenuEle)=>{
-    submenuEle.addEventListener('mouseleave',function(submenuE){
-
-        document.querySelector('.overlay').classList.remove('active');
-
-        submenuE.target.classList.remove('show');
-    })
-
-
-    */
-
-   // ----------------
-
-
-/* document.querySelectorAll('.nav-link-title').forEach((navlink)=>{
-         navlink.addEventListener('mouseover',function(e){
-            e.target.nextElementSibling.classList.add('show');
-            document.querySelector('.overlay').classList.add('active')
-
-        })
-         navlink.addEventListener('mouseup',function(el){
-             if(el.target!= document.querySelector('.submenu')&& el.target!= document.querySelectorAll('.nav-link-title')){
-                el.target.nextElementSibling.classList.remove('show');
-
-             }
-
-        });  */
-
-/*document.querySelector('.nav-container').addEventListener('click',function(e){
-    if(e.target.classList.contains('toggle')){
-        let linkTitle=e.target;
-        document.querySelector('.overlay').classList.toggle('active');
-        let elem=linkTitle.nextElementSibling;
-
-        elem.classList.toggle('show');
-        if(linkTitle.nextElementSibling.classList.contains('show')){
-            document.querySelector('.overlay').addEventListener('click', function(e){
-                if(!elem.contains(e.target)){
-                    elem.classList.remove('show');
-                    document.querySelector('.overlay').classList.remove('active');
-                }
-            })
-        }
-    }
-});*/
-
-       /*
-        if(linkTitle.nextElementSibling.classList.contains('show')){
-            document.querySelector('.overlay').addEventListener('click', function(e){
-                if(!elem.contains(e.target)){
-                    elem.classList.remove('show');
-                    document.querySelector('.overlay').classList.remove('active');
-                }
-            })
-        }
-       *
-
-})*/
-/*
-let submenus = document.querySelectorAll('.submenu');
-for(var i=0;i<submenus.length;i++){
-    submenus[i].addEventListener('mouseleave',(e2)=>{
-        e2.target.classList.remove('show');
-        document.querySelector('.overlay').classList.remove('active');
-                })
-        submenus[i].addEventListener('mouseover',(e4)=>{
-        e4.target.classList.add('show');
-        document.querySelector('.overlay').classList.add('active');
-                })
+    document.querySelector('.js-kalaye-digital-menu').style.display=''
 }
-let toggles = document.querySelectorAll('.toggle');
-for(var j=0;j<toggles.length;j++){
-    var current = toggles[j];
-    toggles[j].addEventListener('mouseleave',(e)=>{
-    console.log(current.nextElementSibling);
-
-
+function sanati(){
+    submenuItems.forEach((item)=>{
+        item.style.display='none'
     })
-} */
-
-
-
-/*  e.target.nextElementSibling.classList.add('show');
- document.querySelector('.overlay').classList.add('active')
-)
-.forEach((navlink)=>{
- navlink.addEventListener('mouseover',function(e){
-    e.target.nextElementSibling.classList.add('show');
-    document.querySelector('.overlay').classList.add('active')
-
-})
- navlink.addEventListener('mouseup',function(el){
-     if(el.target!= document.querySelector('.submenu')&& el.target!= document.querySelectorAll('.nav-link-title')){
-        el.target.nextElementSibling.classList.remove('show');
-
-     }
-
-});
-*/
-
-
-
-//in script temporary hast
-/*  navlinks.addEventListener('click',function(e){
-     let link=e.target;
-     if(link.classList.contains('toggle')){
-         link.nextElementSibling.classList.toggle('show');
-      }
- })
-})*/
+    document.querySelector('.js-abzar-sanati-menu').style.display=''
+}
+function mod(){
+    submenuItems.forEach((item)=>{
+        item.style.display='none'
+    })
+    document.querySelector('.js-mod-menu').style.display=''
+}
+function asbabBazi(){
+    submenuItems.forEach((item)=>{
+        item.style.display='none'
+    })
+    document.querySelector('.js-asbab-bazi-menu').style.display=''
+}
+function zibayie(){
+    submenuItems.forEach((item)=>{
+        item.style.display='none'
+    })
+    document.querySelector('.js-salamet-menu').style.display=''
+}
+function khane(){
+    submenuItems.forEach((item)=>{
+        item.style.display='none'
+    })
+    document.querySelector('.js-khane-menu').style.display=''
+}
+function ketab(){
+    submenuItems.forEach((item)=>{
+        item.style.display='none'
+    })
+    document.querySelector('.js-ketab-menu').style.display=''
+}
+function varzesh(){
+    submenuItems.forEach((item)=>{
+        item.style.display='none'
+    })
+    document.querySelector('.js-varzesh-menu').style.display=''
+}
 
 let due= new Date(2021, 7, 24, 15,30,0);
 
-/*
-    setInterval(()=>{
-        let now= new Date();
-        let ellipse=Math.abs(due-now);
-        let difference = (ellipse - due.toMillieSeconds) ;
-        console.log(ellipse)
-    }, 1000); */
 var second =60;
 var minute = 60;
 var hour=24;

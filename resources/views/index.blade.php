@@ -70,81 +70,393 @@
                             </a>
                             <div class="submenu top-12 absolute " >
                                 <div class="submenu-titles flex flex-col">
-                                    <a href="#submenu" class="submenu-title">
+                                    <a href="#submenu" class="submenu-title" onmouseover="kalayeDigital()">
                                         <i class="fa fa-laptop"></i>
                                         کالای دیجیتال
                                     </a>
-                                    <a href="#submenu" class="submenu-title">
+                                    <a href="#submenu" class="submenu-title"  onmouseover="sanati()">
                                         <i class="fa fa-wrench"></i>
                                         خودرو، ابزار و تجهیزات صنعتی
                                     </a>
-                                    <a href="#submenu" class="submenu-title">
+                                    <a href="#submenu" class="submenu-title" onmouseover="mod()">
                                         <i class="fa fa-check"></i>
                                         مد و پوشاک
                                     </a>
-                                    <a href="#submenu" class="submenu-title">
+                                    <a href="#submenu" class="submenu-title" onmouseover="asbabBazi()">
                                         <i class="fa fa-child"></i>
                                         اسباب بازی، کودک، نوزاد
                                     </a>
-                                    <a href="#submenu" class="submenu-title">
+                                    <a href="#submenu" class="submenu-title" onmouseover="zibayie()">
                                         <i class="fa fa-heart"></i>
                                         زیبایی و سلامت
                                     </a>
-                                    <a href="#submenu" class="submenu-title">
+                                    <a href="#submenu" class="submenu-title" onmouseover="khane()">
                                         <i class="fa fa-home"></i>
                                         خانه و آشپزخانه
                                     </a>
-                                    <a href="#submenu" class="submenu-title">
+                                    <a href="#submenu" class="submenu-title" onmouseover="ketab()">
                                         <i class="fa fa-pencil"></i>
                                         کتاب، لوازم تحریر و هنر
                                     </a>
-                                    <a href="#submenu" class="submenu-title">
+                                    <a href="#submenu" class="submenu-title" onmouseover="varzesh()">
                                         <i class="fa fa-tree"></i>
                                         ورزش و سفر
                                     </a>
 
                                 </div>
-                                <div class="submenu-items  p-3">
-                                    <div class="submenu-top-bar">
-                                        <a href="#link">
-                                            همه دسته‌بندی‌های کالای دیجیتال <i class="fa fa-angle-left"></i>
-                                        </a>
+                                <div class="submenu-items-container flex flex-col w-full">
+                                    <div class="submenu-items js-nav-submenu-items js-kalaye-digital-menu  p-3">
+                                        <div class="submenu-items-side w-full">
+                                            <div class="submenu-top-bar">
+                                                <a href="#link">
+                                                    همه دسته‌بندی‌های کالای دیجیتال <i class="fa fa-angle-left"></i>
+                                                </a>
+                                            </div>
+                                            <ul>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
+                                                    <a href="#category" class="submenu-list-link">پاوربانک</a>
+                                                    <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        گوشی موبایل <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <a href="#category" class="submenu-list-link">سامسونگ</a>
+                                                    <a href="#category" class="submenu-list-link">اپل</a>
+                                                    <a href="#category" class="submenu-list-link">هواوی</a>
+                                                    <a href="#category" class="submenu-list-link">شیاُومی</a>
+                                                    <a href="#category" class="submenu-list-link">نوکیا</a>
+                                                    <a href="#category" class="submenu-list-link">آنر</a>
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        واقعیت مجازی <i class="fa fa-angle-left"></i>
+                                                    </div>
+
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="nav-new-ads mt-0 mx-5 mb-5 flex flex-col justify-between">
+                                            <div class="w-full">
+                                                <a href="#banner">
+                                                    <div class="banner-item">
+                                                        <img src="images/beauty.jpg" alt="محصولات زیبایی">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="adplacement-badge-banner flex flex-row-reverse  bg-white">
+                                                <img src="images/ad.svg">
+                                                <span>Ad</span>
+                                            </div>
+
+                                        </div>
                                     </div>
-                                    <ul>
-                                        <li class="submenu-lists">
-                                            <div class="submenu-lists-title">
-                                                لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
-                                            </div>
-                                            <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
-                                            <a href="#category" class="submenu-list-link">\پاوربانک</a>
-                                            <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+                                    <div class="submenu-items js-nav-submenu-items js-abzar-sanati-menu p-3" style="display: none">
+                                        <div class="submenu-top-bar">
+                                            <a href="#link">
+                                                همه دسته‌بندی‌های وسایل نقلیه و صنعتی<i class="fa fa-angle-left"></i>
+                                            </a>
+                                        </div>
+                                        <ul>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    خودروهای ایرانی و خارجی <i class="fa fa-angle-left"></i>
+                                                </div>
+                                                <div class="submenu-lists-title">
+                                                    موتور سیکلت <i class="fa fa-angle-left"></i>
+                                                </div>
+                                                <div class="submenu-lists-title">
+                                                    لوازم جانبی خودرو و موتور سیکلت <i class="fa fa-angle-left"></i>
+                                                </div>
+                                                <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
+                                                <a href="#category" class="submenu-list-link">پاوربانک</a>
+                                                <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
 
-                                        </li>
-                                        <li class="submenu-lists">
-                                            <div class="submenu-lists-title">
-                                                گوشی موبایل <i class="fa fa-angle-left"></i>
-                                            </div>
-                                            <a href="#category" class="submenu-list-link">سامسونگ</a>
-                                            <a href="#category" class="submenu-list-link">اپل</a>
-                                            <a href="#category" class="submenu-list-link">هواوی</a>
-                                            <a href="#category" class="submenu-list-link">شیاُومی</a>
-                                            <a href="#category" class="submenu-list-link">نوکیا</a>
-                                            <a href="#category" class="submenu-list-link">آنر</a>
-                                        </li>
-                                        <li class="submenu-lists">
-                                            <div class="submenu-lists-title">
-                                                واقعیت مجازی <i class="fa fa-angle-left"></i>
-                                            </div>
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    گوشی موبایل <i class="fa fa-angle-left"></i>
+                                                </div>
+                                                <a href="#category" class="submenu-list-link">سامسونگ</a>
+                                                <a href="#category" class="submenu-list-link">اپل</a>
+                                                <a href="#category" class="submenu-list-link">هواوی</a>
+                                                <a href="#category" class="submenu-list-link">شیاُومی</a>
+                                                <a href="#category" class="submenu-list-link">نوکیا</a>
+                                                <a href="#category" class="submenu-list-link">آنر</a>
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    واقعیت مجازی <i class="fa fa-angle-left"></i>
+                                                </div>
 
-                                        </li>
-                                        <li class="submenu-lists">
-                                            <div class="submenu-lists-title">
-                                                مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
-                                            </div>
-                                        </li>
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
+                                                </div>
+                                            </li>
 
-                                    </ul>
+                                        </ul>
+                                    </div>
+                                    <div class="submenu-items js-nav-submenu-items  js-mod-menu p-3"  style="display: none">
+                                        <div class="submenu-top-bar">
+                                            <a href="#link">
+                                                همه دسته&zwnj;بندی&zwnj;های مد و پوشاک <i class="fa fa-angle-left"></i>
+                                            </a>
+                                        </div>
+                                        <ul>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
+                                                </div>
+                                                <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
+                                                <a href="#category" class="submenu-list-link">پاوربانک</a>
+                                                <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    گوشی موبایل <i class="fa fa-angle-left"></i>
+                                                </div>
+                                                <a href="#category" class="submenu-list-link">سامسونگ</a>
+                                                <a href="#category" class="submenu-list-link">اپل</a>
+                                                <a href="#category" class="submenu-list-link">هواوی</a>
+                                                <a href="#category" class="submenu-list-link">شیاُومی</a>
+                                                <a href="#category" class="submenu-list-link">نوکیا</a>
+                                                <a href="#category" class="submenu-list-link">آنر</a>
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    واقعیت مجازی <i class="fa fa-angle-left"></i>
+                                                </div>
+
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="submenu-items js-nav-submenu-items js-asbab-bazi-menu p-3"  style="display: none">
+                                        <div class="submenu-top-bar">
+                                            <a href="#link">
+                                                همه دسته&zwnj;بندی&zwnj;های کالای دیجیتال <i class="fa fa-angle-left"></i>
+                                            </a>
+                                        </div>
+                                        <ul>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
+                                                </div>
+                                                <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
+                                                <a href="#category" class="submenu-list-link">پاوربانک</a>
+                                                <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    گوشی موبایل <i class="fa fa-angle-left"></i>
+                                                </div>
+                                                <a href="#category" class="submenu-list-link">سامسونگ</a>
+                                                <a href="#category" class="submenu-list-link">اپل</a>
+                                                <a href="#category" class="submenu-list-link">هواوی</a>
+                                                <a href="#category" class="submenu-list-link">شیاُومی</a>
+                                                <a href="#category" class="submenu-list-link">نوکیا</a>
+                                                <a href="#category" class="submenu-list-link">آنر</a>
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    واقعیت مجازی <i class="fa fa-angle-left"></i>
+                                                </div>
+
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="submenu-items js-nav-submenu-items js-salamet-menu p-3"  style="display: none">
+                                        <div class="submenu-top-bar">
+                                            <a href="#link">
+                                                همه دسته&zwnj;بندی&zwnj;های آرایشی و بهداشتی <i class="fa fa-angle-left"></i>
+                                            </a>
+                                        </div>
+                                        <ul>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
+                                                </div>
+                                                <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
+                                                <a href="#category" class="submenu-list-link">پاوربانک</a>
+                                                <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    لوازم آرایشی <i class="fa fa-angle-left"></i>
+                                                </div>
+                                                <a href="#category" class="submenu-list-link">آرایش چشم و ابرو</a>
+                                                <a href="#category" class="submenu-list-link">آرایش لب</a>
+                                                <a href="#category" class="submenu-list-link">مواد آرایشی مو</a>
+                                                <a href="#category" class="submenu-list-link">شیاُومی</a>
+                                                <a href="#category" class="submenu-list-link">نوکیا</a>
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    واقعیت مجازی <i class="fa fa-angle-left"></i>
+                                                </div>
+
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="submenu-items js-nav-submenu-items js-khane-menu p-3"  style="display: none">
+                                        <div class="submenu-top-bar">
+                                            <a href="#link">
+                                                همه دسته&zwnj;بندی&zwnj;های کالای دیجیتال <i class="fa fa-angle-left"></i>
+                                            </a>
+                                        </div>
+                                        <ul>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
+                                                </div>
+                                                <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
+                                                <a href="#category" class="submenu-list-link">پاوربانک</a>
+                                                <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    گوشی موبایل <i class="fa fa-angle-left"></i>
+                                                </div>
+                                                <a href="#category" class="submenu-list-link">سامسونگ</a>
+                                                <a href="#category" class="submenu-list-link">اپل</a>
+                                                <a href="#category" class="submenu-list-link">هواوی</a>
+                                                <a href="#category" class="submenu-list-link">شیاُومی</a>
+                                                <a href="#category" class="submenu-list-link">نوکیا</a>
+                                                <a href="#category" class="submenu-list-link">آنر</a>
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    واقعیت مجازی <i class="fa fa-angle-left"></i>
+                                                </div>
+
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="submenu-items js-nav-submenu-items js-ketab-menu p-3"  style="display: none">
+                                        <div class="submenu-top-bar">
+                                            <a href="#link">
+                                                همه دسته&zwnj;بندی&zwnj;های کتاب& لوازم التحریر و هنر <i class="fa fa-angle-left"></i>
+                                            </a>
+                                        </div>
+                                        <ul>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
+                                                </div>
+                                                <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
+                                                <a href="#category" class="submenu-list-link">\پاوربانک</a>
+                                                <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    گوشی موبایل <i class="fa fa-angle-left"></i>
+                                                </div>
+                                                <a href="#category" class="submenu-list-link">سامسونگ</a>
+                                                <a href="#category" class="submenu-list-link">اپل</a>
+                                                <a href="#category" class="submenu-list-link">هواوی</a>
+                                                <a href="#category" class="submenu-list-link">شیاُومی</a>
+                                                <a href="#category" class="submenu-list-link">نوکیا</a>
+                                                <a href="#category" class="submenu-list-link">آنر</a>
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    واقعیت مجازی <i class="fa fa-angle-left"></i>
+                                                </div>
+
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="submenu-items js-nav-submenu-items js-varzesh-menu p-3"  style="display: none">
+                                        <div class="submenu-top-bar">
+                                            <a href="#link">
+                                                همه دسته&zwnj;بندی&zwnj;های ورزش و سفر <i class="fa fa-angle-left"></i>
+                                            </a>
+                                        </div>
+                                        <ul>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
+                                                </div>
+                                                <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
+                                                <a href="#category" class="submenu-list-link">\پاوربانک</a>
+                                                <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    گوشی موبایل <i class="fa fa-angle-left"></i>
+                                                </div>
+                                                <a href="#category" class="submenu-list-link">سامسونگ</a>
+                                                <a href="#category" class="submenu-list-link">اپل</a>
+                                                <a href="#category" class="submenu-list-link">هواوی</a>
+                                                <a href="#category" class="submenu-list-link">شیاُومی</a>
+                                                <a href="#category" class="submenu-list-link">نوکیا</a>
+                                                <a href="#category" class="submenu-list-link">آنر</a>
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    واقعیت مجازی <i class="fa fa-angle-left"></i>
+                                                </div>
+
+                                            </li>
+                                            <li class="submenu-lists">
+                                                <div class="submenu-lists-title">
+                                                    مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
                                 </div>
+
                             </div>
                             <div class="overlay"></div>
 
@@ -577,296 +889,64 @@
                     </div>
                     <div class="boxes">
                         <div class="items">
-                            <!--product item component-->
-                            <div class="product-item-container-4">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-1.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
+                            <!-- product item component -->
 
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
+
+                            <?php
+                            $productItemContainer4 = [
+                                ['img'=>'"images/phone-1.jpg"','product-title'=>'گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
+                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت', 'old-price'=>'۸,۰۰۰,۰۰۰',
+                                    'discount'=>' ٪۱۵', 'new-price'=>'۷,۲۲۹,۰۰۰'],
+                                ['img'=>'"images/phone-7.jpg"','product-title'=>' کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus', 'old-price'=>'۹۹,۰۰۰ ',
+                                    'discount'=>' ٪۳۰', 'new-price'=>'۴۵,۵۰۰ '],
+                                ['img'=>'"images/phone-8.jpg"','product-title'=>'کاور جویروم مدل Chi مناسب برای گوشی موبایل اپل iPhone 7 Plus', 'old-price'=>'۳۷,۰۰۰  ',
+                                    'discount'=>' ٪۵۴', 'new-price'=>'۲۹,۵۰۰ '],
+                                ['img'=>'"images/phone-2.jpg"','product-title'=>' کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus', 'old-price'=>'۹۹,۰۰۰ ',
+                                    'discount'=>' ٪۵۴', 'new-price'=>'۴۵,۵۰۰ '],
+                                ['img'=>'"images/phone-7.jpg"','product-title'=>' کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus', 'old-price'=>'۹۹,۰۰۰ ',
+                                    'discount'=>' ٪۳۰', 'new-price'=>'۴۵,۵۰۰ '],
+                                ['img'=>'"images/phone-3.jpg"','product-title'=>' کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus', 'old-price'=>'۹۹,۰۰۰ ',
+                                    'discount'=>' ٪۶', 'new-price'=>'۴۵,۵۰۰ '],
+                                ['img'=>'"images/phone-4.jpg"','product-title'=>'کاور نیلکین مدل Camshield مناسب برای گوشی موبایل شیائومی POCO X3 NFC', 'old-price'=>'۹۹,۰۰۰ ',
+                                    'discount'=>'٪۳۰ ', 'new-price'=>'۲۰۴,۷۹۰ '],
+                                ['img'=>'"images/phone-5.jpg"','product-title'=>' کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus', 'old-price'=>'۹۹,۰۰۰ ',
+                                    'discount'=>' ٪۵۴', 'new-price'=>'۴۵,۵۰۰ '],
+                                ['img'=>'"images/phone-6.jpg"','product-title'=>' کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus', 'old-price'=>'۹۹,۰۰۰ ',
+                                    'discount'=>' ٪۵۴', 'new-price'=>'۴۵,۵۰۰ '],
+                                ['img'=>'"images/phone-7.jpg"','product-title'=>' کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus', 'old-price'=>'۹۹,۰۰۰ ',
+                                    'discount'=>' ٪۳۰', 'new-price'=>'۴۵,۵۰۰ ']
+                            ]
+                            ?>
+                            @foreach($productItemContainer4 as $productItem4 )
+                                <div class="product-item-container-4">
+                                    <div class="product-item">
+                                        <div>
+                                            <a href="#product-page">
+                                                <img src={!!$productItem4['img']!!}} title="phone1" alt="a product example" class="product-img">
+                                            </a>
                                         </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
+                                        <div class="product-title">
+                                            <a href="#product-page">
+                                                {{$productItem4['product-title']}}
+                                            </a>
+                                        </div>
+                                        <div class="product-price">
+                                            <div class="product-old-price">
+                                                <del>{{$productItem4['old-price']}}</del>
+                                                <span class="old-price-discount">
+                                                 {{$productItem4['discount']}}
+                                            </span>
+                                            </div>
+                                            <div class="product-new-price">
+                                                {{$productItem4['new-price']}}
+                                                <span class="new-price-currency">تومان</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!--product item component-->
-                            <div class="product-item-container-4">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-1.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
 
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
-                                        </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--product item component-->
-                            <div class="product-item-container-4">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-7.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
+                            @endforeach
 
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
-                                        </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--product item component-->
-                            <div class="product-item-container-4">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-8.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
-                                        </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--product item component-->
-                            <div class="product-item-container-4">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-1.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
-                                        </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--product item component-->
-                            <div class="product-item-container-4">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-5.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
-                                        </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--product item component-->
-                            <div class="product-item-container-4">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-1.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
-                                        </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--product item component-->
-                            <div class="product-item-container-4">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-4.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
-                                        </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--product item component-->
-                            <div class="product-item-container-4">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-6.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
-                                        </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--product item component-->
-                            <div class="product-item-container-4">
-                                <div class="product-item">
-                                    <div>
-                                        <a href="#product-page">
-                                            <img src="images/phone-9.jpg" title="phone1" alt="a product example" class="product-img">
-                                        </a>
-                                    </div>
-                                    <div class="product-title">
-                                        <a href="#product-page">
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                            گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
-
-                                        </a>
-                                    </div>
-                                    <div class="product-price">
-                                        <div class="product-old-price">
-                                            <del>۸,۰۰۰,۰۰۰</del>
-                                            <span class="old-price-discount">
-                                                ۱۵٪
-                                            </span>
-                                        </div>
-                                        <div class="product-new-price">
-                                            ۷,۲۲۹,۰۰۰
-                                            <span class="new-price-currency">تومان</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="arrow-right-3">
                             <i class="fa fa-chevron-right" aria-hidden="true"></i>
@@ -921,113 +1001,33 @@
                 </div>
                 <div class="promotion-cats">
                     <!--promotion cat section-->
-                    <a href="#category" class="promotion-cat-sec">
-                        <div class="promotion-cat-icon">
-                            <i class="fa fa-laptop"></i>
-                        </div>
-                        <div class="promotion-cat-name">
-                            کالای دیجیتال
-                        </div>
-                        <div class="promotion-cat-quantity">
-                            + ۵۲۹۰۰۰ کالا
-                        </div>
-                    </a>
-                    <!--promotion cat section-->
-                    <a href="#category" class="promotion-cat-sec">
-                        <div class="promotion-cat-icon">
-                            <i class="fa fa-wrench"></i>
-                        </div>
-                        <div class="promotion-cat-name">
-                            خودرو، ابزار و تجهیزات صنعتی
-                        </div>
-                        <div class="promotion-cat-quantity">
-                            + ۱۱۱۰۰۰ کالا
-                        </div>
-                    </a>
-                    <!--promotion cat section-->
-                    <a href="#category" class="promotion-cat-sec">
-                        <div class="promotion-cat-icon">
-                            <i class="fa fa-check"></i>
-                        </div>
-                        <div class="promotion-cat-name">
-                            مد و پوشاک
-                        </div>
-                        <div class="promotion-cat-quantity">
-                            + ۴۸۸۰۰۰ کالا
-                        </div>
-                    </a>
-                    <!--promotion cat section-->
-                    <a href="#category" class="promotion-cat-sec">
-                        <div class="promotion-cat-icon">
-                            <i class="fa fa-child"></i>
-                        </div>
-                        <div class="promotion-cat-name">
-                            اسباب بازی، کودک و نوزاد
-                        </div>
-                        <div class="promotion-cat-quantity">
-                            + ۵۲۹۰۰۰ کالا
-                        </div>
-                    </a>
-                    <!--promotion cat section-->
-                    <a href="#category" class="promotion-cat-sec">
-                        <div class="promotion-cat-icon">
-                            <i class="fa fa-shopping-basket"></i>
-                        </div>
-                        <div class="promotion-cat-name">
-                            کالاهای سوپرمارکتی
-                        </div>
-                        <div class="promotion-cat-quantity">
-                            + ۵۲۹۰۰۰ کالا
-                        </div>
-                    </a>
-                    <!--promotion cat section-->
-                    <a href="#category" class="promotion-cat-sec">
-                        <div class="promotion-cat-icon">
-                            <i class="fa fa-heart"></i>
-                        </div>
-                        <div class="promotion-cat-name">
-                            زیبایی و سلامت
-                        </div>
-                        <div class="promotion-cat-quantity">
-                            + ۷۹۰۰۰ کالا
-                        </div>
-                    </a>
-                    <!--promotion cat section-->
-                    <a href="#category" class="promotion-cat-sec">
-                        <div class="promotion-cat-icon">
-                            <i class="fa fa-home"></i>
-                        </div>
-                        <div class="promotion-cat-name">
-                            خانه و آشپزخانه
-                        </div>
-                        <div class="promotion-cat-quantity">
-                            + ۳۴۷۰۰۰ کالا
-                        </div>
-                    </a>
-                    <!--promotion cat section-->
-                    <a href="#category" class="promotion-cat-sec">
-                        <div class="promotion-cat-icon">
-                            <i class="fa fa-pencil"></i>
-                        </div>
-                        <div class="promotion-cat-name">
-                            کتاب، لوازم تحریر و هنر
-                        </div>
-                        <div class="promotion-cat-quantity">
-                            + ۲۰۰۰۰۰ کالا
-                        </div>
-                    </a>
-                    <!--promotion cat section-->
-                    <a href="#category" class="promotion-cat-sec">
-                        <div class="promotion-cat-icon">
-                            <i class="fa fa-tree"></i>
-                        </div>
-                        <div class="promotion-cat-name">
-                            ورزش و سفر
-                        </div>
-                        <div class="promotion-cat-quantity">
-                            + ۲۹۰۰۰ کالا
-                        </div>
-                    </a>
+                    <?php
+                     $promotionSections = [
+                         ['icon'=>'"fa fa-laptop"', 'cat-name'=>' کالای دیجیتال', 'cat-quantity'=>' + ۵۲۹۰۰۰ کالا'],
+                         ['icon'=>'"fa fa-wrench"', 'cat-name'=>'خودرو، ابزار و تجهیزات صنعتی', 'cat-quantity'=>' + ۵۲۹۰۰۰ کالا'],
+                         ['icon'=>'"fa fa-check"', 'cat-name'=>'مد و پوشاک', 'cat-quantity'=>'+ ۱۱۱۰۰۰ کالا'],
+                         ['icon'=>'"fa fa-child"', 'cat-name'=>' اسباب بازی، کودک و نوزاد', 'cat-quantity'=>'+ ۴۸۸۰۰۰ کالا'],
+                         ['icon'=>'"fa fa-shopping-basket"', 'cat-name'=>'کالاهای سوپرمارکتی', 'cat-quantity'=>'+ ۵۲۹۰۰۰ کالا'],
+                         ['icon'=>'"fa fa-heart"', 'cat-name'=>'زیبایی و سلامت', 'cat-quantity'=>' + ۵۲۹۰۰۰ کالا'],
+                         ['icon'=>'"fa fa-home"', 'cat-name'=>'خانه و آشپزخانه', 'cat-quantity'=>' + ۵۲۹۰۰۰ کالا'],
+                         ['icon'=>'"fa fa-pencil"', 'cat-name'=>'کتاب، لوازم تحریر و هنر', 'cat-quantity'=>' + ۵۲۹۰۰۰ کالا'],
+                         ['icon'=>'"fa fa-tree"', 'cat-name'=>'ورزش و سفر', 'cat-quantity'=>'+ ۲۰۰۰۰۰ کالا']
+                     ]
+                    ?>
+                    @foreach($promotionSections as $promotionsection)
+                        <a href="#category" class="promotion-cat-sec">
+                            <div class="promotion-cat-icon">
+                                <i class={!! $promotionsection['icon'] !!}></i>
+                            </div>
+                            <div class="promotion-cat-name">
+                                {!! $promotionsection['cat-name'] !!}
+                            </div>
+                            <div class="promotion-cat-quantity">
+                                {!! $promotionsection['cat-quantity'] !!}
+                            </div>
+                        </a>
+                    @endforeach
+
                 </div>
             </div>
         </div>
