@@ -147,312 +147,548 @@
 
                                             </ul>
                                         </div>
+                                        <!-- inja az yield estefade konam -->
                                         <div class="nav-new-ads mt-0 mx-5 mb-5 flex flex-col justify-between">
-                                            <div class="w-full">
+                                            <div class="w-full ">
                                                 <a href="#banner">
-                                                    <div class="banner-item">
+                                                    <div class="banner-item relative">
                                                         <img src="images/beauty.jpg" alt="محصولات زیبایی">
+                                                        <div class="adplacement-badge-banner flex flex-row-reverse  bg-white">
+                                                            <img src="images/ad.svg">
+                                                            <span>Ad</span>
+                                                        </div>
                                                     </div>
                                                 </a>
+
                                             </div>
-                                            <div class="adplacement-badge-banner flex flex-row-reverse  bg-white">
-                                                <img src="images/ad.svg">
-                                                <span>Ad</span>
+                                            <div class="new-brands-holder h-22 flex flex-col justify-center ">
+                                                <h3>ّبرندهای ویژه</h3>
+                                                <div class="new-ads-brands flex flex-row">
+                                                    <a href="">
+                                                        <div class="ml-2 p-2 text-center"><img src="images/ex-brand-1.jpg" class="h-full w-full" alt=""></div>
+                                                    </a><a href="">
+                                                        <div class=" ml-2 p-2 text-center"><img src="images/ex-brand-2.jpg" class="h-full w-full" alt=""></div>
+                                                    </a><a href="">
+                                                        <div class="ml-2 p-2 text-center"><img src="images/ex-brand-3.jpg" class="h-full w-full" alt=""></div>
+                                                    </a>
+                                                </div>
                                             </div>
 
                                         </div>
                                     </div>
                                     <div class="submenu-items js-nav-submenu-items js-abzar-sanati-menu p-3" style="display: none">
-                                        <div class="submenu-top-bar">
-                                            <a href="#link">
-                                                همه دسته‌بندی‌های وسایل نقلیه و صنعتی<i class="fa fa-angle-left"></i>
-                                            </a>
+                                        <div class="submenu-items-side w-full">
+                                            <div class="submenu-top-bar">
+                                                <a href="#link">
+                                                    همه دسته‌بندی‌های وسایل نقلیه و صنعتی<i class="fa fa-angle-left"></i>
+                                                </a>
+                                            </div>
+                                            <ul>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        خودروهای ایرانی و خارجی <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <div class="submenu-lists-title">
+                                                        موتور سیکلت <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <div class="submenu-lists-title">
+                                                        لوازم جانبی خودرو و موتور سیکلت <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
+                                                    <a href="#category" class="submenu-list-link">پاوربانک</a>
+                                                    <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        گوشی موبایل <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <a href="#category" class="submenu-list-link">سامسونگ</a>
+                                                    <a href="#category" class="submenu-list-link">اپل</a>
+                                                    <a href="#category" class="submenu-list-link">هواوی</a>
+                                                    <a href="#category" class="submenu-list-link">شیاُومی</a>
+                                                    <a href="#category" class="submenu-list-link">نوکیا</a>
+                                                    <a href="#category" class="submenu-list-link">آنر</a>
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        واقعیت مجازی <i class="fa fa-angle-left"></i>
+                                                    </div>
+
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
                                         </div>
-                                        <ul>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    خودروهای ایرانی و خارجی <i class="fa fa-angle-left"></i>
-                                                </div>
-                                                <div class="submenu-lists-title">
-                                                    موتور سیکلت <i class="fa fa-angle-left"></i>
-                                                </div>
-                                                <div class="submenu-lists-title">
-                                                    لوازم جانبی خودرو و موتور سیکلت <i class="fa fa-angle-left"></i>
-                                                </div>
-                                                <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
-                                                <a href="#category" class="submenu-list-link">پاوربانک</a>
-                                                <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+                                        <!-- inja az yield estefade konam -->
+                                        <div class="nav-new-ads mt-0 mx-5 mb-5 flex flex-col justify-between">
+                                            <div class="w-full ">
+                                                <a href="#banner">
+                                                    <div class="banner-item relative">
+                                                        <img src="images/beauty.jpg" alt="محصولات زیبایی">
+                                                        <div class="adplacement-badge-banner flex flex-row-reverse  bg-white">
+                                                            <img src="images/ad.svg">
+                                                            <span>Ad</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
 
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    گوشی موبایل <i class="fa fa-angle-left"></i>
+                                            </div>
+                                            <div class="new-brands-holder h-22 flex flex-col justify-center ">
+                                                <h3>ّبرندهای ویژه</h3>
+                                                <div class="new-ads-brands flex flex-row">
+                                                    <a href="">
+                                                        <div class="ml-2 p-2 text-center"><img src="images/ex-brand-1.jpg" class="h-full w-full" alt=""></div>
+                                                    </a><a href="">
+                                                        <div class=" ml-2 p-2 text-center"><img src="images/ex-brand-2.jpg" class="h-full w-full" alt=""></div>
+                                                    </a><a href="">
+                                                        <div class="ml-2 p-2 text-center"><img src="images/ex-brand-3.jpg" class="h-full w-full" alt=""></div>
+                                                    </a>
                                                 </div>
-                                                <a href="#category" class="submenu-list-link">سامسونگ</a>
-                                                <a href="#category" class="submenu-list-link">اپل</a>
-                                                <a href="#category" class="submenu-list-link">هواوی</a>
-                                                <a href="#category" class="submenu-list-link">شیاُومی</a>
-                                                <a href="#category" class="submenu-list-link">نوکیا</a>
-                                                <a href="#category" class="submenu-list-link">آنر</a>
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    واقعیت مجازی <i class="fa fa-angle-left"></i>
-                                                </div>
+                                            </div>
 
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
-                                                </div>
-                                            </li>
-
-                                        </ul>
+                                        </div>
                                     </div>
                                     <div class="submenu-items js-nav-submenu-items  js-mod-menu p-3"  style="display: none">
-                                        <div class="submenu-top-bar">
-                                            <a href="#link">
-                                                همه دسته&zwnj;بندی&zwnj;های مد و پوشاک <i class="fa fa-angle-left"></i>
-                                            </a>
+                                        <div class="submenu-items-side w-full">
+                                            <div class="submenu-top-bar">
+                                                <a href="#link">
+                                                    همه دسته&zwnj;بندی&zwnj;های مد و پوشاک <i class="fa fa-angle-left"></i>
+                                                </a>
+                                            </div>
+                                            <ul>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
+                                                    <a href="#category" class="submenu-list-link">پاوربانک</a>
+                                                    <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        گوشی موبایل <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <a href="#category" class="submenu-list-link">سامسونگ</a>
+                                                    <a href="#category" class="submenu-list-link">اپل</a>
+                                                    <a href="#category" class="submenu-list-link">هواوی</a>
+                                                    <a href="#category" class="submenu-list-link">شیاُومی</a>
+                                                    <a href="#category" class="submenu-list-link">نوکیا</a>
+                                                    <a href="#category" class="submenu-list-link">آنر</a>
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        واقعیت مجازی <i class="fa fa-angle-left"></i>
+                                                    </div>
+
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
                                         </div>
-                                        <ul>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
-                                                </div>
-                                                <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
-                                                <a href="#category" class="submenu-list-link">پاوربانک</a>
-                                                <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+                                        <!-- inja az yield estefade konam -->
+                                        <div class="nav-new-ads mt-0 mx-5 mb-5 flex flex-col justify-between">
+                                            <div class="w-full ">
+                                                <a href="#banner">
+                                                    <div class="banner-item relative">
+                                                        <img src="images/beauty.jpg" alt="محصولات زیبایی">
+                                                        <div class="adplacement-badge-banner flex flex-row-reverse  bg-white">
+                                                            <img src="images/ad.svg">
+                                                            <span>Ad</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
 
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    گوشی موبایل <i class="fa fa-angle-left"></i>
+                                            </div>
+                                            <div class="new-brands-holder h-22 flex flex-col justify-center ">
+                                                <h3>ّبرندهای ویژه</h3>
+                                                <div class="new-ads-brands flex flex-row">
+                                                    <a href="">
+                                                        <div class="ml-2 p-2 text-center"><img src="images/ex-brand-1.jpg" class="h-full w-full" alt=""></div>
+                                                    </a><a href="">
+                                                        <div class=" ml-2 p-2 text-center"><img src="images/ex-brand-2.jpg" class="h-full w-full" alt=""></div>
+                                                    </a><a href="">
+                                                        <div class="ml-2 p-2 text-center"><img src="images/ex-brand-3.jpg" class="h-full w-full" alt=""></div>
+                                                    </a>
                                                 </div>
-                                                <a href="#category" class="submenu-list-link">سامسونگ</a>
-                                                <a href="#category" class="submenu-list-link">اپل</a>
-                                                <a href="#category" class="submenu-list-link">هواوی</a>
-                                                <a href="#category" class="submenu-list-link">شیاُومی</a>
-                                                <a href="#category" class="submenu-list-link">نوکیا</a>
-                                                <a href="#category" class="submenu-list-link">آنر</a>
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    واقعیت مجازی <i class="fa fa-angle-left"></i>
-                                                </div>
+                                            </div>
 
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
-                                                </div>
-                                            </li>
-
-                                        </ul>
+                                        </div>
                                     </div>
+
                                     <div class="submenu-items js-nav-submenu-items js-asbab-bazi-menu p-3"  style="display: none">
-                                        <div class="submenu-top-bar">
-                                            <a href="#link">
-                                                همه دسته&zwnj;بندی&zwnj;های کالای دیجیتال <i class="fa fa-angle-left"></i>
-                                            </a>
+                                        <div class="submenu-items-side w-full">
+                                            <div class="submenu-top-bar">
+                                                <a href="#link">
+                                                    همه دسته‌بندی‌های وسایل نقلیه و صنعتی<i class="fa fa-angle-left"></i>
+                                                </a>
+                                            </div>
+                                            <ul>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        خودروهای ایرانی و خارجی <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <div class="submenu-lists-title">
+                                                        موتور سیکلت <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <div class="submenu-lists-title">
+                                                        لوازم جانبی خودرو و موتور سیکلت <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
+                                                    <a href="#category" class="submenu-list-link">پاوربانک</a>
+                                                    <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        گوشی موبایل <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <a href="#category" class="submenu-list-link">سامسونگ</a>
+                                                    <a href="#category" class="submenu-list-link">اپل</a>
+                                                    <a href="#category" class="submenu-list-link">هواوی</a>
+                                                    <a href="#category" class="submenu-list-link">شیاُومی</a>
+                                                    <a href="#category" class="submenu-list-link">نوکیا</a>
+                                                    <a href="#category" class="submenu-list-link">آنر</a>
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        واقعیت مجازی <i class="fa fa-angle-left"></i>
+                                                    </div>
+
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
                                         </div>
-                                        <ul>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
-                                                </div>
-                                                <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
-                                                <a href="#category" class="submenu-list-link">پاوربانک</a>
-                                                <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+                                        <!-- inja az yield estefade konam -->
+                                        <div class="nav-new-ads mt-0 mx-5 mb-5 flex flex-col justify-between">
+                                            <div class="w-full ">
+                                                <a href="#banner">
+                                                    <div class="banner-item relative">
+                                                        <img src="images/beauty.jpg" alt="محصولات زیبایی">
+                                                        <div class="adplacement-badge-banner flex flex-row-reverse  bg-white">
+                                                            <img src="images/ad.svg">
+                                                            <span>Ad</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
 
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    گوشی موبایل <i class="fa fa-angle-left"></i>
+                                            </div>
+                                            <div class="new-brands-holder h-22 flex flex-col justify-center ">
+                                                <h3>ّبرندهای ویژه</h3>
+                                                <div class="new-ads-brands flex flex-row">
+                                                    <a href="">
+                                                        <div class="ml-2 p-2 text-center"><img src="images/ex-brand-1.jpg" class="h-full w-full" alt=""></div>
+                                                    </a><a href="">
+                                                        <div class=" ml-2 p-2 text-center"><img src="images/ex-brand-2.jpg" class="h-full w-full" alt=""></div>
+                                                    </a><a href="">
+                                                        <div class="ml-2 p-2 text-center"><img src="images/ex-brand-3.jpg" class="h-full w-full" alt=""></div>
+                                                    </a>
                                                 </div>
-                                                <a href="#category" class="submenu-list-link">سامسونگ</a>
-                                                <a href="#category" class="submenu-list-link">اپل</a>
-                                                <a href="#category" class="submenu-list-link">هواوی</a>
-                                                <a href="#category" class="submenu-list-link">شیاُومی</a>
-                                                <a href="#category" class="submenu-list-link">نوکیا</a>
-                                                <a href="#category" class="submenu-list-link">آنر</a>
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    واقعیت مجازی <i class="fa fa-angle-left"></i>
-                                                </div>
+                                            </div>
 
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
-                                                </div>
-                                            </li>
+                                        </div>
 
-                                        </ul>
                                     </div>
                                     <div class="submenu-items js-nav-submenu-items js-salamet-menu p-3"  style="display: none">
-                                        <div class="submenu-top-bar">
-                                            <a href="#link">
-                                                همه دسته&zwnj;بندی&zwnj;های آرایشی و بهداشتی <i class="fa fa-angle-left"></i>
-                                            </a>
+                                        <div class="submenu-items-side w-full">
+                                            <div class="submenu-top-bar">
+                                                <a href="#link">
+                                                    همه دسته&zwnj;بندی&zwnj;های آرایشی و بهداشتی <i class="fa fa-angle-left"></i>
+                                                </a>
+                                            </div>
+                                            <ul>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
+                                                    <a href="#category" class="submenu-list-link">پاوربانک</a>
+                                                    <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        لوازم آرایشی <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <a href="#category" class="submenu-list-link">آرایش چشم و ابرو</a>
+                                                    <a href="#category" class="submenu-list-link">آرایش لب</a>
+                                                    <a href="#category" class="submenu-list-link">مواد آرایشی مو</a>
+                                                    <a href="#category" class="submenu-list-link">شیاُومی</a>
+                                                    <a href="#category" class="submenu-list-link">نوکیا</a>
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        واقعیت مجازی <i class="fa fa-angle-left"></i>
+                                                    </div>
+
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
                                         </div>
-                                        <ul>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
-                                                </div>
-                                                <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
-                                                <a href="#category" class="submenu-list-link">پاوربانک</a>
-                                                <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+                                        <div class="nav-new-ads mt-0 mx-5 mb-5 flex flex-col justify-between">
+                                            <div class="w-full ">
+                                                <a href="#banner">
+                                                    <div class="banner-item relative">
+                                                        <img src="images/beauty.jpg" alt="محصولات زیبایی">
+                                                        <div class="adplacement-badge-banner flex flex-row-reverse  bg-white">
+                                                            <img src="images/ad.svg">
+                                                            <span>Ad</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
 
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    لوازم آرایشی <i class="fa fa-angle-left"></i>
+                                            </div>
+                                            <div class="new-brands-holder h-22 flex flex-col justify-center ">
+                                                <h3>ّبرندهای ویژه</h3>
+                                                <div class="new-ads-brands flex flex-row">
+                                                    <a href="">
+                                                        <div class="ml-2 p-2 text-center"><img src="images/ex-brand-1.jpg" class="h-full w-full" alt=""></div>
+                                                    </a><a href="">
+                                                        <div class=" ml-2 p-2 text-center"><img src="images/ex-brand-2.jpg" class="h-full w-full" alt=""></div>
+                                                    </a><a href="">
+                                                        <div class="ml-2 p-2 text-center"><img src="images/ex-brand-3.jpg" class="h-full w-full" alt=""></div>
+                                                    </a>
                                                 </div>
-                                                <a href="#category" class="submenu-list-link">آرایش چشم و ابرو</a>
-                                                <a href="#category" class="submenu-list-link">آرایش لب</a>
-                                                <a href="#category" class="submenu-list-link">مواد آرایشی مو</a>
-                                                <a href="#category" class="submenu-list-link">شیاُومی</a>
-                                                <a href="#category" class="submenu-list-link">نوکیا</a>
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    واقعیت مجازی <i class="fa fa-angle-left"></i>
-                                                </div>
+                                            </div>
 
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
-                                                </div>
-                                            </li>
+                                        </div>
 
-                                        </ul>
+
                                     </div>
                                     <div class="submenu-items js-nav-submenu-items js-khane-menu p-3"  style="display: none">
-                                        <div class="submenu-top-bar">
-                                            <a href="#link">
-                                                همه دسته&zwnj;بندی&zwnj;های کالای دیجیتال <i class="fa fa-angle-left"></i>
-                                            </a>
+                                        <div class="submenu-items-side w-full">
+                                            <div class="submenu-top-bar">
+                                                <a href="#link">
+                                                    همه دسته&zwnj;بندی&zwnj;های مد و پوشاک <i class="fa fa-angle-left"></i>
+                                                </a>
+                                            </div>
+                                            <ul>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
+                                                    <a href="#category" class="submenu-list-link">پاوربانک</a>
+                                                    <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        گوشی موبایل <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <a href="#category" class="submenu-list-link">سامسونگ</a>
+                                                    <a href="#category" class="submenu-list-link">اپل</a>
+                                                    <a href="#category" class="submenu-list-link">هواوی</a>
+                                                    <a href="#category" class="submenu-list-link">شیاُومی</a>
+                                                    <a href="#category" class="submenu-list-link">نوکیا</a>
+                                                    <a href="#category" class="submenu-list-link">آنر</a>
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        واقعیت مجازی <i class="fa fa-angle-left"></i>
+                                                    </div>
+
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
                                         </div>
-                                        <ul>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
-                                                </div>
-                                                <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
-                                                <a href="#category" class="submenu-list-link">پاوربانک</a>
-                                                <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+                                        <!-- inja az yield estefade konam -->
+                                        <div class="nav-new-ads mt-0 mx-5 mb-5 flex flex-col justify-between">
+                                            <div class="w-full ">
+                                                <a href="#banner">
+                                                    <div class="banner-item relative">
+                                                        <img src="images/beauty.jpg" alt="محصولات زیبایی">
+                                                        <div class="adplacement-badge-banner flex flex-row-reverse  bg-white">
+                                                            <img src="images/ad.svg">
+                                                            <span>Ad</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
 
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    گوشی موبایل <i class="fa fa-angle-left"></i>
+                                            </div>
+                                            <div class="new-brands-holder h-22 flex flex-col justify-center ">
+                                                <h3>ّبرندهای ویژه</h3>
+                                                <div class="new-ads-brands flex flex-row">
+                                                    <a href="">
+                                                        <div class="ml-2 p-2 text-center"><img src="images/ex-brand-1.jpg" class="h-full w-full" alt=""></div>
+                                                    </a><a href="">
+                                                        <div class=" ml-2 p-2 text-center"><img src="images/ex-brand-2.jpg" class="h-full w-full" alt=""></div>
+                                                    </a><a href="">
+                                                        <div class="ml-2 p-2 text-center"><img src="images/ex-brand-3.jpg" class="h-full w-full" alt=""></div>
+                                                    </a>
                                                 </div>
-                                                <a href="#category" class="submenu-list-link">سامسونگ</a>
-                                                <a href="#category" class="submenu-list-link">اپل</a>
-                                                <a href="#category" class="submenu-list-link">هواوی</a>
-                                                <a href="#category" class="submenu-list-link">شیاُومی</a>
-                                                <a href="#category" class="submenu-list-link">نوکیا</a>
-                                                <a href="#category" class="submenu-list-link">آنر</a>
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    واقعیت مجازی <i class="fa fa-angle-left"></i>
-                                                </div>
+                                            </div>
 
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
-                                                </div>
-                                            </li>
+                                        </div>
 
-                                        </ul>
                                     </div>
                                     <div class="submenu-items js-nav-submenu-items js-ketab-menu p-3"  style="display: none">
-                                        <div class="submenu-top-bar">
-                                            <a href="#link">
-                                                همه دسته&zwnj;بندی&zwnj;های کتاب& لوازم التحریر و هنر <i class="fa fa-angle-left"></i>
-                                            </a>
+                                        <div class="submenu-items-side w-full">
+                                            <div class="submenu-top-bar">
+                                                <a href="#link">
+                                                    همه دسته&zwnj;بندی&zwnj;های مد و پوشاک <i class="fa fa-angle-left"></i>
+                                                </a>
+                                            </div>
+                                            <ul>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
+                                                    <a href="#category" class="submenu-list-link">پاوربانک</a>
+                                                    <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        گوشی موبایل <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <a href="#category" class="submenu-list-link">سامسونگ</a>
+                                                    <a href="#category" class="submenu-list-link">اپل</a>
+                                                    <a href="#category" class="submenu-list-link">هواوی</a>
+                                                    <a href="#category" class="submenu-list-link">شیاُومی</a>
+                                                    <a href="#category" class="submenu-list-link">نوکیا</a>
+                                                    <a href="#category" class="submenu-list-link">آنر</a>
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        واقعیت مجازی <i class="fa fa-angle-left"></i>
+                                                    </div>
+
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
                                         </div>
-                                        <ul>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
-                                                </div>
-                                                <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
-                                                <a href="#category" class="submenu-list-link">\پاوربانک</a>
-                                                <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+                                        <!-- inja az yield estefade konam -->
+                                        <div class="nav-new-ads mt-0 mx-5 mb-5 flex flex-col justify-between">
+                                            <div class="w-full ">
+                                                <a href="#banner">
+                                                    <div class="banner-item relative">
+                                                        <img src="images/beauty.jpg" alt="محصولات زیبایی">
+                                                        <div class="adplacement-badge-banner flex flex-row-reverse  bg-white">
+                                                            <img src="images/ad.svg">
+                                                            <span>Ad</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
 
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    گوشی موبایل <i class="fa fa-angle-left"></i>
+                                            </div>
+                                            <div class="new-brands-holder h-22 flex flex-col justify-center ">
+                                                <h3>ّبرندهای ویژه</h3>
+                                                <div class="new-ads-brands flex flex-row">
+                                                    <a href="">
+                                                        <div class="ml-2 p-2 text-center"><img src="images/ex-brand-1.jpg" class="h-full w-full" alt=""></div>
+                                                    </a><a href="">
+                                                        <div class=" ml-2 p-2 text-center"><img src="images/ex-brand-2.jpg" class="h-full w-full" alt=""></div>
+                                                    </a><a href="">
+                                                        <div class="ml-2 p-2 text-center"><img src="images/ex-brand-3.jpg" class="h-full w-full" alt=""></div>
+                                                    </a>
                                                 </div>
-                                                <a href="#category" class="submenu-list-link">سامسونگ</a>
-                                                <a href="#category" class="submenu-list-link">اپل</a>
-                                                <a href="#category" class="submenu-list-link">هواوی</a>
-                                                <a href="#category" class="submenu-list-link">شیاُومی</a>
-                                                <a href="#category" class="submenu-list-link">نوکیا</a>
-                                                <a href="#category" class="submenu-list-link">آنر</a>
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    واقعیت مجازی <i class="fa fa-angle-left"></i>
-                                                </div>
+                                            </div>
 
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
-                                                </div>
-                                            </li>
+                                        </div>
 
-                                        </ul>
                                     </div>
                                     <div class="submenu-items js-nav-submenu-items js-varzesh-menu p-3"  style="display: none">
-                                        <div class="submenu-top-bar">
-                                            <a href="#link">
-                                                همه دسته&zwnj;بندی&zwnj;های ورزش و سفر <i class="fa fa-angle-left"></i>
-                                            </a>
+                                        <div class="submenu-items-side w-full">
+                                            <div class="submenu-top-bar">
+                                                <a href="#link">
+                                                    همه دسته&zwnj;بندی&zwnj;های مد و پوشاک <i class="fa fa-angle-left"></i>
+                                                </a>
+                                            </div>
+                                            <ul>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
+                                                    <a href="#category" class="submenu-list-link">پاوربانک</a>
+                                                    <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        گوشی موبایل <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                    <a href="#category" class="submenu-list-link">سامسونگ</a>
+                                                    <a href="#category" class="submenu-list-link">اپل</a>
+                                                    <a href="#category" class="submenu-list-link">هواوی</a>
+                                                    <a href="#category" class="submenu-list-link">شیاُومی</a>
+                                                    <a href="#category" class="submenu-list-link">نوکیا</a>
+                                                    <a href="#category" class="submenu-list-link">آنر</a>
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        واقعیت مجازی <i class="fa fa-angle-left"></i>
+                                                    </div>
+
+                                                </li>
+                                                <li class="submenu-lists">
+                                                    <div class="submenu-lists-title">
+                                                        مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
                                         </div>
-                                        <ul>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
-                                                </div>
-                                                <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
-                                                <a href="#category" class="submenu-list-link">\پاوربانک</a>
-                                                <a href="#category" class="submenu-list-link">پایه نگهدانرنده گوشی</a>
+                                        <!-- inja az yield estefade konam -->
+                                        <div class="nav-new-ads mt-0 mx-5 mb-5 flex flex-col justify-between">
+                                            <div class="w-full ">
+                                                <a href="#banner">
+                                                    <div class="banner-item relative">
+                                                        <img src="images/beauty.jpg" alt="محصولات زیبایی">
+                                                        <div class="adplacement-badge-banner flex flex-row-reverse  bg-white">
+                                                            <img src="images/ad.svg">
+                                                            <span>Ad</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
 
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    گوشی موبایل <i class="fa fa-angle-left"></i>
+                                            </div>
+                                            <div class="new-brands-holder h-22 flex flex-col justify-center ">
+                                                <h3>ّبرندهای ویژه</h3>
+                                                <div class="new-ads-brands flex flex-row">
+                                                    <a href="">
+                                                        <div class="ml-2 p-2 text-center"><img src="images/ex-brand-1.jpg" class="h-full w-full" alt=""></div>
+                                                    </a><a href="">
+                                                        <div class=" ml-2 p-2 text-center"><img src="images/ex-brand-2.jpg" class="h-full w-full" alt=""></div>
+                                                    </a><a href="">
+                                                        <div class="ml-2 p-2 text-center"><img src="images/ex-brand-3.jpg" class="h-full w-full" alt=""></div>
+                                                    </a>
                                                 </div>
-                                                <a href="#category" class="submenu-list-link">سامسونگ</a>
-                                                <a href="#category" class="submenu-list-link">اپل</a>
-                                                <a href="#category" class="submenu-list-link">هواوی</a>
-                                                <a href="#category" class="submenu-list-link">شیاُومی</a>
-                                                <a href="#category" class="submenu-list-link">نوکیا</a>
-                                                <a href="#category" class="submenu-list-link">آنر</a>
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    واقعیت مجازی <i class="fa fa-angle-left"></i>
-                                                </div>
+                                            </div>
 
-                                            </li>
-                                            <li class="submenu-lists">
-                                                <div class="submenu-lists-title">
-                                                    مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
-                                                </div>
-                                            </li>
+                                        </div>
 
-                                        </ul>
                                     </div>
 
                                 </div>
