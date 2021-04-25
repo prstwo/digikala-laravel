@@ -370,7 +370,7 @@ a.nav-link-title{
     width: 90px;
 }
 .mobile-menu-container{
-    width: 100px;
+    width: 65vw;
     height: 100vh;
     background-color: white;
     z-index:80;
