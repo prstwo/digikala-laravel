@@ -1,3 +1,14 @@
+let mobileMenuCon= document.querySelector('.mobile-menu-container');
+function mobileMenu(){
+    mobileMenuCon.classList.toggle('hide');
+        document.querySelector('.m-overlay').classList.toggle('active');
+        if(!mobileMenuCon.classList.contains('hide')){
+            document.querySelector('.m-overlay').addEventListener('click',(overlay)=>{
+                mobileMenuCon.classList.add('hide');
+                overlay.target.classList.remove('active');
+            })
+        }
+}
 let submenuItems=document.querySelectorAll('.js-nav-submenu-items');
 function kalayeDigital(){
     submenuItems.forEach((item)=>{

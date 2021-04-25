@@ -24,9 +24,10 @@
 
 </head>
 <body>
+<div class="relative">
+    <div class="mobile-menu-container hide absolute top-0 right-0" id="mobile-menu-container"></div>
 
-<div>
-    @section('mobileSecTitle')
+@section('mobileSecTitle')
         <span class="text-gray-500  mobile-title	">برندهای محبوب</span>
    @endsection
         @section('angle-left')
@@ -34,11 +35,15 @@
     @endsection
 
     <!-- header component-->
-    <header class="sticky top-0 righ-0 left-0 z-50 bg-white">
+    <header class="sticky top-0 righ-0 left-0 z-50 bg-white relative">
         <div class="mobile-header px-4 py-3">
-            <div class="header-one py-2 mb-2 border-b border-gray-100">
-                <div class="sandwich-menu js-m-sandwich-menu">
-                    <i class="fa fa-align-justify "></i>
+            <div class="header-one py-2 mb-2 border-b border-gray-100 ">
+                <div class="sandwich-menu js-m-sandwich-menu ">
+
+                    <a href="#mobile-menu-container"  onclick="mobileMenu()">
+                        <i class="fa fa-align-justify "></i>
+
+                    </a>
                 </div>
                 <div class="digikala-icon-container">
                     <a href="digikala">
@@ -1645,6 +1650,7 @@
             </div>
         </div>
     </footer>
+        <div class="m-overlay"></div>
 </div>
 <script src="js/nav-menu.js"></script>
 <script src="js/icredible-specials.js"></script>

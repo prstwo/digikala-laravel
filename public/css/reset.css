@@ -99,6 +99,9 @@ main{
 .mobile-title{
     display: none;
 }
+.hide{
+    display: none;
+}
 @media screen and (max-width: 680px){
     .page-section-standard{
        box-shadow: none;

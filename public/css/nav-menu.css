@@ -1,5 +1,5 @@
 
-.overlay{
+.overlay, .m-overlay{
     position: fixed;
     right: 0;
     height: 100%;
@@ -9,11 +9,15 @@
     content: "";
     background: rgba(74,74,74,.43);
     opacity: 0;
-    z-index: 9;
     -webkit-transition: opacity .2s cubic-bezier(.215,.61,.355,1) .1s;
     transition: opacity .2s cubic-bezier(.215,.61,.355,1) .1s;
     pointer-events: none;
-
+}
+.overlay{
+    z-index: 9;
+}
+.m-overlay{
+    z-index: 60;
 }
 .active{
     opacity:1;
@@ -364,6 +368,12 @@ a.nav-link-title{
     border: 1px solid #e0e0e2;
     border-radius: 8px;
     width: 90px;
+}
+.mobile-menu-container{
+    width: 100px;
+    height: 100vh;
+    background-color: white;
+    z-index:80;
 }
 @media screen and (max-width: 680px) {
     .nav{
