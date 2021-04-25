@@ -32,8 +32,52 @@
 
     <!-- header component-->
     <header class="sticky top-0 righ-0 left-0 z-50 bg-white">
+        <div class="mobile-header px-4 py-3">
+            <div class="header-one py-2 mb-2 border-b border-gray-100">
+                <div class="sandwich-menu">
+                    <i class="fa fa-align-justify "></i>
+                </div>
+                <div class="digikala-icon-container">
+                    <a href="digikala">
+                        <img src="images/digikala.svg" alt="digikala">
+                    </a>
+                </div>
+                <div class="question-mark">
+                    <i class="fa fa-question text-lg"></i>
+                </div>
+            </div>
+            <div class="header-two py-2 mb-2  border-b border-gray-100">
+                <div class="px-0  header-search">
+                    <i class="fa fa-search w-11 h-search-btn relative"></i>
+                    <input type="text" class="w-full h-full py-3  pl-2 pr-1 search-input" placeholder="جستجو در دیجی&zwnj;کالا …">
+                </div>
+                <div class="flex flex-row justify-center items-center content-center">
+                    <div class="m-header-login px-3 py-0 flex flex-row justify-center items-center content-center ">
+                        <i class="fa fa-sign-in text-2xl	leading-7 ml-2"></i>
+                        ورود
+                    </div>
+                    <div class="header-btn-container header-btn-cart-container px-3 py-0 flex items-center">
+                        <i class="fa fa-shopping-cart text-2xl	leading-7 ml-2"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="header-three flex flex-row justify-between py-2 mb-2 mt-2 border-b border-gray-100">
+                <div class="nav-location-link">
+                    <div class="nav-location">
+                        <i class="fa fa-map-marker mr-2 ml-3 text-yellow-500 text-2xl"></i>
+                        لطفا شهر و استان خود را انتخاب کنید
+                    </div>
+                </div>
+                <div>
+                    <i class="fa fa-angle-left mx-2 text-gray-400 text-2xl	"></i>
+                </div>
+            </div>
+
+        </div>
+
         <div class="px-4 py-3 flex flex-row flex-wrap justify-between">
-            <div class="header-right-side flex content-center flex-grow">
+
+            <div class="desktop-header header-right-side flex content-center flex-grow">
                 <div class="mr-2 ml-6 w-100 flex items-center">
                     <a href="digikala">
                         <img src="images/digikala.svg" alt="digikala">
@@ -1042,7 +1086,7 @@
                         <a href="#incredible-specials">
                             <div>
                                 <img src="images/incredible-pic.png" alt="incredible product">
-                                <div  class="specials-button">
+                                <div  class="specials-button flex flex-row content-center items-center">
                                     <div>مشاهده همه</div>
                                     <i class="fa fa-chevron-left"></i>
                                 </div>
@@ -1074,7 +1118,7 @@
                             ]
                             ?>
                             @foreach($productItemContainer3 as $productItem3 )
-                                <div class="product-item-container-3">
+                                <div class="product-item-container-3 rounded-2xl">
                                     <div class="product-item">
                                         <div>
                                             <a href="#product-page">
@@ -1244,7 +1288,7 @@
         </div>
         <!--promotion categories component-->
         <div class="page-section">
-            <div class="page-section-standard">
+            <div class="page-section-standard promotion-categories">
                 <div class="cat-head">
                     <div class="cat-title">
                         بیش از ۲،۰۰۰،۰۰۰ کالا در دسته‌بندی‌های مختلف

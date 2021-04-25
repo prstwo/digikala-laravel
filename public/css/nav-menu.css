@@ -365,3 +365,8 @@ a.nav-link-title{
     border-radius: 8px;
     width: 90px;
 }
+@media screen and (max-width: 680px) {
+    .nav{
+        display: none;
+    }
+}

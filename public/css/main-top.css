@@ -30,3 +30,12 @@
     height: auto;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 680px) {
+    .main-top-sides{
+        display: none;
+    }
+    .bullets-slider-container{
+        width: 100%;
+    }
+}

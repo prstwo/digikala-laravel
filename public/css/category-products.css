@@ -71,3 +71,27 @@ span.head-title::after{
     width: 100%;
     overflow: hidden;
 }
+@media screen and (max-width: 680px) {
+    .page-section{
+        padding: 0;
+    }
+    .head .head-title, .head .head-link{
+        display: none;
+    }
+    .page-section-standard{
+        background-color:inherit;
+    }
+    .items{
+        overflow-x: scroll;
+        display: flex;
+        flex-direction: row;
+    }
+    .product-item-container-4{
+        background-color: white;
+        width: 60%;
+        flex-basis: 60%;
+    }
+    .promotion-categories{
+        display: none;
+    }
+}

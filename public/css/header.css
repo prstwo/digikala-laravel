@@ -86,4 +86,39 @@ header .fa-search:before {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+@media screen and (min-width: 681px) {
+    .mobile-header{
+        display: none;
+    }
+}
+@media screen and (max-width: 680px) {
+    .desktop-header{
+        display: none;
+    }
+    .mobile-header{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .header-one, .header-two, .header-three{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .question-mark{
+        padding:1px 13px;
+        border: solid 1px black;
+        border-radius:5px;
+    }
+    .question-mark .fa{
+    }
+    .header-action{
+        display: none;
+    }
+    .specials-title {
+        padding: 0 0 0 3%;
+    }
+}
 
