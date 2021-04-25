@@ -68,14 +68,14 @@ span.head-title::after{
     align-content: center;
 }
 .items{
-    width: 100%;
+    min-width: 100%;
     overflow: hidden;
 }
 @media screen and (max-width: 680px) {
     .page-section{
         padding: 0;
     }
-    .head .head-title, .head .head-link{
+    .promotion-cats-section, .head .head-title, .head .head-link{
         display: none;
     }
     .page-section-standard{

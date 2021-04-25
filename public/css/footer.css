@@ -64,6 +64,12 @@
     max-width: 1450px;
     margin: auto;
 }
+.middle-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .footer-links{
     flex: 0 0 calc(100% - 450px);
     max-width: calc(100% - 450px);
@@ -194,19 +200,30 @@
 .newsletter-btn-2{
     display: none;
 }
+.mobile-footer-kinks-ul{
+    display: none;
+}
 @media screen and (max-width: 680px){
+    .digi-footer{
+        margin-top: 0;
+        padding-top: 0;
+    }
     .footer-form{
         width: 100%;
     }
-    .digi-footer .middle-bar {
+    .middle-bar {
         flex-direction:column-reverse ;
+    }
+    .footer-links-col{
+        width: calc(45% - 2px);
+        text-align: center;
     }
     .footer-links{
         max-width: 100%;
     }
     .footer-safety-partner, footer-partners-container, .footer-jumpup,
     .footer-copyright-permission,
-    .footer-partners-container{
+    .footer-partners-container, .footer-links-ul, .last-footer-links-col, .headline-links, .footer-address, .footer-innerbox{
         display: none;
     }
     .form-newsletter legend{
@@ -223,6 +240,7 @@
         position: relative;
         background-color: #ededed;
         border-left: 1px solid #c8c8c8;
+        margin-bottom: 1rem;
     }
     .newsletter-input:before{
         content: "icon gujgt";
@@ -243,6 +261,23 @@
         display: block;
         width: 100%;
         border-radius: 8px ;
+    }
+
+    .mobile-footer-kinks-ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-footer-kinks-ul li a{
+        color: #636363;
+    }
+    .mobile-footer-kinks-ul li {
+        color: #636363;
+        font-weight: 100;
+        font-size: 14px;
+        font-size: 1rem;
+        line-height: 1.571;
+        letter-spacing: -.1px;
+        text-decoration: none;
     }
 
 }

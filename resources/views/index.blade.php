@@ -37,7 +37,7 @@
     <header class="sticky top-0 righ-0 left-0 z-50 bg-white">
         <div class="mobile-header px-4 py-3">
             <div class="header-one py-2 mb-2 border-b border-gray-100">
-                <div class="sandwich-menu">
+                <div class="sandwich-menu js-m-sandwich-menu">
                     <i class="fa fa-align-justify "></i>
                 </div>
                 <div class="digikala-icon-container">
@@ -1296,7 +1296,7 @@
             </section>
         </div>
         <!--promotion categories component-->
-        <div class="page-section">
+        <div class="page-section promotion-cats-section">
             <div class="page-section-standard promotion-categories">
                 <div class="cat-head">
                     <div class="cat-title">
@@ -1382,14 +1382,34 @@
             </a>
         </div>
         <hr>
-        <div class="middle-bar py-5 pb-4 flex justify-between ">
-            <div class="flex flex-start flex-row justify-between px-2 footer-links ">
+        <div class="middle-bar py-5 pb-4">
+            <div class="flex flex-start flex-row justify-between mx-2 px-2 footer-links ">
                 <nav class="footer-links-col">
                     <div class="headline-links">
                         <a href="#buying-from-digikala" class="mb-5 headline-links-title">
                             راهنمای خرید از دیجی کالا
                         </a>
                     </div>
+                    <ul class="mobile-footer-kinks-ul">
+                        <?php
+                        $mobileFooterLinksUl1=[
+                            ['name'=>' نحوه ثبت سفارش'],
+                            ['name'=>'راهنما'],
+                            ['name'=>'درباره دیجی کالا'],
+                            ['name'=>'راهنمای هویت بصری'],
+                            ['name'=>'فرصت های شغلی'],
+                            ['name'=>'گزارش باگ'],
+                            ['name'=>'تماس با ما'],
+                        ]
+                        ?>
+                            @foreach ($mobileFooterLinksUl1 as $mobilefooterlink1)
+                                <li class="mt-3">
+                                    <a href="sefaresh">
+                                        {{$mobilefooterlink1['name']}}
+                                    </a>
+                                </li>
+                            @endforeach
+                    </ul>
                     <ul class="footer-links-ul">
                         <?php
                         $footerLinksUl1=[
@@ -1413,6 +1433,26 @@
                             خدمات مشتریان
                         </a>
                     </div>
+                    <ul class="mobile-footer-kinks-ul">
+                        <?php
+                        $mobileFooterLinksUl2=[
+                            ['name'=>'فروش در دیجی کالا'],
+                            ['name'=>'سوالات متداول'],
+                            ['name'=>'  دانلود اپلیکیشن'],
+                            ['name'=>'شرایط استفاده'],
+                            ['name'=>'حریم خصوصی'],
+                            ['name'=>'اتاق خبر دیجی کالا']
+                        ]
+                        ?>
+                        @foreach ($mobileFooterLinksUl2 as $mobilefooterlink2)
+                            <li class="mt-3">
+                                <a href="sefaresh">
+                                    {{$mobilefooterlink2['name']}}
+                                </a>
+                            </li>
+                        @endforeach
+                    </ul>
+
                     <ul class="footer-links-ul">
                         <?php
                         $footerLinksUl2=[
@@ -1431,7 +1471,7 @@
                         @endforeach
                     </ul>
                 </nav>
-                <nav class="footer-links-col">
+                <nav class="footer-links-col last-footer-links-col">
                     <div class="headline-links">
                         <a href="#buying-from-digikala" class="mb-5 headline-links-title">
                             با دیجی‌کالا
@@ -1457,7 +1497,7 @@
                     </ul>
                 </nav>
             </div>
-            <nav class="footer-form justify-between">
+            <nav class="footer-form justify-between mt-3 mx-2 px-2">
                 <form action="" class="form-newsletter mb-8">
                     <fieldset>
                         <legend class="mb-5">
@@ -1465,7 +1505,7 @@
                             شوید:
                         </legend>
                         <div class="w-full m-0 inline-flex form-newsletter-row">
-                            <input type="text" class="newsletter-input w-full" placeholder="آدرس ایمیل خود را وارد کنید">
+                            <input type="text" class="newsletter-input w-full " placeholder="آدرس ایمیل خود را وارد کنید">
                             <button class="newsletter-btn">ارسال
                             </button>
                             <button class="newsletter-btn-2">تایید ایمیل
@@ -1496,6 +1536,7 @@
                 </div>
             </nav>
         </div>
+        <hr>
         <nav class="footer-address flex- align-center py-4 px-2 flex flex-col flex-wrap w-full justify-center align-center">
             <nav class="flex flex-col align-center justify-center">
                 <ul class="footer-contact flex flex-row justify-center w-auto mt-2 ml-14 mr-0 mb-4">

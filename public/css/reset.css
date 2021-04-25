@@ -106,4 +106,7 @@ main{
     .mobile-title{
         display: block;
     }
+    .arrow-right-3, .arrow-left-3{
+        display: none;
+    }
 }
