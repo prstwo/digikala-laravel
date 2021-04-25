@@ -96,3 +96,14 @@ main{
     padding: 9px 33px 11px 33px;
     max-width: 100%;
 }
+.mobile-title{
+    display: none;
+}
+@media screen and (max-width: 680px){
+    .page-section-standard{
+       box-shadow: none;
+    }
+    .mobile-title{
+        display: block;
+    }
+}

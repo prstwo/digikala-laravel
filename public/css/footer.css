@@ -100,7 +100,7 @@
     padding: 11px 12px;
     letter-spacing: -.8px;
 }
-.newsletter-btn{
+.newsletter-btn, .newsletter-btn-2{
     color: #fff;
     font-weight: 700;
     letter-spacing: .3px;
@@ -190,4 +190,59 @@
     text-align: center;
     border-top: 1px solid #b0bec5;
     font-size: 12px;
+}
+.newsletter-btn-2{
+    display: none;
+}
+@media screen and (max-width: 680px){
+    .footer-form{
+        width: 100%;
+    }
+    .digi-footer .middle-bar {
+        flex-direction:column-reverse ;
+    }
+    .footer-links{
+        max-width: 100%;
+    }
+    .footer-safety-partner, footer-partners-container, .footer-jumpup,
+    .footer-copyright-permission,
+    .footer-partners-container{
+        display: none;
+    }
+    .form-newsletter legend{
+        text-align: center;
+    }
+    .footer-social span{
+        text-align: center;
+    }
+    .form-newsletter-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter-input{
+        position: relative;
+        background-color: #ededed;
+        border-left: 1px solid #c8c8c8;
+    }
+    .newsletter-input:before{
+        content: "icon gujgt";
+        position: absolute;
+        right: 0;
+        width: 30px;
+        height: 40px;
+        bottom: 0;
+        font-size: 1.143rem;
+        line-height: 1.375;
+        color:black ;
+        margin-left: 4px;
+    }
+    .newsletter-btn{
+        display: none;
+    }
+    .newsletter-btn-2{
+        display: block;
+        width: 100%;
+        border-radius: 8px ;
+    }
+
 }

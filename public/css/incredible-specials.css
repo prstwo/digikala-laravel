@@ -19,7 +19,7 @@
     height: auto;
 }
 .specials-button{
-    width: 70%;
+    width: 80%;
     padding: 9px 15px;
     display: flex;
     flex-direction: row;
@@ -71,5 +71,11 @@
     .specials-button{
         width: 90%;
         border: none;
+    }
+    .specials-button i.fa{
+        font-size: .9rem;
+    }
+    .specials-title-text{
+        font-size: .7rem;
     }
 }

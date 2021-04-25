@@ -26,9 +26,12 @@
 <body>
 
 <div>
-    <?php
-
-    ?>
+    @section('mobileSecTitle')
+        <span class="text-gray-500  mobile-title	">برندهای محبوب</span>
+   @endsection
+        @section('angle-left')
+            <i class="fa fa-angle-left "></i>
+    @endsection
 
     <!-- header component-->
     <header class="sticky top-0 righ-0 left-0 z-50 bg-white">
@@ -157,13 +160,15 @@
                                         <div class="submenu-items-side w-full">
                                             <div class="submenu-top-bar">
                                                 <a href="#link">
-                                                    همه دسته‌بندی‌های کالای دیجیتال <i class="fa fa-angle-left"></i>
+                                                    همه دسته‌بندی‌های کالای دیجیتال  @section('angle-left')
+                                                                                         @show
                                                 </a>
                                             </div>
                                             <ul>
                                                 <li class="submenu-lists">
                                                     <div class="submenu-lists-title">
-                                                        لوازم جانبی و گوشی <i class="fa fa-angle-left"></i>
+                                                        لوازم جانبی و گوشی @section('angle-left')
+                                                        @show
                                                     </div>
                                                     <a href="#category" class="submenu-list-link">کیف و کاور گوشی</a>
                                                     <a href="#category" class="submenu-list-link">پاوربانک</a>
@@ -172,7 +177,8 @@
                                                 </li>
                                                 <li class="submenu-lists">
                                                     <div class="submenu-lists-title">
-                                                        گوشی موبایل <i class="fa fa-angle-left"></i>
+                                                        گوشی موبایل @section('angle-left')
+                                                        @show
                                                     </div>
                                                     <a href="#category" class="submenu-list-link">سامسونگ</a>
                                                     <a href="#category" class="submenu-list-link">اپل</a>
@@ -183,13 +189,15 @@
                                                 </li>
                                                 <li class="submenu-lists">
                                                     <div class="submenu-lists-title">
-                                                        واقعیت مجازی <i class="fa fa-angle-left"></i>
+                                                        واقعیت مجازی @section('angle-left')
+                                                        @show
                                                     </div>
 
                                                 </li>
                                                 <li class="submenu-lists">
                                                     <div class="submenu-lists-title">
-                                                        مچ بند و ساعت هوشمند <i class="fa fa-angle-left"></i>
+                                                        مچ بند و ساعت هوشمند @section('angle-left')
+                                                        @show
                                                     </div>
                                                 </li>
 
@@ -1087,8 +1095,8 @@
                             <div>
                                 <img src="images/incredible-pic.png" alt="incredible product">
                                 <div  class="specials-button flex flex-row content-center items-center">
-                                    <div>مشاهده همه</div>
-                                    <i class="fa fa-chevron-left"></i>
+                                    <div class="specials-title-text">مشاهده همه</div>
+                                    <i class="fa fa-chevron-left mr-1"></i>
                                 </div>
                             </div>
                         </a>
@@ -1164,6 +1172,7 @@
             <section class="page-section-standard relative">
                 <div class="products">
                     <div class="head">
+                        <span class="text-gray-400 mobile-title	">منتخب بهترین کالاها</span>
                         <span class="head-title">
                             گوشی موبایل
                         </span>
@@ -1174,8 +1183,6 @@
                     <div class="boxes static">
                         <div class="items">
                             <!-- product item component -->
-
-
                             <?php
                             $productItemContainer4 = [
                                 ['img'=>'"images/phone-1.jpg"','product-title'=>'گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
@@ -1247,6 +1254,8 @@
         <div class="page-section ">
             <section class="swiper-brands-container page-section-standard pt-1 relative">
                 <div class="head">
+                    @section('mobileSecTitle')
+                    @show
                         <span class="head-title">
                             برندهای ویژه
                         </span>
@@ -1396,7 +1405,6 @@
                                 </a>
                             </li>
                         @endforeach
-
                     </ul>
                 </nav>
                 <nav class="footer-links-col">
@@ -1446,7 +1454,6 @@
                                 </a>
                             </li>
                         @endforeach
-
                     </ul>
                 </nav>
             </div>
@@ -1460,6 +1467,8 @@
                         <div class="w-full m-0 inline-flex form-newsletter-row">
                             <input type="text" class="newsletter-input w-full" placeholder="آدرس ایمیل خود را وارد کنید">
                             <button class="newsletter-btn">ارسال
+                            </button>
+                            <button class="newsletter-btn-2">تایید ایمیل
                             </button>
                         </div>
                     </fieldset>
@@ -1491,19 +1500,15 @@
             <nav class="flex flex-col align-center justify-center">
                 <ul class="footer-contact flex flex-row justify-center w-auto mt-2 ml-14 mr-0 mb-4">
                     <li>
-
                         هفت روز هفته ، ۲۴ ساعت شبانه‌روز پاسخگوی شما هستیم
-
                     </li>
                     <li class="mx-5">
                         شماره تماس :
                         <a href="#faq">۶۱۹۳۰۰۰۰ - ۰۲۱</a>
                     </li>
                     <li>
-
                         آدرس ایمیل :
                         <a href="#faq">info@digikala.com</a>
-
                     </li>
                 </ul>
             </nav>
@@ -1521,7 +1526,6 @@
                     <img src="images/sibapp.png" alt="" width="150px" loading="lazy">
                 </a>
             </div>
-
         </nav>
         <div class="footer-more-info px-3 py-5">
             <div class="footer-description-content flex flex-nowrap px-4	">
@@ -1591,10 +1595,11 @@
             </div>
             <div class="footer-copyright px-3">
                 <div class="footer-copyright-text pt-10 pb-4">
-
-                    استفاده از مطالب فروشگاه اینترنتی دیجی‌کالا فقط برای مقاصد غیرتجاری و با ذکر منبع
-                    بلامانع است. کلیه حقوق این سایت متعلق به شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) می‌باشد.
-
+                    <div class="footer-copyright-permission">
+                        استفاده از مطالب فروشگاه اینترنتی دیجی‌کالا فقط برای مقاصد غیرتجاری و با ذکر منبع
+                        بلامانع است.
+                    </div>
+                     کلیه حقوق این سایت متعلق به شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) می‌باشد.
                 </div>
             </div>
         </div>
@@ -1605,7 +1610,5 @@
 <script src="js/category-products.js"></script>
 <script src="js/special-brands.js"></script>
 <script src="js/footer.js"></script>
-
-
 </body>
 </html>
