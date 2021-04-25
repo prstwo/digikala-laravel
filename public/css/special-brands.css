@@ -5,6 +5,7 @@
 }
 
 .swiper-brands-image-container{
+    min-width:17%;
     max-width: 20%;
     height: 160px;
     width: 257.2px;

@@ -1211,36 +1211,28 @@
                     </div>
                 </div>
                 <div class="swiper-brands flex flex-row ">
-                    <div class="swiper-brands-image-container">
-                        <a href="#brand-page" class="banner-brand-link">
-                            <img src="images/huawei.jpg" alt="brand">
-                        </a>
-                    </div>
-                    <div class="swiper-brands-image-container">
-                        <a href="#brand-page" class="banner-brand-link">
-                            <img src="images/x-vision.png" alt="brand">
-                        </a>
-                    </div>
-                    <div class="swiper-brands-image-container">
-                        <a href="#brand-page" class="banner-brand-link">
-                            <img src="images/tcl.jpg" alt="brand">
-                        </a>
-                    </div>
-                    <div class="swiper-brands-image-container">
-                        <a href="#brand-page" class="banner-brand-link">
-                            <img src="images/casio.jpg" alt="brand">
-                        </a>
-                    </div>
-                    <div class="swiper-brands-image-container">
-                        <a href="#brand-page" class="banner-brand-link">
-                            <img src="images/pakshoma.png" alt="brand">
-                        </a>
-                    </div>
-                    <div class="swiper-brands-image-container">
-                        <a href="#brand-page" class="banner-brand-link">
-                            <img src="images/panoramic.png" alt="brand">
-                        </a>
-                    </div>
+                    <?php
+                     $swiperBrands = [
+                        ['img'=>'"images/huawei.jpg"'],
+                         ['img'=>'"images/x-vision.png"'],
+                         ['img'=>'"images/tcl.jpg"'],
+                         ['img'=>'"images/casio.jpg"'],
+                         ['img'=>'"images/pakshoma.png"'],
+                         ['img'=>'"images/panoramic.png"'],
+                         ['img'=>'"images/panasonic.png"'],
+                         ['img'=>'"images/honor.png"'],
+                         ['img'=>'"images/logitech.jpg"'],
+                         ['img'=>'"images/parskhazar.png"'],
+                     ]
+                    ?>
+                    @foreach( $swiperBrands as $brand)
+                            <div class="swiper-brands-image-container">
+                                <a href="#brand-page" class="banner-brand-link">
+                                    <img src={!! $brand['img'] !!} alt="brand">
+                                </a>
+                            </div>
+                        @endforeach
+
                 </div>
                 <div class="arrow-right-5">
                     <i class="fa fa-chevron-right" aria-hidden="true"></i>
@@ -1567,6 +1559,7 @@
 <script src="js/nav-menu.js"></script>
 <script src="js/icredible-specials.js"></script>
 <script src="js/category-products.js"></script>
+<script src="js/special-brands.js"></script>
 <script src="js/footer.js"></script>
 
 
