@@ -245,6 +245,13 @@ a.nav-link-title{
     height: 100%;
     max-width: 100%;
     display: flex;
+    flex-direction: column;
+    flex:1;
+}
+.submenu-items-one{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
     flex-direction: row;
     flex:1;
 }

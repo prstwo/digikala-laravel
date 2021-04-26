@@ -8,14 +8,7 @@
     <title>مشخصات، قیمت و خرید گوشی موبایل </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/nav-menu.css">
-    <link rel="stylesheet" type="text/css" href="css/product.css">
-    <link rel="stylesheet" type="text/css" href="css/bullets-slider.css">
-    <link type="text/css" href="css/product-item.css" rel="stylesheet" >
-    <link rel="stylesheet" type="text/css" href="css/carousel.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/all.css">
 
 </head>
 <body>
