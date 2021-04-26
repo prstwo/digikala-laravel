@@ -10,6 +10,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/nav-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/product.css">
     <link rel="stylesheet" type="text/css" href="css/bullets-slider.css">
     <link type="text/css" href="css/product-item.css" rel="stylesheet" >
     <link rel="stylesheet" type="text/css" href="css/carousel.css">
@@ -23,7 +24,34 @@
     <main class="w-full">
         <div class="product-whole-content mt-4">
             <div class="container px-6 py-0 bg-white">
-                <div class="product-breadcrumb"></div>
+                <div class="product-breadcrumb flex justify-between items-center">
+                    <nav class="breadcrumb">
+                        <ul class="flex flex-row ">
+                            <li>
+                                <a href="#digikala">دیجی کالا</a>
+                            </li>
+                            <li>
+                                <a href="digital-kala">کالای دیجیتال</a>
+                            </li>
+                            <li>
+                                <a href="#mobile">
+                                    موبایل
+                                </a></li>
+                            <li>
+                                <a href="#mobile-phone">
+                                    گوشی موبایل
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="product-link-ex">
+                        <a href="#sell">
+                            کالای خود را در دیجی‌کالا
+                            بفروشید
+                            <i class="fa fa-home ml-2 text-sl"></i>
+                        </a>
+                    </div>
+                </div>
                 <article>
                     <section class="product-gallery"></section>
                     <section class="product-info"></section>

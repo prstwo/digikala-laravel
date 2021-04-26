@@ -17,4 +17,8 @@ Route::get('/', function () {
 
     return view('index');
 });
+Route::get('/product', function () {
+
+    return view('single-product');
+});
 
