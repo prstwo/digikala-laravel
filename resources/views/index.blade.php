@@ -11,13 +11,12 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/all.css">
 
-
 </head>
 <body>
 <?php
 $sandwichMenuItemsP1 = [
     ['class'=>'"fa fa-list-ul"', 'title'=>'دسته بندی کالاها'],
-    ['class'=>'"fa fa-shopping-basket"', 'title'=>'سوپرمارکت'],
+    ['class'=>'"fa fa-shopping-basket js-toggle"', 'title'=>'سوپرمارکت'],
     ['class'=>'"fa fa-percent"', 'title'=>' تخفیف ها و پشنهادها'],
     ['class'=>'"fa fa-check-circle-o"', 'title'=>'  دیجی کالای من']
 ];
@@ -46,7 +45,17 @@ $productItemContainer3 = [
         'discount'=>' ٪۳۰', 'new-price'=>'۴۵,۵۰۰ '],
     ['img'=>'"images/phone-8.jpg"','product-title'=>'کاور جویروم مدل Chi مناسب برای گوشی موبایل اپل iPhone 7 Plus', 'old-price'=>'۳۷,۰۰۰  ',
         'discount'=>' ٪۵۴', 'new-price'=>'۲۹,۵۰۰ ']
+];
+
+$footerAdressImages = [
+    ['src'=>'"images/google-play.png"'],
+    ['src'=>'"images/bazaar.svg"'],
+    [ 'src'=>'"images/myket.svg"']
+    ,['src'=>'"images/sibapp.png"']
 ]
+
+
+
 ?>
 @section('digi-plus')
     <li class="nav-link  border-right-add">
@@ -54,6 +63,9 @@ $productItemContainer3 = [
             <img src="images/digiplus-minicon.svg" class="w-4 h-4 ml-1 inline-block" alt="digiplus mini icon"> دیجی پلاس
         </a>
     </li>
+@endsection
+@section('angle-left')
+    <i class="fa fa-angle-left "></i>
 @endsection
 <div class="relative">
     <div class="mobile-menu-container hide absolute top-0 right-0" id="mobile-menu-container">
@@ -66,13 +78,24 @@ $productItemContainer3 = [
                 </div>
             </div>
             <div class="mobile-menu-items mb-3 list-none">
-                @foreach($sandwichMenuItemsP1 as $sandwichmenuitemP1)
+                {{--  @if($loop->index('0'))
+                    <li class="nav-link  border-right-add">
+                        <a href="#supermarket" class="nav-link-title">
+                            <i class={!! $sandwichmenuitemP1['class'] !!}></i>{{$sandwichmenuitemP1['title']}}
+                        </a>
+                        @section('angle-left')
+                        @show
+                    </li>
+                    @endif
+
+                    @foreach($sandwichMenuItemsP1 as $sandwichmenuitemP1)
 
                     <li class="nav-link  border-right-add">
                         <a href="#supermarket" class="nav-link-title">
                             <i class={!! $sandwichmenuitemP1['class'] !!}></i>{{$sandwichmenuitemP1['title']}}
                         </a>
                     </li>
+
                 @endforeach
                 @section('digi-plus')
                     @show
@@ -84,6 +107,65 @@ $productItemContainer3 = [
                             </a>
                         </li>
                     @endforeach
+                    $sandwichMenuItemsP1 = [
+                ['class'=>'"fa fa-list-ul"', 'title'=>'دسته بندی کالاها'],
+                ['class'=>'"fa fa-shopping-basket js-toggle"', 'title'=>'سوپرمارکت'],
+                ['class'=>'"fa fa-percent"', 'title'=>' تخفیف ها و پشنهادها'],
+                ['class'=>'"fa fa-check-circle-o"', 'title'=>'  دیجی کالای من']
+                ];
+
+                $sandwichMenuItemsP2 = [
+                ['class'=>'"fa fa-random"', 'title'=>'دیجی کلاب'],
+                ['class'=>'"fa fa-paypal"', 'title'=>'دیجی پی'],
+                ['class'=>'""', 'title'=>'سوالی دارید؟'],
+                ['class'=>'""', 'title'=>'فروشنده شوید']
+                ];
+
+                    --}}
+
+                <li class="nav-link  border-right-add">
+                    <a href="#supermarket" class="nav-link-title">
+                        <i class='fa fa-list-ul'></i>دسته بندی کالاها
+
+                    </a>
+                </li>
+                <li class="nav-link  border-right-add js-toggle">
+                    <a href="#supermarket" class="nav-link-title">
+                        <i class='fa fa-shopping-basket '></i>سوپرمارکت
+                    </a>
+                </li>
+
+                <li class="nav-link  border-right-add">
+                    <a href="#supermarket" class="nav-link-title">
+                        <i class='fa fa-percent'></i>تخفیف ها و پشنهادها
+                    </a>
+                </li>
+
+                <li class="nav-link  border-right-add">
+                    <a href="#supermarket" class="nav-link-title">
+                        <i class='fa fa-check-circle-o'></i>دیجی کالای من
+                    </a>
+                </li>
+                <li class="nav-link  border-right-add">
+                    <a href="#supermarket" class="nav-link-title">
+                        <i class='fa fa-random'></i>دیجی کلاب
+                    </a>
+                </li>
+                <li class="nav-link  border-right-add">
+                    <a href="#supermarket" class="nav-link-title">
+                        <i class='fa fa-paypal'></i>دیجی پی
+                    </a>
+                </li>
+                <li class="nav-link  border-right-add">
+                    <a href="#supermarket" class="nav-link-title">
+                        <i class='fa fa-list-ul'></i>سوالی دارید؟
+                    </a>
+                </li>
+                <li class="nav-link  border-right-add">
+                    <a href="#supermarket" class="nav-link-title">
+                        <i class='fa fa-list-ul'></i>فروشنده شوید
+                    </a>
+                </li>
             </div>
             <div class="mobile-menu-cats mb-3"></div>
         </div>
@@ -92,9 +174,7 @@ $productItemContainer3 = [
 @section('mobileSecTitle')
         <span class="text-gray-500  mobile-title	">برندهای محبوب</span>
    @endsection
-        @section('angle-left')
-            <i class="fa fa-angle-left "></i>
-    @endsection
+
 
     <!-- header component-->
     <header class="sticky top-0 righ-0 left-0 z-50 bg-white relative">
@@ -1544,6 +1624,15 @@ $productItemContainer3 = [
                 </nav>
             </div>
             <nav class="footer-form justify-between mt-3 mx-2 px-2">
+                <div>
+                    <div class="mobile-footer-address-images flex flex-nowrap justify-center">
+                        @foreach($footerAdressImages as $footeraddress)
+                            <a href="#download" class="footer-address-googleplay ml-2">
+                                <img src={!! $footeraddress['src'] !!} alt="" width="150px" loading="lazy">
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
                 <form action="" class="form-newsletter mb-8">
                     <fieldset>
                         <legend class="mb-5">
@@ -1600,18 +1689,11 @@ $productItemContainer3 = [
                 </ul>
             </nav>
             <div class="footer-address-images flex flex-nowrap justify-center">
-                <a href="#download" class="footer-address-googleplay ml-2">
-                    <img src="images/google-play.png" alt="" width="150px" loading="lazy">
-                </a>
-                <a href="#download" class="footer-address-googleplay ml-2">
-                    <img src="images/bazaar.svg" alt="" width="150px" loading="lazy">
-                </a>
-                <a href="#download" class="footer-address-googleplay ml-2">
-                    <img src="images/myket.svg" alt="" width="150px" loading="lazy">
-                </a>
-                <a href="#download" class="footer-address-googleplay ml-2">
-                    <img src="images/sibapp.png" alt="" width="150px" loading="lazy">
-                </a>
+                @foreach($footerAdressImages as $footeraddress)
+                    <a href="#download" class="footer-address-googleplay ml-2">
+                        <img src={!! $footeraddress['src'] !!} alt="" width="150px" loading="lazy">
+                    </a>
+                @endforeach
             </div>
         </nav>
         <div class="footer-more-info px-3 py-5">

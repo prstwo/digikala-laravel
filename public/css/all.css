@@ -13,7 +13,11 @@
     url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.ttf') format('truetype');
     font-weight: normal;
 }
-
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('fonts/fontawesome/webfonts/fa-brands-400.eot') format('eot');
+    src: url('fonts/fontawesome/webfonts/fa-solid-900.eot') format('eot');
+ }
 
 html, body{
     font-size: 1rem;
@@ -106,6 +110,7 @@ main{
 @media screen and (max-width: 680px){
     .page-section-standard{
         box-shadow: none;
+        padding: 9px 11px 11px 11px;
     }
     .mobile-title{
         display: block;
@@ -821,8 +826,14 @@ header .fa-search:before {
 .product-item-container-4{
     width: 17% ;
     margin:1.5% ;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: all .2s linear;
+
+}
+.product-item-container-4:hover{
+    transform: translateY(-5px);
+    -webkit-box-shadow: -1.5px 0 4px 0 rgb(0 0 0 / 15%);
+    box-shadow: -1.5px 0 4px 0 rgb(0 0 0 / 15%);
 }
 .product-item-container:hover{
     box-shadow: 0 0 10px 1px rgba(199, 199, 199,.6);
@@ -972,8 +983,10 @@ span.head-title::after{
     }
     .product-item-container-4{
         background-color: white;
-        width: 60%;
-        flex-basis: 60%;
+        min-width: 60%;
+        max-width: 61%;
+        -webkit-box-shadow: -1.5px 0 4px 0 rgb(0 0 0 / 15%);
+        box-shadow: -1.5px 0 4px 0 rgb(0 0 0 / 15%);
     }
     .promotion-categories{
         display: none;
@@ -1047,6 +1060,9 @@ span.head-title::after{
 .middle-bar, .footer-address {
     max-width: 1450px;
     margin: auto;
+}
+.mobile-footer-address-images{
+    display: none;
 }
 .middle-bar{
     display: flex;
@@ -1210,6 +1226,21 @@ span.head-title::after{
     .footer-partners-container, .footer-links-ul, .last-footer-links-col, .headline-links, .footer-address, .footer-innerbox{
         display: none;
     }
+    .mobile-footer-address-images{
+        padding: 10px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .mobile-footer-address-images a{
+        width:45%;
+        margin-top:6px;
+        margin-bottom:6px;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+    }
     .form-newsletter legend{
         text-align: center;
     }
@@ -1308,6 +1339,8 @@ span.head-title::after{
     position: relative;
     width: 100%;
     height: 100%;
+    justify-content: space-around;
+    align-content: center;
 }
 
 .swiper-brands-image-container{
@@ -1326,6 +1359,8 @@ span.head-title::after{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    max-height: 100%;
+    width: fit-content;
 }
 @media screen and (max-width: 680px){
     .swiper-brands{
@@ -1343,6 +1378,20 @@ span.head-title::after{
         max-width: 20%;
         width: 257.2px;
     }
+    .mobile-menu-container .mobile-menu-items li:nth-of-type(2){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .mobile-menu-container .mobile-menu-items li:nth-of-type(2):after{
+        font-family: 'FontAwesome';
+        content: "\f053";
+        border-width: 0;
+        border-style: solid;
+        border-color: #e5e7eb;
+        height: fit-content;
+        margin: auto 0;
+    }
 }
 
 /*promotion cats */
@@ -1352,6 +1401,7 @@ span.head-title::after{
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    font-size: 2.2vh;
 }
 .promotion-cat-sec{
     width: 9%;

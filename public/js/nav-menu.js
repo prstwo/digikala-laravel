@@ -1,3 +1,5 @@
+let sToggles= document.querySelectorAll('.js-toggle');
+
 let mobileMenuCon= document.querySelector('.mobile-menu-container');
 function mobileMenu(){
     mobileMenuCon.classList.toggle('hide');
