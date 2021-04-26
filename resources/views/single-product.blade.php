@@ -25,6 +25,12 @@
         ['span1'=>'شبکه های ارتباطی: ', 'span2'=>'2G, 3G, 4g, 5G '],
         ['span1'=>'دوربین‌های پشت گوشی: ', 'span2'=>' 3 ماژول دوربین'],
         ['span1'=>'توضیحات سیم کارت: ', 'span2'=>' سایز نانو (8.8 × 12.3 میلی‌متر)'],
+    ];
+    $productGalleryPictures = [
+        ['img'=>'"images/product-pic-example1.jpg"'],
+        ['img'=>'"images/product-pic-example2.jpg"'],
+        ['img'=>'"images/product-pic-example3.jpg"'],
+        ['img'=>'"images/product-pic-example4.jpg"']
     ]
 ?>
 <div>
@@ -71,27 +77,27 @@
                                 <img src="images/product-main-pic.jpg" alt="product pic">
                             </div>
                             <ul class="flex product-gallery-pictures">
-                                <li class=" ">
-                                    <div class="thumb-wrapper"><img src="images/product-pic-example1.jpg" alt=""></div>
-                                </li>
-                                <li class=" ">
-                                    <div class="thumb-wrapper"><img src="images/product-pic-example1.jpg" alt=""></div>
-                                </li>
-                                <li class=" ">
-                                    <div class="thumb-wrapper"><img src="images/product-pic-example1.jpg" alt=""></div>
-                                </li>
-                                <li class=" ">
-                                    <div class="thumb-wrapper"><img src="images/product-pic-example1.jpg" alt=""></div>
-                                </li>
-                                <li class=" ">
-                                    <div class="thumb-wrapper"><img src="images/product-pic-example1.jpg" alt=""></div>
-                                </li>
-                                <li class=" ">
-                                    <div class="thumb-wrapper"><img src="images/product-pic-example1.jpg" alt=""></div>
-                                </li>
-                                <li class=" ">
-                                    <div class="thumb-wrapper"><img src="images/product-pic-example1.jpg" alt=""></div>
-                                </li>
+                                @foreach($productGalleryPictures as $productgallerypicture)
+
+                                    @if($loop->last)
+                                        <li class=" ">
+                                            <div class="thumb-wrapper"><img src={!! $productgallerypicture['img'] !!} alt="">
+                                                <div class="gallery-images-count">
+                                                 <span class="gallery-count-circle">
+                                                     <div class="text-2xl">
+                                                         ...
+                                                     </div>
+                                                 </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    @endif
+                                        <li class=" ">
+                                            <div class="thumb-wrapper"><img src={!! $productgallerypicture['img'] !!} alt=""></div>
+                                        </li>
+
+                                @endforeach
+
                             </ul>
                         </div>
                     </section>
