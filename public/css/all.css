@@ -1446,4 +1446,183 @@ span.head-title::after{
     -ms-flex-direction: column;
     flex-direction: column;
 }
+.product-gallery{
+    position: -webkit-sticky;
+    position: sticky;
+    margin-bottom: 45px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.product-gallery-option{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 24px;
+    flex: 0 0 24px;
+}
+.product-gallery-main-pic img{
+    max-width: 85%;
+    vertical-align: top;
+    min-height: 100px;
+    min-width: 101px;
+    max-height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+}
+.product-info-title{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+}
+.product-title-flex{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.product-title-brand{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    line-height: 21px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+}
+a.product-title-brand-link{
+    color: #0fabc6;
+    font-size: 12px;
+}
+.single-product-title{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1.143rem;
+    line-height: 28px;
+    color: #000;
+}
+.product-config{
+    border-color:#dfdfdf;
+    min-height: 300px;
+    flex: 1;
+    max-width: unset;
+    -webkit-box-flex: 0.9;
+    -ms-flex-positive: 0.9;
+    flex-grow: 0.9;
+}
+.product-title-english{
+    margin-left: auto;
+    margin-bottom: -20px;
+    color: #c0c2c5;
+    font-size: 12px;
+    font-size: .857rem;
+    line-height: 1.833;
+}
+.product-engagement-rating{
+    color: #81858b;
+}
+.product-engagement-rating-star{
+    color: #fac74b;
+    font-size: 16px;
+}
+.product-engagement-rating-num{
+    color: #c0c2c5;
+
+    line-height: 2.2;
+}
+.product-config-info ul{
+    color: #55565a;
+    font-size: 12px;
+    font-size: .857rem;
+    line-height: 1.833;
+}
+.product-config-info ul li{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    width: 100%;
+    color: #686868;
+    margin: 2px 0;
+}
+.product-config-info ul li span {
+    margin-left: 5px;
+    white-space: normal;
+}
+.product-seller-info{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    line-height: normal;
+    background-color: #f5f5f5;
+    border-color: #e4e4e4;
+}
+.product-seller-box{
+    flex:1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    max-width: 300px;
+    min-height: 206px;
+}
+.product-seller-counter{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    line-height: 57px;
+    padding: 0 16px;
+    font-weight: 500;
+    margin: 16px auto;
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 25px;
+}
+.product-seller-counter a{
+     font-size: 12px;
+     color: #0fabc6;
+}
+.product-seller-row{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: .9rem;
+    color: #424750;
+}
+.product-seller-row-main{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 24px;
+    position: relative;
+    padding-left: 28px;
+}
+
 
