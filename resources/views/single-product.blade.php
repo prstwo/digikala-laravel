@@ -12,6 +12,9 @@
 
 </head>
 <body>
+@section('angle-left')
+    <i class="fa fa-angle-left "></i>
+@endsection
 <?php
  $productConfigInfo = [
          ['span1'=>'حافظه داخلی:', 'span2'=>'256 گیگابایت'],
@@ -63,8 +66,33 @@
                             <ul class="product-gallery-option list-none flex flex-col "></ul>
                             <div></div>
                         </div>
-                        <div class="product-gallery-main-pic">
-                            <img src="images/product-main-pic.jpg" alt="product pic">
+                        <div>
+                            <div class="product-gallery-main-pic py-4">
+                                <img src="images/product-main-pic.jpg" alt="product pic">
+                            </div>
+                            <ul class="flex product-gallery-pictures">
+                                <li class=" ">
+                                    <div class="thumb-wrapper"><img src="images/product-pic-example1.jpg" alt=""></div>
+                                </li>
+                                <li class=" ">
+                                    <div class="thumb-wrapper"><img src="images/product-pic-example1.jpg" alt=""></div>
+                                </li>
+                                <li class=" ">
+                                    <div class="thumb-wrapper"><img src="images/product-pic-example1.jpg" alt=""></div>
+                                </li>
+                                <li class=" ">
+                                    <div class="thumb-wrapper"><img src="images/product-pic-example1.jpg" alt=""></div>
+                                </li>
+                                <li class=" ">
+                                    <div class="thumb-wrapper"><img src="images/product-pic-example1.jpg" alt=""></div>
+                                </li>
+                                <li class=" ">
+                                    <div class="thumb-wrapper"><img src="images/product-pic-example1.jpg" alt=""></div>
+                                </li>
+                                <li class=" ">
+                                    <div class="thumb-wrapper"><img src="images/product-pic-example1.jpg" alt=""></div>
+                                </li>
+                            </ul>
                         </div>
                     </section>
                     <section class="product-info">
@@ -134,9 +162,7 @@
                                             <div class="product-seller-row-main">
                                                 <div class="product-seller-first-line p-4 flex justify-between">
                                                     <span>دیجی‌کالا</span>
-                                                    @section('angle-left')
-                                                        <i class="fa fa-angle-left "></i>
-                                                    @endsection
+
                                                     @section('angle-left')
                                                     @show
                                                 </div>
@@ -150,10 +176,27 @@
                                             </div>
                                         </div>
                                         <div class="product-seller-row p-4">
-                                            <div class="productdelivery-warehouse relative pr-10 mt-5">
+                                            <div class="product-delivery-warehouse relative pr-10 mt-5">
                                             </div>
                                         </div>
-                                        <div class="product-seller-row p-4"> </div>
+                                        <div class="product-seller-row p-4">
+                                            <div class="product-seller-row-main flex flex-row justify-between">
+                                                موجود در انبار دیجی‌کالا
+                                                @section('angle-left')
+                                                @show
+                                            </div>
+
+                                        </div><div class="product-seller-row p-4">
+                                            <div class="product-seller-row-price flex flex-row justify-between">
+                                                <div class="product-seller-row-price-real">
+                                                    <div class="product-seller-price-pure inline-flex">
+                                                        ۱۴,۹۹۰,۰۰۰
+                                                    </div>
+                                                    تومان
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
                                     <div class="product-seller-add-to-card"></div>
                                 </div>
