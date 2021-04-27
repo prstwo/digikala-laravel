@@ -2304,6 +2304,10 @@ o-btn{
     transition: all .3s ease;
     list-style: none;
 }
+.box-tabs-sticky{
+    background-color: white;
+    top: 0;
+}
 .o-box-tab{
     padding: 14px 16px;
     font-size: 14px;
@@ -2379,4 +2383,67 @@ o-btn{
     line-height: 16px;
     color: inherit;
     margin-right: 6px;
+}
+.params-border-bottom{
+    border-bottom: 1px solid #dfdfdf;
+}
+.params-title{
+    letter-spacing: -.3px;
+    position: relative;
+    width: 250px;
+    color: #232933;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 50px;
+}
+.params-list{
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    margin-bottom: 25px
+}
+.params-list li{
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-bottom: 10px;
+    line-height: 50px;
+}
+.params-list-key{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    -ms-flex: 0 0 22.2%;
+    -webkit-box-flex: 0;
+    flex: 0 0 22.2%;
+    max-width: 22.2%;
+}
+.params-list-value{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    -ms-flex: 0 0 77.8%;
+    -webkit-box-flex: 0;
+    flex: 0 0 77.8%;
+    max-width: 77.8%;
+}
+.block-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 170px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    letter-spacing: -.3px;
+    padding: 14px 18px 12px;
 }

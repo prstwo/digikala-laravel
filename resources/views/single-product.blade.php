@@ -232,7 +232,7 @@
                 <div class="carousel-horizontal-general"></div>
                 <div class="product-more flex flex-row">
                     <div class="product-tabs-container">
-                        <ul class="box-tabs-sticky sticky bg-white top-28 o-box-tabs ">
+                        <ul class="box-tabs-sticky sticky bg-white top-28 o-box-tabs z-10">
                             @foreach($productTabs as $productstab)
                                 <li class="o-box-tab">
                                     <a href={!! $productstab['href'] !!} >{!! $productstab['text'] !!}</a>
@@ -241,13 +241,12 @@
                         </ul>
                         <div class="box-tabs-info">
                             <div class="product-expert">
-                                <article class="content-expert-header mt-11 flex flex-col">
-                                    <span class="content-expert-header-t">
+                                <article >
+
+                                    <x-boxheader>
                                         نقد و بررسی اجمالی
-                                    </span>
-                                    <span class="content-expert-header-desc">
-                                        Xiaomi Mi 10T Pro 5G 2007J3SG Dual SIM 128GB Mobile Phone
-                                    </span>
+                                    </x-boxheader>
+
                                     <section class="content-expert-summary " id="reviews">
                                         <div class="mb-4 relative">
                                             <div class="mask-text-product-summary">
@@ -276,7 +275,30 @@
                                 </article>
 
                             </div>
-                            <div class="product-params"></div>
+                            <div class="product-params">
+                                <article class="mb-12">
+                                    <x-boxheader>
+                                        مشخصات کالا
+                                    </x-boxheader>
+                                    <section class="flex flex-row">
+                                        <h3 class="params-title">مشخصات کلی</h3>
+                                        <ul class="params-list">
+                                            <li>
+                                                <div class="params-list-key px-2">
+                                                    <span class="block-content">ابعاد </span>
+                                                </div>
+                                                <div class="params-list-value px-2">
+                                                    <span class="block-content">
+                                                                                            165.1x76.4x9.3 میلی‌متر
+                                                    </span>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+
+                                    </section>
+                                </article>
+                            </div>
                             <div class="product-comments"></div>
                             <div class="product-faq"></div>
                         </div>
