@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -31,6 +31,12 @@
         ['img'=>'"images/product-pic-example2.jpg"'],
         ['img'=>'"images/product-pic-example3.jpg"'],
         ['img'=>'"images/product-pic-example4.jpg"']
+    ];
+    $productTabs = [
+        ['href'=>'#reviews', 'text'=>'نقد و بررسی'],
+        ['href'=>'#details', 'text'=>'مشخصات'],
+        ['href'=>'#comments', 'text'=>' دیدگاه کاربران '],
+        ['href'=>'#faq', 'text'=>'پرسش و پاسخ  ']
     ]
 ?>
 <div>
@@ -225,10 +231,51 @@
                 </div>
                 <div class="carousel-horizontal-general"></div>
                 <div class="product-more flex flex-row">
-                    <div>
-                        <ul class="box-tabs-sticky"></ul>
+                    <div class="product-tabs-container">
+                        <ul class="box-tabs-sticky sticky bg-white top-28 o-box-tabs ">
+                            @foreach($productTabs as $productstab)
+                                <li class="o-box-tab">
+                                    <a href={!! $productstab['href'] !!} >{!! $productstab['text'] !!}</a>
+                                </li>
+                            @endforeach
+                        </ul>
                         <div class="box-tabs-info">
-                            <div class="product-expert"></div>
+                            <div class="product-expert">
+                                <article class="content-expert-header mt-11 flex flex-col">
+                                    <span class="content-expert-header-t">
+                                        نقد و بررسی اجمالی
+                                    </span>
+                                    <span class="content-expert-header-desc">
+                                        Xiaomi Mi 10T Pro 5G 2007J3SG Dual SIM 128GB Mobile Phone
+                                    </span>
+                                    <section class="content-expert-summary " id="reviews">
+                                        <div class="mb-4 relative">
+                                            <div class="mask-text-product-summary">
+                                                گوشی «Mi 10T Pro 5G» از سری محصولات شرکت مطرح شیائومی است
+                                                که با پنل IPS و پشتیبانی از فناوری ارتباطی 5G روانه بازار شده است.
+                                                نمایشگر Mi 10T Pro 5G از رزولوشن بالایی برخوردار است ؛ به‌طوری‌که در اندازه‌ی 6.67 اینچی آن
+                                                ، حدود 395 پیکسل را در هر اینچ جا داده است. در گوشی Mi 10T Pro 5G
+                                                شیائومی نمایشگر تقریباً تمام قاب جلویی گوشی را پر کرده است. این مشخصه
+                                                در کنار قاب شیشه‌ای و فریم تهیه شده از آلومینیوم قرار گرفته است که
+                                                ظاهر زیبایی را به آن بخشیده است. این بدنه‌ی زیبا در کنار نمایشگر
+                                                این محصول، با استفاده از Corning Gorilla Glass 5 محافظت می‌شود تا
+                                                گوشی در برابر خط‌وخش ایمن باشد. ویژگی دیگر Xiaomi Mi 10T Pro 5G
+                                                مجهز شدن به حسگر اثرانگشت در کناره گوشی که نشان از بالارده بودن
+                                                محصول دارد. اما این پایان کار نیست؛ ۳ دوربین که سنسور اصلی آن 108
+                                                مگاپیکسلی است در قسمت پشتی این گوشی جا خوش کرده‌اند. این دوربین‌ها
+                                                قادرند ویدئوی 8K را ثبت و ضبط کنند. دوربین‌ سلفی این محصول هم به
+                                                سنسوری 20 مگاپیکسلی مجهز شده است. بلوتوث نسخه 5.1، نسخه 10 سیستم
+                                                عامل اندروید، امکان استفاده به عنوان پاوربانک، شارژ بی‌سیم سریع
+                                                و باتری 5000 میلی آمپرساعتی از دیگر ویژگی‌‌های این گوشی جدید هستند.
+                                            </div>
+                                            <a href="#continue" class="px-0 o-btn-link-blue-sm">
+                                                ادامه مطلب
+                                            </a>
+                                        </div>
+                                    </section>
+                                </article>
+
+                            </div>
                             <div class="product-params"></div>
                             <div class="product-comments"></div>
                             <div class="product-faq"></div>
@@ -263,6 +310,9 @@
                                     <span class="text-sm font-extrabold">تومان</span>
                                 </div>
 
+                            </div>
+                            <div class="mini-buy-box-btn-row mt-2">
+                                <a href="#sabad" class="o-btn w-full text-center font-xl py-2 px-4  text-white">افزودن به سبد خرید</a>
                             </div>
 
                         </div>
