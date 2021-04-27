@@ -213,71 +213,18 @@
                 <!--بهتره بخش با کلاس head رو بعد تبدیل به کامپوننت کنم -->
                 <div class="product-suppliers">
                     <div class="box-suppliers-head">
-                        <div class="head">
-                            <span class="text-gray-500  mobile-title	">لیست فروشندگان این کالا</span>
-                            <span class="head-title">
-لیست فروشندگان این کالا                        </span>
-                            <div class="head-link">
-
-                            </div>
-                        </div>
+                        <x-HeadSec>
+                            لیست فروشندگان این کالا
+                        </x-HeadSec>
                     </div>
                     <div class="suppliers-list">
-                        <!-- -->
-                        <div class="supplier-list-row flex flex-wrap justify-between" >
-                            <div class="supplier-cell supplier-cell-title">
-                                <span class="supplier-seller-icon   is-digikala"></span>
-                                <div class="suppliers-seller-wrapper relative">
-                                    <p class="suppliers-seller-wrapper-name">
-                                        <a href="#kala-supplier">
-                                            دیجی&zwnj;کالا
-                                        </a>
-                                    </p>
-                                    <div class="suppliers-rating">
-                                        عملکرد:
-                                        <span class="u-text-bold">
-                                            ۵
-                                        </span>
-                                        از ۵
-                                        <span class="u-divider"></span>
-                                        <span class="u-text-bold">
-                                            ۹۳.۴٪
-                                        </span>
-                                        رضایت از کالا
-                                    </div>
-                                    <p>
-
-                                    </p>
-                                </div>
-
-                            </div>
-                            <div class="supplier-cell supplier-cell-conditions">
-                                <div class="suppliers-sender suppliers-sender-digikala no-lead-time">
-                                    ارسال دیجی&zwnj;کالا
-                                </div></div>
-                            <div class="supplier-cell supplier-cell-guarantee">
-                                <span>گارانتی ۱۸ ماهه کاوش تیم</span>
-                            </div>
-                            <div class="supplier-cell suppliers-cell-price ">
-                                <div class="c-price">
-                                    <div class="c-price-value">
-                                        ۱۳,۳۹۹,۰۰۰
-                                        <span class="text-sm">تومان</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="supplier-cell  supplier-cell-action">
-                                <a class=" o-btn o-btn-outlined-red " href="#add-to-card">
-                                    افزودن به سبد
-                                </a>
-                            </div>
-                        </div>
-
+                        <x-supplier />
+                        <x-supplier />
                         <!-- -->
                     </div>
                 </div>
                 <div class="carousel-horizontal-general"></div>
-                <div class="product-more">
+                <div class="product-more flex flex-row">
                     <div>
                         <ul class="box-tabs-sticky"></ul>
                         <div class="box-tabs-info">
@@ -286,6 +233,40 @@
                             <div class="product-comments"></div>
                             <div class="product-faq"></div>
                         </div>
+                    </div>
+                    <div class="mini-buy-box-fix mr-6 mb-10 sticky top-40 justify-self-start ">
+                        <div class="mini-buy-box rounded-lg p-4 border bg-white">
+                            <div class="mini-buy-box-product-info mb-5 py-4 border-b">
+                                <img src="images/product-pic-example5.jpg" alt="product" class="w-20 h-20 ml-5">
+                                <div class="w-full  mini-buy-box-product-info-info">
+                                    <div class="w-full  title ">
+                                        گوشی موبایل شیائومی مدل Mi 10T Pro 5G 2007J3SG دو سیم‌ کارت ظرفیت 128 گیگابایت
+                                    </div>
+                                    <div class="colors flex flex-row content-center items-center">
+                                        <div  class=" ml-2 border color-label " style=" background-color: rgb(222, 222, 222);"></div>
+                                        <span>نقره ای</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-buy-box-row mini-buy-box-seller">
+                                دیجی کالا
+                            </div>
+                            <div class="mini-buy-box-row mini-buy-box-warranty">
+                                گارانتی 18 ماهه
+                            </div>
+                            <div class="mini-buy-box-row mini-buy-box-stock">
+                                موجود در انبار دیجی کالا
+                            </div>
+                            <div class="mini-buy-box-row mini-buy-box-row-price">
+                                <div class="product-seller-price-info">
+                                    ۱۳,۳۹۹,۰۰۰
+                                    <span class="text-sm font-extrabold">تومان</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>

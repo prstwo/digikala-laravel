@@ -2178,3 +2178,80 @@ o-btn{
     border-radius: 8px;
 
 }
+.mini-buy-box-fix{
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+}
+.mini-buy-box{
+    border-color:  #e0e0e2;
+}
+.mini-buy-box-product-info{
+    border-color: #e0e0e2;
+}
+.mini-buy-box-product-info-info{
+    min-height: 80px;
+}
+.mini-buy-box-product-info-info .title{
+    min-height: 50px;
+    overflow: hidden;
+    line-height: 1.833;
+}
+.mini-buy-box-product-info-info .colors .color-label{
+   border-color: rgba(3,10,22,.1);
+    border-radius: 100%;
+    width: 14px;
+    height: 14px;
+}
+.mini-buy-box-row{
+    width: 100%;
+    min-height: 30px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-size: .857rem;
+    line-height: 1.833;
+}
+ .mini-buy-box-seller:before{
+    font-family: 'FontAwesome';
+    content: "\f0e0";
+    color: #ef394e;
+    font-size: 18px;
+    margin-left: 8px;
+}
+.mini-buy-box-stock:before{
+    font-family: 'FontAwesome';
+    content: "\f12a";
+    color: #0fabc6;
+    font-size: 18px;
+    margin-left: 8px;
+}
+.mini-buy-box-warranty:before{
+    font-family: 'FontAwesome';
+    content: "\f132 ";
+    font-size: 18px;
+    margin-left: 8px;
+}
+.mini-buy-box-row-price{
+    align-self: flex-end;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: left;
+    margin: 0;
+    color: #030a16;
+    font-size: 24px;
+}
+.product-seller-price-info{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    color: #030a16;
+    font-size: 24px;
+}
