@@ -27,6 +27,17 @@ $sandwichMenuItemsP2 = [
     ['class'=>'""', 'title'=>'سوالی دارید؟'],
     ['class'=>'""', 'title'=>'فروشنده شوید']
 ];
+$salesMobileSub = [
+    ['item'=>'مشاهده همه پیشنهاد ها'],
+    ['item'=> 'پرفروش ترین کالاها '],
+    ['item'=>'کالاهای شگفت انگیز'],
+    ['item'=>'شگفت انگیز سوپرمارکتی'],
+    ['item'=>'فروش ویژه'],
+    ['item'=>'با هر خرید هدیه بگیرید'],
+    ['item'=>'تخفیف پایان فصل'],
+    ['item'=>'مشاهدهکارت هدیه خرید از دیجی کالا'],
+    ['item'=>'تازه های فروشنده های جدید']
+];
 $productItemContainer3 = [
     ['img'=>'"images/phone-1.jpg"','product-title'=>'گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت
                                             گوشی موبایل شیائومی مدل POCO X3 M2007J20CG دو سیم‌ کارت ظرفیت 128 گیگابایت', 'old-price'=>'۸,۰۰۰,۰۰۰',
@@ -123,47 +134,68 @@ $footerAdressImages = [
 
                     --}}
 
+
+                <li class="nav-link  border-right-add ">
+                    <a href="#supermarket" class="nav-link-title">
+                        <div>
+                            <i class='fa fa-shopping-basket ml-2'></i>سوپرمارکت
+                        </div>
+                    </a>
+                </li>
+                <!-- منوهایی که toggle میشوند& باید دارای کلاس js-mobile-toggle باشند -->
+                <li class="nav-link  border-right-add js-mobile-toggle" onclick="toggleSub(this)">
+                    <a href="#supermarket" class="nav-link-title">
+                        <div>
+                            <i class='fa fa-percent ml-2'></i>تخفیف ها و پشنهادها
+                        </div>
+                    </a>
+                        <ul class="mobile-nav-link-sub flex flex-col  hide bg-gray-100">
+                            @foreach($salesMobileSub as $msubmenu)
+                                <li>
+                                    <a href="#page-link" class="">
+                                        {{$msubmenu['item']}}
+                                    </a>
+                                </li>
+                            @endforeach
+                        </ul>
+
+                </li>
+
                 <li class="nav-link  border-right-add">
                     <a href="#supermarket" class="nav-link-title">
-                        <i class='fa fa-list-ul'></i>دسته بندی کالاها
+                        <div>
+                            <i class='fa fa-check-circle-o ml-2'></i>دیجی کالای من
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-link  border-right-add">
+                    <a href="#supermarket" class="nav-link-title">
+                        <div>
+                            <i class='fa fa-random ml-2'></i>دیجی کلاب
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-link  border-right-add">
+                    <a href="#supermarket" class="nav-link-title">
+                        <div>
+                            <i class='fa fa-paypal ml-2'></i>دیجی پی
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-link  border-right-add">
+                    <a href="#supermarket" class="nav-link-title">
+                        <div>
+                            <i class='fa fa-list-ul ml-2'></i>سوالی دارید؟
+                        </div>
 
                     </a>
                 </li>
-                <li class="nav-link  border-right-add js-toggle">
+                <li class="nav-link  border-right-add">
                     <a href="#supermarket" class="nav-link-title">
-                        <i class='fa fa-shopping-basket '></i>سوپرمارکت
-                    </a>
-                </li>
+                        <div>
+                            <i class='fa fa-list-ul ml-2'></i>فروشنده شوید
+                        </div>
 
-                <li class="nav-link  border-right-add">
-                    <a href="#supermarket" class="nav-link-title">
-                        <i class='fa fa-percent'></i>تخفیف ها و پشنهادها
-                    </a>
-                </li>
-
-                <li class="nav-link  border-right-add">
-                    <a href="#supermarket" class="nav-link-title">
-                        <i class='fa fa-check-circle-o'></i>دیجی کالای من
-                    </a>
-                </li>
-                <li class="nav-link  border-right-add">
-                    <a href="#supermarket" class="nav-link-title">
-                        <i class='fa fa-random'></i>دیجی کلاب
-                    </a>
-                </li>
-                <li class="nav-link  border-right-add">
-                    <a href="#supermarket" class="nav-link-title">
-                        <i class='fa fa-paypal'></i>دیجی پی
-                    </a>
-                </li>
-                <li class="nav-link  border-right-add">
-                    <a href="#supermarket" class="nav-link-title">
-                        <i class='fa fa-list-ul'></i>سوالی دارید؟
-                    </a>
-                </li>
-                <li class="nav-link  border-right-add">
-                    <a href="#supermarket" class="nav-link-title">
-                        <i class='fa fa-list-ul'></i>فروشنده شوید
                     </a>
                 </li>
             </div>
@@ -188,7 +220,7 @@ $footerAdressImages = [
                     </a>
                 </div>
                 <div class="digikala-icon-container">
-                    <a href="digikala">
+                    <a href="#digikala">
                         <img src="images/digikala.svg" alt="digikala">
                     </a>
                 </div>
@@ -225,7 +257,7 @@ $footerAdressImages = [
 
         </div>
 
-        <div class="px-4 py-3 flex flex-row flex-wrap justify-between">
+        <div class="desktop-header-container px-4 py-3 flex flex-row flex-wrap justify-between">
 
             <div class="desktop-header header-right-side flex content-center flex-grow">
                 <div class="mr-2 ml-6 w-100 flex items-center">

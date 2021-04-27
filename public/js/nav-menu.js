@@ -1,6 +1,10 @@
-let sToggles= document.querySelectorAll('.js-toggle');
 
 let mobileMenuCon= document.querySelector('.mobile-menu-container');
+function toggleSub(link){
+    link.querySelector('ul').classList.toggle('hide');
+
+}
+
 function mobileMenu(){
     mobileMenuCon.classList.toggle('hide');
         document.querySelector('.m-overlay').classList.toggle('active');

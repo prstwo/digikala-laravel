@@ -162,6 +162,13 @@ main{
     justify-content: space-between;
     font-size: .8rem;
 }
+.mobile-nav-link-sub{
+    margin-left: -20px;
+    padding-left: 20px;
+}
+.mobile-nav-link-sub li{
+    padding: 7px 8px 8px 0;
+}
 .free-space{
     flex-grow: 1;
 }
@@ -500,14 +507,20 @@ a.nav-link-title{
     width: 90px;
 }
 .mobile-menu-container{
+    position: fixed;
     width: 65vw;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: fit-content;
     background-color: white;
     z-index:80;
+    overflow: scroll;
 }
 @media screen and (max-width: 680px) {
     .nav{
         display: none;
+    }
+    .nav-link-title{
+        padding: 7px 8px 8px 0;
     }
 }
 
@@ -792,7 +805,7 @@ header .fa-search:before {
     }
 }
 @media screen and (max-width: 680px) {
-    .desktop-header{
+    .desktop-header-container{
         display: none;
     }
     .mobile-header{
@@ -1378,12 +1391,18 @@ span.head-title::after{
         max-width: 20%;
         width: 257.2px;
     }
-    .mobile-menu-container .mobile-menu-items li:nth-of-type(2){
+    .mobile-menu-items{
+        margin-left: -1.5rem;
+    }
+    .mobile-menu-container .mobile-menu-items li a{
+        width: 100%;
+    }
+    .mobile-menu-container .mobile-menu-items li:nth-of-type(2)>a{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    .mobile-menu-container .mobile-menu-items li:nth-of-type(2):after{
+    .mobile-menu-container .mobile-menu-items .nav-link:nth-of-type(2)>a:after{
         font-family: 'FontAwesome';
         content: "\f053";
         border-width: 0;
@@ -1392,6 +1411,19 @@ span.head-title::after{
         height: fit-content;
         margin: auto 0;
     }
+    /*.mobile-toggle:active ul{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        align-content: start;
+    }
+    .mobile-toggle:visited ul{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        align-content: start;
+    }*/
+
 }
 
 /*promotion cats */
