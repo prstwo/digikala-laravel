@@ -33,10 +33,10 @@ body{
 
 a{
     text-decoration: none;
+    color: #4a5f73;
+    background-color: transparent;
 }
-a:link{
-    color: inherit;
-}
+
 a:hover, a:active{
     color: inherit;
 }
@@ -513,7 +513,6 @@ a.nav-link-title{
     max-height: fit-content;
     background-color: white;
     z-index:80;
-    overflow: scroll;
 }
 @media screen and (max-width: 680px) {
     .nav{
@@ -1848,4 +1847,334 @@ a.product-title-brand-link{
     font-size: 14px;
     font-size: 1rem;
     line-height: 14px;
+}
+.supplier-list-row{
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    min-height: 83px;
+    padding: 0 16px;
+}
+.supplier-cell{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 20%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: none;
+    padding: 18px 10px;
+}
+.supplier-cell-title{
+    min-width: 260px;
+    width: 25%;
+    position: relative;
+    cursor: pointer;
+    color: #424750;
+    padding-right: 0;
+}
+.supplier-seller-icon:before{
+    font-family: 'FontAwesome';
+    content: "\f0e0";
+    color: #ef394e;
+    font-size: 24px;
+    font-size: 1.714rem;
+    line-height: 1.833;
+    margin-left: 16px;
+}
+.suppliers-seller-wrapper{
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.suppliers-seller-wrapper, .suppliers-seller-info{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.suppliers-seller-wrapper p {
+    max-width: 320px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.suppliers-seller-wrapper-name{
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 1.571;
+    color: #424750;
+    font-weight: 500;
+
+}
+
+.suppliers-rating{
+    font-size: 12px;
+    font-size: .857rem;
+    line-height: 1.833;
+    color: #81858b;
+    margin-top: 2px;
+}
+.supplier-cell-title p{
+    max-width: 320px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.suppliers-seller-info{
+    z-index: 10;
+    display: none;
+    width: 332px;
+    position: absolute;
+    top: 0;
+    right: 70%;
+    background-color: #fff;
+    -webkit-box-shadow: 0 6px 12px 0 hsl(0deg 0% 71% / 30%);
+    box-shadow: 0 6px 12px 0 hsl(0deg 0% 71% / 30%);
+    border-radius: 8px;
+}
+.suppliers-seller-info .seller-rating{
+    padding: 16px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.suppliers-seller-info .seller-rating-title{
+    font-size: 16px;
+    font-size: 1.143rem;
+    line-height: 2.5;
+    color: #232933;
+}
+.seller-rating-subtitle{
+    font-size: 12px;
+    font-size: .857rem;
+    line-height: 1.833;
+    color: #81858b;
+}
+.seller-rating-text{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+.seller-rating-thin-text{
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 1.571;
+    color: #232933;
+    font-weight: 800;
+}
+.seller-rating-bold-text{
+    font-size: 32px;
+    font-size: 2.286rem;
+    line-height: 1.375;
+    color: #232933;
+    font-weight: 800;
+}
+.seller-rating-ratings{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+}
+.round-progress-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+}
+.round-progress {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f0f0f1;
+}
+.round-progress-half{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 50%;
+}
+.round-progress-label{
+    font-size: 10px;
+    font-size: .714rem;
+    line-height: 2.2;
+    color: #a1a3a8;
+    font-weight: 500;
+    margin-top: 8px;
+}
+.supplier-cell-conditions{
+    -ms-flex-preferred-size: 22%;
+    flex-basis: 22%;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    flex-direction: column;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.suppliers-sender{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #424750;
+    font-size: 12px;
+    font-size: .857rem;
+    line-height: 1.833;
+}
+.suppliers-sender:before{
+     font-size: 18px;
+     font-size: 1.286rem;
+     line-height: 18px;
+     margin-left: 8px;
+}
+.suppliers-sender-digikala:before{
+    font-family: 'FontAwesome';
+    content:'\f0d1 ' ;
+}
+.suppliers-sender-digikala.no-lead-time:before{
+    color: #e6123d;
+}
+.supplier-cell-guarantee{
+    font-size: 12px;
+    font-size: .857rem;
+    line-height: 1.833;
+    color: #424750;
+    font-weight: 500;
+}
+.supplier-cell-guarantee:before{
+    font-family: 'FontAwesome';
+    content: "\f046 ";
+    font-size: 24px;
+    font-size: 1.714rem;
+    line-height: 24px;
+    margin-left: 16px;
+}
+.suppliers-cell-price{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    width: 150px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+c-price{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.c-price-value{
+    font-size: 15px;
+    font-size: 1.071rem;
+    line-height: 26px;
+    letter-spacing: .8px;
+    color: #424750;
+}
+.suppliers-cell-price .c-price-value{
+    font-size: 16px;
+    font-size: 1.143rem;
+    line-height: 1.375;
+    color: #424750;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.supplier-cell-action{
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 15%;
+    padding: 0;
+}
+o-btn{
+    cursor: pointer;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    position: relative;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+.o-btn-outlined-red{
+    padding: 9px 16px;
+    direction: rtl;
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 1.571;
+    font-weight: 700;
+    border: 1px solid #ef394e;
+    color: #ef394e;
+    border-radius: 8px;
+
 }
