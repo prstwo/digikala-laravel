@@ -107,9 +107,10 @@
 
                                     @if($loop->last)
                                         <li class=" ">
-                                            <div class="thumb-wrapper"><img src={!! $productgallerypicture['img'] !!} alt="">
+                                            <div class="thumb-wrapper">
+                                                <img src={!! $productgallerypicture['img'] !!}  alt="sth">
                                                 <div class="gallery-images-count">
-                                                 <span class="gallery-count-circle">
+                                                 <span class="gallery-count-circle" onclick="defaultModalToggle()">
                                                      <div class="text-2xl">
                                                          ...
                                                      </div>
@@ -525,6 +526,7 @@
 
 
 </div>
+    <x-remodal_gallery/>
     <x-overlay/>
 
     <script src="js/nav-menu.js"></script>

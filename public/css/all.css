@@ -2904,3 +2904,33 @@ o-btn{
     font-size: 1.143rem;
     line-height: 16px;
 }
+.remodal-gallery{
+    display: block;
+    position: fixed;
+    top: 5vh;
+    left: 25vw;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    color: #2b2e38;
+    background: #fff;
+    line-height: 22px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 5px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 10%);
+    background-color: #fff;
+    max-width: unset;
+    /*width: unset;
+    max-height: 95vh;*/
+    width: 50vw;
+    height: 90vh;
+    overflow: auto;
+    z-index:110;
+}
+.remodal-is-closed{
+display: none;
+}
+
