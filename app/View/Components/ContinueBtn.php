@@ -4,17 +4,16 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class Boxheader extends Component
+class ContinueBtn extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return void
      */
-
     public function __construct()
     {
-
+        //
     }
 
     /**
@@ -24,6 +23,6 @@ class Boxheader extends Component
      */
     public function render()
     {
-        return view('components.boxheader');
+        return view('components.continue-btn');
     }
 }

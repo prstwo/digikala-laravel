@@ -39,6 +39,17 @@
         ['href'=>'#faq', 'text'=>'پرسش و پاسخ  ']
     ]
 ?>
+@php
+    $commentExpertRatings = [
+      ['title'=>'کیفیت ساخت', 'percent'=>'"86%"', 'width'=>'"width: 86%;"' , 'rate'=>'۴.۳'],
+       ['title'=>'ارزش خرید به نسبت قیمت', 'percent'=>'"84%"', 'width'=>'"width: 84%;"' , 'rate'=>'۴.۲'],
+       ['title'=>'نوآوری', 'percent'=>'"84%"', 'width'=>'"width: 84%;"' , 'rate'=>'۴.۲'],
+        ['title'=>'امکانات و قابلیت ها', 'percent'=>'"66%"', 'width'=>'"width: 66%;"' , 'rate'=>'۴.۳'],
+         ['title'=>'سهولت استفاده', 'percent'=>'"80%"', 'width'=>'"width: 80%;"' , 'rate'=>'۴'],
+          ['title'=>'کیفیت ساخت', 'percent'=>'"86%"', 'width'=>'"width: 86%;"' , 'rate'=>'۴.۳'],
+           ['title'=>'طراحی و ظاهر', 'percent'=>'"86%"', 'width'=>'"width: 86%;"' , 'rate'=>'۴.۳']
+                           ]
+@endphp
 <div>
     <!--در این قسمت هدر و نوبار جای دارند -->
     <main class="w-full">
@@ -239,11 +250,12 @@
                                 </li>
                             @endforeach
                         </ul>
+
                         <div class="box-tabs-info">
                             <div class="product-expert">
                                 <article >
 
-                                    <x-boxheader>
+                                    <x-boxheader  >
                                         نقد و بررسی اجمالی
                                     </x-boxheader>
 
@@ -267,9 +279,10 @@
                                                 عامل اندروید، امکان استفاده به عنوان پاوربانک، شارژ بی‌سیم سریع
                                                 و باتری 5000 میلی آمپرساعتی از دیگر ویژگی‌‌های این گوشی جدید هستند.
                                             </div>
-                                            <a href="#continue" class="px-0 o-btn-link-blue-sm">
+
+                                            <x-ContinueBtn>
                                                 ادامه مطلب
-                                            </a>
+                                            </x-ContinueBtn>
                                         </div>
                                     </section>
                                 </article>
@@ -297,9 +310,61 @@
                                         </ul>
 
                                     </section>
+                                    <x-ContinueBtn>
+                                        نمایش همه مشخصات کالا
+                                    </x-ContinueBtn>
                                 </article>
                             </div>
-                            <div class="product-comments"></div>
+                            <div class="product-comments">
+                                <x-boxheader>
+                                    امتیاز و دیدگاه کاربران
+                                </x-boxheader>
+                                <div class="comments-container flex mb-15 mt-9 items-start ">
+                                    <div class="comment-sidebar ml-15 sticky ">
+                                        <div class="comment-side-rating-container mb-5 ">
+                                               <div class="flex items-end">
+                                                   <div class="comments-side-rating-main">۴.۳</div>
+                                                   <div class="comments-side-rating-desc">از ۵</div>
+                                               </div>
+
+                                            <div class="comments-side-rating-bottom flex items-center">
+                                                <div class="c-stars">
+                                                    <span class="c-stars-item"></span>
+                                                    <span class="c-stars-item"></span>
+                                                    <span class="c-stars-item"></span>
+                                                    <span class="c-stars-item"></span>
+                                                    <span class="c-stars-item"></span>
+
+
+                                            </div>
+                                                <div class="comments-side-rating-all mr-2 flex items-center">
+                                                    از مجموع ۱۴۲ امتیاز
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="c-content-expert-rating">
+
+                                                @foreach($commentExpertRatings as $commentrating)
+                                                <li>
+                                                    <div class="c-content-expert-rating-title">{{$commentrating['title']}}</div>
+                                                    <div class="c-content-expert-rating-value">
+                                                        <div class="c-rating c-rating-general ">
+                                                            <div class="c-rating-rate -" data-rate-value={!! $commentrating['percent']!!} style={!! $commentrating['width']!!}></div>
+                                                        </div>
+                                                        <span class="c-rating-overall-word">{{$commentrating['rate']}}</span>
+                                                    </div>
+                                                </li>
+                                                @endforeach
+
+                                        </ul>
+                                        <a href="#add-comment" data-product-id="4107334"
+                                           class="o-btn o-btn-outlined-red o-btn-full-width">افزودن دیدگاه</a>
+
+                                    </div>
+                                    <div class="comment-content-section"></div>
+
+                                </div>
+                            </div>
                             <div class="product-faq"></div>
                         </div>
                     </div>
