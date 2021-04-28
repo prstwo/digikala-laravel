@@ -15,6 +15,10 @@
 @section('angle-left')
     <i class="fa fa-angle-left "></i>
 @endsection
+@section('half-separator')
+    <div class="c-comment-separator c-comment-separator-half">
+
+    @endsection
 <?php
  $productConfigInfo = [
          ['span1'=>'حافظه داخلی:', 'span2'=>'256 گیگابایت'],
@@ -241,7 +245,7 @@
                     </div>
                 </div>
                 <div class="carousel-horizontal-general"></div>
-                <div class="product-more flex flex-row">
+                <div class="relative product-more flex flex-row">
                     <div class="product-tabs-container">
                         <ul class="box-tabs-sticky sticky bg-white top-28 o-box-tabs z-10">
                             @foreach($productTabs as $productstab)
@@ -361,15 +365,110 @@
                                            class="o-btn o-btn-outlined-red o-btn-full-width">افزودن دیدگاه</a>
 
                                     </div>
-                                    <div class="comment-content-section"></div>
+                                    <div class="comment-content-section">
+                                        <div class="c-sort-row">
+                                            <i class="c-icon-font" data-icon="icon-action-sort"></i>
+                                            <span class="c-sort-row-text">
+                                                مرتب‌سازی دیدگاه‌ها بر اساس:
+                                            </span>
+                                            @php
+                                                $sortComments=[['data-mode'=>'newest_comment', 'class'=>'"c-sort-row-label is-active"', 'sort-text'=>'   جدیدترین دیدگاه‌ها'],
+                                                            ['data-mode'=>'most_liked','class'=>'"c-sort-row-label"', 'sort-text'=>'مفیدترین دیدگاه‌ها'],
+                                                            ['data-mode'=>'buyers','class'=>'"c-sort-row-label "', 'sort-text'=>'  دیدگاه خریداران']]
+                                            @endphp
+                                            <ul class="c-sort-row-items">
+                                                @foreach($sortComments as $csorter)
+                                                    <li class="c-sort-row-item">
+                                                        <a href="#" class={!! $csorter['class'] !!} data-sort-mode={!! $csorter['data-mode'] !!}>
+                                                            {{$csorter['sort-text']}}
+                                                        </a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                        <div class="product-comment-list">
+                                            <div class="c-comment-list padding-0">
+                                                <div class="c-comments-item c-comments-item-pdp">
+                                                    <div class="c-comment-row">
+                                                        <span class="c-comment-title">
+                                                            گوشی شبه پرچم دار می 10 تی پرو 5G
+                                                        </span>
+                                                    </div>
+                                                    <div class="c-comment-row">
+                                                        <span class="c-comment-datail">
+                                                            ۶ اردیبهشت ۱۴۰۰
+                                                        </span>
+                                                        <span class="c-comment-datail">
+                                                            کاربر دیجی‌کالا
+                                                        </span>
+                                                    </div>
+                                                    @section('half-separator') @show                                                    </div>
+                                                    <div class="c-comment-row">
+
+                                                    </div>
+                                                    <div class="c-comment-row c-comment-row-comment c-comment-row-grow">
+                                                        <div class="c-comments-content">سلام دوستان عزیز این گوشی مخصوص
+                                                            طرفداران عکاسی و گیم و بازی هستش
+                                                            پردازنده قوی اسنپ دراگون 865G که
+                                                            رو این گوشیه واقعا جواب گوی بازی
+                                                            های خیلی سنگین و گرافیکی هست
+                                                            باطری و فست شارژش واقعا عالیه
+                                                            دوربینش معرکه اس واقعا محشره
+                                                            توصیه میکنم حتما اینو بخرید
+                                                            تنها یه عیب کوچیک دارع که اونم
+                                                            صفحه نمایش IPS LCD هستش
+                                                            که چندان فرقی هم با بقیه ندارع
+                                                        </div>
+                                                        @section('half-separator')     @show                                                   </div>
+                                                        <div class="c-comments-modal-evaluation">
+                                                            <div class="c-comments-modal-evaluation-item c-comments-modal-evaluation-item-positive items-start">
+                                                                باطری پرسرعت و پرقدرت با ظرفیت 5 هزار میلی امپر
+                                                            </div>
+                                                            <div class="c-comments-modal-evaluation-item c-comments-modal-evaluation-item-negative items-start">
+                                                                صفحه نمایش IPS LCD
+                                                            </div>
+                                                        </div>
+                                                        @section('half-separator')     @show
+                                                    </div>
+                                                        <div class="c-comment-row">
+                                                            <div class="c-comments-color">
+                                                                <div class="c-comments-color-circle" style="background-color: #2196f3;">
+                                                                    آبی
+                                                                </div>
+                                                            </div>
+                                                            <div class="c-comments-seller">
+                                                                دیجی‌کالا
+                                                            </div>
+                                                        </div>
+                                                        <div class="c-comment-row">
+                                                            <div class="c-comments-helpful">
+                                                                <div class="c-comments-helpful-question">آیا این دیدگاه برایتان مفید بود؟</div>
+                                                                <div class="c-comments-helpful-items  is-modal">
+                                                                    <div class="c-comments-helpful-yes " data-comment="19842425">۲</div>
+                                                                    <div class="c-comments-helpful-no  " data-comment="19842425"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="c-comment-row">
+
+                                            </div>
+
+
+                                        </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
 
                                 </div>
                             </div>
                             <div class="product-faq"></div>
                         </div>
                     </div>
-                    <div class="mini-buy-box-fix mr-6 mb-10 sticky top-40 justify-self-start ">
-                        <div class="mini-buy-box rounded-lg p-4 border bg-white">
+                    <div class="sticky  mini-buy-box-fix mr-6 mb-10  justify-self-start ">
+                        <div class="mini-buy-box  rounded-lg p-4 border bg-white">
                             <div class="mini-buy-box-product-info mb-5 py-4 border-b">
                                 <img src="images/product-pic-example5.jpg" alt="product" class="w-20 h-20 ml-5">
                                 <div class="w-full  mini-buy-box-product-info-info">
