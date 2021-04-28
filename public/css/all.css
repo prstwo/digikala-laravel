@@ -1769,7 +1769,9 @@ a.product-title-brand-link{
     align-items: center;
     font-size: .9rem;
     color: #424750;
+    padding: 1rem;
 }
+
 .product-seller-row-main{
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -1779,7 +1781,6 @@ a.product-title-brand-link{
     font-size: 1rem;
     line-height: 24px;
     position: relative;
-    padding-left: 28px;
 }
 .product-seller-row-price{
     position: relative;
@@ -1823,6 +1824,38 @@ a.product-title-brand-link{
     font-size: 24px;
     font-size: 1.714rem;
     line-height: 41px;
+}
+.product-seller-add-to-card{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    height: calc(98px + 1rem);
+    height: auto;
+}
+.btn-add-to-cart{
+    font-size: 18px;
+    font-size: 1.286rem;
+    line-height: 1.222;
+    border-radius: 8px;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    min-height: 48px;
+    padding: 12px 18px;
+    background-color: #ef394e;
+    border: none;
+}
+.btn-add-to-cart:not(.disabled):not(.is-inactive):not([disabled]) {
+    overflow: hidden;
+}
+.btn-add-to-cart-txt{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
 }
 .gallery-images-count{
     top: 0;
@@ -2381,6 +2414,17 @@ o-btn{
     max-height: 250px;
     overflow: hidden;
 }
+.product__summary {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    max-width: 300px;
+}
+@media screen and (min-width: 1366px){
+    .c-product__summary {
+        max-width: 350px;
+    }
+}
 .o-btn-link-blue-sm{
     padding: 8px 16px;
     direction: rtl;
@@ -2440,6 +2484,13 @@ o-btn{
     flex: 0 0 22.2%;
     max-width: 22.2%;
 }
+.params-list-key span{
+    color: #a1a3a8;
+    font-weight: 500;
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 1.571;
+}
 .params-list-value{
     position: relative;
     width: 100%;
@@ -2461,7 +2512,6 @@ o-btn{
     align-items: center;
     position: relative;
     letter-spacing: -.3px;
-    padding: 14px 18px 12px;
 }
 .comment-sidebar{
     transition: top .3s ease;

@@ -11,10 +11,8 @@ class Boxheader extends Component
      *
      * @return void
      */
-
     public function __construct()
     {
-
     }
 
     /**
@@ -24,6 +22,6 @@ class Boxheader extends Component
      */
     public function render()
     {
-        return view('components.boxheader');
+        return view('components.box_header');
     }
 }

@@ -383,6 +383,7 @@ $productItemContainer3 = [
 <script src="js/icredible-specials.js"></script>
 <script src="js/category-products.js"></script>
 <script src="js/special-brands.js"></script>
+<script src="js/all.js"></script>
 <script src="js/footer.js"></script>
 </body>
 </html>

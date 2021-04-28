@@ -92,7 +92,7 @@
                         </a>
                     </div>
                 </div>
-                <article class="bg-white w-full flex flex-row mb-3 items-start">
+                <article class="bg-white w-full flex flex-row mb-3 items-start ">
                     <section class="product-gallery pl-4 ml-4 flex flex-col top-28">
                         <div class="product-gallery-item">
                             <ul class="product-gallery-option list-none flex flex-col "></ul>
@@ -127,7 +127,7 @@
                             </ul>
                         </div>
                     </section>
-                    <section class="product-info">
+                    <section class="product-info ">
                         <div class="product-info-title flex px-0 py-2 items-center">
                                 <div>
                                     <div class="product-title-flex">
@@ -148,7 +148,7 @@
                                     </h1>
                                 </div>
                         </div>
-                        <div class="product-attributes flex flex-row">
+                        <div class="product-attributes flex flex-row justify-between">
                             <div class="product-config flex-shrink-0 relative pt-3 ml-4 border-t border-solid flex flex-col content-between ">
                                 <span class="product-title-english relative bottom-6 right-0 pl-2 bg-white">Xiaomi Mi 10T PRO 5G M 2007J3SG Dual SIM 256GB Mobile Phone</span>
                                 <div class="product-engagement">
@@ -190,9 +190,9 @@
                                                 دیگر
                                             </a>
                                         </div>
-                                        <div class="product-seller-row">
+                                        <div class="product-seller-row p-4">
                                             <div class="product-seller-row-main">
-                                                <div class="product-seller-first-line p-4 flex justify-between">
+                                                <div class="product-seller-first-line flex justify-between">
                                                     <span>دیجی‌کالا</span>
 
                                                     @section('angle-left')
@@ -205,10 +205,6 @@
                                         <div class="product-seller-row p-4">
                                             <div class="product-seller-row-main">
                                                 گارانتی ۱۸ ماهه کاوش تیم
-                                            </div>
-                                        </div>
-                                        <div class="product-seller-row p-4">
-                                            <div class="product-delivery-warehouse relative pr-10 mt-5">
                                             </div>
                                         </div>
                                         <div class="product-seller-row p-4">
@@ -230,7 +226,13 @@
 
                                         </div>
                                     </div>
-                                    <div class="product-seller-add-to-card"></div>
+                                    <div class="product-seller-row product-seller-add-to-card">
+                                            <a class=" btn-add-to-cart w-full" data-product-id="4107334" data-variant="16089105" href="#payment" data-event="add_to_cart" data-event-category="ecommerce" data-event-label="price: 142790000 - seller: marketplace - seller_name: مرکز تامین کالای دیجیتال ایران
+                                            - seller_rating: 84 - multiple_configs: True - position: 0">
+                                                <span class="btn-add-to-cart-txt">افزودن به سبد خرید</span>
+                                            </a>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -262,11 +264,12 @@
 
                         <div class="box-tabs-info">
                             <div class="product-expert">
+                                @php
+                                    $message = 'SDFRes'
+                                @endphp
                                 <article >
+                                    <x-box_header s>نقد وبررسی اجمالی</x-box_header>
 
-                                    <x-boxheader  >
-                                        نقد و بررسی اجمالی
-                                    </x-boxheader>
 
                                     <section class="content-expert-summary " id="reviews">
                                         <div class="mb-4 relative">
@@ -297,24 +300,30 @@
                                 </article>
 
                             </div>
-                            <div class="product-params">
+                            <div class="product-params" id="details">
                                 <article class="mb-12">
-                                    <x-boxheader>
+                                    <x-box_header>
                                         مشخصات کالا
-                                    </x-boxheader>
+                                    </x-box_header>
                                     <section class="flex flex-row">
                                         <h3 class="params-title">مشخصات کلی</h3>
                                         <ul class="params-list">
-                                            <li>
-                                                <div class="params-list-key px-2">
-                                                    <span class="block-content">ابعاد </span>
-                                                </div>
-                                                <div class="params-list-value px-2">
+                                            @php
+                                                $params_lists=[ ['title'=>'ابعاد', 'content'=>'165.1x76.4x9.3 میلی‌متر'],
+                                                                ['title'=>'ابعاد', 'content'=>'165.1x76.4x9.3 میلی‌متر'] ]
+                                            @endphp
+                                            @foreach($params_lists as $param_list)
+                                                <li>
+                                                    <div class="params-list-key px-2">
+                                                        <span class="block-content"> {{$param_list['title']}} </span>
+                                                    </div>
+                                                    <div class="params-list-value px-2">
                                                     <span class="block-content">
-                                                                                            165.1x76.4x9.3 میلی‌متر
+                                                                                           {{$param_list['content']}}
                                                     </span>
-                                                </div>
-                                            </li>
+                                                    </div>
+                                                </li>
+                                            @endforeach
 
                                         </ul>
 
@@ -324,7 +333,7 @@
                                     </x-ContinueBtn>
                                 </article>
                             </div>
-                            <div class="product-comments">
+                            <div class="product-comments" id="comments">
                                 <x-boxheader>
                                     امتیاز و دیدگاه کاربران
                                 </x-boxheader>
@@ -519,7 +528,8 @@
     <x-overlay/>
 
     <script src="js/nav-menu.js"></script>
-
+    <script src="js/single-product.js"></script>
+    <script src="js/all.js"></script>
     <script src="js/footer.js"></script>
 </body>
 </html>
