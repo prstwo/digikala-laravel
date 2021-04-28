@@ -30,7 +30,17 @@ body{
     font-family: 'yekan';
     box-sizing: border-box;
 }
-
+.container{
+    min-width: 1009px;
+    width: 100%;
+    max-width: 1676px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.product-whole-content .container{
+    padding: 0 24px;
+    background-color: #fff;
+}
 a{
     text-decoration: none;
     color: #4a5f73;
@@ -146,6 +156,9 @@ main{
 }
 
 /*navbar styles */
+.nav-container{
+    box-shadow: 0 7px 8px 0 rgb(0 0 0 / 4%);
+}
 .nav, #navbar, .nav-link, .nav-link-title{
     z-index: 11;
 }
@@ -2289,7 +2302,7 @@ o-btn{
     border: 1px solid #ef394e;
 }
 .product-tabs-container{
-    max-width:100%;
+    max-width:calc(100% - 324px);
     flex-grow: 1;
     background-color: #fff;
     border-radius: 8px;
@@ -2455,6 +2468,7 @@ o-btn{
     width: 250px;
     top:95px;
     flex-shrink: 0;
+    margin-left:50px;
 }
 .comments-side-rating-main{
     color: #030a16;
@@ -2562,6 +2576,9 @@ o-btn{
 .o-btn-full-width{
     width: 100%;
 }
+.comment-content-section{
+    flex-grow: 1;
+}
 .c-sort-row{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2630,6 +2647,12 @@ o-btn{
     list-style: none;
     margin-top: 18px;
 }
+.c-comments-item{
+    padding: 16px 0;
+}
+.c-comments-item+.c-comments-item {
+    border-top: 1px solid #dfdfdf;
+}
 .c-comment-row{
     margin: 8px 0;
     text-align: right;
@@ -2672,9 +2695,7 @@ o-btn{
 .c-comment-separator-half{
     width: 50%;
 }
-.c-comment-row-comment{
-    overflow:auto;
-}
+
 .c-comment-row-grow{
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
@@ -2737,7 +2758,7 @@ o-btn{
     -ms-flex-align: center;
     align-items: center;
 }
-.c-comments-color{
+.c-comments-seller{
      font-size: 12px;
      font-size: .857rem;
      line-height: 1.833;

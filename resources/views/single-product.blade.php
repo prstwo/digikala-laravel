@@ -55,6 +55,11 @@
                            ]
 @endphp
 <div>
+    <x-mobile_menu/>
+    <!-- Header component -->
+    <x-header/>
+    <!-- navigation component -->
+    <x-navbar/>
     <!--در این قسمت هدر و نوبار جای دارند -->
     <main class="w-full">
         <div class="product-whole-content mt-4">
@@ -432,9 +437,8 @@
                                                     </div>
                                                         <div class="c-comment-row">
                                                             <div class="c-comments-color">
-                                                                <div class="c-comments-color-circle" style="background-color: #2196f3;">
-                                                                    آبی
-                                                                </div>
+                                                                <span class="c-comments-color-circle" style="background-color: #2196f3;"></span>
+                                                                آبی
                                                             </div>
                                                             <div class="c-comments-seller">
                                                                 دیجی‌کالا
@@ -508,10 +512,14 @@
             </div>
         </div>
     </main>
+    <x-footer/>
+
+
 </div>
+    <x-overlay/>
 
     <script src="js/nav-menu.js"></script>
-    <script src="js/category-products.js"></script>
+
     <script src="js/footer.js"></script>
 </body>
 </html>
