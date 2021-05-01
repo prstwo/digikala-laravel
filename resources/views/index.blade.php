@@ -125,7 +125,6 @@
                     <div class="specials">
                         <div class="product-items ">
                             <!--product item component-->
-
                             @foreach($productItemContainer3 as $productItem3 )
                                 <div class="product-item-container-3 rounded-2xl">
                                     <div class="product-item">
@@ -213,7 +212,6 @@
                                 </div>
 
                             @endforeach
-
                         </div>
                         <div class="arrow-right-3">
                             <i class="fa fa-chevron-right" aria-hidden="true"></i>
@@ -240,20 +238,6 @@
                     </div>
                 </div>
                 <div class="swiper-brands flex flex-row ">
-                    <?php
-                     $swiperBrands = [
-                        ['img'=>'"images/huawei.jpg"'],
-                         ['img'=>'"images/x-vision.png"'],
-                         ['img'=>'"images/tcl.jpg"'],
-                         ['img'=>'"images/casio.jpg"'],
-                         ['img'=>'"images/pakshoma.png"'],
-                         ['img'=>'"images/panoramic.png"'],
-                         ['img'=>'"images/panasonic.png"'],
-                         ['img'=>'"images/honor.png"'],
-                         ['img'=>'"images/logitech.jpg"'],
-                         ['img'=>'"images/parskhazar.png"'],
-                     ]
-                    ?>
                     @foreach( $swiperBrands as $brand)
                             <div class="swiper-brands-image-container">
                                 <a href="#brand-page" class="banner-brand-link">
@@ -261,7 +245,6 @@
                                 </a>
                             </div>
                         @endforeach
-
                 </div>
                 <div class="arrow-right-5">
                     <i class="fa fa-chevron-right" aria-hidden="true"></i>
@@ -281,7 +264,6 @@
                 </div>
                 <div class="promotion-cats">
                     <!--promotion cat section-->
-
                     @foreach($promotionSections as $promotionsection)
                         <a href="#category" class="promotion-cat-sec">
                             <div class="promotion-cat-icon">

@@ -231,7 +231,6 @@
                                 <article >
                                     <x-box_header s>نقد وبررسی اجمالی</x-box_header>
 
-
                                     <section class="content-expert-summary " id="reviews">
                                         <div class="mb-4 relative">
                                             <div class="mask-text-product-summary js-mask-text-product-summary">

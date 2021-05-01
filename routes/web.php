@@ -81,9 +81,21 @@ Route::get('/', function () {
         ['icon'=>'"fa fa-pencil"', 'cat-name'=>'کتاب، لوازم تحریر و هنر', 'cat-quantity'=>' + ۵۲۹۰۰۰ کالا'],
         ['icon'=>'"fa fa-tree"', 'cat-name'=>'ورزش و سفر', 'cat-quantity'=>'+ ۲۰۰۰۰۰ کالا']
     ];
+    $swiperBrands = [
+        ['img'=>'"images/huawei.jpg"'],
+        ['img'=>'"images/x-vision.png"'],
+        ['img'=>'"images/tcl.jpg"'],
+        ['img'=>'"images/casio.jpg"'],
+        ['img'=>'"images/pakshoma.png"'],
+        ['img'=>'"images/panoramic.png"'],
+        ['img'=>'"images/panasonic.png"'],
+        ['img'=>'"images/honor.png"'],
+        ['img'=>'"images/logitech.jpg"'],
+        ['img'=>'"images/parskhazar.png"'],
+    ];
     return view('index',compact(['sandwichMenuItemsP1',
         'sandwichMenuItemsP2',
-        'productItemContainer3', 'productItemContainer4','promotionSections']));
+        'productItemContainer3', 'productItemContainer4','promotionSections','swiperBrands']));
 });
 Route::get('/product', function () {
         $productConfigInfo = [
