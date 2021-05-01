@@ -272,7 +272,7 @@
 
                                     <section class="content-expert-summary " id="reviews">
                                         <div class="mb-4 relative">
-                                            <div class="mask-text-product-summary">
+                                            <div class="mask-text-product-summary js-mask-text-product-summary">
                                                 گوشی «Mi 10T Pro 5G» از سری محصولات شرکت مطرح شیائومی است
                                                 که با پنل IPS و پشتیبانی از فناوری ارتباطی 5G روانه بازار شده است.
                                                 نمایشگر Mi 10T Pro 5G از رزولوشن بالایی برخوردار است ؛ به‌طوری‌که در اندازه‌ی 6.67 اینچی آن
@@ -302,10 +302,13 @@
                                                 محصول دارد. اما این پایان کار نیست؛ ۳ دوربین که سنسور اصلی آن 108
                                                 مگاپیکسلی است در قسمت پشتی این گوشی جا خوش کرده‌اند.
                                             </div>
-
-                                            <x-ContinueBtn>
+                                            {{--
+                                             <x-ContinueBtn>
                                                 ادامه مطلب
                                             </x-ContinueBtn>
+                                            --}}
+                                            <x-cntu_btn txt="ادامه مطلب" category="summary"/>
+
                                         </div>
                                     </section>
                                 </article>
@@ -368,7 +371,7 @@
                                                 @php
                                                     $params_lists_3=[ ['title'=>'تراشه', 'content'=>'Qualcomm SM8250 Snapdragon 865 (7 nm+) Chipset'],
                                                                     ['title'=>'پردازنده مرکزی', 'content'=>'Single-Core Kryo 585 & Triple-Core Kryo 585 & Quad-Core Kryo 585 CPU'],
-                                                                    ['title'=>'فرلکانس پردازنده مرکزی ', 'content'=>'2.84 , 2.42  1.80 گیگاهرتز']]
+                                                                    ['title'=>'فرکانس پردازنده مرکزی ', 'content'=>'2.84 , 2.42  1.80 گیگاهرتز']]
                                                 @endphp
                                                 @foreach($params_lists_3 as $param_list_3)
                                                     <li>
@@ -386,9 +389,7 @@
                                             </ul>
                                         </section>
                                     </div>
-                                    <x-ContinueBtn>
-                                        نمایش همه مشخصات کالا
-                                    </x-ContinueBtn>
+                                    <x-cntu_btn txt="نمایش همه مشخصات کالا" category="params"/>
                                 </article>
                             </div>
                             <div class="product-comments " id="comments">
@@ -583,7 +584,7 @@
 
 
 </div>
-    <x-remodal_gallery/>
+    <x-remodal_gallery action="button"/>
     <x-overlay/>
 
     <script src="js/nav-menu.js"></script>

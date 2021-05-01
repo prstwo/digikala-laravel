@@ -8,7 +8,7 @@
            ['img'=>'"images/product-pic-example6.jpg"','data'=>'"images/product-data-src5.jpg"']
        ];
 @endphp
-<div class="remodal-gallery remodal-is-closed">
+<div class="remodal-gallery remodal-is-closed" >
     <div class="remodal-top-bar flex flex-row justify-between items-center">
         <div class="remodal-top-bar-title">
             تصاویر رسمی

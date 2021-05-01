@@ -1,3 +1,4 @@
+let productSummarySec=document.querySelector('.js-mask-text-product-summary');
 function  defaultModalToggle(){
     document.querySelector('.m-overlay').classList.toggle('active');
     document.querySelector('.remodal-gallery').classList.toggle('remodal-is-closed');
@@ -25,15 +26,8 @@ document.querySelectorAll('.product-gallery-pictures img').forEach((mp)=>{
         modalToggle(send)
     })
 })
-function toggleCollapse(btnC){
-    btnC.parentElement.parentElement.querySelector('.params-collapse-content').classList.toggle('is-open');
-    if(btnC.parentElement.parentElement.querySelector('.params-collapse-content').classList.contains('is-open')){
-        btnC.innerText='فقط نمایش مشخصات کلی کالا';
-    }
-    if(!btnC.parentElement.parentElement.querySelector('.params-collapse-content').classList.contains('is-open')){
-        btnC.innerText='نمایش همه مشخصات کالا';
-    }
-}
+
+
 function displayRemodal(miniImg){
     document.querySelector('.remodal-img-container').src=miniImg.querySelector('img').getAttribute('data-src');
     //console.log(miniImg)
@@ -43,3 +37,22 @@ function closeModal(){
     document.querySelector('.remodal-gallery').classList.add('remodal-is-closed');
     document.querySelector('.m-overlay').classList.remove('active');
 }
+
+document.querySelector('.continue-btn-params').addEventListener('click',(btnParams)=>{
+    btnParams.target.parentElement.parentElement.querySelector('.params-collapse-content').classList.toggle('is-open');
+    if( btnParams.target.parentElement.parentElement.querySelector('.params-collapse-content').classList.contains('is-open')){
+        btnParams.target.innerText='فقط نمایش مشخصات کلی کالا';
+    }
+    if(!btnParams.target.parentElement.parentElement.querySelector('.params-collapse-content').classList.contains('is-open')){
+        btnParams.target.innerText='نمایش همه مشخصات کالا';
+    }
+})
+document.querySelector('.continue-btn-summary').addEventListener('click',(btnSummary)=>{
+    productSummarySec.classList.toggle('is-open');
+    if( productSummarySec.classList.contains('is-open')){
+        btnSummary.target.innerText='نمایش کمتر';
+    }
+    if(!productSummarySec.classList.contains('is-open')){
+        btnSummary.target.innerText='ادامه مطلب';
+    }
+})
