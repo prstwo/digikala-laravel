@@ -189,7 +189,7 @@
                                                 دیگر
                                             </a>
                                         </div>
-                                        <div class="product-seller-row p-4">
+                                        <div class="product-seller-row p-4 cursor-pointer hover:bg-gray-200 ">
                                             <div class="product-seller-row-main">
                                                 <div class="product-seller-first-line flex justify-between">
                                                     <span>دیجی‌کالا</span>
@@ -206,7 +206,7 @@
                                                 گارانتی ۱۸ ماهه کاوش تیم
                                             </div>
                                         </div>
-                                        <div class="product-seller-row p-4">
+                                        <div class="product-seller-row p-4 cursor-pointer hover:bg-gray-200 ">
                                             <div class="product-seller-row-main flex flex-row justify-between">
                                                 موجود در انبار دیجی‌کالا
                                                 @section('angle-left')

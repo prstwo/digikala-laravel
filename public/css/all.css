@@ -1771,6 +1771,9 @@ a.product-title-brand-link{
     color: #424750;
     padding: 1rem;
 }
+.product-seller-row:not(:last-of-type){
+    border-bottom: solid 1px #e4e4e4;
+}
 
 .product-seller-row-main{
     -webkit-box-flex: 1;
