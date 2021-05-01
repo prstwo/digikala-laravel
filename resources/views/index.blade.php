@@ -11,8 +11,10 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/all.css">
 
+
 </head>
 <body>
+
 <?php
 $sandwichMenuItemsP1 = [
     ['class'=>'"fa fa-list-ul"', 'title'=>'دسته بندی کالاها'],

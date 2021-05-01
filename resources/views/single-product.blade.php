@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/all.css">
-
 </head>
 <body>
 @section('angle-left')
@@ -291,6 +290,18 @@
                                                 سنسوری 20 مگاپیکسلی مجهز شده است. بلوتوث نسخه 5.1، نسخه 10 سیستم
                                                 عامل اندروید، امکان استفاده به عنوان پاوربانک، شارژ بی‌سیم سریع
                                                 و باتری 5000 میلی آمپرساعتی از دیگر ویژگی‌‌های این گوشی جدید هستند.
+                                                گوشی «Mi 10T Pro 5G» از سری محصولات شرکت مطرح شیائومی است
+                                                که با پنل IPS و پشتیبانی از فناوری ارتباطی 5G روانه بازار شده است.
+                                                نمایشگر Mi 10T Pro 5G از رزولوشن بالایی برخوردار است ؛ به‌طوری‌که در اندازه‌ی 6.67 اینچی آن
+                                                ، حدود 395 پیکسل را در هر اینچ جا داده است. در گوشی Mi 10T Pro 5G
+                                                شیائومی نمایشگر تقریباً تمام قاب جلویی گوشی را پر کرده است. این مشخصه
+                                                در کنار قاب شیشه‌ای و فریم تهیه شده از آلومینیوم قرار گرفته است که
+                                                ظاهر زیبایی را به آن بخشیده است. این بدنه‌ی زیبا در کنار نمایشگر
+                                                این محصول، با استفاده از Corning Gorilla Glass 5 محافظت می‌شود تا
+                                                گوشی در برابر خط‌وخش ایمن باشد. ویژگی دیگر Xiaomi Mi 10T Pro 5G
+                                                مجهز شدن به حسگر اثرانگشت در کناره گوشی که نشان از بالارده بودن
+                                                محصول دارد. اما این پایان کار نیست؛ ۳ دوربین که سنسور اصلی آن 108
+                                                مگاپیکسلی است در قسمت پشتی این گوشی جا خوش کرده‌اند.
                                             </div>
 
                                             <x-ContinueBtn>
@@ -302,7 +313,7 @@
 
                             </div>
                             <div class="product-params" id="details">
-                                <article class="mb-12">
+                                <article class="mb-12 params-border-bottom">
                                     <x-box_header>
                                         مشخصات کالا
                                     </x-box_header>
@@ -329,16 +340,63 @@
                                         </ul>
 
                                     </section>
+                                    <div class="params-collapse-content flex flex-col">
+                                        <section class="flex flex-row">
+                                            <h3 class="params-title"> حافظه</h3>
+                                            <ul class="params-list">
+                                                @php
+                                                    $params_lists_2=[ ['title'=>'حافظه داخلی', 'content'=>'256 گیگابایت'],
+                                                                    ['title'=>'مقدار رم', 'content'=>'8گیگابایت'] ]
+                                                @endphp
+                                                @foreach($params_lists_2 as $param_list_2)
+                                                    <li>
+                                                        <div class="params-list-key px-2">
+                                                            <span class="block-content"> {{$param_list_2['title']}} </span>
+                                                        </div>
+                                                        <div class="params-list-value px-2">
+                                                    <span class="block-content">
+                                                                                           {{$param_list_2['content']}}
+                                                    </span>
+                                                        </div>
+                                                    </li>
+                                                @endforeach
+
+                                            </ul>
+                                        </section>
+                                        <section class="flex flex-row">
+                                            <h3 class="params-title">پردازنده</h3>
+                                            <ul class="params-list">
+                                                @php
+                                                    $params_lists_3=[ ['title'=>'تراشه', 'content'=>'Qualcomm SM8250 Snapdragon 865 (7 nm+) Chipset'],
+                                                                    ['title'=>'پردازنده مرکزی', 'content'=>'Single-Core Kryo 585 & Triple-Core Kryo 585 & Quad-Core Kryo 585 CPU'],
+                                                                    ['title'=>'فرلکانس پردازنده مرکزی ', 'content'=>'2.84 , 2.42  1.80 گیگاهرتز']]
+                                                @endphp
+                                                @foreach($params_lists_3 as $param_list_3)
+                                                    <li>
+                                                        <div class="params-list-key px-2">
+                                                            <span class="block-content"> {{$param_list_3['title']}} </span>
+                                                        </div>
+                                                        <div class="params-list-value px-2">
+                                                    <span class="block-content">
+                                                                                           {{$param_list_3['content']}}
+                                                    </span>
+                                                        </div>
+                                                    </li>
+                                                @endforeach
+
+                                            </ul>
+                                        </section>
+                                    </div>
                                     <x-ContinueBtn>
                                         نمایش همه مشخصات کالا
                                     </x-ContinueBtn>
                                 </article>
                             </div>
-                            <div class="product-comments" id="comments">
+                            <div class="product-comments " id="comments">
                                 <x-boxheader>
                                     امتیاز و دیدگاه کاربران
                                 </x-boxheader>
-                                <div class="comments-container flex mb-15 mt-9 items-start ">
+                                <div class="comments-container flex mb-15 mt-9 pb-5 items-start ">
                                     <div class="comment-sidebar ml-15 sticky ">
                                         <div class="comment-side-rating-container mb-5 ">
                                                <div class="flex items-end">

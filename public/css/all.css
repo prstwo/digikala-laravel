@@ -2374,6 +2374,9 @@ o-btn{
 .o-box-tab-is-active a{
     color: #ef394e;
 }
+.product-comments{
+    border-bottom: 1px solid #dfdfdf;
+}
 .content-expert-header{
     padding-bottom: 16px;
     -webkit-box-orient: vertical;
@@ -2413,6 +2416,10 @@ o-btn{
 .mask-text-product-summary{
     max-height: 250px;
     overflow: hidden;
+}
+.mask-text-product-summary.is-open{
+    height: auto!important;
+    max-height: unset!important;
 }
 .product__summary {
     -webkit-box-flex: 1;
@@ -2501,6 +2508,16 @@ o-btn{
     -webkit-box-flex: 0;
     flex: 0 0 77.8%;
     max-width: 77.8%;
+}
+.params-collapse-content{
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.params-collapse-content.is-open{
+    height: auto;
+    overflow: unset;
 }
 .block-content{
     display: -webkit-box;

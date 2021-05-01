@@ -25,3 +25,12 @@ document.querySelectorAll('.product-gallery-pictures img').forEach((mp)=>{
         modalToggle(send)
     })
 })
+function toggleCollapse(btnC){
+    btnC.parentElement.parentElement.querySelector('.params-collapse-content').classList.toggle('is-open');
+    if(btnC.parentElement.parentElement.querySelector('.params-collapse-content').classList.contains('is-open')){
+        btnC.innerText='فقط نمایش مشخصات کلی کالا';
+    }
+    if(!btnC.parentElement.parentElement.querySelector('.params-collapse-content').classList.contains('is-open')){
+        btnC.innerText='نمایش همه مشخصات کالا';
+    }
+}

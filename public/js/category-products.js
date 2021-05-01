@@ -1,3 +1,4 @@
+
 if(window.innerWidth > 680) {
     document.querySelector('.arrow-right-3').addEventListener('click', function () {
         moveSlides(-5);
@@ -33,3 +34,5 @@ if(window.innerWidth > 680) {
 
     showSlides(productNum);
 }
+
+
