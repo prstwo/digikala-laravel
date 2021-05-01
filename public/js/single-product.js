@@ -39,3 +39,7 @@ function displayRemodal(miniImg){
     //console.log(miniImg)
     miniImg.classList.add('remodal-gallery-thumb-selected');
 }
+function closeModal(){
+    document.querySelector('.remodal-gallery').classList.add('remodal-is-closed');
+    document.querySelector('.m-overlay').classList.remove('active');
+}

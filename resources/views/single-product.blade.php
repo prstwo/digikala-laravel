@@ -121,7 +121,6 @@
                                         <li class=" ">
                                             <div class="thumb-wrapper"><img src={!! $productgallerypicture['img'] !!}  data-src={!! $productgallerypicture['data'] !!} alt=""></div>
                                         </li>
-
                                 @endforeach
 
                             </ul>
