@@ -12,7 +12,7 @@ function  defaultModalToggle(){
 function  modalToggle(send){
     document.querySelector('.m-overlay').classList.toggle('active');
     document.querySelector('.remodal-gallery').classList.toggle('remodal-is-closed');
-    document.querySelector('.remodal-img-container').src =send.target.getAttribute('src');
+    document.querySelector('.remodal-img-container').src =send.target.getAttribute('data-src');
     if(!document.querySelector('.remodal-gallery').classList.contains('remodal-is-closed')){
         document.querySelector('.m-overlay').addEventListener('click',(overlay)=>{
             document.querySelector('.remodal-gallery').classList.add('remodal-is-closed');
@@ -33,4 +33,9 @@ function toggleCollapse(btnC){
     if(!btnC.parentElement.parentElement.querySelector('.params-collapse-content').classList.contains('is-open')){
         btnC.innerText='نمایش همه مشخصات کالا';
     }
+}
+function displayRemodal(miniImg){
+    document.querySelector('.remodal-img-container').src=miniImg.querySelector('img').getAttribute('data-src');
+    //console.log(miniImg)
+    miniImg.classList.add('remodal-gallery-thumb-selected');
 }

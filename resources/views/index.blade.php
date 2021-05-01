@@ -11,7 +11,6 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/all.css">
 
-
 </head>
 <body>
 

@@ -30,10 +30,10 @@
         ['span1'=>'توضیحات سیم کارت: ', 'span2'=>' سایز نانو (8.8 × 12.3 میلی‌متر)'],
     ];
     $productGalleryPictures = [
-        ['img'=>'"images/product-pic-example1.jpg"'],
-        ['img'=>'"images/product-pic-example2.jpg"'],
-        ['img'=>'"images/product-pic-example3.jpg"'],
-        ['img'=>'"images/product-pic-example4.jpg"']
+        ['img'=>'"images/product-pic-example1.jpg"','data'=>'"images/product-data-src0.jpg"'],
+        ['img'=>'"images/product-pic-example2.jpg"','data'=>'"images/product-data-src1.jpg"'],
+        ['img'=>'"images/product-pic-example3.jpg"','data'=>'"images/product-data-src2.jpg"'],
+        ['img'=>'"images/product-pic-example4.jpg"','data'=>'"images/product-data-src3.jpg"']
     ];
     $productTabs = [
         ['href'=>'#reviews', 'text'=>'نقد و بررسی'],
@@ -119,7 +119,7 @@
                                         </li>
                                     @endif
                                         <li class=" ">
-                                            <div class="thumb-wrapper"><img src={!! $productgallerypicture['img'] !!} alt=""></div>
+                                            <div class="thumb-wrapper"><img src={!! $productgallerypicture['img'] !!}  data-src={!! $productgallerypicture['data'] !!} alt=""></div>
                                         </li>
 
                                 @endforeach
