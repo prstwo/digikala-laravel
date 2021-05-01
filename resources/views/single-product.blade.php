@@ -16,43 +16,7 @@
 @endsection
 @section('half-separator')
     <div class="c-comment-separator c-comment-separator-half">
-
     @endsection
-<?php
- $productConfigInfo = [
-         ['span1'=>'حافظه داخلی:', 'span2'=>'256 گیگابایت', 'class'=>'""'],
-         ['span1'=>'شبکه های ارتباطی: ', 'span2'=>'2G, 3G, 4g, 5G ', 'class'=>'""'],
-         ['span1'=>'دوربین‌های پشت گوشی: ', 'span2'=>' 3 ماژول دوربین', 'class'=>'""'],
-         ['span1'=>'توضیحات سیم کارت: ', 'span2'=>' سایز نانو (8.8 × 12.3 میلی‌متر)', 'class'=>'""'],
-        ['span1'=>'حافظه داخلی:', 'span2'=>'256 گیگابایت', 'class'=>'"c-products-params-more"'],
-        ['span1'=>'شبکه های ارتباطی: ', 'span2'=>'2G, 3G, 4g, 5G ','class'=>'"c-products-params-more"'],
-        ['span1'=>'دوربین‌های پشت گوشی: ', 'span2'=>' 3 ماژول دوربین','class'=>'"c-products-params-more"'],
-        ['span1'=>'توضیحات سیم کارت: ', 'span2'=>' سایز نانو (8.8 × 12.3 میلی‌متر)','class'=>'"c-products-params-more"'],
-    ];
-    $productGalleryPictures = [
-        ['img'=>'"images/product-pic-example1.jpg"','data'=>'"images/product-data-src0.jpg"'],
-        ['img'=>'"images/product-pic-example2.jpg"','data'=>'"images/product-data-src1.jpg"'],
-        ['img'=>'"images/product-pic-example3.jpg"','data'=>'"images/product-data-src2.jpg"'],
-        ['img'=>'"images/product-pic-example4.jpg"','data'=>'"images/product-data-src3.jpg"']
-    ];
-    $productTabs = [
-        ['href'=>'#reviews', 'text'=>'نقد و بررسی'],
-        ['href'=>'#details', 'text'=>'مشخصات'],
-        ['href'=>'#comments', 'text'=>' دیدگاه کاربران '],
-        ['href'=>'#faq', 'text'=>'پرسش و پاسخ  ']
-    ]
-?>
-@php
-    $commentExpertRatings = [
-      ['title'=>'کیفیت ساخت', 'percent'=>'"86%"', 'width'=>'"width: 86%;"' , 'rate'=>'۴.۳'],
-       ['title'=>'ارزش خرید به نسبت قیمت', 'percent'=>'"84%"', 'width'=>'"width: 84%;"' , 'rate'=>'۴.۲'],
-       ['title'=>'نوآوری', 'percent'=>'"84%"', 'width'=>'"width: 84%;"' , 'rate'=>'۴.۲'],
-        ['title'=>'امکانات و قابلیت ها', 'percent'=>'"66%"', 'width'=>'"width: 66%;"' , 'rate'=>'۴.۳'],
-         ['title'=>'سهولت استفاده', 'percent'=>'"80%"', 'width'=>'"width: 80%;"' , 'rate'=>'۴'],
-          ['title'=>'کیفیت ساخت', 'percent'=>'"86%"', 'width'=>'"width: 86%;"' , 'rate'=>'۴.۳'],
-           ['title'=>'طراحی و ظاهر', 'percent'=>'"86%"', 'width'=>'"width: 86%;"' , 'rate'=>'۴.۳']
-                           ]
-@endphp
 <div>
     <x-mobile_menu/>
     <!-- Header component -->
@@ -264,9 +228,6 @@
 
                         <div class="box-tabs-info">
                             <div class="product-expert">
-                                @php
-                                    $message = 'SDFRes'
-                                @endphp
                                 <article >
                                     <x-box_header s>نقد وبررسی اجمالی</x-box_header>
 
@@ -323,10 +284,6 @@
                                     <section class="flex flex-row">
                                         <h3 class="params-title">مشخصات کلی</h3>
                                         <ul class="params-list">
-                                            @php
-                                                $params_lists=[ ['title'=>'ابعاد', 'content'=>'165.1x76.4x9.3 میلی‌متر'],
-                                                                ['title'=>'ابعاد', 'content'=>'165.1x76.4x9.3 میلی‌متر'] ]
-                                            @endphp
                                             @foreach($params_lists as $param_list)
                                                 <li>
                                                     <div class="params-list-key px-2">
@@ -347,10 +304,6 @@
                                         <section class="flex flex-row">
                                             <h3 class="params-title"> حافظه</h3>
                                             <ul class="params-list">
-                                                @php
-                                                    $params_lists_2=[ ['title'=>'حافظه داخلی', 'content'=>'256 گیگابایت'],
-                                                                    ['title'=>'مقدار رم', 'content'=>'8گیگابایت'] ]
-                                                @endphp
                                                 @foreach($params_lists_2 as $param_list_2)
                                                     <li>
                                                         <div class="params-list-key px-2">
@@ -369,11 +322,6 @@
                                         <section class="flex flex-row">
                                             <h3 class="params-title">پردازنده</h3>
                                             <ul class="params-list">
-                                                @php
-                                                    $params_lists_3=[ ['title'=>'تراشه', 'content'=>'Qualcomm SM8250 Snapdragon 865 (7 nm+) Chipset'],
-                                                                    ['title'=>'پردازنده مرکزی', 'content'=>'Single-Core Kryo 585 & Triple-Core Kryo 585 & Quad-Core Kryo 585 CPU'],
-                                                                    ['title'=>'فرکانس پردازنده مرکزی ', 'content'=>'2.84 , 2.42  1.80 گیگاهرتز']]
-                                                @endphp
                                                 @foreach($params_lists_3 as $param_list_3)
                                                     <li>
                                                         <div class="params-list-key px-2">
@@ -386,7 +334,6 @@
                                                         </div>
                                                     </li>
                                                 @endforeach
-
                                             </ul>
                                         </section>
                                     </div>
@@ -412,8 +359,6 @@
                                                     <span class="c-stars-item"></span>
                                                     <span class="c-stars-item"></span>
                                                     <span class="c-stars-item"></span>
-
-
                                             </div>
                                                 <div class="comments-side-rating-all mr-2 flex items-center">
                                                     از مجموع ۱۴۲ امتیاز
@@ -445,11 +390,6 @@
                                             <span class="c-sort-row-text">
                                                 مرتب‌سازی دیدگاه‌ها بر اساس:
                                             </span>
-                                            @php
-                                                $sortComments=[['data-mode'=>'newest_comment', 'class'=>'"c-sort-row-label is-active"', 'sort-text'=>'   جدیدترین دیدگاه‌ها'],
-                                                            ['data-mode'=>'most_liked','class'=>'"c-sort-row-label"', 'sort-text'=>'مفیدترین دیدگاه‌ها'],
-                                                            ['data-mode'=>'buyers','class'=>'"c-sort-row-label "', 'sort-text'=>'  دیدگاه خریداران']]
-                                            @endphp
                                             <ul class="c-sort-row-items">
                                                 @foreach($sortComments as $csorter)
                                                     <li class="c-sort-row-item">
@@ -523,10 +463,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="c-comment-row">
-
                                             </div>
-
-
                                         </div>
 
                                                 </div>
@@ -582,8 +519,6 @@
         </div>
     </main>
     <x-footer/>
-
-
 </div>
     <x-remodal_gallery action="button"/>
     <x-overlay/>
