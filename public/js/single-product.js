@@ -1,4 +1,5 @@
 let productSummarySec=document.querySelector('.js-mask-text-product-summary');
+let paramsList = document.querySelector('.c-products-params-more');
 function  defaultModalToggle(){
     document.querySelector('.m-overlay').classList.toggle('active');
     document.querySelector('.remodal-gallery').classList.toggle('remodal-is-closed');
@@ -55,4 +56,16 @@ document.querySelector('.continue-btn-summary').addEventListener('click',(btnSum
     if(!productSummarySec.classList.contains('is-open')){
         btnSummary.target.innerText='ادامه مطلب';
     }
+})
+document.querySelector('.continue-btn-config').addEventListener('click',(btnConfig)=>{
+    document.querySelector('.product-config-info').querySelectorAll('.c-products-params-more').forEach((li)=>{
+    li.classList.toggle('show');
+        if( !li.classList.contains('show')){
+            btnConfig.target.innerText='مشاهده بیشتر +';
+        }
+        if(li.classList.contains('show')){
+            btnConfig.target.innerText='- بستن';
+        }
+
+    })
 })

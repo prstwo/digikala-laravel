@@ -20,14 +20,14 @@
     @endsection
 <?php
  $productConfigInfo = [
-         ['span1'=>'حافظه داخلی:', 'span2'=>'256 گیگابایت'],
-         ['span1'=>'شبکه های ارتباطی: ', 'span2'=>'2G, 3G, 4g, 5G '],
-         ['span1'=>'دوربین‌های پشت گوشی: ', 'span2'=>' 3 ماژول دوربین'],
-         ['span1'=>'توضیحات سیم کارت: ', 'span2'=>' سایز نانو (8.8 × 12.3 میلی‌متر)'],
-        ['span1'=>'حافظه داخلی:', 'span2'=>'256 گیگابایت'],
-        ['span1'=>'شبکه های ارتباطی: ', 'span2'=>'2G, 3G, 4g, 5G '],
-        ['span1'=>'دوربین‌های پشت گوشی: ', 'span2'=>' 3 ماژول دوربین'],
-        ['span1'=>'توضیحات سیم کارت: ', 'span2'=>' سایز نانو (8.8 × 12.3 میلی‌متر)'],
+         ['span1'=>'حافظه داخلی:', 'span2'=>'256 گیگابایت', 'class'=>'""'],
+         ['span1'=>'شبکه های ارتباطی: ', 'span2'=>'2G, 3G, 4g, 5G ', 'class'=>'""'],
+         ['span1'=>'دوربین‌های پشت گوشی: ', 'span2'=>' 3 ماژول دوربین', 'class'=>'""'],
+         ['span1'=>'توضیحات سیم کارت: ', 'span2'=>' سایز نانو (8.8 × 12.3 میلی‌متر)', 'class'=>'""'],
+        ['span1'=>'حافظه داخلی:', 'span2'=>'256 گیگابایت', 'class'=>'"c-products-params-more"'],
+        ['span1'=>'شبکه های ارتباطی: ', 'span2'=>'2G, 3G, 4g, 5G ','class'=>'"c-products-params-more"'],
+        ['span1'=>'دوربین‌های پشت گوشی: ', 'span2'=>' 3 ماژول دوربین','class'=>'"c-products-params-more"'],
+        ['span1'=>'توضیحات سیم کارت: ', 'span2'=>' سایز نانو (8.8 × 12.3 میلی‌متر)','class'=>'"c-products-params-more"'],
     ];
     $productGalleryPictures = [
         ['img'=>'"images/product-pic-example1.jpg"','data'=>'"images/product-data-src0.jpg"'],
@@ -168,12 +168,13 @@
                                     <div class="product-config-info">
                                         <ul class="list-none p-0 my-5 mx-0">
                                             @foreach($productConfigInfo as $productlist)
-                                                <li>
+                                                <li class={!!  $productlist['class']!!}>
                                                     <span>{{$productlist['span1']}} </span>
                                                     <span>{{$productlist['span2']}} </span>
                                                 </li>
                                             @endforeach
                                         </ul>
+                                        <x-cntu_btn txt="+ موارد بیشتر" category="config"/>
                                     </div>
 
                                 </div>

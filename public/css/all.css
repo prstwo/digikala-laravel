@@ -1717,6 +1717,13 @@ a.product-title-brand-link{
     color: #686868;
     margin: 2px 0;
 }
+
+.product-config-info ul li.c-products-params-more {
+    display: none;
+}
+.product-config-info ul li.c-products-params-more.show {
+    display: block;
+}
 .product-config-info ul li span {
     margin-left: 5px;
     white-space: normal;
@@ -2453,6 +2460,9 @@ o-btn{
     line-height: 16px;
     color: inherit;
     margin-right: 6px;
+}
+.o-btn-link-blue-sm.continue-btn-config:after{
+    content: "";
 }
 .params-border-bottom{
     border-bottom: 1px solid #dfdfdf;
