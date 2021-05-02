@@ -165,7 +165,7 @@ main{
     z-index: 11;
 }
 .nav .overlay{
-    z-index: 9;
+    z-index:9;
 }
 
 .nav-link-title i.fa{
@@ -218,6 +218,8 @@ a.nav-link-title{
     background-color: #fff;
     z-index:10;
     overflow: hidden;
+    border-radius: 8px;
+
 }
 .show{
     display:flex;
@@ -237,7 +239,8 @@ a.nav-link-title{
 .nav-link:hover  > .submenu{
     display: flex;
 }
-.nav-link:hover .overlay{
+
+.nav-link:hover  .overlay{
     opacity: 1;
 }
 
