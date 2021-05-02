@@ -152,7 +152,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             @endforeach
 
                         </div>
@@ -183,7 +182,7 @@
                     <div class="boxes static">
                         <div class="items">
                             <!-- product item component -->
-                            @foreach($productItemContainer4 as $productItem4 )
+                             @foreach($productItemContainer4 as $productItem4 )
                                 <div class="product-item-container-4">
                                     <div class="product-item">
                                         <div>
