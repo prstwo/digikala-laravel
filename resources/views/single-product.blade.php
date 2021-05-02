@@ -271,8 +271,9 @@
                                                 @endforeach
 
                                         </ul>
-                                        <a href="#add-comment" data-product-id="4107334"
-                                           class="o-btn o-btn-outlined-red o-btn-full-width">افزودن دیدگاه</a>
+                                       <x-idea_register>
+                                               افزودن دیدگاه
+                                       </x-idea_register>
 
                                     </div>
                                     <div class="comment-content-section">
@@ -365,23 +366,7 @@
 
                                 </div>
                             </div>
-                            <div class="product-faq">
-                                <x-boxheader>
-                                    پرسش و پاسخ
-                                </x-boxheader>
-                                <div class="comment-sidebar ml-15 sticky ">
-
-                                </div>
-                                <div class="c-question-content">
-                                    <x-c_sort_row/>
-                                    <div class="product-questions-list">
-                                        <div class="c-question-list">
-                                            <x-question_item/>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
+                            <x-product_faq/>
                         </div>
                     </div>
                     <x-mini_buy_box_fix/>

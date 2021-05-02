@@ -1,16 +1,16 @@
+@props(['question','reply','name','badge'])
 <div class="c-question-item" id="faq">
     <div class="c-question-item-title">
-
-        مناسب فیلم برداری هست؟!
+        {{$question}}
     </div>
     <div class="c-question-item-reply">
         <div class="c-question-reply-body">
-            اصلاح کنم فقط مدل mi 10t قابلیت فیلمبرداری اسلوموشن 960 فریم داره ولی به جاش لرزشگیر اپتیکال نداره
+            {{$reply}}
         </div>
         <div class="c-question-reply-body">
             <div>
-                <span class="question-reply-name">نیکزاد </span>
-                <span  class="question-reply-buyer-badge">خریدار</span>
+                <span class="question-reply-name">{{$name}} </span>
+                <span  class="question-reply-buyer-badge">{{$badge}}</span>
             </div>
         </div>
     </div>
