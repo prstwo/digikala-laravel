@@ -2386,7 +2386,7 @@ o-btn{
 .o-box-tab-is-active a{
     color: #ef394e;
 }
-.product-comments{
+.product-comments, .product-faq{
     border-bottom: 1px solid #dfdfdf;
 }
 .content-expert-header{
@@ -3064,3 +3064,75 @@ o-btn{
 display: none;
 }
 
+.c-question-list{
+    margin-top: 12px;
+}
+.c-question-item{
+    padding-top: 16px;
+    padding-right: 40px;
+}
+.c-question-item-title{
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 2.57;
+    color: #232933;
+    font-weight: 500;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.c-question-item-title:before{
+    font-family: FontAwesome;
+    content: "\f128";
+    position: absolute;
+    right: -40px;
+    top: 6px;
+    width: 24px;
+    height: 24px;
+    color: #19bfd3;
+    font-size: 24px;
+    font-size: 1.714rem;
+    line-height: 24px;
+}
+.c-question-item-reply{
+    padding-bottom: 16px;
+}
+.c-question-reply-body{
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 2.57;
+    color: #515151;
+    font-weight: 300;
+    position: relative;
+}
+.question-reply-name{
+    font-size: 10px;
+    font-size: .714rem;
+    line-height: 2.2;
+    color: #a1a3a8;
+}
+.question-reply-buyer-badge{
+    padding: 0 8px;
+    background-color: #f0f0f1;
+    border-radius: 8px;
+    font-size: 10px;
+    font-size: .714rem;
+    line-height: 16px;
+    color: #81858b;
+    margin-right: 8px;
+    display: inline-block;
+}
+.c-question-item-action{
+    padding: 12px 0;
+    border-top: 1px solid hsla(0,0%,87.5%,.5);
+}
+.c-question-reply-body:first-of-type:before{
+    content: "پاسخ";
+    position: absolute;
+    right: -40px;
+    top: 4px;
+    height: 24px;
+    color: rgb(161, 163, 168);
+    font-size: 0.714rem;
+    line-height: 24px;
+}
