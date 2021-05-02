@@ -5,19 +5,19 @@
     <div class="c-question-container">
         <div class="question-sidebar ml-15 sticky ">
             <div class="c-question-filter">
-                <label class="o-form-checkbox" for="">
-                    <input class="o-form-check-box-input" lass="o-form-check-box-input" type="checkbox" name="answered_questions" value="1">
+                <label class="o-form-checkbox" >
+                    <input  class="o-form-check-box-input" name="answered_questions" value="1" type="checkbox">
                     <span class="o-form-check-box-sign"></span>
-                    <span>            پرسش‌های پاسخ داده شده</span>
+                    <span>پرسش‌های پاسخ داده شده</span>
                 </label>
-                <label  class="o-form-checkbox" for="">
-                    <input class="o-form-check-box-input" lass="o-form-check-box-input" type="checkbox" name="answered_questions" value="1">
+                <label  class="o-form-checkbox">
+                    <input  class="o-form-check-box-input" name="unanswered_questions" value="1" type="checkbox">
                     <span class="o-form-check-box-sign"></span>
-                    <span>            پرسش‌های بی پاسخ</span>
+                    <span> پرسش‌های بی پاسخ</span>
                 </label>
                 <div class="c-question-filter-bottom">
                     <label class="c-ui-new-switch">
-                        <input class="u-hidden " name="user_questions" type="checkbox">
+                        <input class="u-hidden input-filter-toggle" name="user_questions" type="checkbox">
                         <span class="c-ui-new-switch-slider">
                             <span class="c-ui-new-switch-slider-toggle"></span>
                         </span>
@@ -38,7 +38,6 @@
                     <x-question_item question=" مناسب فیلم برداری هست؟!"  reply="اصلاح کنم فقط مدل mi 10t قابلیت فیلمبرداری اسلوموشن 960 فریم داره ولی به جاش لرزشگیر اپتیکال نداره" name="نیکزاد" badge="خریدار" />
                     <x-question_item question=" چرا این موبایل که میان رده هست از mate 30pro گرون تره؟؟؟؟؟؟"  reply="میت 30 واقعا بهتره چون پرچم داره" name="نیکزاد" badge="خریدار" />
                     <x-question_item question=" برای گیم مناسبه؟!"  reply="فوق العاده برای گیم" name="مهدی علینزاد" badge="خریدار" />
-
                 </div>
             </div>
         </div>
