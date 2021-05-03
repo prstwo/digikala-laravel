@@ -113,7 +113,7 @@
                 </div>
                 <div class="carousel-horizontal-general"></div>
                 <div class="relative product-more flex flex-row">
-                    <div class="product-tabs-container">
+                    <div class="product-tabs-container ">
                         <ul class="box-tabs-sticky sticky bg-white top-28 o-box-tabs z-10">
                             @foreach($productTabs as $productstab)
                                 <li class="o-box-tab">

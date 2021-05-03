@@ -6,20 +6,13 @@
                 دیجی&zwnj;کالا
             </a>
         </p>
-        <div class="suppliers-rating ">
-            عملکرد:
-            <span class="u-text-bold">
+        <div class="suppliers-rating flex ">
+            <span class="ml-1">عملکرد:</span>
+            <span class="u-text-bold ml-1">
                                             ۵
                                         </span>
             از ۵
             <span class="u-divider"></span>
-            <span class="u-text-bold hidden sm:block">
-                                            ۹۳.۴٪
-                                        </span>
-            <span class="hidden sm:block">
-                 رضایت از کالا
-            </span>
-
         </div>
         <p>
 
