@@ -1,6 +1,6 @@
 <div>
     <!-- It is quality rather than quantity that matters. - Lucius Annaeus Seneca -->
-    <div class="supplier-list-row flex flex-wrap justify-between" >
+    <div class="supplier-list-row hidden sm:flex flex-wrap flex-col sm:flex-row justify-between" >
         <div class="supplier-cell supplier-cell-title">
             <span class="supplier-seller-icon   is-digikala"></span>
             <div class="suppliers-seller-wrapper relative">

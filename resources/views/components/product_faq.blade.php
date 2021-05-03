@@ -3,7 +3,7 @@
         پرسش و پاسخ
     </x-boxheader>
     <div class="c-question-container">
-        <div class="question-sidebar ml-15 sticky ">
+        <div class="question-sidebar hidden sm:block ml-15 sticky ">
             <div class="c-question-filter">
                 <label class="o-form-checkbox" >
                     <input  class="o-form-check-box-input" name="answered_questions" value="1" type="checkbox">

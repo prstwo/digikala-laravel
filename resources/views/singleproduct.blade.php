@@ -11,7 +11,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="{{ asset('css/all.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="make-me-gray">
 @section('angle-left')
     <i class="fa fa-angle-left "></i>
 @endsection
@@ -26,9 +26,9 @@
     <x-navbar/>
     <!--در این قسمت هدر و نوبار جای دارند -->
     <main class="w-full">
-        <div class="product-whole-content mt-4">
+        <div class="product-whole-content">
             <div class="container px-6 py-0 bg-white">
-                <div class="product-breadcrumb flex justify-between items-center">
+                <div class="product-breadcrumb flex flex-col items-start justify-between content-center sm:items-center sm:flex-row ">
                     <nav class="breadcrumb">
                         <ul class="flex flex-row ">
                             <li>
@@ -56,8 +56,8 @@
                         </a>
                     </div>
                 </div>
-                <article class="bg-white w-full flex flex-row mb-3 items-start ">
-                    <section class="product-gallery pl-4 ml-4 flex flex-col top-28">
+                <article class="bg-white w-full flex flex-col sm:flex-row mb-3 items-start  ">
+                    <section class="product-gallery pl-4 ml-4 flex flex-col top-28 static sm:sticky">
                         <div class="product-gallery-item">
                             <ul class="product-gallery-option list-none flex flex-col "></ul>
                             <div></div>
@@ -106,6 +106,8 @@
                     <div class="suppliers-list">
                         <x-supplier />
                         <x-supplier />
+                        <x-supplier_mobile.supplier_mobile/>
+                        <x-supplier_mobile.supplier_mobile/>
                         <!-- -->
                     </div>
                 </div>
@@ -238,7 +240,7 @@
                                     امتیاز و دیدگاه کاربران
                                 </x-boxheader>
                                 <div class="comments-container flex mb-15 mt-9 pb-5 items-start ">
-                                    <div class="comment-sidebar ml-15 sticky ">
+                                    <div class="comment-sidebar hidden sm:block ml-15 sticky ">
                                         <div class="comment-side-rating-container mb-5 ">
                                                <div class="flex items-end">
                                                    <div class="comments-side-rating-main">۴.۳</div>

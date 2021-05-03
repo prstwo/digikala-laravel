@@ -96,6 +96,9 @@ a:hover, a:active{
 .arrow-right-5 .fa:active, .arrow-left-5 .fa:active{
     color: black;
 }
+.make-me-gray{
+    background: #f9f9f9;
+}
 .page-section-standard {
     width: 100%;
     background-color: white;
@@ -124,6 +127,7 @@ main{
         box-shadow: none;
         padding: 9px 11px 11px 11px;
     }
+
     .mobile-title{
         display: block;
     }
@@ -159,8 +163,12 @@ main{
 
 /*navbar styles */
 .nav-container{
-    box-shadow: 0 7px 8px 0 rgb(0 0 0 / 4%);
+    box-shadow: 0 7px 8px 0 rgba(0,0,0,.4);
 }
+.nav{
+    background-color: white;
+}
+
 .nav, #navbar, .nav-link, .nav-link-title{
     z-index: 11;
 }
@@ -532,7 +540,14 @@ a.nav-link-title{
     background-color: white;
     z-index:80;
 }
-@media screen and (max-width: 680px) {
+
+@media screen and (min-width: 640px) {
+    .nav{
+        box-shadow: 0 7px 8px 0 rgb(0 0 0 / 4%);
+    }
+}
+@media screen and (max-width: 640px) {
+
     .nav{
         display: none;
     }
@@ -1546,8 +1561,7 @@ span.head-title::after{
     flex-direction: column;
 }
 .product-gallery{
-    position: -webkit-sticky;
-    position: sticky;
+
     margin-bottom: 45px;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -1913,8 +1927,7 @@ a.product-title-brand-link{
     width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
+    flex-wrap: nowrap;
     min-height: 83px;
     padding: 0 16px;
 }
@@ -3300,4 +3313,13 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
 .o-btn-link-blue-sm.with-chevron.change:after{
     font-family: FontAwesome;
     content: '\f106 ';
+}
+.product-page-section-standard{
+    width: 100%;
+    background-color: white;
+    margin: 2% 0;
+    box-shadow: 0 2px 5px 1px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    font-family: inherit;
+    padding: 9px 33px 11px 11px;
 }
