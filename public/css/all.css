@@ -32,12 +32,17 @@ body{
     font-family: 'yekan';
     box-sizing: border-box;
 }
+
 .container{
-    min-width: 1009px;
     width: 100%;
     max-width: 1676px;
     margin-right: auto;
     margin-left: auto;
+}
+@media screen and (min-width: 640px){
+    .container{
+        min-width: 1009px;
+    }
 }
 .product-whole-content .container{
     padding: 0 24px;
@@ -106,7 +111,7 @@ a:hover, a:active{
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, .1);
     border-radius: 5px;
     font-family: inherit;
-    padding: 9px 33px 11px  11px;
+    padding: 9px 11px 11px  11px;
 }
 main{
     background: #f5f5f5;
@@ -1761,8 +1766,12 @@ a.product-title-brand-link{
     display: -ms-flexbox;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    max-width: 300px;
     min-height: 206px;
+}
+@media screen and (min-width: 680px) {
+    .product-seller-box{
+        max-width: 300px;
+    }
 }
 .product-seller-counter{
     width: 100%;
@@ -1941,16 +1950,15 @@ a.product-title-brand-link{
     flex-flow: row nowrap;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    width: 20%;
+    width: 100%;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     border: none;
-    padding: 18px 10px;
+    padding: 18px 0;
 }
 .supplier-cell-title{
-    min-width: 260px;
-    width: 25%;
+    width: 100%;
     position: relative;
     cursor: pointer;
     color: #424750;
@@ -2898,19 +2906,12 @@ o-btn{
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
     width: 100%;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
 }
 
-
-.c-comments-item-pdp .c-comments-helpful {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-}
 .c-comments-helpful-question{
     font-size: 12px;
     font-size: .857rem;
@@ -3322,4 +3323,23 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
     border-radius: 5px;
     font-family: inherit;
     padding: 9px 33px 11px 11px;
+}
+
+@media screen and (max-width: 680px)  {
+    .suppliers-rating {
+        color: #00bfd6;
+    }
+}
+
+@media screen and (min-width: 680px)  {
+    .supplier-cell-title{
+        min-width: 260px;
+    }
+    .supplier-cell-title{
+        width: 25%;
+    }
+    .supplier-cell{
+        width: 25%;
+        padding: 18px 10px;
+    }
 }

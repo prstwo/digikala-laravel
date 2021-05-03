@@ -1,22 +1,25 @@
 <div class="supplier-cell supplier-cell-title">
     <span class="supplier-seller-icon   is-digikala"></span>
     <div class="suppliers-seller-wrapper relative">
-        <p class="suppliers-seller-wrapper-name">
+        <p class=" suppliers-seller-wrapper-name">
             <a href="#kala-supplier">
                 دیجی&zwnj;کالا
             </a>
         </p>
-        <div class="suppliers-rating">
+        <div class="suppliers-rating ">
             عملکرد:
             <span class="u-text-bold">
                                             ۵
                                         </span>
             از ۵
             <span class="u-divider"></span>
-            <span class="u-text-bold">
+            <span class="u-text-bold hidden sm:block">
                                             ۹۳.۴٪
                                         </span>
-            رضایت از کالا
+            <span class="hidden sm:block">
+                 رضایت از کالا
+            </span>
+
         </div>
         <p>
 

@@ -348,7 +348,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="c-comment-row">
-                                                            <div class="c-comments-helpful">
+                                                            <div class="c-comments-helpful justify-start sm:justify-end">
                                                                 <div class="c-comments-helpful-question">آیا این دیدگاه برایتان مفید بود؟</div>
                                                                 <div class="c-comments-helpful-items  is-modal">
                                                                     <div class="c-comments-helpful-yes " data-comment="19842425">۲</div>
