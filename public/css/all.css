@@ -1964,6 +1964,18 @@ a.product-title-brand-link{
     color: #424750;
     padding-right: 0;
 }
+@media screen and (min-width: 680px)  {
+    .supplier-cell-title{
+        min-width: 260px;
+    }
+    .supplier-cell-title{
+        width: 25%;
+    }
+    .supplier-cell{
+        width: 20%;
+        padding: 18px 10px;
+    }
+}
 .supplier-seller-icon:before{
     font-family: 'FontAwesome';
     content: "\f0e0";
@@ -3331,15 +3343,4 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
     }
 }
 
-@media screen and (min-width: 680px)  {
-    .supplier-cell-title{
-        min-width: 260px;
-    }
-    .supplier-cell-title{
-        width: 25%;
-    }
-    .supplier-cell{
-        width: 25%;
-        padding: 18px 10px;
-    }
-}
+
