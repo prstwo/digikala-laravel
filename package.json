@@ -16,5 +16,8 @@
         "lodash": "^4.17.19",
         "postcss": "^8.2.13",
         "tailwindcss": "^2.1.2"
+    },
+    "dependencies": {
+        "swiper": "^6.5.9"
     }
 }
