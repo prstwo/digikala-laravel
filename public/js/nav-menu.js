@@ -107,5 +107,10 @@ setInterval(function(){
     }
 }, 1000);
 
-
-
+/*document.querySelector('.search-input').addEventListener('focus', (search)=>{
+    //
+    console.log('hello')
+});*/
+function bgWhite(search){
+    search.parentElement.classList.add('is-active')
+}

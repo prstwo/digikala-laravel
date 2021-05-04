@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- Demo styles -->
     <style>
         .swiper-container,.swiper-container2,.swiper-container3 {
