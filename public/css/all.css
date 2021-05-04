@@ -231,6 +231,7 @@ a.nav-link-title{
 }
 .nav-link > .submenu{
     display: none;
+    right: 112.39px;
 }
 .nav-link:hover  > .submenu{
     display: flex;
