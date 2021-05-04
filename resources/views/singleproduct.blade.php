@@ -6,11 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>مشخصات، قیمت و خرید گوشی موبایل </title>
+    <link rel="stylesheet" href="fonts/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link href="{{ asset('css/all.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="make-me-gray">
 @section('angle-left')
     <i class="fa fa-angle-left "></i>
 @endsection
@@ -25,9 +26,9 @@
     <x-navbar/>
     <!--در این قسمت هدر و نوبار جای دارند -->
     <main class="w-full">
-        <div class="product-whole-content mt-4">
+        <div class="product-whole-content">
             <div class="container px-6 py-0 bg-white">
-                <div class="product-breadcrumb flex justify-between items-center">
+                <div class="product-breadcrumb flex flex-col items-start justify-between content-center sm:items-center sm:flex-row ">
                     <nav class="breadcrumb">
                         <ul class="flex flex-row ">
                             <li>
@@ -55,8 +56,8 @@
                         </a>
                     </div>
                 </div>
-                <article class="bg-white w-full flex flex-row mb-3 items-start ">
-                    <section class="product-gallery pl-4 ml-4 flex flex-col top-28">
+                <article class="bg-white w-full flex flex-col sm:flex-row mb-3 items-start  ">
+                    <section class="product-gallery pl-4 ml-4 flex flex-col top-28 static sm:sticky">
                         <div class="product-gallery-item">
                             <ul class="product-gallery-option list-none flex flex-col "></ul>
                             <div></div>
@@ -91,115 +92,8 @@
                         </div>
                     </section>
                     <section class="product-info ">
-                        <div class="product-info-title flex px-0 py-2 items-center">
-                                <div>
-                                    <div class="product-title-flex">
-                                        <div class="product-title-brand flex items-center">
-                                            <a class="product-title-brand-link" href="#شیاُومی">
-
-                                                شیائومی
-                                            </a>
-                                            <span> /
-                                            </span>
-                                            <a class="product-title-brand-link" href="#شیاُومی">
-                                                گوشی موبایل شیائومی
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h1 class="single-product-title ">
-                                        گوشی موبایل شیائومی مدل Mi 10T PRO 5G M 2007J3SG دو سیم&zwnj; کارت ظرفیت 256 گیگابایت
-                                    </h1>
-                                </div>
-                        </div>
-                        <div class="product-attributes flex flex-row justify-between">
-                            <div class="product-config flex-shrink-0 relative pt-3 ml-4 border-t border-solid flex flex-col content-between ">
-                                <span class="product-title-english relative bottom-6 right-0 pl-2 bg-white">Xiaomi Mi 10T PRO 5G M 2007J3SG Dual SIM 256GB Mobile Phone</span>
-                                <div class="product-engagement">
-                                    <div class="flex items-center">
-                                        <div class="product-engagement-rating flex items-center">
-                                            <span class="product-engagement-rating-star fa fa-star  ml-1"></span>
-                                            ۴.۲
-                                            <span class="product-engagement-rating-num mr-0.5 text-xs">
-                                            (۶۵)
-                                            </span>
-
-                                        </div>
-                                    </div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                                <div class="product-config-wrapper">
-                                    <div class="product-config-info">
-                                        <ul class="list-none p-0 my-5 mx-0">
-                                            @foreach($productConfigInfo as $productlist)
-                                                <li class={!!  $productlist['class']!!}>
-                                                    <span>{{$productlist['span1']}} </span>
-                                                    <span>{{$productlist['span2']}} </span>
-                                                </li>
-                                            @endforeach
-                                        </ul>
-                                        <x-cntu_btn txt="+ موارد بیشتر" category="config"/>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="product-summary">
-                                <div class="product-seller-info border border-solid rounded-lg">
-                                    <div class="product-seller-box relative flex flex-col">
-                                        <div class="product-seller-counter flex items-center">
-                                            <div>فروشنده</div>
-                                            <a href="#suppliers" class="seller-count-row">
-                                                <span class="font-bold">۴</span>
-                                                <span class="font-bold"> فروشنده</span>
-                                                دیگر
-                                            </a>
-                                        </div>
-                                        <div class="product-seller-row p-4 cursor-pointer hover:bg-gray-200 ">
-                                            <div class="product-seller-row-main">
-                                                <div class="product-seller-first-line flex justify-between">
-                                                    <span>دیجی‌کالا</span>
-
-                                                    @section('angle-left')
-                                                    @show
-                                                </div>
-                                                <div class="product-seller-second-line"></div>
-
-                                            </div>
-                                        </div>
-                                        <div class="product-seller-row p-4">
-                                            <div class="product-seller-row-main">
-                                                گارانتی ۱۸ ماهه کاوش تیم
-                                            </div>
-                                        </div>
-                                        <div class="product-seller-row p-4 cursor-pointer hover:bg-gray-200 ">
-                                            <div class="product-seller-row-main flex flex-row justify-between">
-                                                موجود در انبار دیجی‌کالا
-                                                @section('angle-left')
-                                                @show
-                                            </div>
-
-                                        </div><div class="product-seller-row p-4">
-                                            <div class="product-seller-row-price flex flex-row justify-between">
-                                                <div class="product-seller-row-price-real">
-                                                    <div class="product-seller-price-pure inline-flex">
-                                                        ۱۴,۹۹۰,۰۰۰
-                                                    </div>
-                                                    تومان
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="product-seller-row product-seller-add-to-card">
-                                            <a class=" btn-add-to-cart w-full" data-product-id="4107334" data-variant="16089105" href="#payment" data-event="add_to_cart" data-event-category="ecommerce" data-event-label="price: 142790000 - seller: marketplace - seller_name: مرکز تامین کالای دیجیتال ایران
-                                            - seller_rating: 84 - multiple_configs: True - position: 0">
-                                                <span class="btn-add-to-cart-txt">افزودن به سبد خرید</span>
-                                            </a>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <x-product_info_title/>
+                        <x-product_attributes/>
                     </section>
                 </article>
                 <!--بهتره بخش با کلاس head رو بعد تبدیل به کامپوننت کنم -->
@@ -212,12 +106,14 @@
                     <div class="suppliers-list">
                         <x-supplier />
                         <x-supplier />
+                        <x-supplier_mobile.supplier_mobile/>
+                        <x-supplier_mobile.supplier_mobile/>
                         <!-- -->
                     </div>
                 </div>
                 <div class="carousel-horizontal-general"></div>
                 <div class="relative product-more flex flex-row">
-                    <div class="product-tabs-container">
+                    <div class="product-tabs-container ">
                         <ul class="box-tabs-sticky sticky bg-white top-28 o-box-tabs z-10">
                             @foreach($productTabs as $productstab)
                                 <li class="o-box-tab">
@@ -344,7 +240,7 @@
                                     امتیاز و دیدگاه کاربران
                                 </x-boxheader>
                                 <div class="comments-container flex mb-15 mt-9 pb-5 items-start ">
-                                    <div class="comment-sidebar ml-15 sticky ">
+                                    <div class="comment-sidebar hidden sm:block ml-15 sticky ">
                                         <div class="comment-side-rating-container mb-5 ">
                                                <div class="flex items-end">
                                                    <div class="comments-side-rating-main">۴.۳</div>
@@ -353,11 +249,9 @@
 
                                             <div class="comments-side-rating-bottom flex items-center">
                                                 <div class="c-stars">
-                                                    <span class="c-stars-item"></span>
-                                                    <span class="c-stars-item"></span>
-                                                    <span class="c-stars-item"></span>
-                                                    <span class="c-stars-item"></span>
-                                                    <span class="c-stars-item"></span>
+                                                    @for ($i = 0; $i < 5; $i++)
+                                                        <span class="c-stars-item"></span>
+                                                    @endfor
                                             </div>
                                                 <div class="comments-side-rating-all mr-2 flex items-center">
                                                     از مجموع ۱۴۲ امتیاز
@@ -379,8 +273,9 @@
                                                 @endforeach
 
                                         </ul>
-                                        <a href="#add-comment" data-product-id="4107334"
-                                           class="o-btn o-btn-outlined-red o-btn-full-width">افزودن دیدگاه</a>
+                                       <x-idea_register>
+                                               افزودن دیدگاه
+                                       </x-idea_register>
 
                                     </div>
                                     <div class="comment-content-section">
@@ -453,7 +348,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="c-comment-row">
-                                                            <div class="c-comments-helpful">
+                                                            <div class="c-comments-helpful justify-start sm:justify-end">
                                                                 <div class="c-comments-helpful-question">آیا این دیدگاه برایتان مفید بود؟</div>
                                                                 <div class="c-comments-helpful-items  is-modal">
                                                                     <div class="c-comments-helpful-yes " data-comment="19842425">۲</div>
@@ -473,46 +368,10 @@
 
                                 </div>
                             </div>
-                            <div class="product-faq"></div>
+                            <x-product_faq/>
                         </div>
                     </div>
-                    <div class="sticky  mini-buy-box-fix mr-6 mb-10  justify-self-start ">
-                        <div class="mini-buy-box  rounded-lg p-4 border bg-white">
-                            <div class="mini-buy-box-product-info mb-5 py-4 border-b">
-                                <img src="images/product-pic-example5.jpg" alt="product" class="w-20 h-20 ml-5">
-                                <div class="w-full  mini-buy-box-product-info-info">
-                                    <div class="w-full  title ">
-                                        گوشی موبایل شیائومی مدل Mi 10T Pro 5G 2007J3SG دو سیم‌ کارت ظرفیت 128 گیگابایت
-                                    </div>
-                                    <div class="colors flex flex-row content-center items-center">
-                                        <div  class=" ml-2 border color-label " style=" background-color: rgb(222, 222, 222);"></div>
-                                        <span>نقره ای</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mini-buy-box-row mini-buy-box-seller">
-                                دیجی کالا
-                            </div>
-                            <div class="mini-buy-box-row mini-buy-box-warranty">
-                                گارانتی 18 ماهه
-                            </div>
-                            <div class="mini-buy-box-row mini-buy-box-stock">
-                                موجود در انبار دیجی کالا
-                            </div>
-                            <div class="mini-buy-box-row mini-buy-box-row-price">
-                                <div class="product-seller-price-info">
-                                    ۱۳,۳۹۹,۰۰۰
-                                    <span class="text-sm font-extrabold">تومان</span>
-                                </div>
-
-                            </div>
-                            <div class="mini-buy-box-btn-row mt-2">
-                                <a href="#sabad" class="o-btn w-full text-center font-xl py-2 px-4  text-white">افزودن به سبد خرید</a>
-                            </div>
-
-                        </div>
-
-                    </div>
+                    <x-mini_buy_box_fix/>
                 </div>
             </div>
         </div>

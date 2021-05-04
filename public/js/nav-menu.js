@@ -1,10 +1,14 @@
-
+/*document.querySelectorAll('.submenu').forEach((sm)=>{
+    if(sm.classList.contains('show')){
+       // document.querySelector('.m-overlay').classList.add('active');
+        //console.log(getComputedStyle(sm).display)
+        console.log(window.getComputedStyle(sm).getPropertyValue('display'))
+    }
+})*/
 let mobileMenuCon= document.querySelector('.mobile-menu-container');
 function toggleSub(link){
     link.querySelector('ul').classList.toggle('hide');
-
 }
-
 function mobileMenu(){
     mobileMenuCon.classList.toggle('hide');
         document.querySelector('.m-overlay').classList.toggle('active');

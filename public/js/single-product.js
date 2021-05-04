@@ -43,18 +43,22 @@ document.querySelector('.continue-btn-params').addEventListener('click',(btnPara
     btnParams.target.parentElement.parentElement.querySelector('.params-collapse-content').classList.toggle('is-open');
     if( btnParams.target.parentElement.parentElement.querySelector('.params-collapse-content').classList.contains('is-open')){
         btnParams.target.innerText='فقط نمایش مشخصات کلی کالا';
+        btnParams.target.classList.add('change');
     }
     if(!btnParams.target.parentElement.parentElement.querySelector('.params-collapse-content').classList.contains('is-open')){
         btnParams.target.innerText='نمایش همه مشخصات کالا';
+        btnParams.target.classList.remove('change');
     }
 })
 document.querySelector('.continue-btn-summary').addEventListener('click',(btnSummary)=>{
     productSummarySec.classList.toggle('is-open');
     if( productSummarySec.classList.contains('is-open')){
+        btnSummary.target.classList.add('change');
         btnSummary.target.innerText='نمایش کمتر';
     }
     if(!productSummarySec.classList.contains('is-open')){
         btnSummary.target.innerText='ادامه مطلب';
+        btnSummary.target.classList.remove('change');
     }
 })
 document.querySelector('.continue-btn-config').addEventListener('click',(btnConfig)=>{
@@ -69,3 +73,16 @@ document.querySelector('.continue-btn-config').addEventListener('click',(btnConf
 
     })
 })
+function showReplies(replyShow){
+    replyShow.parentElement.parentElement.parentElement.querySelectorAll('.c-question-item-reply:not(:first-of-type)').forEach((replyItem)=>{
+        replyItem.classList.toggle('show');
+        if(replyItem.classList.contains('show')){
+            replyShow.parentElement.classList.add('change');
+            replyShow.innerText="مشاهده پاسخ های کمتر"
+        }
+        if(!replyItem.classList.contains('show')){
+            replyShow.parentElement.classList.remove('change');
+            replyShow.innerText="مشاهده پاسخ های دیگر"
+        }
+    })
+}
