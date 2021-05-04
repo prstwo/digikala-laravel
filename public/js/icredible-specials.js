@@ -1,7 +1,7 @@
 /*
 this file is used for sliders functionality (4 slides)
 */
-
+/*
 if(window.innerWidth > 680){
     document.querySelector('.arrow-right-2').addEventListener('click', function(){
         moveSlides2(-4);
@@ -30,3 +30,4 @@ if(window.innerWidth > 680){
 
     showSlides2(productCount);
 }
+*/

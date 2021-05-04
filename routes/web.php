@@ -24,4 +24,9 @@ Route::get('/product', function () {
     return view('singleproduct');
 });
 Route::get('product', '\App\Http\Controllers\SingleProductController@show');
-
+Route::get('/swiper', function (){
+    return view('swiper');
+});
+Route::get('/swiper2', function (){
+    return view('swiper2');
+});

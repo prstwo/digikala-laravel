@@ -62,7 +62,7 @@ class HomeController extends Controller
                     'discount'=>' ۱۵٪', 'new-price'=>'۷,۲۲۹,۰۰۰'],
                 ['img'=>'"images/phone-2.jpg"','product-title'=>' کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus', 'old-price'=>'۹۹,۰۰۰ ',
                     'discount'=>' ٪۵۴', 'new-price'=>'۴۵,۵۰۰ '],
-                ['img'=>'"images/phone-3.jpg"','product-title'=>' کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus', 'old-price'=>'۹۹,۰۰۰ ',
+                ['img'=>'"images/phone-8.jpg"','product-title'=>' کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus', 'old-price'=>'۹۹,۰۰۰ ',
                     'discount'=>' ٪۶', 'new-price'=>'۴۵,۵۰۰ '],
                 ['img'=>'"images/phone-4.jpg"','product-title'=>'کاور نیلکین مدل Camshield مناسب برای گوشی موبایل شیائومی POCO X3 NFC', 'old-price'=>'۹۹,۰۰۰ ',
                     'discount'=>'٪۳۰ ', 'new-price'=>'۲۰۴,۷۹۰ '],
