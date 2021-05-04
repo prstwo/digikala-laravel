@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keyword" content="digikala, دیجی کالا">
     <meta name="description" content="this is home page of digikala">
-    <title>digikala</title>
+    <title>فروشگاه دیجی کالا</title>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -43,6 +43,12 @@
             .swiper-slide{
                 width: 217px;
             }
+            .swiper-container3 .swiper-wrapper{
+                overflow-x:hidden;
+            }
+            .swiper-container3 .swiper-slide{
+                width:calc((100vw - 66px) / 5) !important;
+            }
         }
 
     </style>
@@ -69,7 +75,7 @@
     <x-header/>
     <!-- navigation component -->
     <x-navbar/>
-    <main class="">
+    <main>
         <!-- main top container -->
         <article class="main-top-container">
             <div class="main-top">
@@ -81,7 +87,7 @@
                                 <!--Slide 1-->
                                 <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
                                 <div class="carousel-item absolute opacity-0 w-full h-full" >
-                                    <div class="block h-full w-full bg-indigo-500 text-white text-5xl text-center">
+                                    <div class="block h-full w-full bg-indigo-500 text-white text-5xl text-center rounded-2xl">
                                         <img src="images/maintop-1.jpg" alt="product img" class="rounded-lg">
 
                                     </div>
@@ -162,7 +168,7 @@
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
                                     @foreach($productItemContainer3 as $productItem3 )
-                                        <div class="swiper-slide">
+                                        <div class="swiper-slide" >
                                             <div class="product-item-container-3 rounded-2xl">
                                                 <div class="product-item">
                                                     <div>
@@ -202,7 +208,7 @@
                         </div>
 
                     </div>
-                </div>
+                 </div>
 
             </section>
         </div>
@@ -286,7 +292,7 @@
                         <div class="swiper-container3">
                             <div class="swiper-wrapper">
                                 @foreach($swiperBrands as $brand)
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide" style="">
                                         <div class="swiper-brands-image-container">
                                             <a href="#brand-page" class="banner-brand-link">
                                                 <img src={!! $brand['img'] !!} alt="brand">

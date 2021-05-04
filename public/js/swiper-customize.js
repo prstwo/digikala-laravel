@@ -43,3 +43,12 @@ var swiper3 = new Swiper('.swiper-container3', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+if(window.innerWidth < 680 || document.body.clientWidth <680){
+        document.querySelector('.swiper-container').querySelectorAll('.swiper-slide').forEach((sw)=>{
+            sw.style.width='100%';
+        });
+        document.querySelector('.swiper-container2').querySelectorAll('.swiper-slide').forEach((sw2)=>{
+            sw2.style.width='100%';
+        })
+}
