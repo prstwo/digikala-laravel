@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href='css/swiper-custom.css' rel="stylesheet">
 </head>
 <body>
     <div class="relative">
@@ -26,15 +25,12 @@
         <x-footer/>
         <x-overlay/>
     </div>
-    <script src="js/nav-menu.js"></script>
-    <script src="js/icredible-specials.js"></script>
-    <script src="js/category-products.js"></script>
-    <script src="js/special-brands.js"></script>
-    <script src="js/all.js"></script>
-    <script src="js/footer.js"></script>
+    {{-- --}}
+
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/swiper-customize.js"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/all.js') }}"></script>
     @yield('extra-scripts')
 </body>
 </html>

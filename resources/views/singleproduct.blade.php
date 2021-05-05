@@ -313,6 +313,4 @@
     <x-remodal_gallery action="button"/>
 @endsection
 
-@section('extra-scripts')
-    <script src="js/single-product.js"></script>
-@endsection
+
