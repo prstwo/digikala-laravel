@@ -71,8 +71,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 })*/
 let mobileMenuCon= document.querySelector('.mobile-menu-container');
 function toggleSub(link){
-    link.querySelector('ul').classList.toggle('hide');
+    link.target.querySelector('ul').classList.toggle('hide');
 }
+document.querySelector('.js-offers-mobile-toggle').addEventListener('click',(e)=>{
+    toggleSub(e)
+})
 function mobileMenu(){
     mobileMenuCon.classList.toggle('hide');
     document.querySelector('.m-overlay').classList.toggle('active');
@@ -83,6 +86,9 @@ function mobileMenu(){
         })
     }
 }
+document.querySelector('.js-sandwich-mobile-menu').addEventListener('click',()=>{
+    mobileMenu()
+})
 let submenuItems=document.querySelectorAll('.js-nav-submenu-items');
 function kalayeDigital(){
     submenuItems.forEach((item)=>{
@@ -132,6 +138,31 @@ function varzesh(){
     })
     document.querySelector('.js-varzesh-menu').style.display=''
 }
+
+document.querySelector('.js-varzesh').addEventListener('mouseover',()=>{
+    varzesh()
+});
+document.querySelector('.js-kalaye-digital').addEventListener('mouseover',()=>{
+    kalayeDigital()
+});
+document.querySelector('.js-sanati').addEventListener('mouseover',()=>{
+    sanati()
+});
+document.querySelector('.js-mod').addEventListener('mouseover',()=>{
+    mod()
+});
+document.querySelector('.js-asbabbazi').addEventListener('mouseover',()=>{
+    asbabBazi()
+});
+document.querySelector('.js-zibayi').addEventListener('mouseover',()=>{
+    zibayi()
+});
+document.querySelector('.js-khane').addEventListener('mouseover',()=>{
+    khane()
+});
+document.querySelector('.js-ketab').addEventListener('mouseover',()=>{
+    ketab()
+});
 
 let due= new Date(2021, 7, 24, 15,30,0);
 

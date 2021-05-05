@@ -77,8 +77,12 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
 var mobileMenuCon = document.querySelector('.mobile-menu-container');
 
 function toggleSub(link) {
-  link.querySelector('ul').classList.toggle('hide');
+  link.target.querySelector('ul').classList.toggle('hide');
 }
+
+document.querySelector('.js-offers-mobile-toggle').addEventListener('click', function (e) {
+  toggleSub(e);
+});
 
 function mobileMenu() {
   mobileMenuCon.classList.toggle('hide');
@@ -92,6 +96,9 @@ function mobileMenu() {
   }
 }
 
+document.querySelector('.js-sandwich-mobile-menu').addEventListener('click', function () {
+  mobileMenu();
+});
 var submenuItems = document.querySelectorAll('.js-nav-submenu-items');
 
 function kalayeDigital() {
@@ -150,6 +157,30 @@ function varzesh() {
   document.querySelector('.js-varzesh-menu').style.display = '';
 }
 
+document.querySelector('.js-varzesh').addEventListener('mouseover', function () {
+  varzesh();
+});
+document.querySelector('.js-kalaye-digital').addEventListener('mouseover', function () {
+  kalayeDigital();
+});
+document.querySelector('.js-sanati').addEventListener('mouseover', function () {
+  sanati();
+});
+document.querySelector('.js-mod').addEventListener('mouseover', function () {
+  mod();
+});
+document.querySelector('.js-asbabbazi').addEventListener('mouseover', function () {
+  asbabBazi();
+});
+document.querySelector('.js-zibayi').addEventListener('mouseover', function () {
+  zibayi();
+});
+document.querySelector('.js-khane').addEventListener('mouseover', function () {
+  khane();
+});
+document.querySelector('.js-ketab').addEventListener('mouseover', function () {
+  ketab();
+});
 var due = new Date(2021, 7, 24, 15, 30, 0);
 var second = 60;
 var minute = 60;

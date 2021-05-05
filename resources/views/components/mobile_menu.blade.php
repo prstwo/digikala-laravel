@@ -29,10 +29,10 @@
                 </a>
             </li>
             <!-- منوهایی که toggle میشوند& باید دارای کلاس js-mobile-toggle باشند -->
-            <li class="nav-link  border-right-add js-mobile-toggle" onclick="toggleSub(this)">
-                <a href="#supermarket" class="nav-link-title">
-                    <div>
-                        <i class='fa fa-percent ml-2'></i>تخفیف ها و پشنهادها
+            <li class="nav-link  border-right-add js-offers-mobile-toggle" >
+                <a href="#supermarket" class="nav-link-title" style=" pointer-events: none">
+                    <div style=" pointer-events: none">
+                        <i class='fa fa-percent ml-2' style=" pointer-events: none"></i>تخفیف ها و پشنهادها
                     </div>
                 </a>
                 <ul class="mobile-nav-link-sub flex flex-col  hide bg-gray-100">
