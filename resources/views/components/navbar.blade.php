@@ -10,35 +10,35 @@
                         </a>
                         <div class="submenu top-12 absolute " >
                             <div class="submenu-titles flex flex-col">
-                                <a href="#submenu" class="submenu-title js-kalaye-digital">
+                                <a href="#submenu" class="submenu-title" onmouseover="kalayeDigital()">
                                     <i class="fa fa-laptop"></i>
                                     کالای دیجیتال
                                 </a>
-                                <a href="#submenu" class="submenu-title js-sanati"  >
+                                <a href="#submenu" class="submenu-title"  onmouseover="sanati()">
                                     <i class="fa fa-wrench"></i>
                                     خودرو، ابزار و تجهیزات صنعتی
                                 </a>
-                                <a href="#submenu" class="submenu-title js-mod" >
+                                <a href="#submenu" class="submenu-title" onmouseover="mod()">
                                     <i class="fa fa-check"></i>
                                     مد و پوشاک
                                 </a>
-                                <a href="#submenu" class="submenu-title js-asbabbazi" >
+                                <a href="#submenu" class="submenu-title" onmouseover="asbabBazi()">
                                     <i class="fa fa-child"></i>
                                     اسباب بازی، کودک، نوزاد
                                 </a>
-                                <a href="#submenu" class="submenu-title js-zibayie" >
+                                <a href="#submenu" class="submenu-title" onmouseover="zibayie()">
                                     <i class="fa fa-heart"></i>
                                     زیبایی و سلامت
                                 </a>
-                                <a href="#submenu" class="submenu-title js-khane" >
+                                <a href="#submenu" class="submenu-title" onmouseover="khane()">
                                     <i class="fa fa-home"></i>
                                     خانه و آشپزخانه
                                 </a>
-                                <a href="#submenu" class="submenu-title js-ketab"  >
+                                <a href="#submenu" class="submenu-title" onmouseover="ketab()">
                                     <i class="fa fa-pencil"></i>
                                     کتاب، لوازم تحریر و هنر
                                 </a>
-                                <a href="#submenu" class="submenu-title js-varzesh"  >
+                                <a href="#submenu" class="submenu-title" onmouseover="varzesh()">
                                     <i class="fa fa-tree"></i>
                                     ورزش و سفر
                                 </a>

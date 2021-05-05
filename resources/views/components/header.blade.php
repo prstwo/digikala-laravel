@@ -4,7 +4,7 @@
         <div class="header-one py-2 mb-2 border-b border-gray-100 ">
             <div class="sandwich-menu js-m-sandwich-menu ">
 
-                <a href="#mobile-menu-container"  class="js-sandwich-mobile-menu">
+                <a href="#mobile-menu-container"  onclick="mobileMenu()">
                     <i class="fa fa-align-justify "></i>
 
                 </a>
