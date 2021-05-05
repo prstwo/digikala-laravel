@@ -241,10 +241,7 @@ document.querySelectorAll('.product-gallery-pictures img').forEach((mp)=>{
         modalToggle(send)
     })
 })
-
-
 function displayRemodal(miniImg){
-
     document.querySelector('.remodal-img-container').src=miniImg.target.getAttribute('data-src');
     //console.log(miniImg)
     miniImg.target.classList.add('remodal-gallery-thumb-selected');
