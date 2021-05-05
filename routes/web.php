@@ -30,6 +30,3 @@ Route::get('/swiper', function (){
 Route::get('/swiper2', function (){
     return view('swiper2');
 });
-Route::get('/profile', function (){
-    return view('profile');
-});

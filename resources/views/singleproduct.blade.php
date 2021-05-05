@@ -1,30 +1,10 @@
-<!doctype html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>مشخصات، قیمت و خرید گوشی موبایل </title>
-    <link rel="stylesheet" href="fonts/fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-<body class="make-me-gray">
-@section('angle-left')
-    <i class="fa fa-angle-left "></i>
-@endsection
-@section('half-separator')
-    <div class="c-comment-separator c-comment-separator-half">
-    @endsection
-<div>
-    <x-mobile_menu/>
-    <!-- Header component -->
-    <x-header/>
-    <!-- navigation component -->
-    <x-navbar/>
-    <!--در این قسمت هدر و نوبار جای دارند -->
+@extends('layout')
+@section('keyword-description')
+    <meta name="keyword" content="گوشی موبایل, دیجی کالا">
+    <meta name="description" content="this is product page of digikala">
+@show
+@section('page-title','مشخصات، قیمت و خرید گوشی موبایل ')
+@section('main-content')
     <main class="w-full">
         <div class="product-whole-content">
             <div class="container px-6 py-0 bg-white">
@@ -83,9 +63,9 @@
                                             </div>
                                         </li>
                                     @endif
-                                        <li class=" ">
-                                            <div class="thumb-wrapper"><img src={!! $productgallerypicture['img'] !!}  data-src={!! $productgallerypicture['data'] !!} alt=""></div>
-                                        </li>
+                                    <li class=" ">
+                                        <div class="thumb-wrapper"><img src={!! $productgallerypicture['img'] !!}  data-src={!! $productgallerypicture['data'] !!} alt=""></div>
+                                    </li>
                                 @endforeach
 
                             </ul>
@@ -121,7 +101,6 @@
                                 </li>
                             @endforeach
                         </ul>
-
                         <div class="box-tabs-info">
                             <div class="product-expert">
                                 <article >
@@ -242,17 +221,17 @@
                                 <div class="comments-container flex mb-15 mt-9 pb-5 items-start ">
                                     <div class="comment-sidebar hidden sm:block ml-15 sticky ">
                                         <div class="comment-side-rating-container mb-5 ">
-                                               <div class="flex items-end">
-                                                   <div class="comments-side-rating-main">۴.۳</div>
-                                                   <div class="comments-side-rating-desc">از ۵</div>
-                                               </div>
+                                            <div class="flex items-end">
+                                                <div class="comments-side-rating-main">۴.۳</div>
+                                                <div class="comments-side-rating-desc">از ۵</div>
+                                            </div>
 
                                             <div class="comments-side-rating-bottom flex items-center">
                                                 <div class="c-stars">
                                                     @for ($i = 0; $i < 5; $i++)
                                                         <span class="c-stars-item"></span>
                                                     @endfor
-                                            </div>
+                                                </div>
                                                 <div class="comments-side-rating-all mr-2 flex items-center">
                                                     از مجموع ۱۴۲ امتیاز
                                                 </div>
@@ -260,7 +239,7 @@
                                         </div>
                                         <ul class="c-content-expert-rating">
 
-                                                @foreach($commentExpertRatings as $commentrating)
+                                            @foreach($commentExpertRatings as $commentrating)
                                                 <li>
                                                     <div class="c-content-expert-rating-title">{{$commentrating['title']}}</div>
                                                     <div class="c-content-expert-rating-value">
@@ -270,12 +249,12 @@
                                                         <span class="c-rating-overall-word">{{$commentrating['rate']}}</span>
                                                     </div>
                                                 </li>
-                                                @endforeach
+                                            @endforeach
 
                                         </ul>
-                                       <x-idea_register>
-                                               افزودن دیدگاه
-                                       </x-idea_register>
+                                        <x-idea_register>
+                                            افزودن دیدگاه
+                                        </x-idea_register>
 
                                     </div>
                                     <div class="comment-content-section">
@@ -310,80 +289,77 @@
                                                             کاربر دیجی‌کالا
                                                         </span>
                                                     </div>
-                                                    @section('half-separator') @show                                                    </div>
-                                                    <div class="c-comment-row">
-
-                                                    </div>
-                                                    <div class="c-comment-row c-comment-row-comment c-comment-row-grow">
-                                                        <div class="c-comments-content">سلام دوستان عزیز این گوشی مخصوص
-                                                            طرفداران عکاسی و گیم و بازی هستش
-                                                            پردازنده قوی اسنپ دراگون 865G که
-                                                            رو این گوشیه واقعا جواب گوی بازی
-                                                            های خیلی سنگین و گرافیکی هست
-                                                            باطری و فست شارژش واقعا عالیه
-                                                            دوربینش معرکه اس واقعا محشره
-                                                            توصیه میکنم حتما اینو بخرید
-                                                            تنها یه عیب کوچیک دارع که اونم
-                                                            صفحه نمایش IPS LCD هستش
-                                                            که چندان فرقی هم با بقیه ندارع
-                                                        </div>
-                                                        @section('half-separator')     @show                                                   </div>
-                                                        <div class="c-comments-modal-evaluation">
-                                                            <div class="c-comments-modal-evaluation-item c-comments-modal-evaluation-item-positive items-start">
-                                                                باطری پرسرعت و پرقدرت با ظرفیت 5 هزار میلی امپر
-                                                            </div>
-                                                            <div class="c-comments-modal-evaluation-item c-comments-modal-evaluation-item-negative items-start">
-                                                                صفحه نمایش IPS LCD
-                                                            </div>
-                                                        </div>
-                                                        @section('half-separator')     @show
-                                                    </div>
-                                                        <div class="c-comment-row">
-                                                            <div class="c-comments-color">
-                                                                <span class="c-comments-color-circle" style="background-color: #2196f3;"></span>
-                                                                آبی
-                                                            </div>
-                                                            <div class="c-comments-seller">
-                                                                دیجی‌کالا
-                                                            </div>
-                                                        </div>
-                                                        <div class="c-comment-row">
-                                                            <div class="c-comments-helpful justify-start sm:justify-end">
-                                                                <div class="c-comments-helpful-question">آیا این دیدگاه برایتان مفید بود؟</div>
-                                                                <div class="c-comments-helpful-items  is-modal">
-                                                                    <div class="c-comments-helpful-yes " data-comment="19842425">۲</div>
-                                                                    <div class="c-comments-helpful-no  " data-comment="19842425"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="c-comment-row">
-                                            </div>
-                                        </div>
+                                                    <x-half-seperator/>                                                   </div>
+                                                <div class="c-comment-row">
 
                                                 </div>
-
+                                                <div class="c-comment-row c-comment-row-comment c-comment-row-grow">
+                                                    <div class="c-comments-content">سلام دوستان عزیز این گوشی مخصوص
+                                                        طرفداران عکاسی و گیم و بازی هستش
+                                                        پردازنده قوی اسنپ دراگون 865G که
+                                                        رو این گوشیه واقعا جواب گوی بازی
+                                                        های خیلی سنگین و گرافیکی هست
+                                                        باطری و فست شارژش واقعا عالیه
+                                                        دوربینش معرکه اس واقعا محشره
+                                                        توصیه میکنم حتما اینو بخرید
+                                                        تنها یه عیب کوچیک دارع که اونم
+                                                        صفحه نمایش IPS LCD هستش
+                                                        که چندان فرقی هم با بقیه ندارع
+                                                    </div>
+                                                    <x-half-seperator/>                                                 </div>
+                                                <div class="c-comments-modal-evaluation">
+                                                    <div class="c-comments-modal-evaluation-item c-comments-modal-evaluation-item-positive items-start">
+                                                        باطری پرسرعت و پرقدرت با ظرفیت 5 هزار میلی امپر
+                                                    </div>
+                                                    <div class="c-comments-modal-evaluation-item c-comments-modal-evaluation-item-negative items-start">
+                                                        صفحه نمایش IPS LCD
+                                                    </div>
+                                                </div>
+                                                <x-half-seperator/>
+                                            </div>
+                                            <div class="c-comment-row">
+                                                <div class="c-comments-color">
+                                                    <span class="c-comments-color-circle" style="background-color: #2196f3;"></span>
+                                                    آبی
+                                                </div>
+                                                <div class="c-comments-seller">
+                                                    دیجی‌کالا
+                                                </div>
+                                            </div>
+                                            <div class="c-comment-row">
+                                                <div class="c-comments-helpful justify-start sm:justify-end">
+                                                    <div class="c-comments-helpful-question">آیا این دیدگاه برایتان مفید بود؟</div>
+                                                    <div class="c-comments-helpful-items  is-modal">
+                                                        <div class="c-comments-helpful-yes " data-comment="19842425">۲</div>
+                                                        <div class="c-comments-helpful-no  " data-comment="19842425"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-comment-row">
                                             </div>
                                         </div>
+
                                     </div>
 
                                 </div>
                             </div>
                             <x-product_faq/>
                         </div>
+
                     </div>
                     <x-mini_buy_box_fix/>
                 </div>
+
             </div>
         </div>
-    </main>
-    <x-footer/>
-</div>
-    <x-remodal_gallery action="button"/>
-    <x-overlay/>
 
-    <script src="js/nav-menu.js"></script>
+        </div>
+        </div>
+        </div>
+    </main>
+    <x-remodal_gallery action="button"/>
+@endsection
+
+@section('extra-scripts')
     <script src="js/single-product.js"></script>
-    <script src="js/all.js"></script>
-    <script src="js/footer.js"></script>
-</body>
-</html>
+@endsection
