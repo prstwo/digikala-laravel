@@ -26,6 +26,8 @@
         <x-footer/>
         <x-overlay/>
     </div>
+    {{-- ابتدا با استفاده از لاراول میکس asset ها فراخوانی شدند و استایل ها و کدهای جاوااسکری\ت با موفقیت اعمال شد. اما
+     توابعی که از طریق رویدادهای inline در html استفاده شده بودند، برای داکیومنت غیرقابل خواندن شد. مثل onclick=toggler() که در عمل دیباگ به صورت toggler() is undefined ارور دریافت میشد. به همین دلیل مجدد به کامیت های قبلی بازگشته شد --}}
     <script src="js/nav-menu.js"></script>
     <script src="js/icredible-specials.js"></script>
     <script src="js/category-products.js"></script>
