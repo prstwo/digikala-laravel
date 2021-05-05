@@ -249,6 +249,9 @@ a.nav-link-title{
 }
 .nav-link > .submenu{
     display: none;
+}
+
+.nav-link:not(:first-of-type) > .submenu{
     right: 112.39px;
 }
 .nav-link:hover  > .submenu{
