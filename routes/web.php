@@ -18,12 +18,8 @@ Route::get('/', function () {
     return view('index');
 });
 Route::get('/', '\App\Http\Controllers\HomeController@show');
+Route::get('/product', '\App\Http\Controllers\SingleProductController@show');
 
-Route::get('/product', function () {
-
-    return view('singleproduct');
-});
-Route::get('product', '\App\Http\Controllers\SingleProductController@show');
 Route::get('/swiper', function (){
     return view('swiper');
 });

@@ -45,6 +45,7 @@ class SingleProductController extends Controller
      */
     public function show()
     {
+
         return view('singleproduct', [
             'productGalleryPictures'=> [
                 ['img'=>'"images/product-pic-example1.jpg"','data'=>'"images/product-data-src0.jpg"'],
@@ -75,6 +76,7 @@ class SingleProductController extends Controller
                 ['data-mode'=>'most_liked','class'=>'"c-sort-row-label"', 'sort-text'=>'مفیدترین دیدگاه‌ها'],
                 ['data-mode'=>'buyers','class'=>'"c-sort-row-label "', 'sort-text'=>'  دیدگاه خریداران']]
         ]);
+
     }
 
     /**
