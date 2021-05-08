@@ -18,6 +18,7 @@
         "tailwindcss": "^2.1.2"
     },
     "dependencies": {
+        "config-webpack": "^1.0.5",
         "swiper": "^6.5.9"
     }
 }
