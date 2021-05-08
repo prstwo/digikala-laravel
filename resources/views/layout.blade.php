@@ -16,7 +16,7 @@
     <link href='css/swiper-custom.css' rel="stylesheet">
 </head>
 <body>
-    <div class="relative">
+    <div class="relative whole-div">
         <x-mobile-menu/>
         <x-header/>
         <!-- navigation component -->

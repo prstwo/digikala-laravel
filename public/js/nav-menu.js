@@ -1,5 +1,10 @@
 let mobileMenuCon= document.querySelector('.mobile-menu-container');
 let navOverlay= document.querySelector('.nav-overlay');
+
+document.documentElement.addEventListener('scroll',()=>{
+    toggleNav()
+})
+
 document.querySelectorAll('.js-nav-link').forEach((navLink)=>{navLink.addEventListener('mouseover',()=>{
     navOverlay.classList.add('show')
 

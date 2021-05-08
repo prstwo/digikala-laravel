@@ -1,4 +1,4 @@
-<nav class="desktop-nav ">
+<nav class="desktop-nav js-desktop-nav ">
     <div class="nav-container">
         <div class="nav pt-3 px-4" id="navbar">
             <div class="nav-items">
@@ -561,7 +561,6 @@
                             </div>
 
                         </div>
-                        <div class="overlay" style="z-index: -80"></div>
 
                     </li>
                     <!--اینا خودشون یه کامئوننت جدا هستن که باید بعد روشون کار کنم - شروع-->
@@ -677,7 +676,6 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="overlay"></div>
                     </li>
                     <li class="nav-link ">
                         <a href="#supermarket" class="nav-link-title">

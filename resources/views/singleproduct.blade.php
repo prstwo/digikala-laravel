@@ -94,7 +94,7 @@
                 <div class="carousel-horizontal-general"></div>
                 <div class="relative product-more flex flex-row">
                     <div class="product-tabs-container ">
-                        <ul class="box-tabs-sticky sticky bg-white top-28 o-box-tabs z-10">
+                        <ul class="box-tabs-sticky sticky bg-white top-28 o-box-tabs z-8">
                             @foreach($productTabs as $productstab)
                                 <li class="o-box-tab">
                                     <a href={!! $productstab['href'] !!} >{!! $productstab['text'] !!}</a>
