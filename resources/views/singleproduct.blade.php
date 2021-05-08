@@ -72,8 +72,8 @@
                         </div>
                     </section>
                     <section class="product-info ">
-                        <x-product_info_title/>
-                        <x-product_attributes/>
+                        <x-product-info-title/>
+                        <x-product-attributes/>
                     </section>
                 </article>
                 <!--بهتره بخش با کلاس head رو بعد تبدیل به کامپوننت کنم -->
@@ -86,8 +86,8 @@
                     <div class="suppliers-list">
                         <x-supplier />
                         <x-supplier />
-                        <x-supplier_mobile.supplier_mobile/>
-                        <x-supplier_mobile.supplier_mobile/>
+                        <x-supplier-mobile.supplier-mobile/>
+                        <x-supplier-mobile.supplier-mobile/>
                         <!-- -->
                     </div>
                 </div>
@@ -105,9 +105,9 @@
                             <x-product-expert/>
                             <div class="product-params" id="details">
                                 <article class="mb-12 params-border-bottom">
-                                    <x-box_header>
+                                    <x-box-header>
                                         مشخصات کالا
-                                    </x-box_header>
+                                    </x-box-header>
                                     <section class="flex flex-row">
                                         <h3 class="params-title">مشخصات کلی</h3>
                                         <ul class="params-list">
@@ -164,7 +164,7 @@
                                             </ul>
                                         </section>
                                     </div>
-                                    <x-cntu_btn txt="نمایش همه مشخصات کالا" category="params"/>
+                                    <x-cntu-btn txt="نمایش همه مشخصات کالا" category="params"/>
                                 </article>
                             </div>
                             <div class="product-comments " id="comments">
@@ -205,9 +205,9 @@
                                             @endforeach
 
                                         </ul>
-                                        <x-idea_register>
+                                        <x-idea-register>
                                             افزودن دیدگاه
-                                        </x-idea_register>
+                                        </x-idea-register>
 
                                     </div>
                                     <div class="comment-content-section">
@@ -296,11 +296,11 @@
 
                                 </div>
                             </div>
-                            <x-product_faq/>
+                            <x-product-faq/>
                         </div>
 
                     </div>
-                    <x-mini_buy_box_fix/>
+                    <x-mini-buy-box-fix/>
                 </div>
 
             </div>
@@ -310,7 +310,7 @@
         </div>
         </div>
     </main>
-    <x-remodal_gallery action="button"/>
+    <x-remodal-gallery action="button"/>
 @endsection
 
 @section('extra-scripts')

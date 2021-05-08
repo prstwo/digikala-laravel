@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="relative">
-        <x-mobile_menu/>
+        <x-mobile-menu/>
         <x-header/>
         <!-- navigation component -->
         <x-navbar/>

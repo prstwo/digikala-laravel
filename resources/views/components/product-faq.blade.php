@@ -27,17 +27,17 @@
             </div>
             <div class="c-question-action-text">پرسش خود را درباره این کالا بیان کنید
             </div>
-            <x-idea_register>
+            <x-idea-register>
                 ثبت پرسش
-            </x-idea_register>
+            </x-idea-register>
         </div>
         <div class="c-question-content">
-            <x-c_sort_row/>
+            <x-c-sort-row/>
             <div class="product-questions-list">
                 <div class="c-question-list">
-                    <x-question_item question=" مناسب فیلم برداری هست؟!"  reply="اصلاح کنم فقط مدل mi 10t قابلیت فیلمبرداری اسلوموشن 960 فریم داره ولی به جاش لرزشگیر اپتیکال نداره" name="نیکزاد" badge="خریدار" />
-                    <x-question_item question=" چرا این موبایل که میان رده هست از mate 30pro گرون تره؟؟؟؟؟؟"  reply="میت 30 واقعا بهتره چون پرچم داره" name="نیکزاد" badge="خریدار" />
-                    <x-question_item question=" برای گیم مناسبه؟!"  reply="فوق العاده برای گیم" name="مهدی علینزاد" badge="خریدار" />
+                    <x-question-item question=" مناسب فیلم برداری هست؟!"  reply="اصلاح کنم فقط مدل mi 10t قابلیت فیلمبرداری اسلوموشن 960 فریم داره ولی به جاش لرزشگیر اپتیکال نداره" name="نیکزاد" badge="خریدار" />
+                    <x-question-item question=" چرا این موبایل که میان رده هست از mate 30pro گرون تره؟؟؟؟؟؟"  reply="میت 30 واقعا بهتره چون پرچم داره" name="نیکزاد" badge="خریدار" />
+                    <x-question-item question=" برای گیم مناسبه؟!"  reply="فوق العاده برای گیم" name="مهدی علینزاد" badge="خریدار" />
                 </div>
             </div>
         </div>

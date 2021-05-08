@@ -22,6 +22,6 @@ class Boxheader extends Component
      */
     public function render()
     {
-        return view('components.box_header');
+        return view('components.box-header');
     }
 }

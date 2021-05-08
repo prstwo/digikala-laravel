@@ -23,6 +23,6 @@ class Mobile_menu extends Component
      */
     public function render()
     {
-        return view('components.mobile_menu');
+        return view('components.mobile-menu');
     }
 }

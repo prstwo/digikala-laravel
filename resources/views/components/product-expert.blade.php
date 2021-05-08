@@ -1,6 +1,6 @@
 <div class="product-expert">
     <article >
-        <x-box_header s>نقد وبررسی اجمالی</x-box_header>
+        <x-box-header s>نقد وبررسی اجمالی</x-box-header>
 
         <section class="content-expert-summary " id="reviews">
             <div class="mb-4 relative">
@@ -40,7 +40,7 @@
                     ادامه مطلب
                 </x-ContinueBtn>
                 --}}
-                <x-cntu_btn txt="ادامه مطلب" category="summary"/>
+                <x-cntu-btn txt="ادامه مطلب" category="summary"/>
 
             </div>
         </section>
