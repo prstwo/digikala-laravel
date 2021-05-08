@@ -10,7 +10,24 @@
                         </a>
                         <div class="submenu top-12 absolute " >
                             <div class="submenu-titles flex flex-col">
-                                <a href="#submenu" class="submenu-title" onmouseover="kalayeDigital()">
+                    @php
+                        $categoriesSubmenu = [
+                                            ['cat'=>'کالای دیجیتال','fa-class'=>'fa-laptop','function'=>'"kalayeDigital()"']
+                                           ,['cat'=>'خودرو، ابزار، تجهیزات صنعتی','fa-class'=>'fa-wrench','function'=>'"sanati()"']
+                                           ,['cat'=>'مد و پوشاک','fa-class'=>'fa-check','function'=>'"mod()"']
+                                           ,['cat'=>'اسباب بازی، کودک، نوزاد','function'=>'"asbabBazi()"','fa-class'=>'fa-child']
+                                           ,['cat'=>'زیبایی و سلامت','function'=>'"zibayie()"','fa-class'=>'fa-heart']
+                                           ,['cat'=>'خانه و آشپزخانه','function'=>'"khane()"','fa-class'=>'fa-home']
+                                           ,['cat'=>'کتاب، لوازم تحریر، هنر','function'=>'"ketab()"','fa-class'=>'fa-pencil']
+                                           ,['cat'=>'ورزش و سفر','function'=>'"varzesh()"','fa-class'=>'fa-tree'] ]
+                    @endphp
+                    @foreach($categoriesSubmenu as $categorysubmenu)
+                                    <a href="#submenu" class="submenu-title" onmouseover={!! $categorysubmenu['function']!!}>
+                                        <i class="fa  {!! $categorysubmenu['fa-class']!!}"></i>
+                                        {{$categorysubmenu['cat']}}
+                                    </a>
+                    @endforeach
+                                {{--<a href="#submenu" class="submenu-title" onmouseover="kalayeDigital()">
                                     <i class="fa fa-laptop"></i>
                                     کالای دیجیتال
                                 </a>
@@ -41,7 +58,7 @@
                                 <a href="#submenu" class="submenu-title" onmouseover="varzesh()">
                                     <i class="fa fa-tree"></i>
                                     ورزش و سفر
-                                </a>
+                                </a> --}}
 
                             </div>
                             <div class="submenu-items-container flex flex-col w-full">
@@ -106,18 +123,7 @@
                                             </a>
 
                                         </div>
-                                        <div class="new-brands-holder h-22 flex flex-col justify-center ">
-                                            <h3>ّبرندهای ویژه</h3>
-                                            <div class="new-ads-brands flex flex-row">
-                                                <a href="">
-                                                    <div class="ml-2 p-2 text-center"><img src="images/ex-brand-1.jpg" class="h-auto w-full" alt=""></div>
-                                                </a><a href="">
-                                                    <div class=" ml-2 p-2 text-center"><img src="images/ex-brand-2.jpg" class="h-auto w-full" alt=""></div>
-                                                </a><a href="">
-                                                    <div class="ml-2 p-2 text-center"><img src="images/ex-brand-3.jpg" class="h-auto w-full" alt=""></div>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <x-navbar-new-brands-sec/>
 
                                     </div>
                                 </div>
@@ -183,19 +189,7 @@
                                             </a>
 
                                         </div>
-                                        <div class="new-brands-holder h-22 flex flex-col justify-center ">
-                                            <h3>ّبرندهای ویژه</h3>
-                                            <div class="new-ads-brands flex flex-row">
-                                                <a href="">
-                                                    <div class="ml-2 p-2 text-center"><img src="images/ex-brand-1.jpg" class="h-auto w-full" alt=""></div>
-                                                </a><a href="">
-                                                    <div class=" ml-2 p-2 text-center"><img src="images/ex-brand-2.jpg" class="h-auto w-full" alt=""></div>
-                                                </a><a href="">
-                                                    <div class="ml-2 p-2 text-center"><img src="images/ex-brand-3.jpg" class="h-auto w-full" alt=""></div>
-                                                </a>
-                                            </div>
-                                        </div>
-
+                                        <x-navbar-new-brands-sec/>
                                     </div>
                                 </div>
                                 <div class="submenu-items-one js-nav-submenu-items  js-mod-menu p-3"  style="display: none">
@@ -254,19 +248,7 @@
                                             </a>
 
                                         </div>
-                                        <div class="new-brands-holder h-22 flex flex-col justify-center ">
-                                            <h3>ّبرندهای ویژه</h3>
-                                            <div class="new-ads-brands flex flex-row">
-                                                <a href="">
-                                                    <div class="ml-2 p-2 text-center"><img src="images/ex-brand-1.jpg" class="h-auto w-full" alt=""></div>
-                                                </a><a href="">
-                                                    <div class=" ml-2 p-2 text-center"><img src="images/ex-brand-2.jpg" class="h-auto w-full" alt=""></div>
-                                                </a><a href="">
-                                                    <div class="ml-2 p-2 text-center"><img src="images/ex-brand-3.jpg" class="h-auto w-full" alt=""></div>
-                                                </a>
-                                            </div>
-                                        </div>
-
+                                        <x-navbar-new-brands-sec/>
                                     </div>
                                 </div>
                                 <div class="submenu-items-one js-nav-submenu-items js-asbab-bazi-menu p-3 "  style="display: none">
@@ -331,19 +313,7 @@
                                             </a>
 
                                         </div>
-                                        <div class="new-brands-holder h-22 flex flex-col justify-center ">
-                                            <h3>ّبرندهای ویژه</h3>
-                                            <div class="new-ads-brands flex flex-row">
-                                                <a href="">
-                                                    <div class="ml-2 p-2 text-center"><img src="images/ex-brand-1.jpg" class="h-auto w-full" alt=""></div>
-                                                </a><a href="">
-                                                    <div class=" ml-2 p-2 text-center"><img src="images/ex-brand-2.jpg" class="h-auto w-full" alt=""></div>
-                                                </a><a href="">
-                                                    <div class="ml-2 p-2 text-center"><img src="images/ex-brand-3.jpg" class="h-auto w-full" alt=""></div>
-                                                </a>
-                                            </div>
-                                        </div>
-
+                                        <x-navbar-new-brands-sec/>
                                     </div>
 
                                 </div>
@@ -401,19 +371,7 @@
                                             </a>
 
                                         </div>
-                                        <div class="new-brands-holder h-22 flex flex-col justify-center ">
-                                            <h3>ّبرندهای ویژه</h3>
-                                            <div class="new-ads-brands flex flex-row">
-                                                <a href="">
-                                                    <div class="ml-2 p-2 text-center"><img src="images/ex-brand-1.jpg" class="h-auto w-full" alt=""></div>
-                                                </a><a href="">
-                                                    <div class=" ml-2 p-2 text-center"><img src="images/ex-brand-2.jpg" class="h-auto w-full" alt=""></div>
-                                                </a><a href="">
-                                                    <div class="ml-2 p-2 text-center"><img src="images/ex-brand-3.jpg" class="h-auto w-full" alt=""></div>
-                                                </a>
-                                            </div>
-                                        </div>
-
+                                        <x-navbar-new-brands-sec/>
                                     </div>
 
 
@@ -474,19 +432,7 @@
                                             </a>
 
                                         </div>
-                                        <div class="new-brands-holder h-22 flex flex-col justify-center ">
-                                            <h3>ّبرندهای ویژه</h3>
-                                            <div class="new-ads-brands flex flex-row">
-                                                <a href="">
-                                                    <div class="ml-2 p-2 text-center"><img src="images/ex-brand-1.jpg" class="h-auto w-full" alt=""></div>
-                                                </a><a href="">
-                                                    <div class=" ml-2 p-2 text-center"><img src="images/ex-brand-2.jpg" class="h-auto w-full" alt=""></div>
-                                                </a><a href="">
-                                                    <div class="ml-2 p-2 text-center"><img src="images/ex-brand-3.jpg" class="h-auto w-full" alt=""></div>
-                                                </a>
-                                            </div>
-                                        </div>
-
+                                        <x-navbar-new-brands-sec/>
                                     </div>
 
                                 </div>
@@ -546,19 +492,7 @@
                                             </a>
 
                                         </div>
-                                        <div class="new-brands-holder h-22 flex flex-col justify-center ">
-                                            <h3>ّبرندهای ویژه</h3>
-                                            <div class="new-ads-brands flex flex-row">
-                                                <a href="">
-                                                    <div class="ml-2 p-2 text-center"><img src="images/ex-brand-1.jpg" class="h-auto w-full" alt=""></div>
-                                                </a><a href="">
-                                                    <div class=" ml-2 p-2 text-center"><img src="images/ex-brand-2.jpg" class="h-auto w-full" alt=""></div>
-                                                </a><a href="">
-                                                    <div class="ml-2 p-2 text-center"><img src="images/ex-brand-3.jpg" class="h-auto w-full" alt=""></div>
-                                                </a>
-                                            </div>
-                                        </div>
-
+                                        <x-navbar-new-brands-sec/>
                                     </div>
 
                                 </div>
@@ -618,18 +552,7 @@
                                             </a>
 
                                         </div>
-                                        <div class="new-brands-holder h-22 flex flex-col justify-center ">
-                                            <h3>ّبرندهای ویژه</h3>
-                                            <div class="new-ads-brands flex flex-row">
-                                                <a href="">
-                                                    <div class="ml-2 p-2 text-center"><img src="images/ex-brand-1.jpg" class="h-auto w-full" alt=""></div>
-                                                </a><a href="">
-                                                    <div class=" ml-2 p-2 text-center"><img src="images/ex-brand-2.jpg" class="h-auto w-full" alt=""></div>
-                                                </a><a href="">
-                                                    <div class="ml-2 p-2 text-center"><img src="images/ex-brand-3.jpg" class="h-auto w-full" alt=""></div>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <x-navbar-new-brands-sec/>
 
                                     </div>
 
@@ -678,6 +601,7 @@
 
                                             </div>
                                         </li>
+
                                         <li class="submenu-lists">
                                             <a href="#category" class="submenu-list-link">کالای دیجیتال</a>
                                         </li>
