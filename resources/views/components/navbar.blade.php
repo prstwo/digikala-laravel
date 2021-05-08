@@ -1,9 +1,9 @@
-<nav>
+<nav class="desktop-nav ">
     <div class="nav-container">
         <div class="nav pt-3 px-4" id="navbar">
             <div class="nav-items">
                 <ul class="nav-ul flex relative h-12">
-                    <li class="nav-link">
+                    <li class="nav-link js-nav-link">
                         <a href="#categories-page" class="  nav-link-title mega-menu-link toggle" >
                             <i class="fa fa-list-ul"></i>
                             دسته بندی کالاها
@@ -565,12 +565,12 @@
 
                     </li>
                     <!--اینا خودشون یه کامئوننت جدا هستن که باید بعد روشون کار کنم - شروع-->
-                    <li class="nav-link  border-right-add">
+                    <li class="nav-link border-right-add">
                         <a href="#supermarket" class="nav-link-title">
                             <i class="fa fa-shopping-basket"></i> سوپرمارکت
                         </a>
                     </li>
-                    <li class="nav-link">
+                    <li class="nav-link js-nav-link">
                         <a href="#offers" class="nav-link-title toggle">
                             <i class="fa fa-percent"></i> تخفیف ها و پشنهادها
                         </a>
@@ -679,14 +679,14 @@
                         </div>
                         <div class="overlay"></div>
                     </li>
-                    <li class="nav-link">
+                    <li class="nav-link ">
                         <a href="#supermarket" class="nav-link-title">
                             <i class="fa fa-check-circle-o"></i>  دیجی کالای من
                         </a>
 
                     </li>
                     <!--digi plus-->
-                    <li class="nav-link">
+                    <li class="nav-link js-nav-link">
                         <a href="#supermarket" class="nav-link-title toggle nav-digiplus">
                             <img src="images/digiplus-minicon.svg" class="w-4 h-4 ml-1 inline-block" alt="digiplus mini icon"> دیجی پلاس
                         </a>

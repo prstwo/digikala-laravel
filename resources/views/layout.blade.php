@@ -20,7 +20,7 @@
         <x-mobile-menu/>
         <x-header/>
         <!-- navigation component -->
-        <x-navbar/>
+
         @yield('main-content')
     <!--footer component-->
         <x-footer/>

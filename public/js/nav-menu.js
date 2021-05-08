@@ -1,11 +1,17 @@
-/*document.querySelectorAll('.submenu').forEach((sm)=>{
-    if(sm.classList.contains('show')){
-       // document.querySelector('.m-overlay').classList.add('active');
-        //console.log(getComputedStyle(sm).display)
-        console.log(window.getComputedStyle(sm).getPropertyValue('display'))
-    }
-})*/
 let mobileMenuCon= document.querySelector('.mobile-menu-container');
+let navOverlay= document.querySelector('.nav-overlay');
+document.querySelectorAll('.js-nav-link').forEach((navLink)=>{navLink.addEventListener('mouseover',()=>{
+    navOverlay.classList.add('show')
+
+})
+});
+document.querySelectorAll('.js-nav-link').forEach((navLink)=>{navLink.addEventListener('mouseout',()=>{
+    navOverlay.classList.remove('show')
+
+})
+})
+
+
 function toggleSub(link){
     link.querySelector('ul').classList.toggle('hide');
 }

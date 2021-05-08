@@ -115,7 +115,9 @@ a:hover, a:active{
     padding: 9px 11px 11px  11px;
 }
 main{
+    box-sizing: border-box;
     background: #f5f5f5;
+    margin-top: 65px;
 }
 .page-section{
     margin: 16px 0 0;
@@ -142,7 +144,7 @@ main{
     }
 }
 
-.overlay, .m-overlay{
+.overlay, .m-overlay, .nav-overlay{
     position: fixed;
     right: 0;
     height: 100%;
@@ -162,14 +164,26 @@ main{
 .m-overlay{
     z-index: 60;
 }
+.nav-overlay{
+    z-index: 8;
+}
+.nav-overlay.show{
+    opacity: 1;
+}
 .active{
     opacity:1;
     pointer-events: all;
 }
 
 /*navbar styles */
+.desktop-nav{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 100;
+}
 .nav-container{
-    box-shadow: 0 7px 8px 0 rgba(0,0,0,.4);
+    box-shadow: 0 8px 18px -18px rgb(0 0 0 / 3%);
 }
 .nav{
     background-color: white;
@@ -257,10 +271,10 @@ a.nav-link-title{
 .nav-link:hover  > .submenu{
     display: flex;
 }
-
+/*
 .nav-link:hover  .overlay{
     opacity: 1;
-}
+}*/
 
 .submenu-titles{
     width: 20%;
@@ -752,6 +766,10 @@ This file can be used as the styllesheet of any bullet slider
     }
 }
  /*header */
+
+.page-main-header{
+    z-index:10;
+}
 .header-search{
     line-height: 1.833;
     z-index: 51;

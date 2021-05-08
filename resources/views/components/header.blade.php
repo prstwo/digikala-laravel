@@ -1,5 +1,5 @@
 
-<header class="sticky top-0 righ-0 left-0 z-50 bg-white relative">
+<header class="page-main-header sticky top-0 righ-0 left-0 z-50 bg-white relative">
     <div class="mobile-header px-4 py-3">
         <div class="header-one py-2 mb-2 border-b border-gray-100 ">
             <div class="sandwich-menu js-m-sandwich-menu ">
@@ -75,4 +75,7 @@
 
         </div>
     </div>
+    <x-navbar/>
 </header>
+<div class="nav-overlay"></div>
+

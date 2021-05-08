@@ -5,7 +5,7 @@
 @show
 @section('page-title','فروشگاه اینترنتی دیجی کالا')
 @section('main-content')
-    <main>
+    <main >
         <!-- main top container -->
         <x-home-main-top/>
         <!--incredible specials component-->
