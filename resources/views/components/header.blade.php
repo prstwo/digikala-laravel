@@ -21,7 +21,7 @@
         <div class="header-two py-2 mb-2  border-b border-gray-100">
             <div class="px-0  header-search">
                 <i class="fa fa-search w-11 h-search-btn relative"></i>
-                <input type="text" class="w-full h-full py-3  pl-2 pr-1 search-input" placeholder="جستجو در دیجی&zwnj;کالا …" onclick="bgWhite(this)">
+                <input type="text" class="w-full h-full py-3  pl-2 pr-1 search-input " placeholder="جستجو در دیجی&zwnj;کالا …" >
             </div>
             <div class="flex flex-row justify-center items-center content-center">
                 <div class="m-header-login px-3 py-0 flex flex-row justify-center items-center content-center ">
@@ -57,7 +57,7 @@
             </div>
             <div class="px-0  header-search">
                 <i class="fa fa-search w-11 h-search-btn relative"></i>
-                <input type="text" class="w-full h-full py-3  pl-2 pr-1 search-input" placeholder="جستجو در دیجی&zwnj;کالا …">
+                <input type="text" class="w-full h-full py-3  pl-2 pr-1 search-input js-search-input" placeholder="جستجو در دیجی&zwnj;کالا …">
             </div>
         </div>
         <div class="header-action  flex flex-row">

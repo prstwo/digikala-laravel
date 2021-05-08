@@ -111,6 +111,15 @@ setInterval(function(){
     //
     console.log('hello')
 });*/
-function bgWhite(search){
-    search.parentElement.classList.add('is-active')
+function addBgWhite(search){
+    search.target.parentElement.classList.add('is-active')
+};
+function rmBgWhite(search){
+    search.target.parentElement.classList.remove('is-active')
 }
+document.querySelector('.js-search-input').addEventListener('focus',(e)=>{
+    addBgWhite(e)
+});
+document.querySelector('.js-search-input').addEventListener('blur',(e)=>{
+    rmBgWhite(e)
+})

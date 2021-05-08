@@ -762,6 +762,7 @@ This file can be used as the styllesheet of any bullet slider
     border: none;
     display: flex;
     width: 60%;
+    -webkit-transition: .3s cubic-bezier(.17,.67,.49,.93);
 }
 
 .search-input{
@@ -780,6 +781,7 @@ This file can be used as the styllesheet of any bullet slider
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     background-color: white;
+    box-shadow: 0 0 5px 3px #d6d6d6;
 }
 .search-input:focus, .search-input .header-search{
     outline: none;
@@ -787,11 +789,7 @@ This file can be used as the styllesheet of any bullet slider
     border-bottom-left-radius: 8px;
     background-color: inherit;
 }
-.search-input:focus .header-search{
-    box-shadow: 0 0 3px 3px #d6d6d6;
-    background-color: white;
 
-}
 .search-input:focus .h-search-btn{
     background-color: white;
 
