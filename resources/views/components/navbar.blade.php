@@ -722,9 +722,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="overlay"></div>
                         <!--digi club-->
-                    <li class="nav-link ">
+                    <li class="nav-link  js-nav-link">
                         <a href="#supermarket" class="nav-link-title toggle">
                             <i class="fa fa-random"></i>  دیجی کلاب
                         </a>
@@ -788,7 +787,6 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="overlay" ></div>
 
 
                     </li>
