@@ -157,7 +157,7 @@ main{
     pointer-events: none;
 }
 .overlay{
-    z-index: 9;
+    z-index: 0;
 }
 .m-overlay{
     z-index: 60;
