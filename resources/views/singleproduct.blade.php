@@ -44,7 +44,7 @@
                         </div>
                         <div>
                             <div class="product-gallery-main-pic py-4">
-                                <img src="images/product-main-pic.jpg" alt="product pic">
+                                <img src={{asset("images/product-main-pic.jpg")}} alt="product pic">
                             </div>
                             <ul class="flex product-gallery-pictures">
                                 @foreach($productGalleryPictures as $productgallerypicture)
@@ -52,7 +52,7 @@
                                     @if($loop->last)
                                         <li class=" ">
                                             <div class="thumb-wrapper">
-                                                <img src={!! $productgallerypicture['img'] !!}  alt="sth">
+                                                <img src={{asset($productgallerypicture['img'])}}  alt="sth">
                                                 <div class="gallery-images-count">
                                                  <span class="gallery-count-circle" onclick="defaultModalToggle()">
                                                      <div class="text-2xl">
@@ -64,7 +64,7 @@
                                         </li>
                                     @endif
                                     <li class=" ">
-                                        <div class="thumb-wrapper"><img src={!! $productgallerypicture['img'] !!}  data-src={!! $productgallerypicture['data'] !!} alt=""></div>
+                                        <div class="thumb-wrapper"><img src={{asset($productgallerypicture['img'] )}}  data-src={{asset($productgallerypicture['data']) }} alt=""></div>
                                     </li>
                                 @endforeach
 

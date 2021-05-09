@@ -16,10 +16,11 @@
     url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.ttf') format('truetype');
     font-weight: normal;
 }
+/*اینجارو چیکار کنم؟؟؟؟/*/
 @font-face {
     font-family: 'FontAwesome';
-    src: url('fonts/fontawesome/webfonts/fa-brands-400.eot') format('eot');
-    src: url('fonts/fontawesome/webfonts/fa-solid-900.eot') format('eot');
+    src: asset("fonts/fontawesome/webfonts/fa-brands-400.eot") format('eot');
+    src:asset("fonts/fontawesome/webfonts/fa-solid-900.eot") format('eot');
 }
 
 html, body{
@@ -1141,7 +1142,7 @@ span.head-title::after{
     margin: auto;
 }
 .feature-item-1{
-    background-image: url('images/24hours.svg')  ;
+    background-image: url('../../public/images/24hours.svg')  ;
     background-repeat: no-repeat;
     background-size: auto 58px;
 }

@@ -1,7 +1,7 @@
 <div class="hidden sm:block sticky  mini-buy-box-fix mr-6 mb-10 top-3 justify-self-start ">
     <div class="mini-buy-box  rounded-lg p-4 border bg-white">
         <div class="mini-buy-box-product-info mb-5 py-4 border-b">
-            <img src="images/product-pic-example5.jpg" alt="product" class="w-20 h-20 ml-5">
+            <img src='{{asset("images/product-pic-example5.jpg")}}' alt="product" class="w-20 h-20 ml-5">
             <div class="w-full  mini-buy-box-product-info-info">
                 <div class="w-full  title ">
                     گوشی موبایل شیائومی مدل Mi 10T Pro 5G 2007J3SG دو سیم&zwnj; کارت ظرفیت 128 گیگابایت

@@ -23,7 +23,7 @@
                                                 <div class="product-item">
                                                     <div>
                                                         <a href="#product-page">
-                                                            <img src={!!$productItem3['img']!!}} alt="a product example" class="product-img">
+                                                            <img src={{asset($productItem3['img'])}} alt="a product example" class="product-img">
                                                         </a>
                                                     </div>
                                                     <div class="product-title">
@@ -86,7 +86,7 @@
                                                 <div class="product-item">
                                                     <div>
                                                         <a href="#product-page">
-                                                            <img src={!!$productItem4['img']!!}} title="phone1" alt="a product example" class="product-img">
+                                                            <img src={{asset($productItem4['img'])}} title="phone1" alt="a product example" class="product-img">
                                                         </a>
                                                     </div>
                                                     <div class="product-title">
@@ -144,7 +144,7 @@
                                 <div class="swiper-slide" style="">
                                     <div class="swiper-brands-image-container">
                                         <a href="#brand-page" class="banner-brand-link">
-                                            <img src={!! $brand['img'] !!} alt="brand">
+                                            <img src={{asset($brand['img'])}} alt="brand">
                                         </a>
                                     </div>
                                 </div>

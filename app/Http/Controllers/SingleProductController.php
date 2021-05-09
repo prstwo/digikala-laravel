@@ -48,10 +48,10 @@ class SingleProductController extends Controller
 
         return view('singleproduct', [
             'productGalleryPictures'=> [
-                ['img'=>'"images/product-pic-example1.jpg"','data'=>'"images/product-data-src0.jpg"'],
-                ['img'=>'"images/product-pic-example2.jpg"','data'=>'"images/product-data-src1.jpg"'],
-                ['img'=>'"images/product-pic-example3.jpg"','data'=>'"images/product-data-src2.jpg"'],
-                ['img'=>'"images/product-pic-example4.jpg"','data'=>'"images/product-data-src3.jpg"']
+                ['img'=>'images/product-pic-example1.jpg','data'=>'images/product-data-src0.jpg'],
+                ['img'=>'images/product-pic-example2.jpg','data'=>'images/product-data-src1.jpg'],
+                ['img'=>'images/product-pic-example3.jpg','data'=>'images/product-data-src2.jpg'],
+                ['img'=>'images/product-pic-example4.jpg','data'=>'images/product-data-src3.jpg']
             ], 'productTabs' =>[
                 ['href'=>'#reviews', 'text'=>'نقد و بررسی'],
                 ['href'=>'#details', 'text'=>'مشخصات'],

@@ -1,11 +1,11 @@
 @php
     $modalGalleryPictures = [
-           ['img'=>'"images/product-pic-example1.jpg"','data'=>'"images/product-data-src0.jpg"'],
-           ['img'=>'"images/product-pic-example2.jpg"','data'=>'"images/product-data-src1.jpg"'],
-           ['img'=>'"images/product-pic-example3.jpg"','data'=>'"images/product-data-src2.jpg"'],
-           ['img'=>'"images/product-pic-example4.jpg"','data'=>'"images/product-data-src3.jpg"'],
-           ['img'=>'"images/product-pic-example5.jpg"','data'=>'"images/product-data-src4.jpg"'],
-           ['img'=>'"images/product-pic-example6.jpg"','data'=>'"images/product-data-src5.jpg"']
+           ['img'=>'images/product-pic-example1.jpg','data'=>'images/product-data-src0.jpg'],
+           ['img'=>'images/product-pic-example2.jpg','data'=>'images/product-data-src1.jpg'],
+           ['img'=>'images/product-pic-example3.jpg','data'=>'images/product-data-src2.jpg'],
+           ['img'=>'images/product-pic-example4.jpg','data'=>'images/product-data-src3.jpg'],
+           ['img'=>'images/product-pic-example5.jpg','data'=>'images/product-data-src4.jpg'],
+           ['img'=>'images/product-pic-example6.jpg','data'=>'images/product-data-src5.jpg']
        ];
 @endphp
 <div class="remodal-gallery remodal-is-closed" >
@@ -25,7 +25,7 @@
             <div class="remodal-gallery-thumbs">
                 @foreach($modalGalleryPictures as $modalGalleryPicture)
                     <div class="remodal-gallery-thumb js-remodal-gallery-thumb" onclick="displayRemodal(this)">
-                        <img src={!! $modalGalleryPicture['img'] !!}  data-src={!! $modalGalleryPicture['data'] !!}
+                        <img src={{asset($modalGalleryPicture['img'])}} data-src={{asset( $modalGalleryPicture['data'] )}}
                             alt="گوشی"
                              data-type=""
                              loading="lazy">
