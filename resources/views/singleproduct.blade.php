@@ -315,5 +315,4 @@
 @endsection
 
 @section('extra-scripts')
-    <script src="js/single-product.js"></script>
 @endsection
