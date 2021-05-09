@@ -9,7 +9,6 @@ if(window.innerWidth < 680 || document.body.clientWidth <680){
 }
 
 //nav menu js
-let mobileMenuCon= document.querySelector('.mobile-menu-container');
 let navOverlay= document.querySelector('.nav-overlay');
 
 document.documentElement.addEventListener('scroll',()=>{
@@ -31,7 +30,10 @@ document.querySelectorAll('.js-nav-link').forEach((navLink)=>{navLink.addEventLi
 function toggleSub(link){
     link.querySelector('ul').classList.toggle('hide');
 }
+
 function mobileMenu(){
+    let mobileMenuCon= document.querySelector('.mobile-menu-container');
+
     mobileMenuCon.classList.toggle('hide');
     document.querySelector('.m-overlay').classList.toggle('active');
     if(!mobileMenuCon.classList.contains('hide')){

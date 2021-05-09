@@ -1,7 +1,3 @@
-{{--
-در شاخه mix-test2 از لاراول مکس استفاده شده است. البته در ان شاخه تمامی جوانب پروزه به غیر از کدهای js عمل میکنند.
-در حال بررسی
---}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @yield('keyword-description')
     <title>@yield('page-title')</title>
-    <!-- Link Swiper's CSS -->
     <link href="{{ asset('https://unpkg.com/swiper/swiper-bundle.css') }}" rel="stylesheet">
     <link href="{{ asset('https://unpkg.com/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
     <link href="{{ asset('fonts/fontawesome/css/all.css') }}" rel="stylesheet">

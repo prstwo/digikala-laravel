@@ -6,7 +6,6 @@
 
                 <a href="#mobile-menu-container"  onclick="mobileMenu()">
                     <i class="fa fa-align-justify "></i>
-
                 </a>
             </div>
             <div class="digikala-icon-container">
