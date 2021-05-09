@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.master')
 @section('keyword-description')
     <meta name="keyword" content="گوشی موبایل, دیجی کالا">
     <meta name="description" content="this is product page of digikala">
