@@ -9,7 +9,7 @@
                         <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
                         <div class="carousel-item absolute opacity-0 w-full h-full" >
                             <div class="block h-full w-full bg-indigo-500 text-white text-5xl text-center rounded-2xl">
-                                <img src="images/maintop-1.jpg" alt="product img" class="rounded-lg">
+                                <img src={{asset("images/maintop-1.jpg")}} alt="product img" class="rounded-lg">
 
                             </div>
                         </div>
@@ -20,7 +20,7 @@
                         <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
                         <div class="carousel-item absolute opacity-0 w-full h-full" >
                             <div class="block h-full w-full bg-orange-500 text-white text-5xl text-center">
-                                <img src="images/maintop-2.jpg" alt="product img" class="rounded-lg">
+                                <img src={{asset("images/maintop-2.jpg")}} alt="product img" class="rounded-lg">
                             </div>
                         </div>
                         <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-5xl font-bold text-gray-200  transform hover:translate-x-0.5  rounded-full   leading-tight text-center z-9 inset-y-0 right-0 my-auto">‹</label>
@@ -30,7 +30,7 @@
                         <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
                         <div class="carousel-item absolute opacity-0 w-full h-full">
                             <div class="block h-full w-full bg-green-500 text-white text-5xl text-center">
-                                <img src="images/maintop-3.jpg" alt="product img" class="rounded-lg">
+                                <img src={{asset("images/maintop-3.jpg")}} alt="product img" class="rounded-lg">
 
                             </div>
                         </div>
@@ -55,12 +55,12 @@
         <div class="main-top-sides">
             <div class="side">
                 <a href="side product page">
-                    <img src="images/maintop-topside.gif" alt="product gif">
+                    <img src={{asset("images/maintop-topside.gif")}} alt="product gif">
                 </a>
             </div>
             <div class="side">
                 <a href="side product page">
-                    <img src="images/maintop-bottomside.jpg" alt="product gif">
+                    <img src={{asset("images/maintop-bottomside.jpg")}} alt="product gif">
                 </a>
             </div>
         </div>

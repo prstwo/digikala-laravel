@@ -10,7 +10,7 @@
             </div>
             <div class="digikala-icon-container">
                 <a href="#digikala">
-                    <img src="images/digikala.svg" alt="digikala">
+                    <img src={{asset("images/digikala.svg")}} alt="digikala">
                 </a>
             </div>
             <div class="question-mark">
@@ -51,7 +51,7 @@
         <div class="desktop-header header-right-side flex content-center flex-grow">
             <div class="mr-2 ml-6 w-100 flex items-center">
                 <a href="digikala">
-                    <img src="images/digikala.svg" alt="digikala">
+                    <img src={{asset("images/digikala.svg")}} alt="digikala">
                 </a>
             </div>
             <div class="px-0  header-search">
