@@ -24,7 +24,6 @@
         <x-mobile-menu/>
         <x-header/>
         <!-- navigation component -->
-
         @yield('main-content')
     <!--footer component-->
         <x-footer/>
@@ -32,15 +31,73 @@
     </div>
     {{-- ابتدا با استفاده از لاراول میکس asset ها فراخوانی شدند و استایل ها و کدهای جاوااسکری\ت با موفقیت اعمال شد. اما
      توابعی که از طریق رویدادهای inline در html استفاده شده بودند، برای داکیومنت غیرقابل خواندن شد. مثل onclick=toggler() که در عمل دیباگ به صورت toggler() is undefined ارور دریافت میشد. به همین دلیل مجدد به کامیت های قبلی بازگشته شد --}}
-    <script src="js/nav-menu.js"></script>
-    <script src="js/icredible-specials.js"></script>
-    <script src="js/category-products.js"></script>
-    <script src="js/special-brands.js"></script>
-    <script src="js/all.js"></script>
-    <script src="js/footer.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/swiper-customize.js"></script>
+    {{--<script src="js/swiper-customize.js"></script> --}}
+    <script>
+        //swiper customize
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            slidesPerGroup: 4,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        var swiper2 = new Swiper('.swiper-container2', {
+            slidesPerView: 5,
+            spaceBetween: 20,
+            slidesPerGroup: 5,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        var swiper3 = new Swiper('.swiper-container3', {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            slidesPerGroup: 5,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        var swiper4 = new Swiper('.swiper-container4', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script src="js/all.js"></script>
     @yield('extra-scripts')
 </body>
 </html>
