@@ -19,8 +19,8 @@
 /*اینجارو چیکار کنم؟؟؟؟/*/
 @font-face {
     font-family: 'FontAwesome';
-    src: asset("fonts/fontawesome/webfonts/fa-brands-400.eot") format('eot');
-    src:asset("fonts/fontawesome/webfonts/fa-solid-900.eot") format('eot');
+    src: url('/fonts/fontawesome/webfonts/fa-brands-400.woff2') format("woff2");
+    src:url('/fonts/fontawesome/webfonts/fa-solid-900.woff2') format("woff2");
 }
 
 html, body{

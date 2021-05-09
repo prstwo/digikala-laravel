@@ -1,10 +1,10 @@
 <footer class="digi-footer mt-13">
     @php
     $footerAdressImages = [
-    ['src'=>'"images/google-play.png"'],
-    ['src'=>'"images/bazaar.svg"'],
-    [ 'src'=>'"images/myket.svg"']
-    ,['src'=>'"images/sibapp.png"']
+    ['src'=>'images/google-play.png'],
+    ['src'=>'images/bazaar.svg'],
+    [ 'src'=>'images/myket.svg']
+    ,['src'=>'images/sibapp.png']
     ]
     @endphp
     <div class="footer-jumpup absolute w-full flex flex-row flex-wrap justify-center">
@@ -19,31 +19,31 @@
     <div class="footer-innerbox flex flex-row flex-wrap justify-center">
         <a href="#navbar" class="footer-badge">
             <div class="footer-feature-item feature-item-1 flex flex-col content-center justify-center">
-                <img src="images/24hours.svg" class="pb-7 flex flex-row justify-center w-14 mx-auto my-0">
+                <img src={{asset("images/24hours.svg")}} class="pb-7 flex flex-row justify-center w-14 mx-auto my-0">
                 <div class="flex flex-row justify-center">تحویل اکسپرس</div>
             </div>
         </a>
         <a href="#navbar" class="footer-badge">
             <div class="footer-feature-item feature-item-1 flex flex-col content-center justify-center">
-                <img src="images/24hours.svg" class="pb-7 flex flex-row justify-center w-14 mx-auto my-0">
+                <img src={{asset("images/24hours.svg")}} class="pb-7 flex flex-row justify-center w-14 mx-auto my-0">
                 <div class="flex flex-row justify-center">پشتیبانی 24 ساعته</div>
             </div>
         </a>
         <a href="#navbar" class="footer-badge">
             <div class="footer-feature-item feature-item-1 flex flex-col content-center justify-center">
-                <img src="images/local-pay.svg" class="pb-7 flex flex-row justify-center w-14 mx-auto my-0">
+                <img src={{asset("images/local-pay.svg")}} class="pb-7 flex flex-row justify-center w-14 mx-auto my-0">
                 <div class="flex flex-row justify-center">پرداخت در محل </div>
             </div>
         </a>
         <a href="#navbar" class="footer-badge">
             <div class="footer-feature-item feature-item-1 flex flex-col content-center justify-center">
-                <img src="images/7days.svg" class="pb-7 flex flex-row justify-center w-14 mx-auto my-0">
+                <img src={{asset("images/7days.svg")}} class="pb-7 flex flex-row justify-center w-14 mx-auto my-0">
                 <div class="flex flex-row justify-center">7 روز ضمانت بازگشت</div>
             </div>
         </a>
         <a href="#navbar" class="footer-badge">
             <div class="footer-feature-item feature-item-1 flex flex-col content-center justify-center">
-                <img src="images/garranty.svg" class="pb-7 flex flex-row justify-center w-14 mx-auto my-0">
+                <img src={{asset("images/garranty.svg")}} class="pb-7 flex flex-row justify-center w-14 mx-auto my-0">
                 <div class="flex flex-row justify-center">ضمانت اصل بودن کالا </div>
             </div>
         </a>
@@ -169,7 +169,7 @@
                 <div class="mobile-footer-address-images flex flex-nowrap justify-center">
                     @foreach($footerAdressImages as $footeraddress)
                         <a href="#download" class="footer-address-googleplay ml-2">
-                            <img src={!! $footeraddress['src'] !!} alt="" width="150px" loading="lazy">
+                            <img src={{asset($footeraddress['src'])}} alt="" width="150px" loading="lazy">
                         </a>
                     @endforeach
                 </div>
@@ -232,7 +232,7 @@
         <div class="footer-address-images flex flex-nowrap justify-center">
             @foreach($footerAdressImages as $footeraddress)
                 <a href="#download" class="footer-address-googleplay ml-2">
-                    <img src={!! $footeraddress['src'] !!} alt="" width="150px" loading="lazy">
+                    <img src={{asset($footeraddress['src'])}} alt="" width="150px" loading="lazy">
                 </a>
             @endforeach
         </div>
@@ -255,14 +255,14 @@
             <aside>
                 <ul class="flex flex-row items-center footer-safety-partner">
                     <li class="safety-partner-1">
-                        <img src="images/etehadiye.png" alt="">
+                        <img src={{asset("images/etehadiye.png")}} alt="">
                     </li>
                     <li class="safety-partner-2">
-                        <img src="images/namad.aspx" alt="">
+                        <img src={{asset("images/namad.aspx")}} alt="">
 
                     </li>
                     <li class="safety-partner-3">
-                        <img src="images/sabt-neshan.aspx" alt="">
+                        <img src={{asset("images/sabt-neshan.aspx")}} alt="">
                     </li>
                 </ul>
             </aside>
@@ -272,32 +272,32 @@
                 <ul class="my-2 w-full flex flex-row flex-nowrap justify-around">
                     <li>
                         <a href="#partner-page">
-                            <img src="images/digikala-mag.svg" alt="partner">
+                            <img src={{asset("images/digikala-mag.svg")}} alt="partner">
                         </a>
                     </li>
                     <li>
                         <a href="#partner-page">
-                            <img src="images/digikala-mag.svg" alt="partner">
+                            <img src={{asset("images/digikala-mag.svg")}} alt="partner">
                         </a>
                     </li>
                     <li>
                         <a href="#partner-page">
-                            <img src="images/digipay.svg" alt="partner">
+                            <img src={{asset("images/digipay.svg")}} alt="partner">
                         </a>
                     </li>
                     <li>
                         <a href="#partner-page">
-                            <img src="images/digiclub.svg" alt="partner">
+                            <img src={{asset("images/digiclub.svg")}} alt="partner">
                         </a>
                     </li>
                     <li>
                         <a href="#partner-page">
-                            <img src="images/digikala-affilaiate.svg" alt="partner">
+                            <img src={{asset("images/digikala-affilaiate.svg")}} alt="partner">
                         </a>
                     </li>
                     <li>
                         <a href="#partner-page">
-                            <img src="images/fidiboo.svg" alt="partner">
+                            <img src={{asset("images/fidiboo.svg")}} alt="partner">
                         </a>
                     </li>
                 </ul>
