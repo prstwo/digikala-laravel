@@ -10,7 +10,7 @@
     <link href="{{ asset('https://unpkg.com/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
     <link href="{{ asset('fonts/fontawesome/css/all.css') }}" rel="stylesheet">
     <link href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css') }}" rel="stylesheet">
+    <!-- <link href="{{ asset('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css') }}" rel="stylesheet"> -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -92,7 +92,7 @@
             },
         });
     </script>
-    <script src="{{asset('js/all.js')}}"></script>
+    <script src="{{asset('js/app.js')}}"></script>
     @yield('extra-scripts')
 </body>
 </html>
