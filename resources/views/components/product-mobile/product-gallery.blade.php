@@ -40,5 +40,4 @@
             </a>
         </div>
     </x-product-mobile.product-jumps>
-
 </section>
