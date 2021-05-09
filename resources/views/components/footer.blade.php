@@ -9,7 +9,7 @@
     @endphp
     <div class="footer-jumpup absolute w-full flex flex-row flex-wrap justify-center">
             <span>
-                <a href="#navbar">
+                <a href="#top">
                     <i class="fa fa-chevron-circle-up w-9 h-9 footer-jumpup-icon"></i>
                 برگشت به بالا
                 </a>

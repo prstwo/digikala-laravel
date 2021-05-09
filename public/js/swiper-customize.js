@@ -44,6 +44,21 @@ var swiper3 = new Swiper('.swiper-container3', {
         prevEl: '.swiper-button-prev',
     },
 });
+var swiper4 = new Swiper('.swiper-container4', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
 
 if(window.innerWidth < 680 || document.body.clientWidth <680){
         document.querySelector('.swiper-container').querySelectorAll('.swiper-slide').forEach((sw)=>{

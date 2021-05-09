@@ -21,6 +21,7 @@
 </head>
 <body>
     <div class="relative whole-div">
+        <div id="top"></div>
         <x-mobile-menu/>
         <x-header/>
         <!-- navigation component -->

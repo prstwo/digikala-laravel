@@ -11,7 +11,7 @@
     ];
 @endphp
 <div class="product-config flex-shrink-0 relative pt-3 ml-4 border-t border-solid flex flex-col content-between ">
-    <span class="product-title-english relative bottom-6 right-0 pl-2 bg-white">Xiaomi Mi 10T PRO 5G M 2007J3SG Dual SIM 256GB Mobile Phone</span>
+    <x-product-title-english/>
     <div class="product-engagement">
         <div class="flex items-center">
             <div class="product-engagement-rating flex items-center">
