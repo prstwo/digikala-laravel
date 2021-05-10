@@ -3515,6 +3515,49 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
     -ms-flex-align: center;
     align-items: center;
 }
+.c-checkout-submit{
+    border-radius: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    right: 0;
+    left: 0;
+    z-index: 7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-shadow: 0 -1px 2px 0 rgb(0 0 0 / 8%);
+    box-shadow: 0 -1px 2px 0 rgb(0 0 0 / 8%);
+    background-color: #fff;
+    padding: 12px;
+}
+.c-btn-action{
+    display: inline-block;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 9px;
+    font-size: 18px;
+    font-size: 1.286rem;
+    line-height: 1.222;
+    letter-spacing: -.6px;
+    background-color: #00bfd6;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    background-color: #ef394e;
+}
+.c-checkout-submit .c-btn-action{
+    padding: 14px 20px;
+}
 /*swiper custom */
 .swiper-container,.swiper-container2 , .swiper-container-mobile-2{
     width: 100%;

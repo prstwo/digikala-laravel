@@ -527,9 +527,8 @@
                 </div>
 
             </div>
-            <x-product-mobile.mobile-container/>
+            @include('sections.single-product-mobile')
         </div>
-
         </div>
         </div>
         </div>
