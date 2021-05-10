@@ -75,6 +75,12 @@ class SingleProductController extends Controller
             'sortComments'=>[['data-mode'=>'newest_comment', 'class'=>'"c-sort-row-label is-active"', 'sort-text'=>'   جدیدترین دیدگاه‌ها'],
                 ['data-mode'=>'most_liked','class'=>'"c-sort-row-label"', 'sort-text'=>'مفیدترین دیدگاه‌ها'],
                 ['data-mode'=>'buyers','class'=>'"c-sort-row-label "', 'sort-text'=>'  دیدگاه خریداران']]
+            ,'modalGalleryPictures'=>[['img'=>'images/product-pic-example1.jpg','data'=>'images/product-data-src0.jpg'],
+                ['img'=>'images/product-pic-example2.jpg','data'=>'images/product-data-src1.jpg'],
+                ['img'=>'images/product-pic-example3.jpg','data'=>'images/product-data-src2.jpg'],
+                ['img'=>'images/product-pic-example4.jpg','data'=>'images/product-data-src3.jpg'],
+                ['img'=>'images/product-pic-example5.jpg','data'=>'images/product-data-src4.jpg'],
+                ['img'=>'images/product-pic-example6.jpg','data'=>'images/product-data-src5.jpg']]
         ]);
 
     }
