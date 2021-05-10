@@ -289,6 +289,19 @@ document.querySelectorAll('.js-more-replies a').forEach(function (moreReplies) {
     showReplies(e.target);
   });
 });
+/*responsive product page */
+
+function tabOpen(dropup) {
+  dropup.querySelector('.c-dropup-container').style.bottom = '0';
+
+  if (dropup.querySelector('.c-dropup-container').style.bottom === '0') {
+    dropup.querySelector('.c-dropup-container').style.bottom = '100%';
+  }
+}
+
+document.querySelector('.c-product-tab').addEventListener('click', function (t) {
+  tabOpen(t.target);
+});
 
 /***/ }),
 

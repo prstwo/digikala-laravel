@@ -48,16 +48,39 @@
         </section>
 
         <section class="my-4">
-            <a href="" class="c-product-tab">
-        <span class="c-product-tab-name">
-            رنگ
-            <span class="product-tab-color-value" style="background-color:black"></span>
-            <span class="js-filter-color-selector">مشکی</span>
-        </span>
+            <a href="#sth" class="c-product-tab">
+            <span class="c-product-tab-name">
+                    رنگ
+                    <span class="product-tab-color-value" style="background-color:black"></span>
+                    <span class="js-filter-color-selector">مشکی</span>
+            </span>
                 <span class="c-product-tab-value flex flex-row items-center">
-            (2 رنگ)
-            <x-angles.angle-bottom/>
-        </span>
+                (2 رنگ)
+                <x-angles.angle-bottom/>
+                    {{--سکشن رنگ با قابلیت collapse اضافه شد. اما
+                    در رابطه با بسته شدن
+                    این سکشن کدهای بعدی اضافه خواهد شد. فعلا یک شکل ساده طراحی شده است.  --}}
+                        <div class="c-dropup-container c-b-filters-color" style="bottom:100%">
+                            <div class="c-dropup-content-wrapper">
+                                <div class="c-dropup-header c-b-filters-color-header">
+                                    رنگ نقره ای
+                                </div>
+                                <div class="c-dropup-content">
+                                    <div class="c-b-filters-colors-items">
+                                        <div class="c-b-filters-colors-item">
+                                            <div class="c-b-filters-colors-item-text">نقره ای</div>
+                                            <div class="c-b-filters-colors-item-value" style="background-color:#dedede "></div>
+                                        </div>
+                                        <div class="c-b-filters-colors-item">
+                                            <div class="c-b-filters-colors-item-text">سبز</div>
+                                            <div class="c-b-filters-colors-item-value" style="background-color:green "></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                 </span>
             </a>
         </section>
         <section class="my-4"></section>
