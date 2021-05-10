@@ -185,6 +185,9 @@ function  modalToggle(send){
         })
     }
 }
+document.querySelector('.js-gallery-count-circle').addEventListener('click',()=>{
+    defaultModalToggle()
+})
 document.querySelectorAll('.product-gallery-pictures img').forEach((mp)=>{
     mp.addEventListener("click", (send)=>{
         modalToggle(send)
@@ -193,7 +196,7 @@ document.querySelectorAll('.product-gallery-pictures img').forEach((mp)=>{
 
 
 function displayRemodal(miniImg){
-    document.querySelector('.remodal-img-container').src=miniImg.querySelector('img').getAttribute('data-src');
+    document.querySelector('.remodal-img-container').src=miniImg.getAttribute('data-src');
     //console.log(miniImg)
     miniImg.classList.add('remodal-gallery-thumb-selected');
 }
@@ -201,7 +204,16 @@ function closeModal(){
     document.querySelector('.remodal-gallery').classList.add('remodal-is-closed');
     document.querySelector('.m-overlay').classList.remove('active');
 }
-
+document.querySelectorAll('.js-remodal-gallery-thumb img').forEach((miniImg)=>{
+    miniImg.addEventListener(
+        'click',(e)=>{
+            displayRemodal(e.target)
+        }
+    )
+});
+document.querySelector('.js-remodal-close').addEventListener('click',()=>{
+    closeModal()
+});
 document.querySelector('.continue-btn-params').addEventListener('click',(btnParams)=>{
     btnParams.target.parentElement.parentElement.querySelector('.params-collapse-content').classList.toggle('is-open');
     if( btnParams.target.parentElement.parentElement.querySelector('.params-collapse-content').classList.contains('is-open')){

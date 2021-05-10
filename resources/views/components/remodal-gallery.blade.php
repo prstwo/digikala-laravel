@@ -13,8 +13,8 @@
         <div class="remodal-top-bar-title">
             تصاویر رسمی
         </div>
-        <div class="remodal-top-bar-close-btn-container">
-            <button class="fas fa-times " onclick="closeModal()"></button>
+        <div class="remodal-top-bar-close-btn-container ">
+            <button class="fas fa-times js-remodal-close" ></button>
         </div>
     </div>
     <div class="remodal-images-gallery flex flex-row">
@@ -24,7 +24,7 @@
         <div class="remodal-gallery-info">
             <div class="remodal-gallery-thumbs">
                 @foreach($modalGalleryPictures as $modalGalleryPicture)
-                    <div class="remodal-gallery-thumb js-remodal-gallery-thumb" onclick="displayRemodal(this)">
+                    <div class="remodal-gallery-thumb js-remodal-gallery-thumb" >
                         <img src={{asset($modalGalleryPicture['img'])}} data-src={{asset( $modalGalleryPicture['data'] )}}
                             alt="گوشی"
                              data-type=""

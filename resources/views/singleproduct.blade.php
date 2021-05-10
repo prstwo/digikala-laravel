@@ -54,7 +54,7 @@
                                             <div class="thumb-wrapper">
                                                 <img src={{asset($productgallerypicture['img'])}}  alt="sth">
                                                 <div class="gallery-images-count">
-                                                 <span class="gallery-count-circle" onclick="defaultModalToggle()">
+                                                 <span class="gallery-count-circle js-gallery-count-circle">
                                                      <div class="text-2xl">
                                                          ...
                                                      </div>
