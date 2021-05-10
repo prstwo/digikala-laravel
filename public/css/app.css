@@ -33846,12 +33846,7 @@ a.product-title-brand-link{
   display: -ms-flexbox;
   -webkit-box-orient: vertical;
   min-height: 206px;
-}
-
-@media screen and (min-width: 680px) {
-  .product-seller-box{
-    max-width: 300px;
-  }
+  width: 100%;
 }
 
 .product-seller-counter{
@@ -34506,13 +34501,14 @@ o-btn{
   max-height: unset!important;
 }
 
-.product__summary {
+.product-summary{
   flex: 1;
+  min-width: 290px;
   max-width: 300px;
 }
 
 @media screen and (min-width: 1366px){
-  .c-product__summary {
+  .product-summary {
     max-width: 350px;
   }
 }
