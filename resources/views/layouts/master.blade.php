@@ -29,9 +29,9 @@
 </div>
 {{--در صورت استفاده از نود ماژول های swiper، اکشن های سوُیپر از کار می افتادند. فعلا سوییپر به صورت اکسترنال اتچ شده تا مجدد بررسی گردد --}}
 
- <script src="{{asset('https://unpkg.com/swiper/swiper-bundle.js')}}"></script>
+<script src="{{asset('https://unpkg.com/swiper/swiper-bundle.js')}}"></script>
 <script src="{{asset('https://unpkg.com/swiper/swiper-bundle.min.js')}}"></script>
-<script src="{{mix('js/app.js')}}"></script>
+<script src="{{mix('js/app.js')}}" ></script>
 {{--<script src="js/swiper-customize.js"></script> --}}
 <script >
     //swiper customize

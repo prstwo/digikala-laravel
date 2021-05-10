@@ -41,63 +41,54 @@ function mobileMenu() {
 }
 
 var submenuItems = document.querySelectorAll('.js-nav-submenu-items');
-
-function kalayeDigital() {
+document.querySelector('.kalayeDigital').addEventListener('mouseover', function () {
   submenuItems.forEach(function (item) {
     item.style.display = 'none';
   });
   document.querySelector('.js-kalaye-digital-menu').style.display = '';
-}
-
-function sanati() {
+});
+document.querySelector('.sanati').addEventListener('mouseover', function () {
   submenuItems.forEach(function (item) {
     item.style.display = 'none';
   });
   document.querySelector('.js-abzar-sanati-menu').style.display = '';
-}
-
-function mod() {
+});
+document.querySelector('.mod').addEventListener('mouseover', function () {
   submenuItems.forEach(function (item) {
     item.style.display = 'none';
   });
   document.querySelector('.js-mod-menu').style.display = '';
-}
-
-function asbabBazi() {
+});
+document.querySelector('.asbabBazi').addEventListener('mouseover', function () {
   submenuItems.forEach(function (item) {
     item.style.display = 'none';
   });
   document.querySelector('.js-asbab-bazi-menu').style.display = '';
-}
-
-function zibayie() {
+});
+document.querySelector('.zibayie').addEventListener('mouseover', function () {
   submenuItems.forEach(function (item) {
     item.style.display = 'none';
   });
   document.querySelector('.js-salamet-menu').style.display = '';
-}
-
-function khane() {
+});
+document.querySelector('.khane').addEventListener('mouseover', function () {
   submenuItems.forEach(function (item) {
     item.style.display = 'none';
   });
   document.querySelector('.js-khane-menu').style.display = '';
-}
-
-function ketab() {
+});
+document.querySelector('.ketab').addEventListener('mouseover', function () {
   submenuItems.forEach(function (item) {
     item.style.display = 'none';
   });
   document.querySelector('.js-ketab-menu').style.display = '';
-}
-
-function varzesh() {
+});
+document.querySelector('.varzesh').addEventListener('mouseover', function () {
   submenuItems.forEach(function (item) {
     item.style.display = 'none';
   });
   document.querySelector('.js-varzesh-menu').style.display = '';
-}
-
+});
 var due = new Date(2021, 7, 24, 15, 30, 0);
 var second = 60;
 var minute = 60;

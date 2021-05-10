@@ -12,17 +12,17 @@
                             <div class="submenu-titles flex flex-col">
                     @php
                         $categoriesSubmenu = [
-                                            ['cat'=>'کالای دیجیتال','fa-class'=>'fa-laptop','function'=>'"kalayeDigital()"']
-                                           ,['cat'=>'خودرو، ابزار، تجهیزات صنعتی','fa-class'=>'fa-wrench','function'=>'"sanati()"']
-                                           ,['cat'=>'مد و پوشاک','fa-class'=>'fa-check','function'=>'"mod()"']
-                                           ,['cat'=>'اسباب بازی، کودک، نوزاد','function'=>'"asbabBazi()"','fa-class'=>'fa-child']
-                                           ,['cat'=>'زیبایی و سلامت','function'=>'"zibayie()"','fa-class'=>'fa-heart']
-                                           ,['cat'=>'خانه و آشپزخانه','function'=>'"khane()"','fa-class'=>'fa-home']
-                                           ,['cat'=>'کتاب، لوازم تحریر، هنر','function'=>'"ketab()"','fa-class'=>'fa-pencil']
-                                           ,['cat'=>'ورزش و سفر','function'=>'"varzesh()"','fa-class'=>'fa-tree'] ]
+                                           ['cat'=>'کالای دیجیتال','fa-class'=>'fa-laptop','class'=>'kalayeDigital']
+                                          ,['cat'=>'خودرو، ابزار، تجهیزات صنعتی','fa-class'=>'fa-wrench','class'=>'sanati']
+                                          ,['cat'=>'مد و پوشاک','fa-class'=>'fa-check','class'=>'mod']
+                                          ,['cat'=>'اسباب بازی، کودک، نوزاد','class'=>'asbabBazi','fa-class'=>'fa-child']
+                                          ,['cat'=>'زیبایی و سلامت','class'=>'zibayie','fa-class'=>'fa-heart']
+                                          ,['cat'=>'خانه و آشپزخانه','class'=>'khane','fa-class'=>'fa-home']
+                                          ,['cat'=>'کتاب، لوازم تحریر، هنر','class'=>'ketab','fa-class'=>'fa-pencil']
+                                          ,['cat'=>'ورزش و سفر','class'=>'varzesh','fa-class'=>'fa-tree'] ]
                     @endphp
                     @foreach($categoriesSubmenu as $categorysubmenu)
-                                    <a href="#submenu" class="submenu-title" onmouseover={!! $categorysubmenu['function']!!}>
+                                    <a href="#submenu" class="submenu-title {{$categorysubmenu['class']}}" >
                                         <i class="fa  {!! $categorysubmenu['fa-class']!!}"></i>
                                         {{$categorysubmenu['cat']}}
                                     </a>
