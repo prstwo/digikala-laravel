@@ -13,7 +13,6 @@ document.querySelectorAll('.js-nav-link').forEach((navLink)=>{navLink.addEventLi
 });
 document.querySelectorAll('.js-nav-link').forEach((navLink)=>{navLink.addEventListener('mouseout',()=>{
     navOverlay.classList.remove('show')
-
 })
 })
 function toggleSub(link){

@@ -1,7 +1,4 @@
-{{--پس از گردآوری تمامی کدهای js در یک فایل واحد و استفاده از لاراول میکس& برخی کدهای js عملکردی ندارند&
- این مورد باید بیشتر بررسی گردد--}}
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,11 +16,11 @@
 <body>
 <div class="relative whole-div">
     <div id="top"></div>
-    @include('mobile-menu')
-    @include('header')
+    @include('sections.mobile-menu')
+    @include('sections.header')
     <!-- navigation component -->
     @yield('main-content')
-    @include('footer')
+    @include('sections.footer')
     <x-overlay/>
 
 </div>
@@ -33,6 +30,7 @@
 <script src="{{asset('https://unpkg.com/swiper/swiper-bundle.min.js')}}"></script>
 <script src="{{mix('js/app.js')}}" ></script>
 {{--<script src="js/swiper-customize.js"></script> --}}
+{{-- علت استفاده از اسکریپت داخلی این بود که کدهای سوییپر پس از ادغام در قالب یک فایل یعنی app.js،  از کار می افتادند--}}
 <script >
     //swiper customize
     var swiper = new Swiper('.swiper-container', {
