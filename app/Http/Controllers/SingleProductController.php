@@ -81,6 +81,17 @@ class SingleProductController extends Controller
                 ['img'=>'images/product-pic-example4.jpg','data'=>'images/product-data-src3.jpg'],
                 ['img'=>'images/product-pic-example5.jpg','data'=>'images/product-data-src4.jpg'],
                 ['img'=>'images/product-pic-example6.jpg','data'=>'images/product-data-src5.jpg']]
+            ,'productConfigInfo'=>[
+
+                    ['span1'=>'حافظه داخلی:', 'span2'=>'256 گیگابایت', 'class'=>'""'],
+                    ['span1'=>'شبکه های ارتباطی: ', 'span2'=>'2G, 3G, 4g, 5G ', 'class'=>'""'],
+                    ['span1'=>'دوربین‌های پشت گوشی: ', 'span2'=>' 3 ماژول دوربین', 'class'=>'""'],
+                    ['span1'=>'توضیحات سیم کارت: ', 'span2'=>' سایز نانو (8.8 × 12.3 میلی‌متر)', 'class'=>'""'],
+                    ['span1'=>'حافظه داخلی:', 'span2'=>'256 گیگابایت', 'class'=>'"c-products-params-more"'],
+                    ['span1'=>'شبکه های ارتباطی: ', 'span2'=>'2G, 3G, 4g, 5G ','class'=>'"c-products-params-more"'],
+                    ['span1'=>'دوربین‌های پشت گوشی: ', 'span2'=>' 3 ماژول دوربین','class'=>'"c-products-params-more"'],
+                    ['span1'=>'توضیحات سیم کارت: ', 'span2'=>' سایز نانو (8.8 × 12.3 میلی‌متر)','class'=>'"c-products-params-more"']
+            ]
         ]);
 
     }

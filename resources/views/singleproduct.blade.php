@@ -73,7 +73,98 @@
                     </section>
                     <section class="product-info ">
                         <x-product-info-title/>
-                        <x-product-attributes/>
+                        <div class="product-attributes flex flex-col sm:flex-row justify-between">
+                            <div class="product-config flex-shrink-0 relative pt-3 ml-4 border-t border-solid flex flex-col content-between ">
+    <span class="product-title-english relative bottom-6 right-0 pl-2 bg-white">
+        Xiaomi Mi 10T PRO 5G M 2007J3SG Dual SIM 256GB Mobile Phone
+    </span>
+                                <div class="product-engagement">
+                                    <div class="flex items-center">
+                                        <div class="product-engagement-rating flex items-center">
+                                            <span class="product-engagement-rating-star fa fa-star  ml-1"></span>
+                                            ۴.۲
+                                            <span class="product-engagement-rating-num mr-0.5 text-xs">
+                                            (۶۵)
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div class="product-config-wrapper">
+                                    <div class="product-config-info">
+                                        <ul class="list-none p-0 my-5 mx-0">
+                                            @foreach($productConfigInfo as $productConfig)
+                                                <li class={!! $productConfig['class'] !!}>
+                                                    <span>{{$productConfig['span1']}} </span>
+                                                    <span>{{$productConfig['span2']}}</span>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                        <div class="mb-5">
+                                            <a href="#continue" class="px-0 o-btn-link-blue-sm continue-btn-config" onclick="toggleCollapse(this)">
+                                                + موارد بیشتر
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="product-summary">
+                                <div class="product-seller-info border border-solid rounded-lg">
+                                    <div class="product-seller-box relative flex flex-col">
+                                        <div class="product-seller-counter flex items-center">
+                                            <div>فروشنده</div>
+                                            <a href="#suppliers" class="seller-count-row">
+                                                <span class="font-bold">۴</span>
+                                                <span class="font-bold"> فروشنده</span>
+                                                دیگر
+                                            </a>
+                                        </div>
+                                        <div class="product-seller-row p-4 cursor-pointer hover:bg-gray-200 ">
+                                            <div class="product-seller-row-main">
+                                                <div class="product-seller-first-line flex justify-between">
+                                                    <span>دیجی&zwnj;کالا</span>
+
+                                                    <i class="fa fa-angle-left "></i>
+                                                </div>
+                                                <div class="product-seller-second-line"></div>
+
+                                            </div>
+                                        </div>
+                                        <div class="product-seller-row p-4">
+                                            <div class="product-seller-row-main">
+                                                گارانتی ۱۸ ماهه کاوش تیم
+                                            </div>
+                                        </div>
+                                        <div class="product-seller-row p-4 cursor-pointer hover:bg-gray-200 ">
+                                            <div class="product-seller-row-main flex flex-row justify-between">
+                                                موجود در انبار دیجی&zwnj;کالا
+                                                <i class="fa fa-angle-left "></i>
+                                            </div>
+
+                                        </div><div class="product-seller-row p-4">
+                                            <div class="product-seller-row-price flex flex-row justify-between">
+                                                <div class="product-seller-row-price-real">
+                                                    <div class="product-seller-price-pure inline-flex">
+                                                        ۱۴,۹۹۰,۰۰۰
+                                                    </div>
+                                                    تومان
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="product-seller-row product-seller-add-to-card">
+                                        <a class=" btn-add-to-cart w-full" data-product-id="4107334" data-variant="16089105" href="#payment" data-event="add_to_cart" data-event-category="ecommerce" data-event-label="price: 142790000 - seller: marketplace - seller_name: مرکز تامین کالای دیجیتال ایران
+                                            - seller_rating: 84 - multiple_configs: True - position: 0">
+                                            <span class="btn-add-to-cart-txt">افزودن به سبد خرید</span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </article>
                 <!--بهتره بخش با کلاس head رو بعد تبدیل به کامپوننت کنم -->
@@ -102,7 +193,55 @@
                             @endforeach
                         </ul>
                         <div class="box-tabs-info">
-                            <x-product-expert/>
+                            <div class="product-expert">
+                                <article >
+                                    <x-box-header s>نقد وبررسی اجمالی</x-box-header>
+
+                                    <section class="content-expert-summary " id="reviews">
+                                        <div class="mb-4 relative">
+                                            <x-product-expert-children.mask-text-product-summary>
+
+                                                گوشی «Mi 10T Pro 5G» از سری محصولات شرکت مطرح شیائومی است
+                                                که با پنل IPS و پشتیبانی از فناوری ارتباطی 5G روانه بازار شده است.
+                                                نمایشگر Mi 10T Pro 5G از رزولوشن بالایی برخوردار است ؛ به‌طوری‌که در اندازه‌ی 6.67 اینچی آن
+                                                ، حدود 395 پیکسل را در هر اینچ جا داده است. در گوشی Mi 10T Pro 5G
+                                                شیائومی نمایشگر تقریباً تمام قاب جلویی گوشی را پر کرده است. این مشخصه
+                                                در کنار قاب شیشه‌ای و فریم تهیه شده از آلومینیوم قرار گرفته است که
+                                                ظاهر زیبایی را به آن بخشیده است. این بدنه‌ی زیبا در کنار نمایشگر
+                                                این محصول، با استفاده از Corning Gorilla Glass 5 محافظت می‌شود تا
+                                                گوشی در برابر خط‌وخش ایمن باشد. ویژگی دیگر Xiaomi Mi 10T Pro 5G
+                                                مجهز شدن به حسگر اثرانگشت در کناره گوشی که نشان از بالارده بودن
+                                                محصول دارد. اما این پایان کار نیست؛ ۳ دوربین که سنسور اصلی آن 108
+                                                مگاپیکسلی است در قسمت پشتی این گوشی جا خوش کرده‌اند. این دوربین‌ها
+                                                قادرند ویدئوی 8K را ثبت و ضبط کنند. دوربین‌ سلفی این محصول هم به
+                                                سنسوری 20 مگاپیکسلی مجهز شده است. بلوتوث نسخه 5.1، نسخه 10 سیستم
+                                                عامل اندروید، امکان استفاده به عنوان پاوربانک، شارژ بی‌سیم سریع
+                                                و باتری 5000 میلی آمپرساعتی از دیگر ویژگی‌‌های این گوشی جدید هستند.
+                                                گوشی «Mi 10T Pro 5G» از سری محصولات شرکت مطرح شیائومی است
+                                                که با پنل IPS و پشتیبانی از فناوری ارتباطی 5G روانه بازار شده است.
+                                                نمایشگر Mi 10T Pro 5G از رزولوشن بالایی برخوردار است ؛ به‌طوری‌که در اندازه‌ی 6.67 اینچی آن
+                                                ، حدود 395 پیکسل را در هر اینچ جا داده است. در گوشی Mi 10T Pro 5G
+                                                شیائومی نمایشگر تقریباً تمام قاب جلویی گوشی را پر کرده است. این مشخصه
+                                                در کنار قاب شیشه‌ای و فریم تهیه شده از آلومینیوم قرار گرفته است که
+                                                ظاهر زیبایی را به آن بخشیده است. این بدنه‌ی زیبا در کنار نمایشگر
+                                                این محصول، با استفاده از Corning Gorilla Glass 5 محافظت می‌شود تا
+                                                گوشی در برابر خط‌وخش ایمن باشد. ویژگی دیگر Xiaomi Mi 10T Pro 5G
+                                                مجهز شدن به حسگر اثرانگشت در کناره گوشی که نشان از بالارده بودن
+                                                محصول دارد. اما این پایان کار نیست؛ ۳ دوربین که سنسور اصلی آن 108
+                                                مگاپیکسلی است در قسمت پشتی این گوشی جا خوش کرده‌اند.
+                                            </x-product-expert-children.mask-text-product-summary>
+                                            {{--
+                                             <x-ContinueBtn>
+                                                ادامه مطلب
+                                            </x-ContinueBtn>
+                                            --}}
+                                            <x-cntu-btn txt="ادامه مطلب" category="summary"/>
+
+                                        </div>
+                                    </section>
+                                </article>
+
+                            </div>
                             <div class="product-params" id="details">
                                 <article class="mb-12 params-border-bottom">
                                     <x-box-header>
@@ -347,7 +486,44 @@
                         </div>
 
                     </div>
-                    <x-mini-buy-box-fix/>
+                    <div class="hidden sm:block sticky  mini-buy-box-fix mr-6 mb-10 top-3 justify-self-start ">
+                        <div class="mini-buy-box  rounded-lg p-4 border bg-white">
+                            <div class="mini-buy-box-product-info mb-5 py-4 border-b">
+                                <img src='{{asset("images/product-pic-example5.jpg")}}' alt="product" class="w-20 h-20 ml-5">
+                                <div class="w-full  mini-buy-box-product-info-info">
+                                    <div class="w-full  title ">
+                                        گوشی موبایل شیائومی مدل Mi 10T Pro 5G 2007J3SG دو سیم&zwnj; کارت ظرفیت 128 گیگابایت
+                                    </div>
+                                    <div class="colors flex flex-row content-center items-center">
+                                        <div class=" ml-2 border color-label " style=" background-color: rgb(222, 222, 222);"></div>
+                                        <span>نقره ای</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-buy-box-row mini-buy-box-seller">
+                                دیجی کالا
+                            </div>
+                            <div class="mini-buy-box-row mini-buy-box-warranty">
+                                گارانتی 18 ماهه
+                            </div>
+                            <div class="mini-buy-box-row mini-buy-box-stock">
+                                موجود در انبار دیجی کالا
+                            </div>
+                            <div class="mini-buy-box-row mini-buy-box-row-price">
+                                <div class="product-seller-price-info">
+                                    ۱۳,۳۹۹,۰۰۰
+                                    <span class="text-sm font-extrabold">تومان</span>
+                                </div>
+
+                            </div>
+                            <div class="mini-buy-box-btn-row mt-2">
+                                <a href="#sabad" class="o-btn w-full text-center font-xl py-2 px-4  text-white">افزودن به سبد خرید</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
