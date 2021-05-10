@@ -31853,8 +31853,6 @@ video {
   font-weight: normal;
 }
 
-/*اینجارو چیکار کنم؟؟؟؟/*/
-
 @font-face {
   font-family: 'FontAwesome';
 
@@ -34380,7 +34378,7 @@ o-btn{
 
 .mini-buy-box-warranty:before{
   font-family: 'FontAwesome';
-  content: "\f132 ";
+  content: "\f0b2 ";
   font-size: 18px;
   margin-left: 8px;
 }

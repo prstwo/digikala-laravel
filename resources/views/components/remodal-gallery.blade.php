@@ -14,7 +14,7 @@
             تصاویر رسمی
         </div>
         <div class="remodal-top-bar-close-btn-container">
-            <button class="fa fa-close " onclick="closeModal()"></button>
+            <button class="fas fa-times " onclick="closeModal()"></button>
         </div>
     </div>
     <div class="remodal-images-gallery flex flex-row">

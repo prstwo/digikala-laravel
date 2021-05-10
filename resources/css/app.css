@@ -16,7 +16,6 @@
     url('https://cdn.fontcdn.ir/Font/Persian/Yekan/Yekan.ttf') format('truetype');
     font-weight: normal;
 }
-/*اینجارو چیکار کنم؟؟؟؟/*/
 @font-face {
     font-family: 'FontAwesome';
     src: url('/fonts/fontawesome/webfonts/fa-brands-400.woff2') format("woff2");
@@ -2401,7 +2400,7 @@ o-btn{
 }
 .mini-buy-box-warranty:before{
     font-family: 'FontAwesome';
-    content: "\f132 ";
+    content: "\f0b2 ";
     font-size: 18px;
     margin-left: 8px;
 }

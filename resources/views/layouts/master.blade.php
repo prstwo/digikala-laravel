@@ -31,7 +31,7 @@
 
  <script src="{{asset('https://unpkg.com/swiper/swiper-bundle.js')}}"></script>
 <script src="{{asset('https://unpkg.com/swiper/swiper-bundle.min.js')}}"></script>
-
+<script src="{{mix('js/app.js')}}"></script>
 {{--<script src="js/swiper-customize.js"></script> --}}
 <script >
     //swiper customize
@@ -126,7 +126,6 @@
         },
     });
 </script>
-<script src="{{mix('js/app.js')}}"></script>
 @yield('extra-scripts')
 </body>
 </html>
