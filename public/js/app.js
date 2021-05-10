@@ -24,8 +24,14 @@ document.querySelectorAll('.js-nav-link').forEach(function (navLink) {
 });
 
 function toggleSub(link) {
-  link.querySelector('ul').classList.toggle('hide');
+  link.parentElement.querySelector('ul').classList.toggle('hide');
 }
+
+document.querySelectorAll('.js-mobile-toggle a').forEach(function (d) {
+  d.addEventListener('click', function (mmt) {
+    toggleSub(mmt.target);
+  });
+}); //mmt is abb of mobile menu toggler
 
 function mobileMenu() {
   var mobileMenuCon = document.querySelector('.mobile-menu-container');
@@ -40,6 +46,9 @@ function mobileMenu() {
   }
 }
 
+document.querySelector('.js-sandwich-btn').addEventListener('click', function () {
+  mobileMenu();
+});
 var submenuItems = document.querySelectorAll('.js-nav-submenu-items');
 document.querySelector('.kalayeDigital').addEventListener('mouseover', function () {
   submenuItems.forEach(function (item) {
@@ -274,6 +283,12 @@ function showReplies(replyShow) {
     }
   });
 }
+
+document.querySelectorAll('.js-more-replies a').forEach(function (moreReplies) {
+  moreReplies.addEventListener('click', function (e) {
+    showReplies(e.target);
+  });
+});
 
 /***/ }),
 

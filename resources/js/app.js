@@ -16,12 +16,15 @@ document.querySelectorAll('.js-nav-link').forEach((navLink)=>{navLink.addEventLi
 
 })
 })
-
-
 function toggleSub(link){
-    link.querySelector('ul').classList.toggle('hide');
+    link.parentElement.querySelector('ul').classList.toggle('hide');
 }
-
+document.querySelectorAll('.js-mobile-toggle a').forEach((d)=>{
+    d.addEventListener('click',(mmt)=>{
+        toggleSub(mmt.target)
+    })
+})
+//mmt is abb of mobile menu toggler
 function mobileMenu(){
     let mobileMenuCon= document.querySelector('.mobile-menu-container');
 
@@ -34,6 +37,9 @@ function mobileMenu(){
         })
     }
 }
+document.querySelector('.js-sandwich-btn').addEventListener('click',()=>{
+    mobileMenu()
+})
 let submenuItems=document.querySelectorAll('.js-nav-submenu-items');
 
 document.querySelector('.kalayeDigital').addEventListener('mouseover',()=>{
@@ -261,8 +267,11 @@ function showReplies(replyShow){
         }
     })
 }
-
-
+document.querySelectorAll('.js-more-replies a').forEach(moreReplies=>{
+    moreReplies.addEventListener('click',(e)=>{
+            showReplies(e.target)
+        })
+})
 
 
 

@@ -16,7 +16,7 @@
         <div class="mobile-menu-icon mb-3">
             <div class="digikala-icon-container">
                 <a href="digikala">
-                    <img src="images/digikala.svg" alt="digikala">
+                    <img src={{asset("images/digikala.svg")}} alt="digikala">
                 </a>
             </div>
         </div>
@@ -29,7 +29,7 @@
                 </a>
             </li>
             <!-- منوهایی که toggle میشوند& باید دارای کلاس js-mobile-toggle باشند -->
-            <li class="nav-link  border-right-add js-mobile-toggle" onclick="toggleSub(this)">
+            <li class="nav-link  border-right-add mobile-toggle-li js-mobile-toggle" >
                 <a href="#supermarket" class="nav-link-title">
                     <div>
                         <i class='fa fa-percent ml-2'></i>تخفیف ها و پشنهادها

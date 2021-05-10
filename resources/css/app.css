@@ -1503,7 +1503,9 @@ span.head-title::after{
     }*/
 
 }
-
+.mobile-toggle-li a div{
+    pointer-events: none;
+}
 /*promotion cats */
 
 .promotion-cats{
