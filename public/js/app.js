@@ -7,17 +7,7 @@
   \*****************************/
 /***/ (() => {
 
-//swiper customize
-if (window.innerWidth < 680 || document.body.clientWidth < 680) {
-  document.querySelector('.swiper-container').querySelectorAll('.swiper-slide').forEach(function (sw) {
-    sw.style.width = '100%';
-  });
-  document.querySelector('.swiper-container2').querySelectorAll('.swiper-slide').forEach(function (sw2) {
-    sw2.style.width = '100%';
-  });
-} //nav menu js
-
-
+//nav menu js
 var navOverlay = document.querySelector('.nav-overlay');
 document.documentElement.addEventListener('scroll', function () {
   toggleNav();

@@ -5,6 +5,7 @@
 @show
 @section('page-title','فروشگاه اینترنتی دیجی کالا')
 @section('main-content')
+
     <main >
         <!-- main top container -->
         <x-home-main-top/>
@@ -15,39 +16,14 @@
                     <x-specials-title/>
                     <div class="specials">
                         <div class="product-items ">
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    @foreach($productItemContainer3 as $productItem3 )
-                                        <div class="swiper-slide" >
-                                            <div class="product-item-container-3 rounded-2xl">
-                                                <div class="product-item">
-                                                    <div>
-                                                        <a href="#product-page">
-                                                            <img src={{asset($productItem3['img'])}} alt="a product example" class="product-img">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-title">
-                                                        <a href="#product-page">
-                                                            {{$productItem3['product-title']}}
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <div class="product-old-price">
-                                                            <del> {{$productItem3['old-price']}}</del>
-                                                            <span class="old-price-discount">
-                                                     {{$productItem3['discount']}}
-                                                </span>
-                                                        </div>
-                                                        <div class="product-new-price">
-                                                            {{$productItem3['new-price']}}
-                                                            <span class="new-price-currency">تومان</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    @endforeach
+                            <div class="hidden sm:block swiper-container">
+                                @include('sections.swiper-wrapper1')
+                                <div class="swiper-button-next arrow-left-3">
                                 </div>
+                                <div class="swiper-button-prev arrow-right-3"></div>
+                            </div>
+                            <div class="block sm:hidden swiper-container-mobile">
+                                @include('sections.swiper-wrapper1')
                                 <div class="swiper-button-next arrow-left-3">
                                 </div>
                                 <div class="swiper-button-prev arrow-right-3"></div>
@@ -78,40 +54,15 @@
                     <div class="boxes static">
                         <div class="items">
                             <!-- product item component -->
-                            <div class="swiper-container2">
-                                <div class="swiper-wrapper">
-                                    @foreach($productItemContainer4 as $productItem4 )
-                                        <div class="swiper-slide">
-                                            <div class="product-item-container-4">
-                                                <div class="product-item">
-                                                    <div>
-                                                        <a href="#product-page">
-                                                            <img src={{asset($productItem4['img'])}} title="phone1" alt="a product example" class="product-img">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-title">
-                                                        <a href="#product-page">
-                                                            {{$productItem4['product-title']}}
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <div class="product-old-price">
-                                                            <del>{{$productItem4['old-price']}}</del>
-                                                            <span class="old-price-discount">
-                                                     {{$productItem4['discount']}}
-                                                </span>
-                                                        </div>
-                                                        <div class="product-new-price">
-                                                            {{$productItem4['new-price']}}
-                                                            <span class="new-price-currency">تومان</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    @endforeach
+                            <div class="hidden sm:block swiper-container2">
+                                @include('sections.swiper-wrapper2')
+                                <div class="swiper-button-next arrow-left-3">
                                 </div>
-                                <!-- Add Pagination -->
+                                <div class="swiper-button-prev arrow-right-3"></div>
+                            </div>
+                            <div class="block sm:hidden swiper-container-mobile-2">
+                                @include('sections.swiper-wrapper2')
+                            <!-- Add Pagination -->
                                 <!-- Add Arrows -->
                                 <div class="swiper-button-next arrow-left-3">
                                 </div>
