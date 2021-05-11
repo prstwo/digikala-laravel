@@ -124,11 +124,25 @@
                     <div class="c-product-seller-extra js-c-product-seller-extra">
                     </div>
                 </div>
-                <div class="c-product-data-section">
+                <div class="c-product-data-section c-product-guarantee">
+                    <div class="c-product-guarantee-main">
+                        <div class="">گارانتی ۱۸ ماهه کاوش تیم
+                        </div>
+                    </div>
 
                 </div>
-                <div class="c-product-data-section">
-
+                <div class="c-product-data-section c-product-data-section-column ">
+                    <div class="c-product-ship-main flex flex-row justify-between">
+                        موجود در انبار فروشنده
+                        <span class="c-product-ship-more"></span>
+                    </div>
+                    <ul class="list-none c-product-ship-sender-list">
+                        <li>
+                            <span class="c-line-bullet-list-item  c-line-bullet-list-item-digikala ">
+                                ارسال دیجی‌کالا از ۱ روز کاری دیگر
+                            </span>
+                        </li>
+                    </ul>
                 </div>
 
             </div>

@@ -35746,6 +35746,134 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   color: #00bfd6;
 }
 
+.c-product-seller-info .c-product-guarantee:before{
+  color: #aaa;
+  font-size: 1rem;
+  margin-left: .5rem;
+}
+
+.c-product-guarantee:before{
+  font-family: FontAwesome;
+  content: "\f0b2 ";
+  font-size: 1rem;
+  margin-left: .5rem;
+}
+
+.c-product-guarantee-main{
+  flex: 1;
+}
+
+.c-product-data-section-column{
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.c-product-ship-main{
+  flex: 1;
+  position: relative;
+  padding-left: 24px;
+  padding-right: 28px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 13px;
+  font-size: .929rem;
+  line-height: 24px;
+}
+
+.c-product-ship-main:before{
+  font-family: FontAwesome;
+  content: '\f0c7';
+  right: 0;
+  font-size: 1rem;
+  color: #424750;
+  background: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.c-product-ship-more:after{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #9b9b9b;
+}
+
+.c-product-ship-main .c-product-ship-more:after{
+  font-family: FontAwesome;
+  content: '\f104';
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #9b9b9b;
+  vertical-align: middle;
+}
+
+.c-product-ship-sender-list{
+  width: 100%;
+  margin: 8px 2px 0 0;
+}
+
+.c-product-ship-sender-list li{
+  padding-right: 28px;
+  position: relative;
+  color: #62666d;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-size: .857rem;
+  line-height: 21px;
+}
+
+.c-product-ship-sender-list li:before{
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #0fabc6;
+  border-radius: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 6px;
+}
+
+.c-product-ship-sender-list li:after{
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 15px;
+  background-color: #e0e0e2;
+  bottom: 15px;
+  right: 8px;
+}
+
+.c-product-ship-sender-list li:first-of-type:after {
+  height: 12px;
+}
+
+.c-line-bullet-list-item{
+  display: flex;
+  align-items: center;
+  color: #81858b;
+  font-size: 12px;
+  font-size: .857rem;
+  line-height: 24px;
+}
+
+.c-line-bullet-list-item:before{
+  font-size: 1rem;
+  line-height: 18px!important;
+  margin-left: 4px;
+  color: #424750;
+}
+
+.c-line-bullet-list-item-digikala:before{
+  font-family: FontAwesome;
+  content: '\f0d1';
+}
+
 .remodal-wrapper{
   position: fixed;
   z-index: 10000;
