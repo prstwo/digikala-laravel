@@ -150,7 +150,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="product-seller-row p-4">
+                                        <div class="product-seller-row p-4 flex flex-row justify-end">
                                             <div class="product-seller-row-price flex flex-row justify-between">
                                                 <div class="product-seller-row-price-real">
                                                     <div class="product-seller-price-pure inline-flex">

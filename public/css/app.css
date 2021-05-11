@@ -35737,6 +35737,10 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   font-size: 1.1rem;
 }
 
+.c-product-seller-extra{
+  cursor: pointer;
+}
+
 .c-product-seller-extra:after{
   font-family: FontAwesome;
   content: '\f104';
