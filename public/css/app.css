@@ -35713,8 +35713,16 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   padding: 15px 0;
 }
 
-.c-product-data-section:not(:last-of-type) {
-  border-top: 1px solid #e5e5ea;
+.c-product-data-section:not(:last-of-type){
+  border-bottom: 1px solid #e5e5ea;
+}
+
+.c-product-data-section.c-product-seller:before{
+  font-family: FontAwesome;
+  content: '\f015';
+  color: #aaa;
+  font-size: 1rem;
+  margin-left: .5rem;
 }
 
 .c-product-seller-main{
@@ -35732,6 +35740,10 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   font-weight: 700;
   color: #9b9b9b;
   vertical-align: middle;
+}
+
+.c-product-seller-rate-wrapper{
+  color: #00bfd6;
 }
 
 .remodal-wrapper{

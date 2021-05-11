@@ -322,9 +322,16 @@ document.querySelectorAll('.js-color-picker').forEach((c)=>{
         colorBorder(cp.target)
     })
 })
-function remodalSeller(){
-    document.querySelector('.c-remodal-seller-info').style.display='block'
+function remodalSellershow(){
+    document.querySelector('.js-remodal-seller-info').style.display='block'
+}
+function remodalSellerHide(){
+    document.querySelector('.js-remodal-seller-info').style.display='none'
 }
 document.querySelector('.js-c-product-seller-extra').addEventListener('click',()=>{
-    remodalSeller();
+    remodalSellershow();
+})
+
+document.querySelector('.js-seller-remodal-back').addEventListener('click',()=>{
+    remodalSellerHide();
 })

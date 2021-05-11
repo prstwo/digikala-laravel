@@ -107,15 +107,21 @@
                     <div class="c-product-seller-main">
                         <div class="c-product-seller-wrapper">
                             فروشنده:
-                            <div class="c-product-seller-seller">
+                            <span class="c-product-seller-seller">
                                 <span class="js-seller-name">
                                     ایرانیان قایم همراه کاوش تیم
                                 </span>
-                            </div>
+                            </span>
+                        </div>
+                        <div class="c-product-seller-rate-wrapper">
+                            عملکرد:
+                            <span class="c-product-seller-rate font-bold">
+                                ۱.۹
+                            </span>
+                            از ۵
                         </div>
                     </div>
                     <div class="c-product-seller-extra js-c-product-seller-extra">
-
                     </div>
                 </div>
                 <div class="c-product-data-section">
@@ -139,7 +145,7 @@
     <div class="p-2">
         <div class="c-page-title-bar">
             <div class="c-page-title-bar-holder">
-                <div class="c-page-title-bar-btn-back"></div>
+                <div class="c-page-title-bar-btn-back js-seller-remodal-back"></div>
                 <div class="c-page-title-bar-title">
                     اطلاعات فروشنده
                 </div>
