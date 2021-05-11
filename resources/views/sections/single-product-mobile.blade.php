@@ -131,7 +131,7 @@
                     </div>
 
                 </div>
-                <div class="c-product-data-section c-product-data-section-column ">
+                <div class="c-product-data-section c-product-data-section-column js-shipment-info-trigger">
                     <div class="c-product-ship-main flex flex-row justify-between">
                         موجود در انبار فروشنده
                         <span class="c-product-ship-more"></span>
@@ -155,16 +155,9 @@
     </article>
 </div>
 <div class="dropup-overlay"></div>
-<x-product-mobile.mobile-remodal-wrapper  extraClass1="remodal-seller-info c-remodal-full-screen" extraClass2="remodal-seller-info">
-    <div class="p-2">
-        <div class="c-page-title-bar">
-            <div class="c-page-title-bar-holder">
-                <div class="c-page-title-bar-btn-back js-seller-remodal-back"></div>
-                <div class="c-page-title-bar-title">
-                    اطلاعات فروشنده
-                </div>
-            </div>
-        </div>
+<x-product-mobile.mobile-remodal-wrapper  extraClass1="remodal-seller-info c-remodal-full-screen"
+                                          extraClass2="remodal-seller-info" extraClass3="seller-remodal-back"
+                    title="اطلاعات فروشنده">
         <div class="c-remodal-seller">
             <a href="" class="text-bold js-seller-name js-seller-url">
                 ایرانیان قائم همراه کاوش تیم
@@ -203,5 +196,19 @@
                 </div>
             </div>
         </div>
-    </div>
+</x-product-mobile.mobile-remodal-wrapper>
+<x-product-mobile.mobile-remodal-wrapper  extraClass1="remodal-shipment-info c-remodal-full-screen"
+                                          extraClass2="remodal-add-to-cart" extraClass3="shipment-remodal-back"
+                    title="جزئیات ارسال">
+        <div class="c-remodal-seller">
+            <div class="c-remodal-shipment-main">
+                <div class="text-bold">
+                    ارسال توسط دیجی‌کالا از ۱ روز کاری دیگر
+                </div>
+                <div class="mb-5">
+                    این کالا پس از مدت زمان مشخص شده توسط فروشنده در انبار دیجی‌کالا تامین
+                    و آماده پردازش می‌گردد و توسط پیک دیجی‌کالا در بازه انتخابی ارسال خواهد شد.
+                </div>
+            </div>
+        </div>
 </x-product-mobile.mobile-remodal-wrapper>

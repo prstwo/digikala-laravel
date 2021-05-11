@@ -335,3 +335,15 @@ document.querySelector('.js-c-product-seller-extra').addEventListener('click',()
 document.querySelector('.js-seller-remodal-back').addEventListener('click',()=>{
     remodalSellerHide();
 })
+function remodalShipmentShow(){
+    document.querySelector('.js-remodal-add-to-cart').style.display='block'
+}
+document.querySelector('.js-shipment-info-trigger').addEventListener('click',()=>{
+    remodalShipmentShow()
+});
+function remodalShipmentHide(){
+    document.querySelector('.js-remodal-add-to-cart').style.display='none'
+}
+document.querySelector('.js-shipment-remodal-back').addEventListener('click',()=>{
+    remodalShipmentHide()
+})

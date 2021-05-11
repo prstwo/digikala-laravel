@@ -361,6 +361,22 @@ document.querySelector('.js-seller-remodal-back').addEventListener('click', func
   remodalSellerHide();
 });
 
+function remodalShipmentShow() {
+  document.querySelector('.js-remodal-add-to-cart').style.display = 'block';
+}
+
+document.querySelector('.js-shipment-info-trigger').addEventListener('click', function () {
+  remodalShipmentShow();
+});
+
+function remodalShipmentHide() {
+  document.querySelector('.js-remodal-add-to-cart').style.display = 'none';
+}
+
+document.querySelector('.js-shipment-remodal-back').addEventListener('click', function () {
+  remodalShipmentHide();
+});
+
 /***/ }),
 
 /***/ "./resources/css/app.css":
