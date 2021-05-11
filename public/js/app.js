@@ -321,6 +321,19 @@ document.querySelector('.dropup-overlay').addEventListener('click', function (e)
   removeDropUP(e.target);
 });
 
+function changeColorText(colorPick) {
+  var colorText = colorPick.querySelector('.js-color-picker-text').innerText;
+  var colorValue = colorPick.querySelector('.js-color-picker-value').style.backgroundColor;
+  document.querySelector('.js-filters-color-header-value').style.backgroundColor = colorValue;
+  document.querySelector('.js-filter-color-modal-text').innerText = colorText;
+}
+
+document.querySelectorAll('.js-color-picker').forEach(function (c) {
+  c.addEventListener('click', function (cp) {
+    changeColorText(cp.target);
+  });
+});
+
 /***/ }),
 
 /***/ "./resources/css/app.css":

@@ -35651,6 +35651,7 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   line-height: 28px;
   letter-spacing: -.5px;
   color: #2a2a2a;
+  pointer-events: none;
 }
 
 .c-b-filters-colors-item-value{
@@ -35659,6 +35660,7 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   height: 19px;
   border: 1px solid #000;
   margin-right: 14px;
+  pointer-events: none;
 }
 
 /*swiper custom */

@@ -51,8 +51,8 @@
             <a href="#sth" class="c-product-tab">
             <span class="c-product-tab-name">
                     رنگ
-                    <span class="product-tab-color-value" style="background-color:black"></span>
-                    <span class="js-filter-color-selector">مشکی</span>
+                    <span class="product-tab-color-value js-product-tab-color-value" style="background-color:green"></span>
+                    <span class="js-filter-color-selector">سبز</span>
             </span>
                 <span class="c-product-tab-value flex flex-row items-center">
                 (2 رنگ)
@@ -68,17 +68,17 @@
                             <span class="js-filter-color-modal-text">نقره ای</span>
                         </div>
 
-                        <div class="c-b-filters-color-header-value" style="background-color: #dedede;"></div>
+                        <div class="c-b-filters-color-header-value js-filters-color-header-value" style="background-color: #dedede;"></div>
                     </div>
                     <div class="c-dropup-content">
                         <div class="c-b-filters-colors-items">
-                            <div class="c-b-filters-colors-item">
-                                <div class="c-b-filters-colors-item-text">نقره ای</div>
-                                <div class="c-b-filters-colors-item-value" style="background-color:#dedede "></div>
+                            <div class="c-b-filters-colors-item js-color-picker">
+                                <div class="c-b-filters-colors-item-text js-color-picker-text">نقره ای</div>
+                                <div class="c-b-filters-colors-item-value js-color-picker-value" style="background-color:#dedede "></div>
                             </div>
-                            <div class="c-b-filters-colors-item">
-                                <div class="c-b-filters-colors-item-text">سبز</div>
-                                <div class="c-b-filters-colors-item-value" style="background-color:green "></div>
+                            <div class="c-b-filters-colors-item js-color-picker">
+                                <div class="c-b-filters-colors-item-text js-color-picker-text">سبز</div>
+                                <div class="c-b-filters-colors-item-value js-color-picker-value" style="background-color:green "></div>
                             </div>
                         </div>
                     </div>
