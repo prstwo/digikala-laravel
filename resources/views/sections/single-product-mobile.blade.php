@@ -101,6 +101,32 @@
                 </div>
             </div>
         </section>
+        <section class="my-4">
+            <div class="c-product-data c-product-seller-info">
+                <div class="c-product-data-section c-product-seller">
+                    <div class="c-product-seller-main">
+                        <div class="c-product-seller-wrapper">
+                            فروشنده:
+                            <div class="c-product-seller-seller">
+                                <span class="js-seller-name">
+                                    ایرانیان قایم همراه کاوش تیم
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-product-seller-extra js-c-product-seller-extra">
+
+                    </div>
+                </div>
+                <div class="c-product-data-section">
+
+                </div>
+                <div class="c-product-data-section">
+
+                </div>
+
+            </div>
+        </section>
         <div class="c-checkout-submit flex-col">
             <a href="#kharid" class="c-btn-action">
                 افزودن به سبد خرید
@@ -109,3 +135,53 @@
     </article>
 </div>
 <div class="dropup-overlay"></div>
+<x-product-mobile.mobile-remodal-wrapper  extraClass1="remodal-seller-info c-remodal-full-screen" extraClass2="remodal-seller-info">
+    <div class="p-2">
+        <div class="c-page-title-bar">
+            <div class="c-page-title-bar-holder">
+                <div class="c-page-title-bar-btn-back"></div>
+                <div class="c-page-title-bar-title">
+                    اطلاعات فروشنده
+                </div>
+            </div>
+        </div>
+        <div class="c-remodal-seller">
+            <a href="" class="text-bold js-seller-name js-seller-url">
+                ایرانیان قائم همراه کاوش تیم
+            </a>
+            <div class="c-remodal-seller-rates js-seller-score-container">
+                عملکرد
+                <span class="c-remodal-seller-total-rate js-seller-final-score">
+                    ۱.۹
+                </span>
+                از ۵
+                <span class="c-remodal-seller-registration-info js-seller-register-date-container">
+                    (عضویت از
+                    <span class="js-seller-register-date">۳
+                        سال و ۱۰ ماه
+                    </span>
+                    پیش)
+                </span>
+                <div class="c-remodal-seller-rates-wrapper">
+                    <div class="c-remodal-seller-rate">
+                        <div class="c-remodal-seller-percent c-remodal-seller-percent-red js-seller-ship-on-time-percentage">
+                            ۹۴.۳٪
+                        </div>
+                        <span class="c-remodal-seller-rate-title">تامین به موقع</span>
+                    </div>
+                    <div class="c-remodal-seller-rate"><div class="c-remodal-seller-percent c-remodal-seller-percent-green js-seller-cancel_percentage">
+                            ۹۹.۹٪
+                        </div>
+                        <span class="c-remodal-seller-rate-title">تعهد ارسال
+
+                        </span></div><div class="c-remodal-seller-rate">
+                        <div class="c-remodal-seller-percent c-remodal-seller-percent-yellow js-seller-return-percentage">
+                            ۹۹.۳٪
+                        </div>
+                        <span class="c-remodal-seller-rate-title">بدون مرجوعی</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</x-product-mobile.mobile-remodal-wrapper>

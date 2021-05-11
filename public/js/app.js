@@ -346,6 +346,14 @@ document.querySelectorAll('.js-color-picker').forEach(function (c) {
   });
 });
 
+function remodalSeller() {
+  document.querySelector('.c-remodal-seller-info').style.display = 'block';
+}
+
+document.querySelector('.js-c-product-seller-extra').addEventListener('click', function () {
+  remodalSeller();
+});
+
 /***/ }),
 
 /***/ "./resources/css/app.css":

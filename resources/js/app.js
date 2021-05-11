@@ -322,3 +322,9 @@ document.querySelectorAll('.js-color-picker').forEach((c)=>{
         colorBorder(cp.target)
     })
 })
+function remodalSeller(){
+    document.querySelector('.c-remodal-seller-info').style.display='block'
+}
+document.querySelector('.js-c-product-seller-extra').addEventListener('click',()=>{
+    remodalSeller();
+})
