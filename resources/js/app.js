@@ -273,22 +273,27 @@ document.querySelectorAll('.js-more-replies a').forEach(moreReplies=>{
 })
 
 /*responsive product page */
+function removeColorBorder(){
+    document.querySelectorAll('.js-color-picker').forEach((f)=>{
+        f.classList.remove('selected');
+    })
+}
+function colorBorder(colorElem){
+    var productColor=document.querySelector('.js-filter-color-selector').innerText;
+    if (colorElem.querySelector('.js-color-picker-text').innerText==productColor){
+        colorElem.classList.add('selected');
+    }
+    else{
+        colorElem.classList.remove('selected');
+    }
+}
 function tabOpen(dropup){
     let dropUpCon=dropup.parentElement.querySelector('.c-dropup-container');
     dropUpCon.style.bottom='0';
     document.querySelector('.dropup-overlay').classList.add('active');
-    /*
-    if (dropUpCon.style.bottom=='0'){
-        console.log('done')
-        document.addEventListener('click', (click)=>{
-            if(!dropUpCon.contains(click.target)){
-                //dropUpCon.style.bottom='-100%';
-                console.log('hi')
-            }
-        })
-    }
-    */
-
+    document.querySelectorAll('.js-color-picker').forEach((e)=>{
+        colorBorder(e)
+    })
 
 }
 document.querySelector('.c-product-tab').addEventListener('click',(t)=>{
@@ -307,9 +312,13 @@ function changeColorText(colorPick){
     var colorValue=colorPick.querySelector('.js-color-picker-value').style.backgroundColor;
     document.querySelector('.js-filters-color-header-value').style.backgroundColor=colorValue;
     document.querySelector('.js-filter-color-modal-text').innerText=colorText;
+    document.querySelector('.js-product-tab-color-value').style.backgroundColor=colorValue;
+    document.querySelector('.js-filter-color-selector').innerText=colorText;
 }
 document.querySelectorAll('.js-color-picker').forEach((c)=>{
     c.addEventListener('click', (cp)=>{
-        changeColorText(cp.target)
+        changeColorText(cp.target);
+        removeColorBorder();
+        colorBorder(cp.target)
     })
 })

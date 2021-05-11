@@ -35645,6 +35645,10 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   cursor: pointer;
 }
 
+.c-b-filters-colors-item.selected{
+  border-color: #0fabc6;
+}
+
 .c-b-filters-colors-item-text{
   font-size: 16px;
   font-size: 1.143rem;
