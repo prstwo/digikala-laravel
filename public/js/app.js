@@ -292,15 +292,33 @@ document.querySelectorAll('.js-more-replies a').forEach(function (moreReplies) {
 /*responsive product page */
 
 function tabOpen(dropup) {
-  dropup.querySelector('.c-dropup-container').style.bottom = '0';
-
-  if (dropup.querySelector('.c-dropup-container').style.bottom === '0') {
-    dropup.querySelector('.c-dropup-container').style.bottom = '100%';
+  var dropUpCon = dropup.parentElement.querySelector('.c-dropup-container');
+  dropUpCon.style.bottom = '0';
+  document.querySelector('.dropup-overlay').classList.add('active');
+  /*
+  if (dropUpCon.style.bottom=='0'){
+      console.log('done')
+      document.addEventListener('click', (click)=>{
+          if(!dropUpCon.contains(click.target)){
+              //dropUpCon.style.bottom='-100%';
+              console.log('hi')
+          }
+      })
   }
+  */
 }
 
 document.querySelector('.c-product-tab').addEventListener('click', function (t) {
   tabOpen(t.target);
+});
+
+function removeDropUP(duo) {
+  document.querySelector('.c-dropup-container').style.bottom = '-100%';
+  duo.classList.remove('active');
+}
+
+document.querySelector('.dropup-overlay').addEventListener('click', function (e) {
+  removeDropUP(e.target);
 });
 
 /***/ }),

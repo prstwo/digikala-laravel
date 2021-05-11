@@ -32008,7 +32008,7 @@ main{
   }
 }
 
-.overlay, .m-overlay, .nav-overlay{
+.overlay, .m-overlay, .nav-overlay,.dropup-overlay{
   position: fixed;
   right: 0;
   height: 100%;
@@ -32020,6 +32020,14 @@ main{
   opacity: 0;
   transition: opacity .2s cubic-bezier(.215,.61,.355,1) .1s;
   pointer-events: none;
+}
+
+.dropup-overlay{
+  z-index:14;
+}
+
+.dropup-overlay.active{
+  opacity: 1;
 }
 
 .overlay{
@@ -35565,12 +35573,13 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
 
 .c-dropup-container{
   position: fixed;
-  bottom: -100%;
+  bottom: 100%;
   left: 0;
   right: 0;
   z-index: 15;
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in-out;
   max-height: 80vh;
+  pointer-events: auto;
 }
 
 .c-b-filters-color, .c-b-filters-size {
@@ -35590,12 +35599,22 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   margin-bottom: 11.5px;
   border-bottom: 2px solid #e5e5e5;
   padding-bottom: 15px;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .c-b-filters-color-header, .c-b-filters-size-header {
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.c-b-filters-color-header-value{
+  border: 1px solid #000;
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
 }
 
 .c-dropup-content{

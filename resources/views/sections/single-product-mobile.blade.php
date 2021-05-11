@@ -57,31 +57,34 @@
                 <span class="c-product-tab-value flex flex-row items-center">
                 (2 رنگ)
                 <x-angles.angle-bottom/>
-                    {{--سکشن رنگ با قابلیت collapse اضافه شد. اما
-                    در رابطه با بسته شدن
-                    این سکشن کدهای بعدی اضافه خواهد شد. فعلا یک شکل ساده طراحی شده است.  --}}
-                        <div class="c-dropup-container c-b-filters-color" style="bottom:100%">
-                            <div class="c-dropup-content-wrapper">
-                                <div class="c-dropup-header c-b-filters-color-header">
-                                    رنگ نقره ای
-                                </div>
-                                <div class="c-dropup-content">
-                                    <div class="c-b-filters-colors-items">
-                                        <div class="c-b-filters-colors-item">
-                                            <div class="c-b-filters-colors-item-text">نقره ای</div>
-                                            <div class="c-b-filters-colors-item-value" style="background-color:#dedede "></div>
-                                        </div>
-                                        <div class="c-b-filters-colors-item">
-                                            <div class="c-b-filters-colors-item-text">سبز</div>
-                                            <div class="c-b-filters-colors-item-value" style="background-color:green "></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                  </span>
             </a>
+            <div class="c-dropup-container c-b-filters-color" style="bottom:-100%">
+                <div class="c-dropup-content-wrapper">
+                    <div class="c-dropup-header c-b-filters-color-header">
+                        <div class="c-b-filters color-header-text">
+                            رنگ
+                            <span class="js-filter-color-modal-text">نقره ای</span>
+                        </div>
+
+                        <div class="c-b-filters-color-header-value" style="background-color: #dedede;"></div>
+                    </div>
+                    <div class="c-dropup-content">
+                        <div class="c-b-filters-colors-items">
+                            <div class="c-b-filters-colors-item">
+                                <div class="c-b-filters-colors-item-text">نقره ای</div>
+                                <div class="c-b-filters-colors-item-value" style="background-color:#dedede "></div>
+                            </div>
+                            <div class="c-b-filters-colors-item">
+                                <div class="c-b-filters-colors-item-text">سبز</div>
+                                <div class="c-b-filters-colors-item-value" style="background-color:green "></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <section class="my-4"></section>
         <div class="c-checkout-submit flex-col">
@@ -91,3 +94,4 @@
         </div>
     </article>
 </div>
+<div class="dropup-overlay"></div>
