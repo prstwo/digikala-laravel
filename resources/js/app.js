@@ -203,6 +203,9 @@ document.querySelectorAll('.product-gallery-pictures img').forEach((mp)=>{
 function displayRemodal(miniImg){
     document.querySelector('.remodal-img-container').src=miniImg.getAttribute('data-src');
     //console.log(miniImg)
+    document.querySelectorAll('.remodal-gallery-thumb-selected').forEach(img=>{
+        img.classList.remove('remodal-gallery-thumb-selected');
+    })
     miniImg.classList.add('remodal-gallery-thumb-selected');
 }
 function closeModal(){
