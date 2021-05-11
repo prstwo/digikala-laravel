@@ -35667,6 +35667,41 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   pointer-events: none;
 }
 
+.c-product-data{
+  border-radius: 9px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 9%);
+  padding: 1rem;
+  font-size: 12px;
+  font-size: .857rem;
+  line-height: 1.833;
+  font-size: 1rem;
+}
+
+.c-product-data-section-additional{
+  display: flex;
+  align-items: center;
+  color: #686868;
+  margin-top: 16px;
+}
+
+.c-product-data-section-additional:first-child {
+  margin-top: 0;
+}
+
+.c-product-data-info-icon{
+  padding-left: 1rem;
+  height: 24px;
+}
+
+.c-product-data-info-icon:before{
+  font-family: FontAwesome;
+  content: '\f05a';
+  font-size: 24px;
+  font-size: 1.3rem;
+  line-height: 22px;
+}
+
 /*swiper custom */
 
 .swiper-container,.swiper-container2 , .swiper-container-mobile-2{
