@@ -177,7 +177,6 @@
                                                                     <div class="value-bar"></div>
                                                                 </div>
                                                             </div>
-
                                                         </div>
                                                     <div class="c-round-progress">
                                                         <div class="progress-circle over50 p99">
