@@ -4276,7 +4276,6 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
     line-height: 2.2;
     color: #a1a3a8;
     font-weight: 500;
-    margin-top: 8px;
 }
     /*swiper custom */
 .swiper-container,.swiper-container2 , .swiper-container-mobile-2{
@@ -4371,7 +4370,7 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
     width: 3em;
     height: 3em;
     border-radius: 50%;
-    border: 0.25em solid red; /*The border is 0.35 but making it larger removes visual artifacts */
+    border: 0.35em solid red; /*The border is 0.35 but making it larger removes visual artifacts */
     box-sizing: border-box;
 
 }
@@ -4391,7 +4390,7 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
     background-color: green;
 }
 .progress-circle.p100 .value-bar,.progress-circle.p99 .value-bar,.progress-circle.p98 .value-bar{
-    border: 0.28em solid green;
+    border: .35em solid green;
     background-color: green;
 }
 

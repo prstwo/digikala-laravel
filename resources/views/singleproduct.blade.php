@@ -169,6 +169,7 @@
                                                     ایرانیان قایم همراه کاوش تیم
                                                 </div>
                                                 <div class="c-seller-rating-ratings c-seller-rating-ratings-buy-box">
+                                                    <div class="c-round-progress-container">
                                                         <div class="c-round-progress">
                                                             <div class="progress-circle over50 p100">
                                                                 <span>100%</span>
@@ -178,26 +179,35 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    <div class="c-round-progress">
-                                                        <div class="progress-circle over50 p99">
-                                                            <span>99%</span>
-                                                            <div class="left-half-clipper">
-                                                                <div class="first50-bar"></div>
-                                                                <div class="value-bar"></div>
-                                                            </div>
-                                                        </div>
+                                                        <span class="c-round-progress-label">تامین به موقع</span>
+                                                    </div>
 
+                                                    <div class="c-round-progress-container">
+                                                        <div class="c-round-progress">
+                                                            <div class="progress-circle over50 p99">
+                                                                <span>99%</span>
+                                                                <div class="left-half-clipper">
+                                                                    <div class="first50-bar"></div>
+                                                                    <div class="value-bar"></div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <span class="c-round-progress-label">تعهد ارسال</span>
                                                     </div>
-                                                    <div class="c-round-progress">
-                                                        <div class="progress-circle over50 p93">
-                                                            <span>93%</span>
-                                                            <div class="left-half-clipper">
-                                                                <div class="first50-bar"></div>
-                                                                <div class="value-bar"></div>
+
+                                                    <div class="c-round-progress-container">
+                                                        <div class="c-round-progress">
+                                                            <div class="progress-circle over50 p93">
+                                                                <span>93%</span>
+                                                                <div class="left-half-clipper">
+                                                                    <div class="first50-bar"></div>
+                                                                    <div class="value-bar"></div>
+                                                                </div>
                                                             </div>
                                                         </div>
+                                                        <span class="c-round-progress-label">بدون ثبت مرجوعی</span>
                                                     </div>
-                                                        <span class="c-round-progress-label"></span>
 
                                                 </div>
 
