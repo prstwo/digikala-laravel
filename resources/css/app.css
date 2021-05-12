@@ -4007,6 +4007,42 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
     -ms-flex-align: center;
     align-items: center;
 }
+.mobile-remodal-comments-head-actions{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.mobile-remodal-comments-title{
+    font-size: 16px;
+    font-size: 1.143rem;
+    line-height: 1.375;
+}
+.mobile-remodal-comments-add-action{
+    border-radius: 8px;
+    background-color: #00bfd5;
+    padding: 9px 35px 9px 15px;
+    color: #fff;
+    position: relative;
+}
+.mobile-remodal-comments-add-action:after{
+    font-family: FontAwesome;
+    content: '\f067';
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-size: .857rem;
+    line-height: 1.833;
+}
 .mobile-ui-radio-wrapper .mobile-filter-label {
     font-size: 14px;
     font-size: 1rem;

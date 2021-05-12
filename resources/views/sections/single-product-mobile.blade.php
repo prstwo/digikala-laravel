@@ -368,6 +368,14 @@
                                           extraClass2="remodal-comments" extraClass3="remodal-comments-back"
                     title=" نظرات کاربران">
         <div class="o-round-file my-4 py-5 ">
+            <div class="mobile-remodal-comments-head-actions">
+                <h2 class="mobile-remodal-comments-title">
+                    نظر خود را ثبت کنید
+                </h2>
+                <a href="" class="mobile-remodal-comments-add-action">
+                    افزودن نظر
+                </a>
+            </div>
             <div class="mobile-remodal-comments-sort-header">
                 <p>مرتب&zwnj;سازی بر اساس:</p>
                 <div class="mobile-remodal-comments-sort-options">
