@@ -357,7 +357,7 @@ function remodalSellerHide() {
   document.querySelector('.js-remodal-seller-info').style.display = 'none';
 }
 
-document.querySelector('.js-c-product-seller-extra').addEventListener('click', function () {
+document.querySelector('.js-product-seller-trigger').addEventListener('click', function () {
   remodalSellershow();
 });
 document.querySelector('.js-seller-remodal-back').addEventListener('click', function () {

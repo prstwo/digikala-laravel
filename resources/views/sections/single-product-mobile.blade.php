@@ -103,7 +103,7 @@
         </section>
         <section class="my-4">
             <div class="c-product-data c-product-seller-info">
-                <div class="c-product-data-section c-product-seller">
+                <div class="c-product-data-section c-product-seller js-product-seller-trigger">
                     <div class="c-product-seller-main">
                         <div class="c-product-seller-wrapper">
                             فروشنده:

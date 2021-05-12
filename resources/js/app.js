@@ -331,7 +331,7 @@ function remodalSellershow(){
 function remodalSellerHide(){
     document.querySelector('.js-remodal-seller-info').style.display='none'
 }
-document.querySelector('.js-c-product-seller-extra').addEventListener('click',()=>{
+document.querySelector('.js-product-seller-trigger').addEventListener('click',()=>{
     remodalSellershow();
 })
 

@@ -700,7 +700,6 @@ This file can be used as the styllesheet of any bullet slider
 }
 
 @media screen and (max-width: 767px) {
-
     .bullets-slider-container{
         width: 100%;
     }
