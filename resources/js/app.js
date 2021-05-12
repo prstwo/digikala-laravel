@@ -350,3 +350,36 @@ function remodalShipmentHide(){
 document.querySelector('.js-shipment-remodal-back').addEventListener('click',()=>{
     remodalShipmentHide()
 })
+function remodalExpertShow(){
+    document.querySelector('.js-remodal-expert-review').style.display='block'
+}
+function remodalExpertHide(){
+    document.querySelector('.js-remodal-expert-review').style.display='none'
+
+}
+document.querySelector('.js-expert-review-show-more').addEventListener(
+    'click', ()=>{
+        remodalExpertShow()
+    }
+)
+document.querySelector('.js-remodal-review-back').addEventListener(
+    'click', ()=>{
+        remodalExpertHide()
+    }
+)
+function remodalSpecShow(){
+    document.querySelector('.js-remodal-tech-specs').style.display='block'
+}
+function remodalSpecHide(){
+    document.querySelector('.js-remodal-tech-specs').style.display='none'
+}
+document.querySelector('.js-show-more-specs').addEventListener(
+    'click', ()=>{
+        remodalSpecShow()
+    }
+)
+document.querySelector('.js-remodal-tech-back').addEventListener(
+    'click', ()=>{
+        remodalSpecHide()
+    }
+)

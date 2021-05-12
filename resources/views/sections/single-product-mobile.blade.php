@@ -271,3 +271,71 @@
             </div>
         </div>
 </x-product-mobile.mobile-remodal-wrapper>
+<x-product-mobile.mobile-remodal-wrapper  extraClass1="remodal-expert-review c-remodal-full-screen"
+                                          extraClass2="remodal-expert-review" extraClass3="remodal-review-back"
+                    title="نقد و بررسی اجمالی">
+        <div class="my-4">
+            <article class="c-product-data">
+                <div class="c-product-text-header remodal-c-product-text-header">
+                    <h2>
+                        <span>
+                            گوشی موبایل شیائومی مدل Mi 10T PRO 5G M 2007J3SG دو سیم‌ کارت ظرفیت 256 گیگابایت
+                        </span>
+                    </h2>
+                </div>
+                <div class="c-product-text-content">
+                    <p>
+
+                        گوشی موبایل شیائومی مدل Mi 10T PRO 5G M 2007J3SG دو سیم کارت ظرفیت 256 گیگابایت یکی از
+                        شگفت‌انگیزترین گوشی‌های کمپانی بزرگ شیائومی است که با رونمایی آن،
+                        همه افرادی که از طرفداران شیائومی هستند را شگفت‌زده کرده است.
+                        این گوشی تحول بسیار بزرگی در تصویربرداری، قدرت پردازش منطقی،
+                        محاسباتی، گرافیکی و وظایف اینترنتی از قبیل بازی، سوشیال و بسیاری
+                        دیگر ایجاد کرده است. در گوشی شیائومی نمایشگر تقریباً تمام
+                        قاب جلویی گوشی را پر کرده است. این مشخصه در کنار فریم
+                        تهیه شده از آلومینیوم  قرار گرفته است که ظاهر زیبایی را
+                        به آن بخشیده است. این بدنه­‌ی زیبا در کنار نمایشگر این محصول،
+                        با استفاده از Corning Gorilla Glass 5 محافظت می‌شود تا گوشی
+                        در برابر خط‌وخش ایمن باشد. حافظه‌هایی که در این گوشی به‌کار رفته است
+                        دارای ظرفیت‌های بسیار بالایی هستند. ۲۵۶ گیگابایت برای حافظه‌داخلی
+                        و ۸ گیگابایت حافظه RAM می‌تواند همه‌کارهای همزمان سنگین
+                        شما را به‌راحتی انجام دهد. این گوشی شیائومی دارای فناوری ارتباطی شبکه
+                        5G یا نسل پنجم است که اتفاقی بسیار بزرگ و پرقدرت در بهبود سرعت دانلود
+                        و آپلود است. این گوشی می‌تواند با کیفیت 8K تصویربرداری کند.
+
+                    </p>
+                </div>
+            </article>
+        </div>
+</x-product-mobile.mobile-remodal-wrapper>
+<x-product-mobile.mobile-remodal-wrapper  extraClass1="remodal-tech-specs c-remodal-full-screen"
+                                          extraClass2="remodal-tech-specs" extraClass3="remodal-tech-back"
+                    title="مشخصات فنی">
+        <div class="my-4 py-5 px-4">
+            @php
+            $productspecs = [['headline'=>'مشخصات کلی'
+                               ,'items'=> [['key'=>'ابعاد', 'value'=>'165.1x76.4x9.3 میلی‌متر'],['key'=>'بدنه', 'value'=>'قاب پشتی و جلو از جنس شیشه با محافظت Gorilla Glass 5'] ]]
+                               ,['headline'=>' CPU'
+                               ,'items'=> [['key'=>'حافظه', 'value'=>'مقدار RAM '],['key'=>'داخلی', 'value'=>'256 گیگابایت']]
+                                ]
+            ]
+            @endphp
+            @foreach($productspecs as $productspec)
+                <h3 class="c-product-spec-headline">
+                    {{$productspec['headline']}}
+                </h3>
+                <div class="c-table-spec">
+                    <div class="c-table-spec-item">
+                        @foreach($productspec['items'] as $productspecitemdet)
+                            <div class="c-table-spec-key">
+                               {{$productspecitemdet['key']}}
+                            </div>
+                            <div class="c-table-spec-value">
+                                {{$productspecitemdet['value']}}
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            @endforeach
+        </div>
+</x-product-mobile.mobile-remodal-wrapper>
