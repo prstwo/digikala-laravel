@@ -113,54 +113,79 @@
                             <div class="product-summary">
                                 <div class="product-seller-info border border-solid rounded-lg">
                                     <div class="product-seller-box relative flex flex-col">
-                                        <div class="product-seller-counter flex items-center">
-                                            <div>فروشنده</div>
-                                            <a href="#suppliers" class="seller-count-row">
-                                                <span class="font-bold">۴</span>
-                                                <span class="font-bold"> فروشنده</span>
-                                                دیگر
-                                            </a>
-                                        </div>
-                                        <div class="product-seller-row product-seller-row-first-line p-4 cursor-pointer hover:bg-gray-200 ">
-                                            <div class="product-seller-row-fund relative pl-7">
-                                                <div class="product-seller-first-line flex justify-between">
-                                                    <span>دیجی&zwnj;کالا</span>
+                                        <div class="product-summary-box-items relative flex flex-col">
+                                            <div class="product-seller-counter flex items-center">
+                                                <div>فروشنده</div>
+                                                <a href="#suppliers" class="seller-count-row">
+                                                    <span class="font-bold">۴</span>
+                                                    <span class="font-bold"> فروشنده</span>
+                                                    دیگر
+                                                </a>
+                                            </div>
+                                            <div class="product-seller-row product-seller-row-first-line js-seller-embeded-info p-4 cursor-pointer hover:bg-gray-200 ">
+                                                <div class="product-seller-row-fund relative pl-7">
+                                                    <div class="product-seller-first-line flex justify-between">
+                                                        <span>دیجی&zwnj;کالا</span>
 
+
+                                                    </div>
+                                                    <div class="product-seller-second-line"></div>
 
                                                 </div>
-                                                <div class="product-seller-second-line"></div>
-
                                             </div>
-                                        </div>
-                                        <div class="product-seller-row p-4">
-                                            <div class="product-seller-row-main">
-                                                گارانتی ۱۸ ماهه کاوش تیم
+                                            <div class="product-seller-row p-4">
+                                                <div class="product-seller-row-main">
+                                                    گارانتی ۱۸ ماهه کاوش تیم
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="product-seller-row p-4 flex-col cursor-pointer hover:bg-gray-200 ">
-                                            <div class="product-ship-main flex flex-row justify-between">
-                                                موجود در انبار فروشنده
-                                                <span class="product-ship-arrow-left"></span>
-                                            </div>
-                                            <ul class="list-none c-product-ship-sender-list">
-                                                <li>
+                                            <div class="product-seller-row p-4 flex-col cursor-pointer hover:bg-gray-200 ">
+                                                <div class="product-ship-main js-product-summary-ship flex flex-row justify-between">
+                                                    موجود در انبار فروشنده
+                                                    <span class="product-ship-arrow-left"></span>
+                                                </div>
+                                                <ul class="list-none c-product-ship-sender-list">
+                                                    <li>
                                                     <span class="c-line-bullet-list-item  c-line-bullet-list-item-digikala ">
                                                         ارسال دیجی‌کالا از ۱ روز کاری دیگر
                                                     </span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-seller-row p-4 flex flex-row justify-end">
-                                            <div class="product-seller-row-price flex flex-row justify-between">
-                                                <div class="product-seller-row-price-real">
-                                                    <div class="product-seller-price-pure inline-flex">
-                                                        ۱۴,۹۹۰,۰۰۰
-                                                    </div>
-                                                    تومان
-                                                </div>
+                                                    </li>
+                                                </ul>
                                             </div>
+                                            <div class="product-seller-row p-4 flex flex-row justify-end">
+                                                <div class="product-seller-row-price flex flex-row justify-between">
+                                                    <div class="product-seller-row-price-real">
+                                                        <div class="product-seller-price-pure inline-flex">
+                                                            ۱۴,۹۹۰,۰۰۰
+                                                        </div>
+                                                        تومان
+                                                    </div>
+                                                </div>
 
+                                            </div>
                                         </div>
+                                        <x-product-info-embeded jsClass="seller-info-changable" title="اطلاعات تکمیلی فروشنده"  backBtn="js-embeded-seller-back">
+                                            <div class="c-shipment-info-row ">
+                                                <div class="c-shipment-info-row-title">
+                                                    ایرانیان قایم همراه کاوش تیم
+                                                </div>
+
+
+                                            </div>
+                                        </x-product-info-embeded>
+                                        <x-product-info-embeded jsClass="shipment-info-changable" title="جزئیات ارسال" backBtn="js-embeded-shipment-back">
+                                            <div class="c-shipment-info-row ">
+                                                <div class="c-shipment-info-row-title">
+                                                    ارسال توسط دیجی‌کالا از ۱ روز کاری دیگر
+                                                </div>
+                                                <div class="c-shipment-info-row-content">
+                                                    این کالا پس از مدت زمان مشخص شده توسط فروشنده در انبار دیجی&zwnj;کالا تامین و آماده پردازش
+                                                    می&zwnj;گردد و توسط پیک دیجی&zwnj;کالا در بازه انتخابی ارسال خواهد شد.
+
+                                                </div>
+
+                                            </div>
+                                        </x-product-info-embeded>
+
                                     </div>
                                     <div class="product-seller-row product-seller-add-to-card p-4 cursor-pointer">
                                         <a class=" btn-add-to-cart w-full" data-product-id="4107334" data-variant="16089105" href="#payment" data-event="add_to_cart" data-event-category="ecommerce" data-event-label="price: 142790000 - seller: marketplace - seller_name: مرکز تامین کالای دیجیتال ایران

@@ -274,7 +274,34 @@ document.querySelectorAll('.js-more-replies a').forEach(moreReplies=>{
             showReplies(e.target)
         })
 })
-
+function shipmentEmebedShow(){
+    document.querySelector('.product-summary-box-items').classList.add('hide');
+    document.querySelector('.js-shipment-info-changable').classList.remove('hide');
+}
+document.querySelector('.js-product-summary-ship').addEventListener('click',()=>{
+    shipmentEmebedShow();
+})
+function shipmentEmebedHide(){
+    document.querySelector('.product-summary-box-items').classList.remove('hide');
+    document.querySelector('.js-shipment-info-changable').classList.add('hide');
+}
+document.querySelector('.js-embeded-shipment-back').addEventListener('click',()=>{
+    shipmentEmebedHide();
+})
+function sellerEmebedShow(){
+    document.querySelector('.product-summary-box-items').classList.add('hide');
+    document.querySelector('.js-seller-info-changable').classList.remove('hide');
+}
+document.querySelector('.js-seller-embeded-info').addEventListener('click',()=>{
+    sellerEmebedShow();
+})
+function sellerEmebedHide(){
+    document.querySelector('.product-summary-box-items').classList.remove('hide');
+    document.querySelector('.js-seller-info-changable').classList.add('hide');
+}
+document.querySelector('.js-embeded-seller-back').addEventListener('click',()=>{
+    sellerEmebedHide();
+})
 /*responsive product page */
 function removeColorBorder(){
     document.querySelectorAll('.js-color-picker').forEach((f)=>{

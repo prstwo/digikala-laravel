@@ -92,6 +92,11 @@ class SingleProductController extends Controller
                     ['span1'=>'دوربین‌های پشت گوشی: ', 'span2'=>' 3 ماژول دوربین','class'=>'"c-products-params-more"'],
                     ['span1'=>'توضیحات سیم کارت: ', 'span2'=>' سایز نانو (8.8 × 12.3 میلی‌متر)','class'=>'"c-products-params-more"']
             ]
+            ,'productspecs'=> [['headline'=>'مشخصات کلی'
+            ,'items'=> [['key'=>'ابعاد', 'value'=>'165.1x76.4x9.3 میلی‌متر'],['key'=>'بدنه', 'value'=>'قاب پشتی و جلو از جنس شیشه با محافظت Gorilla Glass 5'] ]]
+            ,['headline'=>' CPU'
+                ,'items'=> [['key'=>'حافظه', 'value'=>'مقدار RAM '],['key'=>'داخلی', 'value'=>'256 گیگابایت']]
+            ]]
         ]);
 
     }

@@ -312,14 +312,6 @@
                                           extraClass2="remodal-tech-specs" extraClass3="remodal-tech-back"
                     title="مشخصات فنی">
         <div class="my-4 py-5 px-4">
-            @php
-            $productspecs = [['headline'=>'مشخصات کلی'
-                               ,'items'=> [['key'=>'ابعاد', 'value'=>'165.1x76.4x9.3 میلی‌متر'],['key'=>'بدنه', 'value'=>'قاب پشتی و جلو از جنس شیشه با محافظت Gorilla Glass 5'] ]]
-                               ,['headline'=>' CPU'
-                               ,'items'=> [['key'=>'حافظه', 'value'=>'مقدار RAM '],['key'=>'داخلی', 'value'=>'256 گیگابایت']]
-                                ]
-            ]
-            @endphp
             @foreach($productspecs as $productspec)
                 <h3 class="c-product-spec-headline">
                     {{$productspec['headline']}}
