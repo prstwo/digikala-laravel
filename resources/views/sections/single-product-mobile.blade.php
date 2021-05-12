@@ -147,6 +147,65 @@
 
             </div>
         </section>
+        <section class="my-4">
+            <div class="c-product-data c-product-text">
+                <div class="c-product-text-header">
+                    <span>نقد و بررسی اجمالی</span>
+                    <a href="#product-more" class="c-product-text-more js-expert-review-show-more">بیشتر</a>
+                </div>
+                <div class="c-product-text-content">
+                    <p>
+                        گوشی موبایل شیائومی مدل Mi 10T PRO 5G M 2007J3SG دو سیم کارت ظرفیت
+                        256 گیگابایت یکی از شگفت‌انگیزترین گوشی‌های کمپانی بزرگ شیائومی است که
+                        با رونمایی آن، همه افرادی که از طرفداران شیائومی هستند را شگفت‌زده کرده است.
+                        این گوشی تحول بسیار بزرگی در تصویربرداری، قدرت پردازش منطقی، محاسباتی، گرافیکی و وظای
+                    </p>
+                </div>
+                <div class="c-product-text-header">
+                    <span>مشخصات فنی</span>
+                    <a href="#product-more" class="c-product-text-more js-show-more-specs">بیشتر</a>
+                </div>
+                <div class="c-product-text-content">
+                    <ul>
+                        <li>
+                            <span>حافظه داخلی:
+                            </span>
+                            <span>
+                                   256 گیگابایت
+                            </span>
+                        </li>
+                        <li>
+                            <span>شبکه های ارتباطی:
+                            </span>
+                            <span>
+                                   5G، 4G، 3G، 2G
+                            </span>
+                        </li>
+                        <li>
+                            <span>دوربین&zwnj;
+                                های پشت گوشی:
+                            </span>
+                            <span>
+                                                                            3 ماژول دوربین                                                                    </span>
+                        </li>
+                        <li>
+                            <span>سیستم عامل: </span>
+                            <span>
+                                    Android
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                توضیحات سیم کارت:
+                            </span>
+                            <span>
+                                 سایز نانو (8.8 × 12.3 میلی&zwnj;متر)
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <div class="c-checkout-submit flex-col">
             <a href="#kharid" class="c-btn-action">
                 افزودن به سبد خرید
