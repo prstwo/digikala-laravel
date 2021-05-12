@@ -10,7 +10,7 @@
         <!-- main top container -->
         <article class="main-top-container">
             <div class="main-top">
-                <div class="bullets-slider-container">
+                <div class="bullets-slider-container  ">
                     <!--bullets slider component attached-->
                     <div class="bullets-slider">
                         <div class="carousel relative ">
@@ -62,7 +62,7 @@
 
                     </div>
                 </div>
-                <div class="main-top-sides">
+                <div class="main-top-sides hidden md:flex flex-col ">
                     <div class="side">
                         <a href="side product page">
                             <img src={{asset("images/maintop-topside.gif")}} alt="product gif">
@@ -83,13 +83,13 @@
                     <x-specials-title/>
                     <div class="specials">
                         <div class="product-items ">
-                            <div class="hidden sm:block swiper-container">
+                            <div class="hidden md:block swiper-container">
                                 @include('sections.swiper-wrapper1')
                                 <div class="swiper-button-next arrow-left-3">
                                 </div>
                                 <div class="swiper-button-prev arrow-right-3"></div>
                             </div>
-                            <div class="block sm:hidden swiper-container-mobile">
+                            <div class="block md:hidden swiper-container-mobile">
                                 @include('sections.swiper-wrapper1')
                                 <div class="swiper-button-next arrow-left-3">
                                 </div>
@@ -121,13 +121,13 @@
                     <div class="boxes static">
                         <div class="items">
                             <!-- product item component -->
-                            <div class="hidden sm:block swiper-container2">
+                            <div class="hidden md:block swiper-container2">
                                 @include('sections.swiper-wrapper2')
                                 <div class="swiper-button-next arrow-left-3">
                                 </div>
                                 <div class="swiper-button-prev arrow-right-3"></div>
                             </div>
-                            <div class="block sm:hidden swiper-container-mobile-2">
+                            <div class="block md:hidden swiper-container-mobile-2">
                                 @include('sections.swiper-wrapper2')
                             <!-- Add Pagination -->
                                 <!-- Add Arrows -->

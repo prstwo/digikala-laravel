@@ -134,7 +134,7 @@ main{
 .hide{
     display: none;
 }
-@media screen and (max-width: 680px){
+@media screen and (max-width: 767px){
     .page-section-standard{
         box-shadow: none;
         padding: 9px 11px 11px 11px;
@@ -148,7 +148,7 @@ main{
     }
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 768px) {
     main{
         margin-top: 65px;
 
@@ -685,9 +685,7 @@ This file can be used as the styllesheet of any bullet slider
 }
 .main-top-sides{
     width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+
 }
 .side{
     overflow: hidden;
@@ -701,10 +699,8 @@ This file can be used as the styllesheet of any bullet slider
     border-radius: 10px;
 }
 
-@media screen and (max-width: 680px) {
-    .main-top-sides{
-        display: none;
-    }
+@media screen and (max-width: 767px) {
+
     .bullets-slider-container{
         width: 100%;
     }
@@ -762,7 +758,7 @@ This file can be used as the styllesheet of any bullet slider
     margin: .5%;
     background-color: white;
 }
-@media screen and (max-width: 680px){
+@media screen and (max-width: 767px){
     /*.product-items{
         overflow-x:scroll ;
     }*/
@@ -892,10 +888,7 @@ header .fa-search:before {
         display: none;
     }
 }
-@media screen and (max-width: 680px) {
-    .desktop-header-container{
-        display: none;
-    }
+@media screen and (max-width: 767px) {
     .mobile-header{
         display: flex;
         flex-direction: column;
@@ -1067,7 +1060,7 @@ span.head-title::after{
     min-width: 100%;
     overflow: hidden;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 767px) {
     .page-section{
         padding: 0;
     }
@@ -1304,7 +1297,7 @@ span.head-title::after{
 .mobile-footer-kinks-ul{
     display: none;
 }
-@media screen and (max-width: 680px){
+@media screen and (max-width: 767px){
     .digi-footer{
         margin-top: 0;
         padding-top: 0;
@@ -1460,7 +1453,7 @@ span.head-title::after{
     max-height: 100%;
     width: fit-content;
 }
-@media screen and (max-width: 680px){
+@media screen and (max-width: 767px){
     .swiper-brands{
         flex-wrap: wrap;
     }
@@ -2015,7 +2008,7 @@ a.product-title-brand-link{
     color: #424750;
     padding-right: 0;
 }
-@media screen and (min-width: 680px)  {
+@media screen and (min-width: 767px)  {
     .supplier-cell-title{
         min-width: 260px;
     }
@@ -2027,7 +2020,7 @@ a.product-title-brand-link{
         padding: 18px 10px;
     }
 }
-@media screen and (max-width: 680px){
+@media screen and (max-width: 767px){
     .supplier-cell-action{
         display: none;
     }
@@ -3398,7 +3391,7 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
     padding: 9px 33px 11px 11px;
 }
 
-@media screen and (max-width: 680px)  {
+@media screen and (max-width: 767px)  {
     .suppliers-rating {
         color: #00bfd6;
     }

@@ -1,5 +1,5 @@
 
-<header class="page-main-header sticky top-0 righ-0 left-0 z-50 bg-white relative">
+<header class="page-main-header static md:sticky top-0 righ-0 left-0 z-50 bg-white relative">
     <div class="mobile-header px-4 py-3">
         <div class="header-one py-2 mb-2 border-b border-gray-100 ">
             <div class="sandwich-menu js-m-sandwich-menu ">
@@ -46,7 +46,7 @@
 
     </div>
 
-    <div class="desktop-header-container px-4 py-3 flex flex-row flex-wrap justify-between">
+    <div class="desktop-header-container hidden md:flex  px-4 py-3 flex-row flex-wrap justify-between">
 
         <div class="desktop-header header-right-side flex content-center flex-grow">
             <div class="mr-2 ml-6 w-100 flex items-center">
@@ -75,7 +75,7 @@
         </div>
     </div>
     <!-- desktop navbar-->
-    <nav class="desktop-nav js-desktop-nav ">
+    <nav class="desktop-nav js-desktop-nav hidden md:block">
         <div class="nav-container">
             <div class="nav pt-3 px-4" id="navbar">
                 <div class="nav-items">
