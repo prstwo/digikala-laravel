@@ -446,6 +446,21 @@ document.querySelector('.js-remodal-tech-back').addEventListener('click', functi
   remodalSpecHide();
 });
 
+function remodalCommentsShow() {
+  document.querySelector('.js-remodal-comments').style.display = 'block';
+}
+
+function remodalCommentsHide() {
+  document.querySelector('.js-remodal-comments').style.display = 'none';
+}
+
+document.querySelector('.js-mobile-comments-more').addEventListener('click', function () {
+  remodalCommentsShow();
+});
+document.querySelector('.js-remodal-comments-back').addEventListener('click', function () {
+  remodalCommentsHide();
+});
+
 /***/ }),
 
 /***/ "./resources/css/app.css":

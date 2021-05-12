@@ -1,0 +1,12 @@
+@props(['commentor','date'])
+<li>
+    <div>
+        {{$commentor}}
+        <div>
+            {{$date}}
+        </div>
+    </div>
+    <p>
+        {{$slot}}
+    </p>
+</li>

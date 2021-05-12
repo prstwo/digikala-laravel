@@ -410,3 +410,16 @@ document.querySelector('.js-remodal-tech-back').addEventListener(
         remodalSpecHide()
     }
 )
+function remodalCommentsShow(){
+    document.querySelector('.js-remodal-comments').style.display='block'
+}
+function remodalCommentsHide(){
+    document.querySelector('.js-remodal-comments').style.display='none'
+
+}
+document.querySelector('.js-mobile-comments-more').addEventListener('click',()=>{
+    remodalCommentsShow()
+})
+document.querySelector('.js-remodal-comments-back').addEventListener('click',()=>{
+    remodalCommentsHide()
+})

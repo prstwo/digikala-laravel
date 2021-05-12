@@ -206,6 +206,39 @@
                 </div>
             </div>
         </section>
+        <section class="my-4">
+            <div class="mobile-comments-section">
+                <div class="mobile-comments-headline">
+                    مفیدترین نظرات کاربران
+                    <a href="#comments" class="mobile-comments-add">
+                        افزودن نظر
+                    </a>
+                </div>
+                <div class="mobile-comments-digiclub">
+                    <img src={{asset('images/digiclub-minicoin.png')}} alt="">
+                    <div>
+                        پس از عضویت در دیجی‌کلاب با ثبت نظر بر روی کالاهای خریداری شده
+                        <span>۵</span>
+                        امتیاز دریافت کنید
+                    </div>
+                </div>
+                <ul class="mobile-comments-list">
+                    <x-product-mobile.mobile-comment-section commentor="پرستو علیرضازاده" date="۲۹ بهمن ۱۳۹۹">
+                        این گوشی عالیه، برای خریدش اصلا شک نکنید مخصوصا صفحه
+                        144 هرتز که وقتی باهاش کار کنید اصلا دلتون نمیخاد برگردید به 60 هرتز
+                    </x-product-mobile.mobile-comment-section>
+
+                    <x-product-mobile.mobile-comment-section commentor="زهره رضایی" date="۱۲ دی ۱۳۹۹ ">
+                        در کل نسبت به قیمتش عالیه؛ در خریدش شک نکنید.
+                    </x-product-mobile.mobile-comment-section>
+                </ul>
+                <div class="mobile-comments-actions">
+                    <a href="#more-comments" class="mobile-comments-show-more js-mobile-comments-more">
+                        مشاهده همه <span>۲۰۲ </span> نظر کاربران
+                    </a>
+                </div>
+            </div>
+        </section>
         <div class="c-checkout-submit flex-col">
             <a href="#kharid" class="c-btn-action">
                 افزودن به سبد خرید
@@ -329,5 +362,55 @@
                     </div>
                 </div>
             @endforeach
+        </div>
+</x-product-mobile.mobile-remodal-wrapper>
+<x-product-mobile.mobile-remodal-wrapper  extraClass1="remodal-comments c-remodal-full-screen"
+                                          extraClass2="remodal-comments" extraClass3="remodal-comments-back"
+                    title=" نظرات کاربران">
+        <div class="o-round-file my-4 py-5 ">
+            <div class="mobile-remodal-comments-sort-header">
+                <p>مرتب&zwnj;سازی بر اساس:</p>
+                <div class="mobile-remodal-comments-sort-options">
+                    <div class="mobile-remodal-comments-sort-option">
+                        <div class="mobile-ui-radio-wrapper ">
+                            <label class="mobile-filter-label " for="comments-sort1">
+                                نظر خریداران
+                            </label>
+                            <label class="mobile-ui-radio">
+                                <input type="radio" value="buyers" name="comments_sort" class="" id="comments-sort1" checked="checked" data-title="نظر خریداران">
+                                <span class="mobile-ui-radio-check">
+
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mobile-remodal-comments-sort-option">
+                        <div class="mobile-ui-radio-wrapper ">
+                            <label class="mobile-filter-label " for="comments-sort1">
+                                مفیدترین نظرات
+                            </label>
+                            <label class="mobile-ui-radio">
+                                <input type="radio" value="buyers" name="comments_sort" class="" id="comments-sort1"  data-title="نظر خریداران">
+                                <span class="mobile-ui-radio-check">
+
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mobile-remodal-comments-sort-option">
+                        <div class="mobile-ui-radio-wrapper ">
+                            <label class="mobile-filter-label " for="comments-sort1">
+                                جدیدترین نظرات
+                            </label>
+                            <label class="mobile-ui-radio">
+                                <input type="radio" value="buyers" name="comments_sort" class="" id="comments-sort1"  data-title="نظر خریداران">
+                                <span class="mobile-ui-radio-check">
+
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 </x-product-mobile.mobile-remodal-wrapper>
