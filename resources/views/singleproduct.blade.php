@@ -623,9 +623,12 @@
             </div>
         </div>
         <div class="remodal-images-gallery flex flex-row">
-            <div class="remodal-gallery-main-image">
-                <img src="" class="remodal-img-container">
+
+            <div class="remodal-gallery-main-image img-zoom-container relative">
+                <img src="" class="remodal-img-container" id="myimage" style="width: 300px; height: 300px">
+                <div id="myresult" class="img-zoom-result"></div>
             </div>
+
             <div class="remodal-gallery-info">
                 <div class="remodal-gallery-thumbs">
                     @foreach($modalGalleryPictures as $modalGalleryPicture)
