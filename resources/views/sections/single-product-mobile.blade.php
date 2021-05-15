@@ -1,5 +1,18 @@
 <div class="block md:hidden px-2 mobile-container ">
-    <nav></nav>
+    <nav class="mobile-breadcrumb-container">
+        <ol class="mobile-breadcrumb">
+            @foreach($breadcrumbs as $breadcrumb )
+                <li>
+                    <a href="#digikala">
+                    <span>
+                        {{$breadcrumb}}
+                    </span>
+                    </a>
+                </li>
+            @endforeach
+
+        </ol>
+    </nav>
     <article class="relative">
         <section class="mobile-product-gallery">
             <x-product-info-title/>
@@ -207,7 +220,19 @@
             </div>
         </section>
         <aside class="my-4">
-
+            <span class="mobile-collapse-headline js-sntracker-carousel-title">
+                خریداران این محصول، محصولات زیر را هم خریده
+                &zwnj;اند</span>
+            <div class="product-row product-row-inner-page">
+                <div class=" swiper-container-mobile3">
+                @include('sections.swiper-wrapper2')
+                <!-- Add Pagination -->
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next arrow-left-3">
+                    </div>
+                    <div class="swiper-button-prev arrow-right-3"></div>
+                </div>
+            </div>
         </aside>
         <section class="my-4">
             <div class="mobile-comments-section">
@@ -261,6 +286,10 @@
                 </div>
             </div>
         </section>
+        <div class="mobile-footer-product-id">
+            <span>شناسه کالا :</span>
+            <span>DKP - ۴۱۰۷۳۳۴</span>
+        </div>
         <div class="c-checkout-submit flex-col">
             <a href="#kharid" class="c-btn-action">
                 افزودن به سبد خرید
