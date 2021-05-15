@@ -429,6 +429,19 @@ document.querySelector('.js-mobile-comments-more').addEventListener('click',()=>
 document.querySelector('.js-remodal-comments-back').addEventListener('click',()=>{
     remodalCommentsHide()
 })
+function  remodalFaqShow(){
+    document.querySelector('.js-remodal-faq').style.display='block'
+}
+function  remodalFaqHide(){
+    document.querySelector('.js-remodal-faq').style.display='none'
+}
+document.querySelector('.js-mobile-faq-more').addEventListener('click',()=>{
+    remodalFaqShow()
+})
+
+document.querySelector('.js-remodal-faq-back').addEventListener('click',()=>{
+    remodalFaqHide()
+})
 /*magnifier*/
 /**
  * Unifies event handling across browsers

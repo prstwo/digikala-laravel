@@ -466,6 +466,21 @@ document.querySelector('.js-mobile-comments-more').addEventListener('click', fun
 document.querySelector('.js-remodal-comments-back').addEventListener('click', function () {
   remodalCommentsHide();
 });
+
+function remodalFaqShow() {
+  document.querySelector('.js-remodal-faq').style.display = 'block';
+}
+
+function remodalFaqHide() {
+  document.querySelector('.js-remodal-faq').style.display = 'none';
+}
+
+document.querySelector('.js-mobile-faq-more').addEventListener('click', function () {
+  remodalFaqShow();
+});
+document.querySelector('.js-remodal-faq-back').addEventListener('click', function () {
+  remodalFaqHide();
+});
 /*magnifier*/
 
 /**

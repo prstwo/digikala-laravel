@@ -6,8 +6,6 @@
 @section('page-title','مشخصات، قیمت و خرید گوشی موبایل ')
 @section('main-content')
     <main class="w-full">
-
-
         <div class="product-whole-content">
             <div class="container hidden md:block px-6 py-0 bg-white">
                 <div class="product-breadcrumb flex flex-col items-start justify-between content-center md:items-center sm:flex-row content-center">

@@ -206,6 +206,9 @@
                 </div>
             </div>
         </section>
+        <aside class="my-4">
+
+        </aside>
         <section class="my-4">
             <div class="mobile-comments-section">
                 <div class="mobile-comments-headline">
@@ -235,6 +238,25 @@
                 <div class="mobile-comments-actions">
                     <a href="#more-comments" class="mobile-comments-show-more js-mobile-comments-more">
                         مشاهده همه <span>۲۰۲ </span> نظر کاربران
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="my-4">
+            <div class="mobile-faq">
+                <div class="mobile-faq-headline">
+                    پرسش و پاسخ
+                    <button class="mobile-question-add">
+                        ارسال پرسش
+                    </button>
+                </div>
+                <ul class="mobile-faq-list">
+                    <x-product-mobile.mobile-faq-list name="اکرم مهری آسیابر" question="برای بازی 60fps رو ساپورت میکنه؟  "/>
+                    <x-product-mobile.mobile-faq-list name="امیرحسین صفار" question="سلام میشه رنگ آبیشو موجود کنین   "/>
+                </ul>
+                <div class="mobile-faq-actions">
+                    <a href="#show-comments" class="mobile-faq-show-more js-mobile-faq-more">
+                        مشاهده همه ۱۰۳ پرسش کاربران
                     </a>
                 </div>
             </div>
@@ -376,49 +398,14 @@
                     افزودن نظر
                 </a>
             </div>
-            <div class="mobile-remodal-comments-sort-header">
-                <p>مرتب&zwnj;سازی بر اساس:</p>
-                <div class="mobile-remodal-comments-sort-options">
-                    <div class="mobile-remodal-comments-sort-option">
-                        <div class="mobile-ui-radio-wrapper ">
-                            <label class="mobile-filter-label " for="comments-sort1">
-                                نظر خریداران
-                            </label>
-                            <label class="mobile-ui-radio">
-                                <input type="radio" value="buyers" name="comments_sort" class="" id="comments-sort1" checked="checked" data-title="نظر خریداران">
-                                <span class="mobile-ui-radio-check">
+            <x-product-mobile.sort-comment-faq txt1="نظر خریداران " txt2="مفیدترین نظرات" txt3="جدیترین نظرات" />
+        </div>
+</x-product-mobile.mobile-remodal-wrapper>
+<x-product-mobile.mobile-remodal-wrapper  extraClass1="remodal-faq c-remodal-full-screen"
+                                          extraClass2="remodal-faq" extraClass3="remodal-faq-back"
+                    title=" پرسش و پاسخ">
+        <div class="o-round-file my-4 py-5 ">
+            <x-product-mobile.sort-comment-faq txt1="جدیدترین پرسش  " txt2="بیشترین پاسخ به پرسش" txt3="پرسش های شما " />
 
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="mobile-remodal-comments-sort-option">
-                        <div class="mobile-ui-radio-wrapper ">
-                            <label class="mobile-filter-label " for="comments-sort1">
-                                مفیدترین نظرات
-                            </label>
-                            <label class="mobile-ui-radio">
-                                <input type="radio" value="buyers" name="comments_sort" class="" id="comments-sort1"  data-title="نظر خریداران">
-                                <span class="mobile-ui-radio-check">
-
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="mobile-remodal-comments-sort-option">
-                        <div class="mobile-ui-radio-wrapper ">
-                            <label class="mobile-filter-label " for="comments-sort1">
-                                جدیدترین نظرات
-                            </label>
-                            <label class="mobile-ui-radio">
-                                <input type="radio" value="buyers" name="comments_sort" class="" id="comments-sort1"  data-title="نظر خریداران">
-                                <span class="mobile-ui-radio-check">
-
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 </x-product-mobile.mobile-remodal-wrapper>

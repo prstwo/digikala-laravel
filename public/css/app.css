@@ -35724,7 +35724,7 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   border-bottom: 1px solid #e5e5ea;
 }
 
-.mobile-comments-section{
+.mobile-comments-section, .mobile-faq{
   border-radius: 9px;
   background-color: #fff;
   box-shadow: 0 2px 4px 0 rgb(0 0 0 / 9%);
@@ -35881,7 +35881,7 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   color: #2a2a2a;
 }
 
-.mobile-comments-add{
+.mobile-comments-add,.mobile-question-add{
   border-radius: 8px;
   border: 1px solid #00bfd5;
   margin: 0;
@@ -35892,7 +35892,7 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   white-space: nowrap;
 }
 
-.mobile-comments-add:before{
+.mobile-comments-add:before, .mobile-question-add:before{
   font-family: FontAwesome;
   content: '\f067';
   font-size: 13px;
@@ -35970,21 +35970,21 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   padding: 15px;
 }
 
-.mobile-remodal-comments-sort-header{
+.mobile-remodal-comments-faq-sort-header{
   margin-top: 10px;
   padding-top: 10px;
 }
 
-.mobile-remodal-comments-sort-options{
+.mobile-remodal-comments-faq-sort-options{
   display: flex;
   flex-wrap: wrap;
 }
 
-.mobile-remodal-comments-sort-option:first-of-type {
+.mobile-remodal-comments-faq-sort-option:first-of-type {
   margin-left: 10px;
 }
 
-.mobile-remodal-comments-sort-option .mobile-ui-radio-wrapper {
+.mobile-remodal-comments-faq-sort-option .mobile-ui-radio-wrapper {
   padding-top: 2px;
   padding-bottom: 2px;
 }
@@ -36067,7 +36067,7 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   flex-shrink: 0;
 }
 
-.mobile-remodal-comments-sort-option .mobile-ui-radio>input:checked+.mobile-ui-radio-check {
+.mobile-remodal-comments-faq-sort-option .mobile-ui-radio>input:checked+.mobile-ui-radio-check {
   border-color: #00bfd6;
 }
 
@@ -36082,11 +36082,11 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   border-radius: inherit;
 }
 
-.mobile-remodal-comments-sort-option .mobile-ui-radio>input:checked+.mobile-ui-radio-check:before {
+.mobile-remodal-comments-faq-sort-option .mobile-ui-radio>input:checked+.mobile-ui-radio-check:before {
   background-color: #00bfd6;
 }
 
-.mobile-remodal-comments-sort-option .mobile-filter__label {
+.mobile-remodal-comments-faq-sort-option .mobile-filter__label {
   white-space: nowrap;
 }
 
@@ -36264,6 +36264,109 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   padding: 15px 0 0;
   margin-top: 15px;
 }
+
+.mobile-faq-headline{
+  padding: 9px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #2a2a2a;
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 1.571;
+  letter-spacing: -.5px;
+}
+
+.mobile-faq-list{
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-faq-list p{
+  color: #858585;
+}
+
+.mobile-faq-headline+.mobile-faq-list{
+  border-top: 1px solid #e5e5ea;
+}
+
+.is-question{
+  padding: 11px 0;
+  overflow: hidden;
+}
+
+.mobile-faq-header, .mobile-faq-list p {
+  font-size: 12px;
+  font-size: .857rem;
+  line-height: 1.833;
+}
+
+.mobile-faq-header{
+  font-weight: 700;
+  color: #424242;
+  margin-bottom: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.mobile-faq-header:before{
+  font-family: FontAwesome;
+  content: "\f128";
+  font-size: 16px;
+  color: #00bfd6;
+  margin-left: 10px;
+}
+
+.mobile-faq-fullname{
+  margin-right: 20px;
+  position: relative;
+}
+
+.mobile-faq-fullname:before{
+  font-family: FontAwesome;
+  content: '\f111';
+  color: #d8d8d8;
+  position: absolute;
+  right: -13px;
+  top: 8px;
+  font-size: 6px;
+}
+
+.mobile-faq-header span {
+  font-weight: 300;
+  color: #424242;
+  display: block;
+}
+
+.mobile-faq-submission-details span{
+  display: inline-block;
+}
+
+.mobile-faq-actions{
+  text-align: left;
+  direction: rtl;
+  padding: 10px 0;
+}
+
+.mobile-faq-show-more{
+  color: #00bfd6;
+  position: relative;
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-size: .857rem;
+  line-height: 16px;
+}
+
+.mobile-faq-show-more:after{
+  font-family: FontAwesome;
+  content: '\f104';
+  line-height: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/*remodal classes */
 
 .remodal-c-product-text-header{
   border-bottom: 2px solid #e4e4e4;
