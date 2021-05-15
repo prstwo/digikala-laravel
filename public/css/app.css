@@ -36901,6 +36901,78 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
 .progress-circle.p100 .value-bar { transform: rotate(360deg);
 }
 
+/*magnifier css*/
+
+.magnifier-thumb-wrapper {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0
+}
+
+.magnifier-lens {
+  position: absolute;
+  border: solid 1px #ccc;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  overflow: hidden
+}
+
+.magnifier-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: solid 1px #ccc;
+  color: #fff;
+  text-align: center;
+  background: transparent;
+  background: rgba(50, 50, 50, 0.5);
+  z-index: 1000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F323232,endColorstr=#7F323232)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F323232,endColorstr=#7F323232)
+}
+
+.magnifier-loader-text {
+  font: 13px Arial;
+  margin-top: 10px
+}
+
+.magnifier-large {
+  position: absolute;
+  z-index: 6;
+}
+
+.magnifier-preview {
+  padding: 0;
+  width: 100%;
+  /* height: 150px;*/
+  position: absolute;
+  overflow: hidden
+}
+
+.magnifier-preview.reveal{
+  background-color: white;
+  box-shadow: 0 2px 6px 6px rgba(0,0,0,.1);
+  border-radius: 1rem;
+}
+
+.magnifier-preview img {
+  position: absolute;
+  top: 0;
+  left: 0
+}
+
+.opaque {
+  opacity: .5;
+  filter: alpha(opacity=50);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50)
+}
+
+.hidden {
+  display: none
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

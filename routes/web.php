@@ -13,16 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
 
-    return view('index');
-});
 Route::get('/', '\App\Http\Controllers\HomeController@show');
 Route::get('/product', '\App\Http\Controllers\SingleProductController@show');
 
-Route::get('/swiper', function (){
-    return view('swiper');
-});
-Route::get('/swiper2', function (){
-    return view('swiper2');
-});

@@ -6,6 +6,8 @@
 @section('page-title','مشخصات، قیمت و خرید گوشی موبایل ')
 @section('main-content')
     <main class="w-full">
+
+
         <div class="product-whole-content">
             <div class="container hidden md:block px-6 py-0 bg-white">
                 <div class="product-breadcrumb flex flex-col items-start justify-between content-center md:items-center sm:flex-row content-center">
@@ -43,9 +45,14 @@
                             <div></div>
                         </div>
                         <div>
-                            <div class="product-gallery-main-pic py-4">
-                                <img src={{asset("images/product-main-pic.jpg")}} alt="product pic">
+                            <div class="product-gallery-main-pic py-4 js-product-gallery-main-pic" class="magnifier-thumb-wrapper">
+                                <img id="thumb" src={{asset("images/product-main-pic.jpg")}} alt="product-pic"
+                                     data-large-img-url={{asset("images/product-main-pic.jpg")}}
+                                     data-large-img-wrapper="preview" class="" dir="ltr">
+                                <div dir="ltr" id="thumb-lens" class="magnifier-lens hidden" style="width: 67px; height: 52px; background: url(&quot;images/product-main-pic.jpg;)
+                                 -2px -1px no-repeat scroll; left: 1px; top: 0px;"></div>
                             </div>
+
                             <ul class="flex product-gallery-pictures">
                                 @foreach($productGalleryPictures as $productgallerypicture)
 
@@ -73,11 +80,11 @@
                     </section>
                     <section class="product-info ">
                         <x-product-info-title/>
-                        <div class="product-attributes flex flex-col sm:flex-row justify-between">
+                        <div class="product-attributes flex flex-col sm:flex-row justify-between relative">
                             <div class="product-config flex-shrink-0 relative pt-3 ml-4 border-t border-solid flex flex-col content-between ">
-    <span class="product-title-english relative bottom-6 right-0 pl-2 bg-white">
-        Xiaomi Mi 10T PRO 5G M 2007J3SG Dual SIM 256GB Mobile Phone
-    </span>
+                                <span class="product-title-english relative bottom-6 right-0 pl-2 bg-white">
+                                    Xiaomi Mi 10T PRO 5G M 2007J3SG Dual SIM 256GB Mobile Phone
+                                </span>
                                 <div class="product-engagement">
                                     <div class="flex items-center">
                                         <div class="product-engagement-rating flex items-center">
@@ -236,6 +243,8 @@
 
                                     </div>
                                 </div>
+                            </div>
+                            <div dir="ltr" class="magnifier-preview" id="preview" style="width: 100%; height: calc(100% + 20px); top:-19px">
                             </div>
                         </div>
                     </section>

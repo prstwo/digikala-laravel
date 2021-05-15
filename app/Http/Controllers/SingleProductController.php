@@ -45,7 +45,6 @@ class SingleProductController extends Controller
      */
     public function show()
     {
-
         return view('singleproduct', [
             'productGalleryPictures'=> [
                 ['img'=>'images/product-pic-example1.jpg','data'=>'images/product-data-src0.jpg'],
