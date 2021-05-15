@@ -671,7 +671,7 @@ var Magnifier = function (evt, options) {
 
                 large.id = idx + '-large';
                 large.style.width = data[idx].largeW + 'px';
-                large.style.height = data[idx].largeH + 'px';
+                large.style.height = 'auto';
                 large.className = 'magnifier-large hidden';
 
                 if (data[idx].mode === 'inside') {
@@ -882,8 +882,12 @@ var Magnifier = function (evt, options) {
 
             thumbData.x = thumbBounds.left;
             thumbData.y = thumbBounds.top;
+            thumbData.w = Math.round(thumbBounds.right );
+            thumbData.h = Math.round(thumbBounds.bottom);
+            /*
             thumbData.w = Math.round(thumbBounds.right - thumbData.x);
             thumbData.h = Math.round(thumbBounds.bottom - thumbData.y);
+            */
 
             thumbData.lensW = Math.round(thumbData.w / thumbData.zoom);
             thumbData.lensH = Math.round(thumbData.h / thumbData.zoom);

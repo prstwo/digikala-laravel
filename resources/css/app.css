@@ -4773,13 +4773,15 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
     width: 100%;
    /* height: 150px;*/
     position: absolute;
-    overflow: hidden
+    overflow: hidden;
+    opacity: 0;
 }
 .magnifier-preview.reveal{
     background-color: white;
     box-shadow: 0 2px 6px 6px rgba(0,0,0,.1);
     border-radius: 1rem;
     z-index: 5;
+    opacity: 1;
 }
 
 .magnifier-preview img {
