@@ -33777,6 +33777,7 @@ a.product-title-brand-link{
   flex: 1;
   max-width: unset;
   flex-grow: 0.9;
+  z-index:4;
 }
 
 .product-title-english{
@@ -34518,6 +34519,7 @@ o-btn{
   flex: 1;
   min-width: 290px;
   max-width: 300px;
+  z-index:4;
 }
 
 @media screen and (min-width: 1366px){
@@ -36940,7 +36942,7 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
 
 .magnifier-large {
   position: absolute;
-  z-index: 6;
+  z-index: 2;
 }
 
 .magnifier-preview {
@@ -36955,6 +36957,7 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   background-color: white;
   box-shadow: 0 2px 6px 6px rgba(0,0,0,.1);
   border-radius: 1rem;
+  z-index: 5;
 }
 
 .magnifier-preview img {
