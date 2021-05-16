@@ -35229,6 +35229,61 @@ o-btn{
   color: #ef5661;
 }
 
+.mobile-remodal-comments-comment-body{
+  margin-top: 15px;
+}
+
+.mobile-remodal-comments-comment-body p{
+  color: #858585;
+  font-size: 12px;
+  font-size: .857rem;
+  line-height: 21px;
+}
+
+.mobile-remodal-comments-comment-actions{
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.mobile-remodal-comments-comment-actions>span{
+  letter-spacing: -.5px;
+  color: #858585;
+}
+
+.mobile-remodal-comments-comment-actions>span, .mobile-remodal-comments-comment-buttons{
+  font-size: 12px;
+  font-size: .857rem;
+  line-height: 25px;
+  vertical-align: middle;
+}
+
+.mobile-remodal-comments-comment-button {
+  padding: 5px;
+  border-radius: 7px;
+  color: #8c8c8c;
+  border: 1px solid #ededed;
+}
+
+.mobile-remodal-comments-comment-button>span{
+  font-size: 12px;
+  font-size: .857rem;
+  line-height: 25px;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.mobile-remodal-comments-comment-button-like-icon{
+  display: inline-flex;
+  position: relative;
+}
+
+.mobile-remodal-comments-comment-button-flag-icon{
+  display: inline-block;
+  position: relative;
+}
+
 .remodal-gallery{
   display: flex;
   flex-direction: column;
