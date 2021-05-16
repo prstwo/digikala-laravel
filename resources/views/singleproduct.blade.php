@@ -43,7 +43,7 @@
                             <div></div>
                         </div>
                         <div>
-                            <div class="product-gallery-main-pic py-4 js-product-gallery-main-pic" class="magnifier-thumb-wrapper">
+                            <div class="product-gallery-main-pic py-4  magnifier-thumb-wrapper js-product-gallery-main-pic">
                                 <img id="thumb" src={{asset("images/product-main-pic.jpg")}} alt="product-pic"
                                      data-large-img-url={{asset("images/product-main-pic.jpg")}}
                                      data-large-img-wrapper="preview" class="" dir="ltr">

@@ -190,10 +190,10 @@ function  modalToggle(send){
         })
     }
 }
-document.querySelector('.js-product-gallery-main-pic').addEventListener('mouseover',()=>{
+document.querySelector('#thumb-lens').addEventListener('mouseover',()=>{
     document.getElementById('preview').classList.add('reveal')
 })
-document.querySelector('.js-product-gallery-main-pic').addEventListener('mouseleave',()=>{
+document.querySelector('#thumb-lens').addEventListener('mouseleave',()=>{
     document.getElementById('preview').classList.remove('reveal')
 })
 document.querySelector('.js-gallery-count-circle').addEventListener('click',()=>{

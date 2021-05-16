@@ -37127,6 +37127,7 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
   position: absolute;
   overflow: hidden;
   opacity: 0;
+  transition: opacity .5s ease-in-out;
 }
 
 .magnifier-preview.reveal{

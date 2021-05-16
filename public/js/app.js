@@ -200,10 +200,10 @@ function modalToggle(send) {
   }
 }
 
-document.querySelector('.js-product-gallery-main-pic').addEventListener('mouseover', function () {
+document.querySelector('#thumb-lens').addEventListener('mouseover', function () {
   document.getElementById('preview').classList.add('reveal');
 });
-document.querySelector('.js-product-gallery-main-pic').addEventListener('mouseleave', function () {
+document.querySelector('#thumb-lens').addEventListener('mouseleave', function () {
   document.getElementById('preview').classList.remove('reveal');
 });
 document.querySelector('.js-gallery-count-circle').addEventListener('click', function () {
