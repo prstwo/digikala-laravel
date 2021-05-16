@@ -361,10 +361,14 @@ document.querySelectorAll('.js-color-picker').forEach((c)=>{
     })
 })
 function remodalSellershow(){
-    document.querySelector('.js-remodal-seller-info').style.display='block'
+    document.querySelector('.js-remodal-seller-info').style.display='block';
+    document.querySelector('.js-remodal-seller-info').style.overflowY='scroll'
+    document.body.classList.add('no-overflow');
 }
 function remodalSellerHide(){
-    document.querySelector('.js-remodal-seller-info').style.display='none'
+    document.querySelector('.js-remodal-seller-info').style.display='none';
+    document.querySelector('.js-remodal-seller-info').style.overflowY=''
+    document.body.classList.remove('no-overflow');
 }
 document.querySelector('.js-product-seller-trigger').addEventListener('click',()=>{
     remodalSellershow();
@@ -374,22 +378,30 @@ document.querySelector('.js-seller-remodal-back').addEventListener('click',()=>{
     remodalSellerHide();
 })
 function remodalShipmentShow(){
-    document.querySelector('.js-remodal-add-to-cart').style.display='block'
+    document.querySelector('.js-remodal-add-to-cart').style.display='block';
+    document.querySelector('.js-remodal-add-to-cart').style.overflowY='scroll'
+    document.body.classList.add('no-overflow');
 }
 document.querySelector('.js-shipment-info-trigger').addEventListener('click',()=>{
     remodalShipmentShow()
 });
 function remodalShipmentHide(){
-    document.querySelector('.js-remodal-add-to-cart').style.display='none'
+    document.querySelector('.js-remodal-add-to-cart').style.display='none';
+    document.querySelector('.js-remodal-add-to-cart').style.overflowY=''
+    document.body.classList.remove('no-overflow');
 }
 document.querySelector('.js-shipment-remodal-back').addEventListener('click',()=>{
     remodalShipmentHide()
 })
 function remodalExpertShow(){
-    document.querySelector('.js-remodal-expert-review').style.display='block'
+    document.querySelector('.js-remodal-expert-review').style.display='block';
+    document.querySelector('.js-remodal-expert-review').style.overflowY='scroll'
+    document.body.classList.add('no-overflow');
 }
 function remodalExpertHide(){
-    document.querySelector('.js-remodal-expert-review').style.display='none'
+    document.querySelector('.js-remodal-expert-review').style.display='none';
+    document.querySelector('.js-remodal-expert-review').style.overflowY=''
+    document.body.classList.remove('no-overflow');
 
 }
 document.querySelector('.js-expert-review-show-more').addEventListener(
@@ -403,10 +415,14 @@ document.querySelector('.js-remodal-review-back').addEventListener(
     }
 )
 function remodalSpecShow(){
-    document.querySelector('.js-remodal-tech-specs').style.display='block'
+    document.querySelector('.js-remodal-tech-specs').style.display='block';
+    document.querySelector('.js-remodal-tech-specs').style.overflowY='scroll'
+    document.body.classList.add('no-overflow');
 }
 function remodalSpecHide(){
-    document.querySelector('.js-remodal-tech-specs').style.display='none'
+    document.querySelector('.js-remodal-tech-specs').style.display='none';
+    document.querySelector('.js-remodal-tech-specs').style.overflowY=''
+    document.body.classList.remove('no-overflow');
 }
 document.querySelector('.js-show-more-specs').addEventListener(
     'click', ()=>{
@@ -419,10 +435,14 @@ document.querySelector('.js-remodal-tech-back').addEventListener(
     }
 )
 function remodalCommentsShow(){
-    document.querySelector('.js-remodal-comments').style.display='block'
+    document.querySelector('.js-remodal-comments').style.display='block';
+    document.querySelector('.js-remodal-comments').style.overflowY='scroll'
+    document.body.classList.add('no-overflow');
 }
 function remodalCommentsHide(){
-    document.querySelector('.js-remodal-comments').style.display='none'
+    document.querySelector('.js-remodal-comments').style.display='none';
+    document.querySelector('.js-remodal-comments').style.overflowY=''
+    document.body.classList.remove('no-overflow');
 
 }
 document.querySelector('.js-mobile-comments-more').addEventListener('click',()=>{
@@ -432,10 +452,14 @@ document.querySelector('.js-remodal-comments-back').addEventListener('click',()=
     remodalCommentsHide()
 })
 function  remodalFaqShow(){
-    document.querySelector('.js-remodal-faq').style.display='block'
+    document.querySelector('.js-remodal-faq').style.display='block';
+    document.querySelector('.js-remodal-comments').style.overflowY='scroll'
+    document.body.classList.add('no-overflow');
 }
 function  remodalFaqHide(){
-    document.querySelector('.js-remodal-faq').style.display='none'
+    document.querySelector('.js-remodal-faq').style.display='none';
+    document.querySelector('.js-remodal-comments').style.overflowY=''
+    document.body.classList.remove('no-overflow');
 }
 document.querySelector('.js-mobile-faq-more').addEventListener('click',()=>{
     remodalFaqShow()
