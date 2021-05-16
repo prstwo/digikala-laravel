@@ -31875,6 +31875,10 @@ body{
   overflow-x: hidden;
 }
 
+body.no-overflow{
+  overflow-y: hidden;
+}
+
 .whole-div{
   background: #f5f5f5;
 }
@@ -32502,11 +32506,10 @@ a.nav-link-title{
   position: fixed;
   width: 65vw;
   min-height: 100vh;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
+  height: calc(100vh - 8em) ;
   background-color: white;
   z-index:80;
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 640px) {

@@ -37,11 +37,13 @@ function mobileMenu() {
   var mobileMenuCon = document.querySelector('.mobile-menu-container');
   mobileMenuCon.classList.toggle('hide');
   document.querySelector('.m-overlay').classList.toggle('active');
+  document.body.classList.toggle('no-overflow');
 
   if (!mobileMenuCon.classList.contains('hide')) {
     document.querySelector('.m-overlay').addEventListener('click', function (overlay) {
       mobileMenuCon.classList.add('hide');
       overlay.target.classList.remove('active');
+      document.body.classList.remove('no-overflow');
     });
   }
 }

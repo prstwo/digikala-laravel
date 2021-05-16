@@ -120,8 +120,6 @@ class SingleProductController extends Controller
             ,['headline'=>' CPU'
                 ,'items'=> [['key'=>'حافظه', 'value'=>'مقدار RAM '],['key'=>'داخلی', 'value'=>'256 گیگابایت']]
             ]]
-            ,'defaultstrengthes'=>['']
-            ,'defaultweaknesses'=>['']
             ,'strengthes'=>['باتری قوی','کیفیت صفحه نمایش','سخت افزار قوی','دوربین عالی']
             ,'weaknesses'=>['یکم داغ میکنه','یکم سنگین']
         ]);
