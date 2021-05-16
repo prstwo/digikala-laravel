@@ -48,21 +48,6 @@
             prevEl: '.swiper-button-prev',
         },
     });
-    var swiperM = new Swiper('.swiper-container-mobile', {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        slidesPerGroup: 1,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
     var swiper2 = new Swiper('.swiper-container2', {
         slidesPerView: 5,
         spaceBetween: 20,
@@ -78,9 +63,9 @@
             prevEl: '.swiper-button-prev',
         },
     });
-    var swiperM2 = new Swiper('.swiper-container-mobile-2', {
+    var swiperM = new Swiper('.swiper-container-mobile', {
         slidesPerView: 1,
-        spaceBetween: 30,
+        spaceBetween: 10,
         slidesPerGroup: 1,
         loop: true,
         loopFillGroupWithBlank: true,
@@ -93,23 +78,7 @@
             prevEl: '.swiper-button-prev',
         },
     });
-    var swiper3 = new Swiper('.swiper-container3', {
-        slidesPerView: 5,
-        spaceBetween: 30,
-        slidesPerGroup: 5,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-
-    var swiper4 = new Swiper('.swiper-container4', {
+    var swiperM2 = new Swiper('.swiper-container-mobile-2', {
         slidesPerView: 1,
         spaceBetween: 30,
         slidesPerGroup: 1,

@@ -19,9 +19,7 @@
             <span class="product-title-english relative bottom-6 right-0 pl-2 bg-white">
                     Xiaomi Mi 10T PRO 5G M 2007J3SG Dual SIM 256GB Mobile Phone
             </span>
-            <div class="swiper-container">
-                <div class="mo-swiper-slide"></div>
-                <div class="swiper-container4">
+            <div class="swiper-container-mobile">
                     <div class="swiper-wrapper">
                         @for($i=0;$i<5;$i++ )
                             <div class="swiper-slide">
@@ -36,7 +34,6 @@
                     </div>
                     <div class="swiper-button-prev arrow-right-3"></div>
                 </div>
-            </div>
             <x-product-mobile.product-jumps>
                 <div class="product-jumps-item">
                     برند

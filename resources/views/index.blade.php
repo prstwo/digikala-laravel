@@ -158,7 +158,7 @@
                     </div>
                 </div>
                 <div class="swiper-brands flex flex-row ">
-                    <div class="swiper-container3">
+                    <div class="swiper-container2">
                         <div class="swiper-wrapper">
                             @foreach($swiperBrands as $brand)
                                 <div class="swiper-slide" style="">
