@@ -3041,6 +3041,186 @@ o-btn{
     font-size: 1.143rem;
     line-height: 16px;
 }
+.mo-round-cart{
+    border-radius: 9px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 9%);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 9%);
+}
+.mobile-remodal-comments-summary-title{
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 25px;
+    letter-spacing: -.5px;
+    margin-top: 10px;
+}
+.mobile-remodal-comments-summary-title-main{
+    font-size: 12px;
+    font-size: .857rem;
+    line-height: 20px;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+.mobile-remodal-comments-summary-title-details{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 10px;
+    height: 100%;
+}
+.mobile-remodal-comments-summary-sender{
+    font-size: 12px;
+    font-size: .857rem;
+    line-height: 21px;
+    font-weight: 300;
+    color: #424242;
+    margin: 5px 0;
+}
+.mobile-faq-submission-details span{
+    display: inline-block;
+}
+.mobile-faq-submission-details span:not(:last-child){
+    margin-left: 5px;
+}
+.mobile-remodal-comments-summary-title-buyer{
+    position: relative;
+    height: 70px;
+    width: 46px;
+    background-image: url('/images/flag.svg');
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 35px;
+    color: #64d979;
+    text-align: center;
+    font-size: 12px;
+    font-size: .857rem;
+    line-height: 1.67;
+}
+.mobile-remodal-comments-summary-bought-seller{
+    font-size: 12px;
+    font-size: .857rem;
+    line-height: 21px;
+    letter-spacing: -.4px;
+    color: #2a2a2a;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.mobile-btn-link-spoiler{
+    color: #1ca2bd;
+    padding: 0;
+    line-height: 2;
+    position: relative;
+}
+.mobile-remodal-comments-recommend{
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 25px;
+    letter-spacing: -.5px;
+    padding: 5px;
+    margin: 10px 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    background-color: #fcfcfc;
+    width: 100%;
+}
+.mobile-remodal-comments-recommend-positive{
+    color: #64d979;
+}
+.mobile-remodal-comments-recommend-negative{
+    color: #ef4746;
+}
+.mobile-remodal-comments-summary-bought {
+    margin-top: 10px;
+    margin-bottom: 9px;
+}
+.mobile-remodal-comments-summary-bought-details{
+    margin-top: 10px;
+}
+.mobile-remodal-comments-summary-bought-color{
+    font-size: 12px;
+    font-size: .857rem;
+    line-height: 21px;
+    color: #2a2a2a;
+    letter-spacing: -.4px;
+    vertical-align: middle;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 20px;
+}
+.mobile-remodal-comments-summary-bought-color span {
+    margin-left: 2px;
+}
+.mobile-remodal-comments-summary-bought-color-value{
+    display: inline;
+    border-radius: 100%;
+    border: 1px solid #000;
+    margin-right: 5px;
+    width: 19px;
+    height: 19px;
+}
+.mobile-remodal-comments-summary-title{
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 25px;
+    letter-spacing: -.5px;
+    margin-top: 10px;
+}
+.mobile-remodal-comments-summary-title-strength{
+    color: #00bfd6;
+}
+.mobile-remodal-comments-summary-title-weakness{
+    color: #ef5661;
+}
+.mobile-remodal-comments-summary-points{
+    margin-top: 10px;
+    list-style: none;
+}
+.mobile-remodal-comments-summary-points li{
+    padding-right: 10px;
+    position: relative;
+    color: #858585;
+    font-size: 12px;
+    font-size: .857rem;
+    line-height: 21px;
+}
+.mobile-remodal-comments-summary-points-strength li:before{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    content: "•";
+    color: #00bfd6;
+}
+.mobile-remodal-comments-summary-points-weakness li:before{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    content: "•";
+    color: #ef5661;
+}
 .remodal-gallery{
     display: flex;
     flex-direction: column;

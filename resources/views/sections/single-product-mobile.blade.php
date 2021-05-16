@@ -426,6 +426,54 @@
             </div>
             <x-product-mobile.sort-comment-faq txt1="نظر خریداران " txt2="مفیدترین نظرات" txt3="جدیترین نظرات" />
         </div>
+    <div class="my-4 px-5 pb-5 mo-round-cart">
+        <div class="mobile-remodal-comments-summary-title  mobile-remodal-comments-summary-title-main">
+            {{--class haro edit konam--}}
+            <div class="mobile-remodal-comments-summary-title-details">
+                <p>بخرید</p>
+                <div class="mobile-faq-submission-details mobile-remodal-comments-summary-sender">
+                    <span>دانش رادمهر</span>
+                    <span>(۲۶ اردیبهشت ۱۴۰۰)</span>
+                </div>
+            </div>
+            <div class="mobile-remodal-comments-summary-title-buyer">
+                خریدار
+            </div>
+
+
+        </div>
+        <p class="mobile-remodal-comments-summary-bought-seller">
+            <span>خریداری شده از:</span>
+            <a href="#kavoshteampage" class="mobile-btn-link-spoiler">ایرانیان قایم همراه کاوش تیم</a>
+        </p>
+        <div class="mobile-remodal-comments-recommend mobile-remodal-comments-recommend-positive">
+            خرید این محصول را توصیه می&zwnj;کنم
+        </div>
+        <div class="mobile-remodal-comments-summary-bought">
+            <div class="mobile-remodal-comments-summary-bought-details">
+                <div class="mobile-remodal-comments-summary-bought-color">
+                    <span>رنگ خریداری شده:</span> <span>نقره ای</span>
+                    <div class="mobile-remodal-comments-summary-bought-color-value" style="background-color: #dedede;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-remodal-comments-summary-title mobile-remodal-comments-summary-title-strength">
+            <span>نقاط قوت</span>
+        </div>
+        <ul class="mobile-remodal-comments-summary-points mobile-remodal-comments-summary-points-strength">
+            <li>باتری قوی</li>
+            <li>سخت افزار قوی</li>
+            <li>کیفیت صفحه نمایش</li>
+            <li>دوربین عالی</li>
+        </ul>
+        <div class="mobile-remodal-comments-summary-title mobile-remodal-comments-summary-title-weakness">
+            <span>نقاط ضعف</span>
+        </div>
+        <ul class="mobile-remodal-comments-summary-points mobile-remodal-comments-summary-points-weakness">
+            <li>یکم داغ میکنه </li>
+            <li>یکم سنگین </li>
+        </ul>
+    </div>
 </x-product-mobile.mobile-remodal-wrapper>
 <x-product-mobile.mobile-remodal-wrapper  extraClass1="remodal-faq c-remodal-full-screen"
                                           extraClass2="remodal-faq" extraClass3="remodal-faq-back"
