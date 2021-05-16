@@ -1140,11 +1140,6 @@ span.head-title::after{
     padding-bottom: 20px;
     margin: auto;
 }
-.feature-item-1{
-    background-image: url('../../public/images/24hours.svg')  ;
-    background-repeat: no-repeat;
-    background-size: auto 58px;
-}
 .headline-links-title{
     font-size: 1.14rem;
     line-height: 22px;
