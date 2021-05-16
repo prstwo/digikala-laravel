@@ -111,15 +111,7 @@
         <div class="page-section relative">
             <section class="page-section-standard relative">
                 <div class="products">
-                    <div class="head">
-                        <span class="text-gray-400 mobile-title	">منتخب بهترین کالاها</span>
-                        <span class="head-title">
-                            گوشی موبایل
-                        </span>
-                        <div class="head-link">
-                            <a href="#products-page"> مشاهده همه</a>
-                        </div>
-                    </div>
+                    <x-head-sec mobileTitle="منتخب بهترین کالاها " title="گوشی موبایل   " link="مشاهده همه"/>
                     <div class="boxes static">
                         <div class="items">
                             <!-- product item component -->
@@ -129,6 +121,7 @@
                                 </div>
                                 <div class="swiper-button-prev arrow-right-3"></div>
                             </div>
+                            <div class="block md:hidden swiper-container-mobile-2">
                             <div class="block md:hidden swiper-container-mobile-2">
                                 <x-swiper.swiper-wrapper5 :productItemContainer4="$productItemContainer4"/>
                             <!-- Add Pagination -->
@@ -148,15 +141,7 @@
         <!--brands component -->
         <div class="page-section ">
             <section class="swiper-brands-container page-section-standard pt-1 relative">
-                <div class="head">
-                    <span class="text-gray-500  mobile-title	">برندهای محبوب</span>
-                    <span class="head-title">
-                            برندهای ویژه
-                        </span>
-                    <div class="head-link">
-
-                    </div>
-                </div>
+                <x-head-sec mobileTitle=" برندهای ویژه" title="برندهای ویژه" link=""/>
                 <div class="swiper-brands flex flex-row ">
                     <div class="swiper-container2">
                         <div class="swiper-wrapper">
@@ -177,7 +162,6 @@
                         <div class="swiper-button-prev arrow-right-3"></div>
                     </div>
                 </div>
-
             </section>
         </div>
         <!--promotion categories component-->

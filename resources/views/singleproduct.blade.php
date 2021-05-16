@@ -248,11 +248,10 @@
                     </section>
                 </article>
                 <!--بهتره بخش با کلاس head رو بعد تبدیل به کامپوننت کنم -->
-                <div class="product-suppliers">
+                <div class="product-suppliers mb-3">
                     <div class="box-suppliers-head">
-                        <x-HeadSec>
-                            لیست فروشندگان این کالا
-                        </x-HeadSec>
+                         <x-head-sec mobileTitle="لیست فروشندگان این کالا" title="لیست فروشندگان این کالا" link=""/>
+
                     </div>
                     <div class="suppliers-list">
                         <x-supplier />
@@ -262,7 +261,17 @@
                         <!-- -->
                     </div>
                 </div>
-                <div class="carousel-horizontal-general"></div>
+                <div class="carousel-horizontal-general mb-3">
+                    <x-head-sec mobileTitle="محصولات مرتبط" title="محصولات مرتبط" link=""/>
+                    <div class="flex flex-row justify-center content-center overflow-hidden">
+                        <div class="swiper-container2">
+                            <x-swiper.swiper-wrapper5 :productItemContainer4="$productItemContainer4"/>
+                            <div class="swiper-button-next arrow-left-3">
+                            </div>
+                            <div class="swiper-button-prev arrow-right-3"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="relative product-more flex flex-row">
                     <div class="product-tabs-container ">
                         <ul class="box-tabs-sticky sticky bg-white top-28 o-box-tabs z-8">
