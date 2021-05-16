@@ -84,13 +84,15 @@
                     <div class="specials">
                         <div class="product-items ">
                             <div class="hidden md:block swiper-container">
-                                @include('sections.swiper-wrapper1')
+
+                               {{--@include('sections.swiper-wrapper1') --}}
+                                <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3"/>
                                 <div class="swiper-button-next arrow-left-3">
                                 </div>
                                 <div class="swiper-button-prev arrow-right-3"></div>
                             </div>
                             <div class="block md:hidden swiper-container-mobile">
-                                @include('sections.swiper-wrapper1')
+                                <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3"/>
                                 <div class="swiper-button-next arrow-left-3">
                                 </div>
                                 <div class="swiper-button-prev arrow-right-3"></div>
@@ -122,13 +124,13 @@
                         <div class="items">
                             <!-- product item component -->
                             <div class="hidden md:block swiper-container2">
-                                @include('sections.swiper-wrapper2')
+                                <x-swiper.swiper-wrapper5 :productItemContainer4="$productItemContainer4"/>
                                 <div class="swiper-button-next arrow-left-3">
                                 </div>
                                 <div class="swiper-button-prev arrow-right-3"></div>
                             </div>
                             <div class="block md:hidden swiper-container-mobile-2">
-                                @include('sections.swiper-wrapper2')
+                                <x-swiper.swiper-wrapper5 :productItemContainer4="$productItemContainer4"/>
                             <!-- Add Pagination -->
                                 <!-- Add Arrows -->
                                 <div class="swiper-button-next arrow-left-3">

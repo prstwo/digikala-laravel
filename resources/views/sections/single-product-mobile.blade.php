@@ -225,7 +225,7 @@
                 &zwnj;اند</span>
             <div class="product-row product-row-inner-page">
                 <div class=" swiper-container-mobile3">
-                @include('sections.swiper-wrapper2')
+                    <x-swiper.swiper-wrapper5 :productItemContainer4="$productItemContainer4"/>
                 <!-- Add Pagination -->
                     <!-- Add Arrows -->
                     <div class="swiper-button-next arrow-left-3">

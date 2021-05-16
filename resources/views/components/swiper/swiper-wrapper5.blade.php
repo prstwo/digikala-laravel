@@ -1,5 +1,5 @@
-{{-- /*علت اینکه این بخش را به کامپوننت تبدیل نکردم، این بود که در صورت جاگذاری این کدها در کامپوننت جدا، متغیرهای کنترلر کار نمیکردند.
-*/--}}
+{{-- مختص اسلایدرهای 5 تایی--}}
+@props(['productItemContainer4'])
 <div class="swiper-wrapper">
     @foreach($productItemContainer4 as $productItem4 )
         <div class="swiper-slide">
