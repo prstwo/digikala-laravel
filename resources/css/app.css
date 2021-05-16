@@ -3948,6 +3948,10 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
     color: #686868;
     margin-top: 16px;
 }
+.desktop-hamta span{
+    color: #686868;
+    font-size: .8rem;
+}
 .c-product-data-section-additional:first-child {
     margin-top: 0;
 }
