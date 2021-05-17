@@ -341,6 +341,79 @@ function sellerEmebedHide() {
 document.querySelector('.js-embeded-seller-back').addEventListener('click', function () {
   sellerEmebedHide();
 });
+var observerReviews = new IntersectionObserver(function (entries) {
+  if (entries[0].isIntersecting === true) {
+    document.querySelector('a[href="#reviews"]').parentElement.classList.add('is-active');
+  } else {
+    document.querySelector('a[href="#reviews"]').parentElement.classList.remove('is-active');
+  }
+}, {
+  threshold: [1]
+});
+observerReviews.observe(document.querySelector("#reviews"));
+var observerDetails = new IntersectionObserver(function (entries) {
+  if (entries[0].isIntersecting === true) {
+    document.querySelector('a[href="#details"]').parentElement.classList.add('is-active');
+  } else {
+    document.querySelector('a[href="#details"]').parentElement.classList.remove('is-active');
+  }
+}, {
+  threshold: [1]
+});
+observerDetails.observe(document.querySelector("#details"));
+var observerComments = new IntersectionObserver(function (entries) {
+  if (entries[0].isIntersecting === true) {
+    document.querySelector('a[href="#comments"]').parentElement.classList.add('is-active');
+  } else {
+    document.querySelector('a[href="#comments"]').parentElement.classList.remove('is-active');
+  }
+}, {
+  threshold: [1]
+});
+observerComments.observe(document.querySelector("#comments"));
+var observerFaq = new IntersectionObserver(function (entries) {
+  if (entries[0].isIntersecting === true) {
+    document.querySelector('a[href="#faq"]').parentElement.classList.add('is-active');
+  } else {
+    document.querySelector('a[href="#faq"]').parentElement.classList.remove('is-active');
+  }
+}, {
+  threshold: [1]
+});
+observerFaq.observe(document.querySelector("#faq"));
+/*
+if(expertElem.top>=0 && expertElem.bottom <= window.innerHeight){
+    document.querySelector('a[href="#reviews"]').parentElement.classList.add('is-active')
+}
+else{
+    document.querySelector('a[href="#reviews"]').parentElement.classList.remove('is-active')
+}*/
+
+/*
+if(detailsElem.top>=0 && detailsElem.bottom <= window.innerHeight){
+    document.querySelector('a[href="#details"]').parentElement.classList.add('is-active')
+}
+else{
+    document.querySelector('a[href="#details"]').parentElement.classList.remove('is-active')
+}*/
+
+/*
+if(commentsElem.top>=0 && commentsElem.bottom <= window.innerHeight){
+    document.querySelector('a[href="#comments"]').parentElement.classList.add('is-active')
+}
+else{
+    document.querySelector('a[href="#comments"]').parentElement.classList.remove('is-active')
+}*/
+
+/*
+if(faqElem.top>0 && faqElem.bottom <= window.innerHeight){
+    document.querySelector('a[href="#faq"]').parentElement.classList.add('is-active')
+}
+else{
+    document.querySelector('a[href="#faq"]').parentElement.classList.remove('is-active')
+}
+  */
+
 /*responsive product page */
 
 function removeColorBorder() {

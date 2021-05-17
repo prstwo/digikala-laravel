@@ -114,7 +114,7 @@
                                         <div class="mb-5">
                                             <div class="c-product-data-section-additional  desktop-hamta">
                                                 <div class="c-product-data-info-icon"></div>
-                                                    <span>
+                                                    <span class="text-justify">
                                                         هشدار
                                                         سامانه همتا: حتما در زمان تحویل دستگاه، به کمک کد فعال&zwnj;سازی چاپ شده
                                                         روی جعبه یا کارت
@@ -295,11 +295,11 @@
                             @endforeach
                         </ul>
                         <div class="box-tabs-info">
-                            <div class="product-expert">
+                            <div class="product-expert js-product-expert" id="reviews">
                                 <article >
                                     <x-box-header s>نقد وبررسی اجمالی</x-box-header>
 
-                                    <section class="content-expert-summary " id="reviews">
+                                    <section class="content-expert-summary " >
                                         <div class="mb-4 relative">
                                             <x-product-expert-children.mask-text-product-summary>
 

@@ -2476,7 +2476,8 @@ o-btn{
 }
 .box-tabs-sticky{
     background-color: white;
-    top: 0;
+    top: 133px;
+    z-index:5;
 }
 .o-box-tab{
     padding: 14px 16px;
@@ -2492,9 +2493,23 @@ o-btn{
     user-select: none;
     cursor: pointer;
 }
-.o-box-tab-is-active a{
+.o-box-tab a{
+    color: inherit;
+}
+.o-box-tabs .o-box-tab.is-active{
     color: #ef394e;
 }
+.o-box-tabs .o-box-tab.is-active:after{
+    content: "";
+    position: absolute;
+    width: calc(100% - 16px);
+    right: 8px;
+    bottom: -1px;
+    height: 4px;
+    border-radius: 2px 2px 0 0;
+    background-color: #ef394e;
+}
+
 .product-comments, .product-faq{
     border-bottom: 1px solid #dfdfdf;
 }
