@@ -4239,6 +4239,37 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 9%);
     padding: 15px;
 }
+.o-round-file-no-bg{
+    border-radius: 9px;
+    padding: 15px;
+}
+.modal-remodal-questions .mobile-product-text-header{
+    font-size: 16px;
+    font-size: 1.143rem;
+    line-height: 28px;
+    letter-spacing: -.5px;
+    color: #2a2a2a;
+    font-weight: 700;
+    border-bottom: 1px solid #e5e5ea;
+    padding-bottom: 15px;
+}
+.mobile-faq-list{
+    padding: 0;
+    list-style: none;
+}
+.mobile-comments-actions{
+    text-align: left;
+    direction: rtl;
+    padding: 10px 0;
+}
+.mobile-comments-show-more{
+    color: #00bfd6;
+    position: relative;
+    margin: 0 0 10px;
+    font-size: 12px;
+    font-size: .857rem;
+    line-height: 16px;
+}
 .mobile-remodal-comments-faq-sort-header{
     margin-top: 10px;
     padding-top: 10px;

@@ -273,8 +273,8 @@
                     </button>
                 </div>
                 <ul class="mobile-faq-list">
-                    <x-product-mobile.mobile-faq-list name="اکرم مهری آسیابر" question="برای بازی 60fps رو ساپورت میکنه؟  "/>
-                    <x-product-mobile.mobile-faq-list name="امیرحسین صفار" question="سلام میشه رنگ آبیشو موجود کنین   "/>
+                    <x-product-mobile.mobile-faq-list name="اکرم مهری آسیابر" question="برای بازی 60fps رو ساپورت میکنه؟  " hidden="hidden"/>
+                    <x-product-mobile.mobile-faq-list name="امیرحسین صفار" question="سلام میشه رنگ آبیشو موجود کنین   " hidden="hidden"/>
                 </ul>
                 <div class="mobile-faq-actions">
                     <a href="#show-comments" class="mobile-faq-show-more js-mobile-faq-more">
@@ -449,8 +449,20 @@
 <x-product-mobile.mobile-remodal-wrapper  extraClass1="remodal-faq c-remodal-full-screen"
                                           extraClass2="remodal-faq" extraClass3="remodal-faq-back"
                     title=" پرسش و پاسخ">
-        <div class="o-round-file my-4 py-5 ">
+        <div class="o-round-file-no-bg my-4 py-5 ">
             <x-product-mobile.sort-comment-faq txt1="جدیدترین پرسش  " txt2="بیشترین پاسخ به پرسش" txt3="پرسش های شما " />
+
+        </div>
+        <div class="o-round-file my-4 p-5">
+            <div class="modal-remodal-questions">
+                <div class="mobile-product-text-header">
+                    <span>پرسش و پاسخ</span>
+                </div>
+                <ul class="mobile-faq-list">
+                    <x-product-mobile.mobile-faq-list name="فرشته حسین زاده" question="ساخت کدوم کشوره؟" hidden=""/>
+                    <x-product-mobile.mobile-faq-list name="  رضا باقرزاده" question="کدوم رنگ این گوشی مات هست  ؟" hidden=""/>
+                </ul>
+            </div>
 
         </div>
 </x-product-mobile.mobile-remodal-wrapper>
