@@ -76,7 +76,7 @@
                 </div>
             </div>
         </article>
-        <!--incredible specials component-->
+        {{--incredible specials part --}}
         <div class="">
             <section class="incredible-specials-container">
                 <div class="incredible-specials">
@@ -84,8 +84,6 @@
                     <div class="specials">
                         <div class="product-items ">
                             <div class="hidden md:block swiper-container">
-
-                               {{--@include('sections.swiper-wrapper1') --}}
                                 <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3"/>
                                 <div class="swiper-button-next arrow-left-3">
                                 </div>
@@ -107,6 +105,7 @@
 
         </section>
         </div>
+        {{--sponsers section --}}
         <article class="px-4 hidden md:block">
             <div class="mt-4 ">
                 <div class="adplacement adplacement-container-row">
@@ -122,7 +121,7 @@
             </div>
         </article>
 
-        <!--products component-->
+        <!--products section-->
         <div class="page-section relative">
             <section class="page-section-standard relative">
                 <div class="products">
@@ -153,7 +152,7 @@
             </section>
 
         </div>
-        <!--brands component -->
+        <!--brands section -->
         <div class="page-section ">
             <section class="swiper-brands-container page-section-standard pt-1 relative">
                 <x-head-sec mobileTitle=" برندهای ویژه" title="برندهای ویژه" link=""/>
@@ -179,7 +178,7 @@
                 </div>
             </section>
         </div>
-        <!--promotion categories component-->
+        <!--promotion categories section-->
         <div class="page-section promotion-cats-section">
             <div class="page-section-standard promotion-categories">
                 <div class="cat-head">
