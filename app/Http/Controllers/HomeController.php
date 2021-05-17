@@ -119,6 +119,12 @@ class HomeController extends Controller
                 ['img'=>'images/logitech.jpg'],
                 ['img'=>'images/parskhazar.png'],
             ]
+            ,'sponserBigPics'=>[
+                ['src'=>'images/sponser-big-1.jpg'],
+                ['src'=>'images/sponser-big-2.jpg'],
+                ['src'=>'images/sponser-big-3.jpg'],
+                ['src'=>'images/sponser-big-4.jpg']
+            ]
         ]);
 
 

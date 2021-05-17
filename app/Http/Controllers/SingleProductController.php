@@ -127,6 +127,7 @@ class SingleProductController extends Controller
             ]]
             ,'strengthes'=>['باتری قوی','کیفیت صفحه نمایش','سخت افزار قوی','دوربین عالی']
             ,'weaknesses'=>['یکم داغ میکنه','یکم سنگین']
+
         ]);
 
     }

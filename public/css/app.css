@@ -31979,7 +31979,7 @@ main{
 
 .page-section{
   margin: 16px 0 0;
-  padding: 9px 33px 11px 33px;
+  padding: 0 33px 0 33px;
   max-width: 100%;
 }
 
@@ -32960,6 +32960,44 @@ img.product-img{
 .new-price-currency{
   font-size: .8rem;
   font-weight: 400;
+}
+
+/* adplacement section */
+
+.adplacement{
+  display: flex;
+}
+
+.adplacement-container-row{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0
+}
+
+.adplacement-item{
+  display: block;
+  flex-grow: 1;
+  margin-top: 20px;
+}
+
+.adplacement-item:not(:last-of-type) {
+  margin-left: 20px;
+}
+
+.adplacement-sponsored-box {
+  position: relative;
+  width: 100%;
+  float: left;
+  height: 100%;
+}
+
+.adplacement-sponsored-box img{
+  width: 100%;
+  height: auto;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+  cursor: pointer;
+  border-radius: 16px;
 }
 
 /* category products*/

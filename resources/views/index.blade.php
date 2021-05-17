@@ -107,6 +107,21 @@
 
         </section>
         </div>
+        <article class="px-4 hidden md:block">
+            <div class="mt-4 ">
+                <div class="adplacement adplacement-container-row">
+
+                    @foreach($sponserBigPics as $sponserBigPic)
+                        <a href="#product_page" class="adplacement-item">
+                            <div class="adplacement-sponsored-box">
+                                <img src={{asset($sponserBigPic['src'])}} alt="" class="">
+                            </div>
+                        </a>
+                    @endforeach
+                </div>
+            </div>
+        </article>
+
         <!--products component-->
         <div class="page-section relative">
             <section class="page-section-standard relative">
