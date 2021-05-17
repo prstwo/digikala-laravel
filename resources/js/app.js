@@ -1,8 +1,16 @@
 
 //nav menu js
 let navOverlay= document.querySelector('.nav-overlay');
+function toggleNav(){
+   if (window.scrollY > 300 ) {
+        document.querySelector(".desktop-nav .nav-container").classList.add('hide')
 
-document.documentElement.addEventListener('scroll',()=>{
+    }
+    else {
+        document.querySelector(".desktop-nav .nav-container").classList.remove('hide')
+    }
+}
+window.addEventListener('scroll',()=>{
     toggleNav()
 })
 
@@ -146,18 +154,8 @@ document.querySelector('.js-search-input').addEventListener('blur',(e)=>{
 })
 
 //common js
-function toggleNav(){
-    if (window.scrollY < 300 || window.scrollY < 300) {
-        document.querySelector(".desktop-nav").classList.remove('hide')
 
-    }
-    else {
-        document.querySelector(".desktop-nav").classList.add('hide')
-    }
-}
-document.addEventListener('scroll',()=>{
-    toggleNav()
-});
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -315,47 +313,58 @@ document.querySelector('.js-embeded-seller-back').addEventListener('click',()=>{
     sellerEmebedHide();
 })
 
+var observerReviews = new IntersectionObserver(function(entries) {
+    if(entries[0].isIntersecting === true) {
+        document.querySelectorAll('.o-box-tab').forEach((e)=>{
+            e.classList.remove('is-active')
+        })
+        document.querySelector('a[href="#reviews"]').parentElement.classList.add('is-active')
+    }
+    else {
+        document.querySelector('a[href="#reviews"]').parentElement.classList.remove('is-active')
+    }
+}, { threshold: [0.05] });
+observerReviews.observe(document.querySelector("#reviews"));
 
-    var observerReviews = new IntersectionObserver(function(entries) {
-        if(entries[0].isIntersecting === true) {
-            document.querySelector('a[href="#reviews"]').parentElement.classList.add('is-active')
-        }
-        else {
-            document.querySelector('a[href="#reviews"]').parentElement.classList.remove('is-active')
-        }
-    }, { threshold: [1] });
-    observerReviews.observe(document.querySelector("#reviews"));
+var observerDetails = new IntersectionObserver(function(entries) {
+    if(entries[0].isIntersecting === true) {
+        document.querySelectorAll('.o-box-tab').forEach((e)=>{
+            e.classList.remove('is-active')
+        })
+        document.querySelector('a[href="#details"]').parentElement.classList.add('is-active')
+    }
+    else {
+        document.querySelector('a[href="#details"]').parentElement.classList.remove('is-active')
+    }
+}, { threshold: [0.05] });
+observerDetails.observe(document.querySelector("#details"));
 
-    var observerDetails = new IntersectionObserver(function(entries) {
-        if(entries[0].isIntersecting === true) {
-            document.querySelector('a[href="#details"]').parentElement.classList.add('is-active')
-        }
-        else {
-            document.querySelector('a[href="#details"]').parentElement.classList.remove('is-active')
-        }
-    }, { threshold: [1] });
-    observerDetails.observe(document.querySelector("#details"));
+var observerComments = new IntersectionObserver(function(entries) {
+    if(entries[0].isIntersecting === true) {
+        document.querySelectorAll('.o-box-tab').forEach((e)=>{
+            e.classList.remove('is-active')
+        })
+        document.querySelector('a[href="#comments"]').parentElement.classList.add('is-active')
+    }
+    else {
+        document.querySelector('a[href="#comments"]').parentElement.classList.remove('is-active')
+    }
+}, { threshold: [0] });
+observerComments.observe(document.querySelector("#comments"));
 
-    var observerComments = new IntersectionObserver(function(entries) {
-        if(entries[0].isIntersecting === true) {
-            document.querySelector('a[href="#comments"]').parentElement.classList.add('is-active')
-        }
-        else {
-            document.querySelector('a[href="#comments"]').parentElement.classList.remove('is-active')
-        }
-    }, { threshold: [1] });
-    observerComments.observe(document.querySelector("#comments"));
+var observerFaq = new IntersectionObserver(function(entries) {
+    if(entries[0].isIntersecting === true) {
+        document.querySelectorAll('.o-box-tab').forEach((e)=>{
+            e.classList.remove('is-active')
+        })
+        document.querySelector('a[href="#faq"]').parentElement.classList.add('is-active')
+    }
+    else {
+        document.querySelector('a[href="#faq"]').parentElement.classList.remove('is-active')
+    }
+}, { threshold: [0] });
 
-    var observerFaq = new IntersectionObserver(function(entries) {
-        if(entries[0].isIntersecting === true) {
-            document.querySelector('a[href="#faq"]').parentElement.classList.add('is-active')
-        }
-        else {
-            document.querySelector('a[href="#faq"]').parentElement.classList.remove('is-active')
-        }
-    }, { threshold: [1] });
-
-    observerFaq.observe(document.querySelector("#faq"));
+observerFaq.observe(document.querySelector("#faq"));
     /*
     if(expertElem.top>=0 && expertElem.bottom <= window.innerHeight){
         document.querySelector('a[href="#reviews"]').parentElement.classList.add('is-active')

@@ -75,8 +75,8 @@
         </div>
     </div>
     <!-- desktop navbar-->
-    <nav class="desktop-nav js-desktop-nav hidden md:block">
-        <div class="nav-container">
+    <nav class="desktop-nav js-desktop-nav   hidden md:block ">
+        <div class="nav-container ">
             <div class="nav pt-3 px-4" id="navbar">
                 <div class="nav-items">
                     <ul class="nav-ul flex relative h-12">

@@ -468,68 +468,135 @@
                                             </ul>
                                         </div>
                                         <div class="product-comment-list">
-                                            <div class="c-comment-list padding-0">
-                                                <div class="c-comments-item c-comments-item-pdp">
-                                                    <div class="c-comment-row">
+                                            <div class="product-comment item">
+                                                <div class="c-comment-list padding-0">
+                                                    <div class="c-comments-item c-comments-item-pdp">
+                                                        <div class="c-comment-row">
                                                         <span class="c-comment-title">
                                                             گوشی شبه پرچم دار می 10 تی پرو 5G
                                                         </span>
-                                                    </div>
-                                                    <div class="c-comment-row">
+                                                        </div>
+                                                        <div class="c-comment-row">
                                                         <span class="c-comment-datail">
                                                             ۶ اردیبهشت ۱۴۰۰
                                                         </span>
-                                                        <span class="c-comment-datail">
+                                                            <span class="c-comment-datail">
                                                             کاربر دیجی‌کالا
                                                         </span>
-                                                    </div>
-                                                    <x-half-seperator/>                                                   </div>
-                                                <div class="c-comment-row">
+                                                        </div>
+                                                        <x-half-seperator/>                                                   </div>
+                                                    <div class="c-comment-row">
 
+                                                    </div>
+                                                    <div class="c-comment-row c-comment-row-comment c-comment-row-grow">
+                                                        <div class="c-comments-content">سلام دوستان عزیز این گوشی مخصوص
+                                                            طرفداران عکاسی و گیم و بازی هستش
+                                                            پردازنده قوی اسنپ دراگون 865G که
+                                                            رو این گوشیه واقعا جواب گوی بازی
+                                                            های خیلی سنگین و گرافیکی هست
+                                                            باطری و فست شارژش واقعا عالیه
+                                                            دوربینش معرکه اس واقعا محشره
+                                                            توصیه میکنم حتما اینو بخرید
+                                                            تنها یه عیب کوچیک دارع که اونم
+                                                            صفحه نمایش IPS LCD هستش
+                                                            که چندان فرقی هم با بقیه ندارع
+                                                        </div>
+                                                        <x-half-seperator/>                                                 </div>
+                                                    <div class="c-comments-modal-evaluation">
+                                                        <div class="c-comments-modal-evaluation-item c-comments-modal-evaluation-item-positive items-start">
+                                                            باطری پرسرعت و پرقدرت با ظرفیت 5 هزار میلی امپر
+                                                        </div>
+                                                        <div class="c-comments-modal-evaluation-item c-comments-modal-evaluation-item-negative items-start">
+                                                            صفحه نمایش IPS LCD
+                                                        </div>
+                                                    </div>
+                                                    <x-half-seperator/>
                                                 </div>
-                                                <div class="c-comment-row c-comment-row-comment c-comment-row-grow">
-                                                    <div class="c-comments-content">سلام دوستان عزیز این گوشی مخصوص
-                                                        طرفداران عکاسی و گیم و بازی هستش
-                                                        پردازنده قوی اسنپ دراگون 865G که
-                                                        رو این گوشیه واقعا جواب گوی بازی
-                                                        های خیلی سنگین و گرافیکی هست
-                                                        باطری و فست شارژش واقعا عالیه
-                                                        دوربینش معرکه اس واقعا محشره
-                                                        توصیه میکنم حتما اینو بخرید
-                                                        تنها یه عیب کوچیک دارع که اونم
-                                                        صفحه نمایش IPS LCD هستش
-                                                        که چندان فرقی هم با بقیه ندارع
+                                                <div class="c-comment-row">
+                                                    <div class="c-comments-color">
+                                                        <span class="c-comments-color-circle" style="background-color: #2196f3;"></span>
+                                                        آبی
                                                     </div>
-                                                    <x-half-seperator/>                                                 </div>
-                                                <div class="c-comments-modal-evaluation">
-                                                    <div class="c-comments-modal-evaluation-item c-comments-modal-evaluation-item-positive items-start">
-                                                        باطری پرسرعت و پرقدرت با ظرفیت 5 هزار میلی امپر
-                                                    </div>
-                                                    <div class="c-comments-modal-evaluation-item c-comments-modal-evaluation-item-negative items-start">
-                                                        صفحه نمایش IPS LCD
+                                                    <div class="c-comments-seller">
+                                                        دیجی‌کالا
                                                     </div>
                                                 </div>
-                                                <x-half-seperator/>
+                                                <div class="c-comment-row">
+                                                    <div class="c-comments-helpful justify-start sm:justify-end">
+                                                        <div class="c-comments-helpful-question">آیا این دیدگاه برایتان مفید بود؟</div>
+                                                        <div class="c-comments-helpful-items  is-modal">
+                                                            <div class="c-comments-helpful-yes " data-comment="19842425">۲</div>
+                                                            <div class="c-comments-helpful-no  " data-comment="19842425"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="c-comment-row">
+                                                </div>
                                             </div>
-                                            <div class="c-comment-row">
-                                                <div class="c-comments-color">
-                                                    <span class="c-comments-color-circle" style="background-color: #2196f3;"></span>
-                                                    آبی
+                                            <div class="product-comment item">
+                                                <div class="c-comment-list padding-0">
+                                                    <div class="c-comments-item c-comments-item-pdp">
+                                                        <div class="c-comment-row">
+                                                        <span class="c-comment-title">
+                                                            گوشی شبه پرچم دار می 10 تی پرو 5G
+                                                        </span>
+                                                        </div>
+                                                        <div class="c-comment-row">
+                                                        <span class="c-comment-datail">
+                                                            ۶ اردیبهشت ۱۴۰۰
+                                                        </span>
+                                                            <span class="c-comment-datail">
+                                                            کاربر دیجی‌کالا
+                                                        </span>
+                                                        </div>
+                                                        <x-half-seperator/>                                                   </div>
+                                                    <div class="c-comment-row">
+
+                                                    </div>
+                                                    <div class="c-comment-row c-comment-row-comment c-comment-row-grow">
+                                                        <div class="c-comments-content">سلام دوستان عزیز این گوشی مخصوص
+                                                            طرفداران عکاسی و گیم و بازی هستش
+                                                            پردازنده قوی اسنپ دراگون 865G که
+                                                            رو این گوشیه واقعا جواب گوی بازی
+                                                            های خیلی سنگین و گرافیکی هست
+                                                            باطری و فست شارژش واقعا عالیه
+                                                            دوربینش معرکه اس واقعا محشره
+                                                            توصیه میکنم حتما اینو بخرید
+                                                            تنها یه عیب کوچیک دارع که اونم
+                                                            صفحه نمایش IPS LCD هستش
+                                                            که چندان فرقی هم با بقیه ندارع
+                                                        </div>
+                                                        <x-half-seperator/>                                                 </div>
+                                                    <div class="c-comments-modal-evaluation">
+                                                        <div class="c-comments-modal-evaluation-item c-comments-modal-evaluation-item-positive items-start">
+                                                            باطری پرسرعت و پرقدرت با ظرفیت 5 هزار میلی امپر
+                                                        </div>
+                                                        <div class="c-comments-modal-evaluation-item c-comments-modal-evaluation-item-negative items-start">
+                                                            صفحه نمایش IPS LCD
+                                                        </div>
+                                                    </div>
+                                                    <x-half-seperator/>
                                                 </div>
-                                                <div class="c-comments-seller">
-                                                    دیجی‌کالا
-                                                </div>
-                                            </div>
-                                            <div class="c-comment-row">
-                                                <div class="c-comments-helpful justify-start sm:justify-end">
-                                                    <div class="c-comments-helpful-question">آیا این دیدگاه برایتان مفید بود؟</div>
-                                                    <div class="c-comments-helpful-items  is-modal">
-                                                        <div class="c-comments-helpful-yes " data-comment="19842425">۲</div>
-                                                        <div class="c-comments-helpful-no  " data-comment="19842425"></div>
+                                                <div class="c-comment-row">
+                                                    <div class="c-comments-color">
+                                                        <span class="c-comments-color-circle" style="background-color: #2196f3;"></span>
+                                                        آبی
+                                                    </div>
+                                                    <div class="c-comments-seller">
+                                                        دیجی‌کالا
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="c-comment-row">
+                                                <div class="c-comment-row">
+                                                    <div class="c-comments-helpful justify-start sm:justify-end">
+                                                        <div class="c-comments-helpful-question">آیا این دیدگاه برایتان مفید بود؟</div>
+                                                        <div class="c-comments-helpful-items  is-modal">
+                                                            <div class="c-comments-helpful-yes " data-comment="19842425">۲</div>
+                                                            <div class="c-comments-helpful-no  " data-comment="19842425"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="c-comment-row">
+                                                </div>
                                             </div>
                                         </div>
 
