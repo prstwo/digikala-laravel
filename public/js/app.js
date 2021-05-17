@@ -424,6 +424,13 @@ else{
 }
   */
 
+/*product page*/
+
+document.querySelectorAll('.circle-variant-color input').forEach(function (inputElem) {
+  inputElem.addEventListener('click', function (inputElem) {
+    document.querySelector('.js-color-title').innerText = inputElem.target.getAttribute('data-title');
+  });
+});
 /*responsive product page */
 
 function removeColorBorder() {

@@ -96,6 +96,17 @@
                                     <div></div>
                                     <div></div>
                                 </div>
+                                <div class="product-circle-variants">
+                                    <div class="product-circle-variant-title">
+                                        <header>رنگ: </header>
+                                        <span class="js-color-title">خاکستری</span>
+                                    </div>
+                                    <ul class="js-product-variants">
+                                        @foreach($productColors as $productColor)
+                                            <x-product-color :productColor="$productColor" />
+                                        @endforeach
+                                    </ul>
+                                </div>
                                 <div class="product-config-wrapper">
                                     <div class="product-config-info">
                                         <ul class="list-none p-0 my-5 mx-0">

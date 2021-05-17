@@ -395,7 +395,12 @@ observerFaq.observe(document.querySelector("#faq"));
     }
 
      */
-
+/*product page*/
+document.querySelectorAll('.circle-variant-color input').forEach((inputElem)=>{
+    inputElem.addEventListener('click',(inputElem)=>{
+        document.querySelector('.js-color-title').innerText=inputElem.target.getAttribute('data-title')
+    })
+})
 /*responsive product page */
 function removeColorBorder(){
     document.querySelectorAll('.js-color-picker').forEach((f)=>{
