@@ -250,13 +250,6 @@
                         <aside class=" box-promo-single">
                             <div class="c-promo-single">
                                 <div class="c-promo-single-headline">پیشنهادهای لحظه&zwnj;ای برای شما</div>
-                                <style>
-                                    .swiper-instant-offers {
-                                        width: 100%;
-                                        height: 100%;
-                                    }
-
-                                </style>
                                 <div class="swiper-instant-offers">
                                         <div class="swiper-wrapper" id="gallery_wrapper">
                                             <div class="swiper-slide flex flex-col">

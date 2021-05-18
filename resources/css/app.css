@@ -167,6 +167,10 @@ a:hover, a:active{
     right: 0;
     content: "";
 }
+.swiper-instant-offers{
+    width: 100%;
+    height: 100%;
+}
 .c-promo-single-headline:after{
     position: absolute;
     bottom: 0;
@@ -1093,7 +1097,7 @@ header .fa-search:before {
     transition: all .2s linear;
 
 }
-.product-item-container-4:hover{
+.product-item-container-3:hover{
     transform: translateY(-5px);
     -webkit-box-shadow: -1.5px 0 4px 0 rgb(0 0 0 / 15%);
     box-shadow: -1.5px 0 4px 0 rgb(0 0 0 / 15%);
@@ -1101,6 +1105,15 @@ header .fa-search:before {
 .product-item-container:hover{
     box-shadow: 0 0 10px 1px rgba(199, 199, 199,.6);
     transform: translateY(-5px);
+}
+.specials .product-items .product-item-container-3:hover,
+.swiper-instant-offers .product-item-container-3:hover,
+.swiper-container-mobile-2 .product-item-container-3:hover,
+.swiper-container-mobile .product-item-container-3:hover,
+.swiper-container-mobile3 .product-item-container-3:hover{
+    transform: none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
 }
 .product-item{
     -webkit-box-sizing: border-box;
