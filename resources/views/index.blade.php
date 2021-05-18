@@ -217,7 +217,7 @@
             <section class="pl-5 w-9/12">
                 <section class="page-section-standard-no-p relative ">
                     <div class="products">
-                        <x-head-sec mobileTitle="منتخب بهترین کالاها " title="گوشی موبایل   " link="مشاهده همه"/>
+                        <x-head-sec mobileTitle="منتخب بهترین کالاها " title="گوشی موبایل   " link=""/>
                         <div class="boxes static">
                             <div class="items">
                                 <!-- product item component -->
@@ -257,9 +257,36 @@
                                     }
 
                                 </style>
-                                <div class="swiper-wrapper" id="gallery_wrapper">
-                                    <div class="swiper-instant-offers">
+                                <div class="swiper-instant-offers">
                                         <div class="swiper-wrapper" id="gallery_wrapper">
+                                            <div class="swiper-slide flex flex-col">
+                                                <div class="product-item-container-3 rounded-2xl">
+                                                    <div class="product-item">
+                                                        <div class="product-box-img">
+                                                            <a href="#product-page">
+                                                                <img src={{asset('images/instant-4.jpg')}} alt="a product example" class="product-img">
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-title">
+                                                            <a href="#product-page">
+                                                                لپ تاپ 15 اینچی ایسوس مدل VivoBook R521JP -MR
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-price">
+                                                            <div class="product-old-price">
+                                                                <del> ۹۹,۰۰۰ </del>
+                                                                <span class="old-price-discount">
+                                                                 ٪۳۰
+                                                            </span>
+                                                            </div>
+                                                            <div class="product-new-price">
+                                                                ۲۰۴,۷۹۰
+                                                                <span class="new-price-currency">تومان</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="swiper-slide flex flex-col">
                                                 <div class="product-item-container-3 rounded-2xl">
                                                     <div class="product-item">
@@ -288,10 +315,65 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="swiper-slide flex flex-col">
+                                                <div class="product-item-container-3 rounded-2xl">
+                                                    <div class="product-item">
+                                                        <div class="product-box-img">
+                                                            <a href="#product-page">
+                                                                <img src={{asset('images/instant-2.jpg')}} alt="a product example" class="product-img">
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-title">
+                                                            <a href="#product-page">
+                                                                نگهدارنده لاک ناخن کد 524
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-price">
+                                                            <div class="product-old-price">
+                                                                <del> ۹۹,۰۰۰ </del>
+                                                                <span class="old-price-discount">
+                                                                 ٪۳۰
+                                                            </span>
+                                                            </div>
+                                                            <div class="product-new-price">
+                                                                ۲۰۴,۷۹۰
+                                                                <span class="new-price-currency">تومان</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide flex flex-col">
+                                                <div class="product-item-container-3 rounded-2xl">
+                                                    <div class="product-item">
+                                                        <div class="product-box-img">
+                                                            <a href="#product-page">
+                                                                <img src={{asset('images/instant-3.jpg')}} alt="a product example" class="product-img">
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-title">
+                                                            <a href="#product-page">
+                                                                نگهدارنده لاک ناخن کد 524
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-price">
+                                                            <div class="product-old-price">
+                                                                <del> ۹۹,۰۰۰ </del>
+                                                                <span class="old-price-discount">
+                                                                 ٪۳۰
+                                                            </span>
+                                                            </div>
+                                                            <div class="product-new-price">
+                                                                ۲۰۴,۷۹۰
+                                                                <span class="new-price-currency">تومان</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
                                     </div>
-                                </div>
 
                         </aside>
                     </div>

@@ -110,7 +110,7 @@
     });
     var mySwiper = new Swiper ('.swiper-instant-offers',
         {
-            speed:4000,
+            speed:1000,
             direction: 'horizontal',
             zoom: true,
             keyboard:
@@ -118,18 +118,19 @@
                     enabled: true,
                     onlyInViewport: false,
                 },
+            allowTouchMove:false
+            ,
             mousewheel:
                 {
                     invert: true,
                 },
             autoplay:
                 {
-                    delay: 6000,
+                    delay: 5500,
                 },
             loop: true,
         });
 </script>
-
 @yield('extra-scripts')
 </body>
 </html>

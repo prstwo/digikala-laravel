@@ -167,6 +167,28 @@ a:hover, a:active{
     right: 0;
     content: "";
 }
+.c-promo-single-headline:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: -webkit-gradient(linear,left top,right top,from(#ffd3db),to(#fb3449));
+    background: linear-gradient(
+        90deg
+        ,#ffd3db,#fb3449);
+    content: "";
+    -webkit-animation: bar-fill 7s cubic-bezier(.17,.67,.71,.99) infinite;
+    animation: bar-fill 7s cubic-bezier(.17,.67,.71,.99) infinite;
+}
+@-webkit-keyframes bar-fill{
+    0%{width:0}
+    to{width:100%}
+}
+@keyframes bar-fill{
+    0%{width:0}
+    to{width:100%}
+}
  .swiper-wrapper{
      box-sizing: border-box;
 }
