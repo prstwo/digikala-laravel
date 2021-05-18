@@ -31972,6 +31972,147 @@ a:hover, a:active{
   padding: 9px 11px 11px  11px;
 }
 
+.products-instant-offers-conrainer{
+  padding: 9px 33px 11px  33px;
+  margin: 2% 0;
+  max-width: 100%;
+}
+
+.page-section-standard-no-p{
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.c-box-container{
+  height: 100%;
+}
+
+.c-promo-single{
+  text-align: center;
+  height: 100%;
+  background: white;
+  box-shadow: 1px 1px 4px 0 rgb(0 0 0 / 3%);
+  border: 1px solid rgba(0,191,214,.3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.c-promo-single-headline{
+  height: 57px;
+  line-height: 56px;
+  font-weight: 500;
+  color: #6e6e6e;
+  margin: 0 13px;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.c-promo-single-headline:before{
+  height: 1px;
+  background: #f5f5f5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+}
+
+.swiper-wrapper{
+  box-sizing: border-box;
+}
+
+.c-promo-single-img{
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  justify-content: center;
+}
+
+.c-product-box-title{
+  display: block;
+  overflow: hidden;
+  font-size: 12px;
+  font-size: .857rem;
+  line-height: 30px;
+  text-align: right;
+  line-height: 22px;
+  margin-top: 13px;
+  height: 43px;
+}
+
+.c-product-box-price-item{
+  display: inline-block;
+  float: left;
+}
+
+.c-new-price{
+  flex-direction: column;
+  min-height: 52px;
+  padding: 4px;
+  justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.c-new-price, .c-new-price-value {
+  display: flex;
+  align-items: center;
+}
+
+.c-new-price-old-value {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #ababab;
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+
+.c-new-price-old-value del {
+  display: block;
+  text-decoration: line-through;
+}
+
+.c-new-price-discount {
+  font-size: 12px;
+  font-size: .857rem;
+  line-height: 20px;
+  font-weight: 700;
+  padding-top: 2px;
+  background-color: #e6123d;
+  color: #fff;
+  border-radius: 16px;
+  margin-right: 4px;
+  width: 32px;
+  text-align: center;
+}
+
+.c-new-price-value {
+  font-size: 16px;
+  font-size: 1.143rem;
+  line-height: 30px;
+  color: #232933;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 0!important;
+  justify-content: flex-end;
+}
+
+.c-new-price-currency{
+  font-size: 10px;
+  font-size: .714rem;
+  line-height: 21px;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
 main{
   box-sizing: border-box;
   background: #f5f5f5;
@@ -31995,6 +32136,10 @@ main{
   .page-section-standard{
     box-shadow: none;
     padding: 9px 11px 11px 11px;
+  }
+
+  .page-section-standard-no-p{
+    box-shadow: none;
   }
 
   .mobile-title{
@@ -32901,10 +33046,31 @@ header .fa-search:before {
 }
 
 .product-item{
-  padding: 2% 3%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  justify-content: flex-start;
+  padding: 5px 15px 16px;
+  position: relative;
+}
+
+.product-box-img{
+  height: 180px;
+  width: 180px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 380px) {
+  .product-box-img{
+    height: 130px;
+    width: 130px;
+  }
 }
 
 img.product-img{
@@ -32943,7 +33109,7 @@ img.product-img{
 .old-price-discount{
   width: 60px;
   border-radius: 10px ;
-  background-color: red;
+  background-color: #e6123d;
   color: white;
   padding: 3px;
   margin-right: 3px;
@@ -33084,6 +33250,18 @@ span.head-title::after{
   overflow: hidden;
 }
 
+.c-box{
+  position: relative;
+}
+
+.c-box:first-child {
+  margin-top: 0;
+}
+
+.products .items .c-box{
+  height: 100%;
+}
+
 @media screen and (max-width: 767px) {
   .page-section{
     padding: 0;
@@ -33093,7 +33271,7 @@ span.head-title::after{
     display: none;
   }
 
-  .page-section-standard{
+  .page-section-standard, .page-section-standard-no-p{
     background-color:inherit;
   }
 

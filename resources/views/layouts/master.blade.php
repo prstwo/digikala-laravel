@@ -50,7 +50,7 @@
     });
     var swiper2 = new Swiper('.swiper-container2', {
         slidesPerView: 5,
-        spaceBetween: 20,
+        spaceBetween: 10,
         slidesPerGroup: 5,
         loop: true,
         loopFillGroupWithBlank: true,
@@ -108,6 +108,26 @@
             prevEl: '.swiper-button-prev',
         },
     });
+    var mySwiper = new Swiper ('.swiper-instant-offers',
+        {
+            speed:4000,
+            direction: 'horizontal',
+            zoom: true,
+            keyboard:
+                {
+                    enabled: true,
+                    onlyInViewport: false,
+                },
+            mousewheel:
+                {
+                    invert: true,
+                },
+            autoplay:
+                {
+                    delay: 6000,
+                },
+            loop: true,
+        });
 </script>
 
 @yield('extra-scripts')

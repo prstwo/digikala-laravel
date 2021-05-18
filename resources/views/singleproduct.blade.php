@@ -288,8 +288,8 @@
                 <div class="carousel-horizontal-general mb-3">
                     <x-head-sec mobileTitle="محصولات مرتبط" title="محصولات مرتبط" link=""/>
                     <div class="flex flex-row justify-center content-center overflow-hidden">
-                        <div class="swiper-container2">
-                            <x-swiper.swiper-wrapper5 :productItemContainer4="$productItemContainer4"/>
+                        <div class="swiper-container">
+                            <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3"/>
                             <div class="swiper-button-next arrow-left-3">
                             </div>
                             <div class="swiper-button-prev arrow-right-3"></div>

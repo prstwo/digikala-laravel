@@ -5,7 +5,14 @@
 @show
 @section('page-title','فروشگاه اینترنتی دیجی کالا')
 @section('main-content')
+<style>
+    @media (min-width: 768px){
+        body{
+            background: #f5f5f5;
+        }
+    }
 
+</style>
     <main >
         <!-- main top container -->
         <article class="main-top-container">
@@ -129,15 +136,15 @@
                     <div class="boxes static">
                         <div class="items">
                             <!-- product item component -->
-                            <div class="hidden md:block swiper-container2">
-                                <x-swiper.swiper-wrapper5 :productItemContainer4="$productItemContainer4"/>
+                            <div class="hidden md:block swiper-container">
+                                <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3"/>
                                 <div class="swiper-button-next arrow-left-3">
                                 </div>
                                 <div class="swiper-button-prev arrow-right-3"></div>
                             </div>
                             <div class="block md:hidden swiper-container-mobile-2">
                             <div class="block md:hidden swiper-container-mobile-2">
-                                <x-swiper.swiper-wrapper5 :productItemContainer4="$productItemContainer4"/>
+                                <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3"/>
                             <!-- Add Pagination -->
                                 <!-- Add Arrows -->
                                 <div class="swiper-button-next arrow-left-3">
@@ -204,6 +211,94 @@
 
                 </div>
             </div>
+        </div>
+        <!--products section-->
+        <div class=" relative hidden md:flex products-instant-offers-conrainer">
+            <section class="pl-5 w-9/12">
+                <section class="page-section-standard-no-p relative ">
+                    <div class="products">
+                        <x-head-sec mobileTitle="منتخب بهترین کالاها " title="گوشی موبایل   " link="مشاهده همه"/>
+                        <div class="boxes static">
+                            <div class="items">
+                                <!-- product item component -->
+                                <div class=" swiper-container ">
+                                    <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3"/>
+                                    <div class="swiper-button-next arrow-left-3">
+                                    </div>
+                                    <div class="swiper-button-prev arrow-right-3"></div>
+                                </div>
+
+                                <div class="block md:hidden swiper-container-mobile-2">
+                                    <div class="block md:hidden swiper-container-mobile-2">
+                                        <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3"/>
+                                        <!-- Add Pagination -->
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next arrow-left-3">
+                                        </div>
+                                        <div class="swiper-button-prev arrow-right-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                </section>
+            </section>
+            <div class=" box-border w-3/12">
+                <div class="c-box-container box-border	">
+                    <div class="c-box">
+                        <aside class=" box-promo-single">
+                            <div class="c-promo-single">
+                                <div class="c-promo-single-headline">پیشنهادهای لحظه&zwnj;ای برای شما</div>
+                                <style>
+                                    .swiper-instant-offers {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+
+                                </style>
+                                <div class="swiper-wrapper" id="gallery_wrapper">
+                                    <div class="swiper-instant-offers">
+                                        <div class="swiper-wrapper" id="gallery_wrapper">
+                                            <div class="swiper-slide flex flex-col">
+                                                <div class="product-item-container-3 rounded-2xl">
+                                                    <div class="product-item">
+                                                        <div class="product-box-img">
+                                                            <a href="#product-page">
+                                                                <img src={{asset('images/instant-1.jpg')}} alt="a product example" class="product-img">
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-title">
+                                                            <a href="#product-page">
+                                                                نگهدارنده لاک ناخن کد 524
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-price">
+                                                            <div class="product-old-price">
+                                                                <del> ۹۹,۰۰۰ </del>
+                                                                <span class="old-price-discount">
+                                                                 ٪۳۰
+                                                            </span>
+                                                            </div>
+                                                            <div class="product-new-price">
+                                                                ۲۰۴,۷۹۰
+                                                                <span class="new-price-currency">تومان</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                        </aside>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
     </main>

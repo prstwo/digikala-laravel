@@ -5,7 +5,7 @@
         <div class="swiper-slide" >
             <div class="product-item-container-3 rounded-2xl">
                 <div class="product-item">
-                    <div>
+                    <div class="product-box-img">
                         <a href="#product-page">
                             <img src={{asset($productItem3['img'])}} alt="a product example" class="product-img">
                         </a>
