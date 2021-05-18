@@ -18,6 +18,6 @@
         "tailwindcss": "^2.1.2"
     },
     "dependencies": {
-        "swiper": "^6.5.9"
+        "swiper": "^6.6.1"
     }
 }

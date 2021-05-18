@@ -1,3 +1,102 @@
+import Swiper from 'swiper/bundle';
+//swiper customize
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 4,
+    spaceBetween: 10,
+    slidesPerGroup: 4,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+var swiper2 = new Swiper('.swiper-container2', {
+    slidesPerView: 5,
+    spaceBetween: 10,
+    slidesPerGroup: 5,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+var swiperM = new Swiper('.swiper-container-mobile', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+var swiperM2 = new Swiper('.swiper-container-mobile-2', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+var swiperM3 = new Swiper('.swiper-container-mobile3', {
+    slidesPerView: 2,
+    spaceBetween: 8,
+    slidesPerGroup: 2,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+var mySwiper = new Swiper ('.swiper-instant-offers',
+    {
+        speed:1000,
+        direction: 'horizontal',
+        zoom: true,
+        keyboard:
+            {
+                enabled: true,
+                onlyInViewport: false,
+            },
+        allowTouchMove:false
+        ,
+        mousewheel:
+            {
+                invert: true,
+            },
+        autoplay:
+            {
+                delay: 5500,
+            },
+        loop: true,
+    });
 
 //nav menu js
 let navOverlay= document.querySelector('.nav-overlay');
@@ -365,36 +464,6 @@ var observerFaq = new IntersectionObserver(function(entries) {
 }, { threshold: [0] });
 
 observerFaq.observe(document.querySelector("#faq"));
-    /*
-    if(expertElem.top>=0 && expertElem.bottom <= window.innerHeight){
-        document.querySelector('a[href="#reviews"]').parentElement.classList.add('is-active')
-    }
-    else{
-        document.querySelector('a[href="#reviews"]').parentElement.classList.remove('is-active')
-    }*/
-    /*
-    if(detailsElem.top>=0 && detailsElem.bottom <= window.innerHeight){
-        document.querySelector('a[href="#details"]').parentElement.classList.add('is-active')
-    }
-    else{
-        document.querySelector('a[href="#details"]').parentElement.classList.remove('is-active')
-    }*/
-    /*
-    if(commentsElem.top>=0 && commentsElem.bottom <= window.innerHeight){
-        document.querySelector('a[href="#comments"]').parentElement.classList.add('is-active')
-    }
-    else{
-        document.querySelector('a[href="#comments"]').parentElement.classList.remove('is-active')
-    }*/
-    /*
-    if(faqElem.top>0 && faqElem.bottom <= window.innerHeight){
-        document.querySelector('a[href="#faq"]').parentElement.classList.add('is-active')
-    }
-    else{
-        document.querySelector('a[href="#faq"]').parentElement.classList.remove('is-active')
-    }
-
-     */
 /*product page*/
 document.querySelectorAll('.circle-variant-color input').forEach((inputElem)=>{
     inputElem.addEventListener('click',(inputElem)=>{
