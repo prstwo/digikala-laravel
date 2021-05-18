@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @yield('keyword-description')
     <title>@yield('page-title')</title>
-    <link href="{{ asset('https://unpkg.com/swiper/swiper-bundle.css') }}" rel="stylesheet">
-    <link href="{{ asset('https://unpkg.com/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-
     <link href="{{ asset('fonts/fontawesome/css/all.css') }}" rel="stylesheet">
     <link href="{{ asset('fonts/fontawesome/css/fontawesome.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">

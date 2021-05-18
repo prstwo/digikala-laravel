@@ -31920,13 +31920,13 @@ a:hover, a:active{
 
 .arrow-left, .arrow-left-2, .arrow-left-3, .arrow-left-5{
   left:0;
-  top: calc((100% / 2) - 30px);
-  color: #a8a8a8;
+  top: calc((100% / 2) - 30px) !important;
+  color: #a8a8a8 !important;
   background-color: #fff;
   box-shadow: 1.5px 0 4px 0 rgb(0 0 0 / 15%);
   border-radius: 0 8px 8px 0;
-  width: 49px;
-  height: 90px;
+  width: 49px !important;
+  height: 90px !important;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -31934,13 +31934,13 @@ a:hover, a:active{
 
 .arrow-right, .arrow-right-2, .arrow-right-3, .arrow-right-5{
   right: 0;
-  top: calc((100% / 2) - 30px);
-  color: #a8a8a8;
+  top: calc((100% / 2) - 30px) !important;
+  color: #a8a8a8 !important;
   background-color: #fff;
   box-shadow: -1.5px 0 4px 0 rgb(0 0 0 / 15%);
   border-radius: 8px 0 0 8px;
-  width: 49px;
-  height: 90px;
+  width: 49px !important;
+  height: 90px !important;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -32186,7 +32186,7 @@ main{
   }
 
   .arrow-right-3, .arrow-left-3{
-    display: none;
+    display: none !important;
   }
 }
 
@@ -34609,7 +34609,7 @@ o-btn{
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  top: 51px;
+  top: 125px;
 }
 
 .mini-buy-box{
