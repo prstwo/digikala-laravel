@@ -145,11 +145,11 @@ document.querySelectorAll('.js-mobile-toggle a').forEach(function (d) {
 function mobileMenu() {
   var mobileMenuCon = document.querySelector('.mobile-menu-container');
   mobileMenuCon.classList.toggle('hide');
-  document.querySelector('.mobile-overlay').classList.toggle('active');
+  document.querySelector('.m-overlay').classList.toggle('active');
   document.body.classList.toggle('no-overflow');
 
   if (!mobileMenuCon.classList.contains('hide')) {
-    document.querySelector('.mobile-overlay').addEventListener('click', function (overlay) {
+    document.querySelector('.m-overlay').addEventListener('click', function (overlay) {
       mobileMenuCon.classList.add('hide');
       overlay.target.classList.remove('active');
       document.body.classList.remove('no-overflow');

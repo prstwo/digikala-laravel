@@ -328,7 +328,7 @@ main{
     }
 }
 
-.overlay, .m-overlay, .nav-overlay,.dropup-overlay, .mobile-overlay{
+.overlay, .m-overlay, .nav-overlay,.dropup-overlay{
     position: fixed;
     right: 0;
     height: 100%;
@@ -353,7 +353,7 @@ main{
     z-index: 0;
 }
 
-.m-overlay, .mobile-overlay{
+.m-overlay{
     z-index: 60;
 }
 .nav-overlay{

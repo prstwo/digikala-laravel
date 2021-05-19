@@ -18,8 +18,7 @@
     <!-- navigation component -->
     @yield('main-content')
     @include('sections.footer')
-    <x-overlay/>
-
+    <div class="m-overlay"></div>
 </div>
 <script src="{{mix('js/app.js')}}" ></script>
 @yield('extra-scripts')

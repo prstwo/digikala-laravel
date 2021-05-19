@@ -137,10 +137,10 @@ function mobileMenu(){
     let mobileMenuCon= document.querySelector('.mobile-menu-container');
 
     mobileMenuCon.classList.toggle('hide');
-    document.querySelector('.mobile-overlay').classList.toggle('active');
+    document.querySelector('.m-overlay').classList.toggle('active');
     document.body.classList.toggle('no-overflow');
     if(!mobileMenuCon.classList.contains('hide')){
-        document.querySelector('.mobile-overlay').addEventListener('click',(overlay)=>{
+        document.querySelector('.m-overlay').addEventListener('click',(overlay)=>{
             mobileMenuCon.classList.add('hide');
             overlay.target.classList.remove('active');
             document.body.classList.remove('no-overflow');
