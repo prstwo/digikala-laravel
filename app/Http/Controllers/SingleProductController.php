@@ -145,6 +145,26 @@ class SingleProductController extends Controller
                 ,['title'=>'مپنت','icon_class'=>'fas fa-calculator ml-2 text-yellow-500']
                 ,['title'=>'فروشنده شوید','icon_class'=>'fa fa-list-ul ml-2']
             ]
+            ,'mobileMenuCats'=>[
+                ['cat'=>'کالای دیجیتال', 'submenu'=>[
+                    ['class'=>'mobile-toggle-li js-mobile-toggle','chevron'=>true, 'title'=>'لوازم جانبی گوشی',
+                        'sublists'=>['واقعیت مجازی','دوربین', 'کامپیوتر و لوازم جانبی']]
+                    ,['class'=>'mobile-toggle-li js-mobile-toggle','chevron'=>true, 'title'=>'لوازم جانبی لپ تاپ',
+                        'sublists'=>['کابل صدا','کاور', ' کیف و کوله']]
+                    ,['class'=>'', 'title'=>'واقعیت مجازی','chevron'=>false,
+                        'sublists'=>['سامسونگ','هوآوی', ' اپل']]
+                ]],
+                ['cat'=>'خودرو، ابزار و تجهیزات صنعتی', 'submenu'=>[
+                    ['class'=>'', 'title'=>'خودرو ایرانی و خارجی','chevron'=>false,
+                    ]
+                    ,['class'=>'mobile-toggle-li js-mobile-toggle','chevron'=>true, 'title'=>'ابزار برقی',
+                        'sublists'=>[' کارواش','مکنده و دمنده', 'گمپرسور جک و خودرو']]
+                    ,['class'=>'mobile-toggle-li js-mobile-toggle','chevron'=>true, 'title'=>'حفاظتی و امنیتی',
+                        'sublists'=>['گاوصندوق']]
+
+                ]]
+
+            ]
 
 
         ]);
