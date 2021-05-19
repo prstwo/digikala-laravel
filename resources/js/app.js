@@ -125,6 +125,7 @@ document.querySelectorAll('.js-nav-link').forEach((navLink)=>{navLink.addEventLi
 })
 function toggleSub(link){
     link.parentElement.querySelector('ul').classList.toggle('hide');
+    link.classList.toggle('change');
 }
 document.querySelectorAll('.js-mobile-toggle a').forEach((d)=>{
     d.addEventListener('click',(mmt)=>{

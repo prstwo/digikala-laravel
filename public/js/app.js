@@ -133,6 +133,7 @@ document.querySelectorAll('.js-nav-link').forEach(function (navLink) {
 
 function toggleSub(link) {
   link.parentElement.querySelector('ul').classList.toggle('hide');
+  link.classList.toggle('change');
 }
 
 document.querySelectorAll('.js-mobile-toggle a').forEach(function (d) {
