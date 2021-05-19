@@ -32270,9 +32270,10 @@ main{
   z-index:9;
 }
 
+/*
 .nav-link-title i.fa{
-  color: #a1a3a8;
-}
+    color: #ef394e;
+}*/
 
 .nav-items{
   display: flex;
@@ -32688,7 +32689,7 @@ a.nav-link-title{
 
 .mobile-menu-container{
   position: fixed;
-  width: 65vw;
+  width: 285px;
   min-height: 100vh;
   height: calc(100vh - 8em) ;
   background-color: white;
@@ -32706,9 +32707,11 @@ a.nav-link-title{
   .nav{
     display: none;
   }
+}
 
+@media screen and (max-width: 768px) {
   .nav-link-title{
-    padding: 7px 8px 8px 0;
+    padding: 14px 0;
   }
 }
 

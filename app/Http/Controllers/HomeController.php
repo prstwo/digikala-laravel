@@ -102,6 +102,29 @@ class HomeController extends Controller
                 ['src'=>'images/sponser-big-3.jpg'],
                 ['src'=>'images/sponser-big-4.jpg']
             ]
+            , 'mobileMenuItems' => [['title'=>'سوپرمارکت','icon_class'=>'fa fa-shopping-basket ml-2 text-green-500	']
+                ,['title'=>'تخفیف ها و پیشنهادها'
+                    ,'icon_class'=>'fa fa-percent ml-2 text-red-600', 'sublist'=>
+                        [
+                            ['item'=>'مشاهده همه پیشنهاد ها'],
+                            ['item'=> 'پرفروش ترین کالاها '],
+                            ['item'=>'کالاهای شگفت انگیز'],
+                            ['item'=>'شگفت انگیز سوپرمارکتی'],
+                            ['item'=>'فروش ویژه'],
+                            ['item'=>'با هر خرید هدیه بگیرید'],
+                            ['item'=>'تخفیف پایان فصل'],
+                            ['item'=>'مشاهدهکارت هدیه خرید از دیجی کالا'],
+                            ['item'=>'تازه های فروشنده های جدید']
+                        ]
+                ]
+                ,['title'=>'دیجی کالای من','icon_class'=>'far fa-check-square ml-2 text-red-600	']
+                ,['title'=>'دیجی پلاس','icon_class'=>'fa fa-random ml-2 text-purple-800']
+                ,['title'=>'دیجی کلاب','icon_class'=>'fa fa-random ml-2 text-yellow-300']
+                ,['title'=>'دیجی پی','icon_class'=>'fa fa-coins ml-2 text-blue-400']
+                ,['title'=>'مپنت','icon_class'=>'fas fa-calculator ml-2 text-yellow-500']
+                ,['title'=>'فروشنده شوید','icon_class'=>'fa fa-list-ul ml-2']
+            ]
+
         ]);
 
 
