@@ -1,4 +1,4 @@
-<div class="mobile-menu-container hide absolute top-0 right-0" id="mobile-menu-container">
+<div class="mobile-menu-container md:hidden hide absolute top-0 right-0" id="mobile-menu-container">
     <div class="content-container flex flex-col p-6">
         <div class="mobile-menu-icon mb-3">
             <div class="digikala-icon-container">

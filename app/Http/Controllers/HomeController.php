@@ -74,6 +74,38 @@ class HomeController extends Controller
                 ['img'=>'images/phone-8.jpg','product-title'=>'کاور جویروم مدل Chi مناسب برای گوشی موبایل اپل iPhone 7 Plus', 'old-price'=>'۳۷,۰۰۰  ',
                     'discount'=>' ٪۵۴', 'new-price'=>'۲۹,۵۰۰ ']
             ]
+            ,'footerAdressImages'=>[
+                ['src'=>'images/google-play.png'],
+                ['src'=>'images/bazaar.svg'],
+                [ 'src'=>'images/myket.svg']
+                ,['src'=>'images/sibapp.png']
+            ]
+            ,'footerLinksUl1'=>[
+                ['name'=>' نحوه ثبت سفارش'],
+                ['name'=>' رویه ارسال سفارش'],
+                ['name'=>'شیوه های پرداخت']
+            ]
+            ,'mobileFooterLinksUl2'=>[
+                ['name'=>'فروش در دیجی کالا'],
+                ['name'=>'سوالات متداول'],
+                ['name'=>'  دانلود اپلیکیشن'],
+                ['name'=>'شرایط استفاده'],
+                ['name'=>'حریم خصوصی'],
+                ['name'=>'اتاق خبر دیجی کالا']
+            ]
+            ,'footerLinksUl2'=>[
+                ['name'=>' پاسخ به پرسش‌های متداول'],
+                ['name'=>' شرایط استفاده'],
+                ['name'=>' حریم خصوصی'],
+                ['name'=>' گزارش باگ'],
+            ]
+            ,'footerLinksUl3'=>[
+                ['name'=>' اتاق خبر دیجی‌کالا'],
+                ['name'=>' فروش در دیجی کالا  '],
+                ['name'=>' فرصت های شغلی  '],
+                ['name'=>' تماس با دیجی کالا    '],
+                ['name'=>'راهنمای هویت بصری ']
+            ]
             , 'promotionSections'=>[
                 ['icon'=>'"fa fa-laptop"', 'cat-name'=>' کالای دیجیتال', 'cat-quantity'=>' + ۵۲۹۰۰۰ کالا'],
                 ['icon'=>'"fa fa-wrench"', 'cat-name'=>'خودرو، ابزار و تجهیزات صنعتی', 'cat-quantity'=>' + ۵۲۹۰۰۰ کالا'],
@@ -144,6 +176,7 @@ class HomeController extends Controller
                 ]]
 
             ]
+
         ]);
 
 

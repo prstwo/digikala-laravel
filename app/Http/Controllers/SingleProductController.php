@@ -123,6 +123,38 @@ class SingleProductController extends Controller
             ]]
             ,'strengthes'=>['باتری قوی','کیفیت صفحه نمایش','سخت افزار قوی','دوربین عالی']
             ,'weaknesses'=>['یکم داغ میکنه','یکم سنگین']
+            ,'footerAdressImages'=>[
+                ['src'=>'images/google-play.png'],
+                ['src'=>'images/bazaar.svg'],
+                [ 'src'=>'images/myket.svg']
+                ,['src'=>'images/sibapp.png']
+            ]
+            ,'footerLinksUl1'=>[
+                ['name'=>' نحوه ثبت سفارش'],
+                ['name'=>' رویه ارسال سفارش'],
+                ['name'=>'شیوه های پرداخت']
+            ]
+            ,'mobileFooterLinksUl2'=>[
+                ['name'=>'فروش در دیجی کالا'],
+                ['name'=>'سوالات متداول'],
+                ['name'=>'  دانلود اپلیکیشن'],
+                ['name'=>'شرایط استفاده'],
+                ['name'=>'حریم خصوصی'],
+                ['name'=>'اتاق خبر دیجی کالا']
+            ]
+            ,'footerLinksUl2'=>[
+                ['name'=>' پاسخ به پرسش‌های متداول'],
+                ['name'=>' شرایط استفاده'],
+                ['name'=>' حریم خصوصی'],
+                ['name'=>' گزارش باگ'],
+            ]
+            ,'footerLinksUl3'=>[
+                ['name'=>' اتاق خبر دیجی‌کالا'],
+                ['name'=>' فروش در دیجی کالا  '],
+                ['name'=>' فرصت های شغلی  '],
+                ['name'=>' تماس با دیجی کالا    '],
+                ['name'=>'راهنمای هویت بصری ']
+            ]
             , 'mobileMenuItems' => [['title'=>'سوپرمارکت','icon_class'=>'fa fa-shopping-basket ml-2 text-green-500	']
                 ,['title'=>'تخفیف ها و پیشنهادها'
                     ,'icon_class'=>'fa fa-percent ml-2 text-red-600', 'sublist'=>

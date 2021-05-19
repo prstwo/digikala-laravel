@@ -1,12 +1,4 @@
 <footer class="digi-footer mt-13">
-    @php
-    $footerAdressImages = [
-    ['src'=>'images/google-play.png'],
-    ['src'=>'images/bazaar.svg'],
-    [ 'src'=>'images/myket.svg']
-    ,['src'=>'images/sibapp.png']
-    ]
-    @endphp
     <div class="footer-jumpup absolute w-full flex flex-row flex-wrap justify-center">
             <span>
                 <a href="#top">
@@ -78,13 +70,6 @@
                     @endforeach
                 </ul>
                 <ul class="footer-links-ul">
-                    <?php
-                    $footerLinksUl1=[
-                        ['name'=>' نحوه ثبت سفارش'],
-                        ['name'=>' رویه ارسال سفارش'],
-                        ['name'=>'شیوه های پرداخت']
-                    ]
-                    ?>
                     @foreach ($footerLinksUl1 as $footerlink1)
                         <li class="mt-3">
                             <a href="sefaresh">
@@ -101,16 +86,6 @@
                     </a>
                 </div>
                 <ul class="mobile-footer-kinks-ul">
-                    <?php
-                    $mobileFooterLinksUl2=[
-                        ['name'=>'فروش در دیجی کالا'],
-                        ['name'=>'سوالات متداول'],
-                        ['name'=>'  دانلود اپلیکیشن'],
-                        ['name'=>'شرایط استفاده'],
-                        ['name'=>'حریم خصوصی'],
-                        ['name'=>'اتاق خبر دیجی کالا']
-                    ]
-                    ?>
                     @foreach ($mobileFooterLinksUl2 as $mobilefooterlink2)
                         <li class="mt-3">
                             <a href="sefaresh">
@@ -121,14 +96,7 @@
                 </ul>
 
                 <ul class="footer-links-ul">
-                    <?php
-                    $footerLinksUl2=[
-                        ['name'=>' پاسخ به پرسش‌های متداول'],
-                        ['name'=>' شرایط استفاده'],
-                        ['name'=>' حریم خصوصی'],
-                        ['name'=>' گزارش باگ'],
-                    ]
-                    ?>
+
                     @foreach ($footerLinksUl2 as $footerlink2)
                         <li class="mt-3">
                             <a href="sefaresh">
@@ -145,15 +113,6 @@
                     </a>
                 </div>
                 <ul class="footer-links-ul">
-                    <?php
-                    $footerLinksUl3 = [
-                        ['name'=>' اتاق خبر دیجی‌کالا'],
-                        ['name'=>' فروش در دیجی کالا  '],
-                        ['name'=>' فرصت های شغلی  '],
-                        ['name'=>' تماس با دیجی کالا    '],
-                        ['name'=>'راهنمای هویت بصری ']
-                    ];
-                    ?>
                     @foreach ($footerLinksUl3 as $footerlink3)
                         <li class="mt-3">
                             <a href="sefaresh">
@@ -196,16 +155,16 @@
                         </span>
                     <span class="footer-social-images flex">
                             <a href="#social" class="social-icon">
-                                <i class="fa fa-linkedin-square"></i>
+                                <i class="fab fa-linkedin"></i>
                             </a>
                             <a href="#social" class="social-icon mr-5">
-                                <i class="fa fa-youtube-play"></i>
+                                <i class="fab fa-youtube"></i>
                             </a>
                             <a href="#social" class="social-icon mr-5">
-                                <i class="fa fa-twitter-square"></i>
+                                <i class="fab fa-twitter"></i>
                             </a>
                             <a href="#social" class="social-icon mr-5">
-                                <i class="fa fa-instagram"></i>
+                                <i class="fab fa-instagram"></i>
                             </a>
                         </span>
                 </div>
