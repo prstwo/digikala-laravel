@@ -51,7 +51,7 @@ var swiperM = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__.default('.swiper-co
   loop: true,
   loopFillGroupWithBlank: true,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination-product-mobile',
     clickable: true
   },
   navigation: {

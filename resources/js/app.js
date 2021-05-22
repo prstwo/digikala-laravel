@@ -38,7 +38,7 @@ var swiperM = new Swiper('.swiper-container-mobile', {
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination-product-mobile',
         clickable: true,
     },
     navigation: {

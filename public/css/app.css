@@ -33095,6 +33095,14 @@ header .fa-search:before {
   box-shadow:none;
 }
 
+.swiper-pagination-product-mobile{
+  position: absolute;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
 .product-item{
   box-sizing: border-box;
   border: none;

@@ -28,7 +28,7 @@
                         @endfor
                     </div>
                     <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
+                    <div class=" swiper-pagination-product-mobile" id="swiper-pagination-product-mobile"></div>
                     <!-- Add Arrows -->
                     <div class="swiper-button-next arrow-left-3">
                     </div>
