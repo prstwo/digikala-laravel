@@ -1,7 +1,7 @@
 @props(['seller','rate','sender','guarantee','price',
 'supplyover50','supplynum','supplyrate',
 'sendover50','sendnum','sendrate',
-'returnover50','returnnum','returnrate'])
+'returnover50','returnnum','returnrate','rezayatpercent','people','raziwith','kamelanraziwith','naraziwith'])
 <div>
     <!-- It is quality rather than quantity that matters. - Lucius Annaeus Seneca -->
     <div class="supplier-list-row hidden md:flex flex-wrap flex-col md:flex-row justify-between" >
@@ -44,21 +44,24 @@
                     <div class="seller-rating-bottom">
                         <div class="seller-rating-text">
                             <div class="seller-rating-bold-text">
-                                <label >۹۵</label>٪</div>
+                                <label >{{$rezayatpercent}}</label>٪</div>
                             <div class="seller-rating-thin-text">
                                 رضایت از کالا
                             </div>
                         </div>
                         <div class="seller-rating-subtitle text-center">
-                            از مجموع<label class="mx-1">۴</label>نفر
+                            از مجموع<label class="mx-1">{{$people}}</label>نفر
                         </div>
 
                     </div>
                     <div class="seller-rating-row-rating">
                         <div class="line-graph ">
-                            <div class="line-graph-item line-graph-item-5" style="width: 75%">
+                            <div class="line-graph-item line-graph-item-5" style="width: {{$raziwith}}">
+                                {{-- 75%--}}
                             </div>
-                            <div class="line-graph-item line-graph-item-4" style="width: 25%">
+                            <div class="line-graph-item line-graph-item-4" style="width: {{$kamelanraziwith}}">
+                            </div>
+                            <div class="line-graph-item line-graph-item-3" style="width: {{$naraziwith}}">
                             </div>
                         </div>
                         <div class="line-graph-labels">

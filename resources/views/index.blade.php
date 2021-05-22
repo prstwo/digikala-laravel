@@ -132,7 +132,7 @@
         <div class="page-section relative">
             <section class="page-section-standard relative">
                 <div class="products">
-                    <x-head-sec mobileTitle="منتخب بهترین کالاها " title="گوشی موبایل   " link="مشاهده همه"/>
+                    <x-head-sec mobileTitle="منتخب بهترین کالاها " title="گوشی موبایل   " headlink="head-link" link="مشاهده همه"/>
                     <div class="boxes static">
                         <div class="items">
                             <!-- product item component -->
@@ -162,7 +162,7 @@
         <!--brands section -->
         <div class="page-section ">
             <section class="swiper-brands-container page-section-standard pt-1 relative">
-                <x-head-sec mobileTitle=" برندهای ویژه" title="برندهای ویژه" link=""/>
+                <x-head-sec mobileTitle=" برندهای ویژه" title="برندهای ویژه" headlink="head-link" link="مشاهده همه" />
                 <div class="swiper-brands flex flex-row ">
                     <div class="swiper-container2">
                         <div class="swiper-wrapper">
@@ -217,7 +217,7 @@
             <section class="pl-5 w-9/12">
                 <section class="page-section-standard-no-p relative ">
                     <div class="products">
-                        <x-head-sec mobileTitle="منتخب بهترین کالاها " title="گوشی موبایل   " link=""/>
+                        <x-head-sec mobileTitle="منتخب بهترین کالاها " title="گوشی موبایل   "  headlink="head-link" link="مشاهده همه" />
                         <div class="boxes static">
                             <div class="items">
                                 <!-- product item component -->

@@ -2532,6 +2532,9 @@ a.product-title-brand-link{
 .line-graph-item-4{
     background-color: #65aa57;
 }
+.line-graph-item-3{
+    background-color: #d75555;
+}
 .line-graph-labels{
     display: -webkit-box;
     display: -ms-flexbox;

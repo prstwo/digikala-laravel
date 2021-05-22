@@ -34526,6 +34526,10 @@ a.product-title-brand-link{
   background-color: #65aa57;
 }
 
+.line-graph-item-3{
+  background-color: #d75555;
+}
+
 .line-graph-labels{
   display: flex;
   justify-content: space-between;

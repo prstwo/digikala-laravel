@@ -1,4 +1,4 @@
-@props(['mobileTitle','title','link'])
+@props(['mobileTitle','title','headlink','link'])
 <div>
     <!-- Simplicity is the consequence of refined emotions. - Jean D'Alembert -->
     <div class="head">
@@ -6,8 +6,11 @@
         <span class="head-title">
               {{$title}}
         </span>
-        <div class="head-link">
-            <a href="#products-page"> {{$link}}</a>
+        <div class="{{$headlink}}">
+            {{--pass head-link if you want this section --}}
+            @if($headlink!=='')
+                <a href="#products-page"> {{$link}}</a>
+            @endif
         </div>
     </div>
 </div>
