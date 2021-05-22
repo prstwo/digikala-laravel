@@ -197,48 +197,9 @@
                                                 <div class="c-shipment-info-row-title">
                                                     ایرانیان قایم همراه کاوش تیم
                                                 </div>
-                                                <div class="c-seller-rating-ratings c-seller-rating-ratings-buy-box">
-                                                    <div class="c-round-progress-container">
-                                                        <div class="c-round-progress">
-                                                            <div class="progress-circle over50 p100">
-                                                                <span>100%</span>
-                                                                <div class="left-half-clipper">
-                                                                    <div class="first50-bar"></div>
-                                                                    <div class="value-bar"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <span class="c-round-progress-label">تامین به موقع</span>
-                                                    </div>
-
-                                                    <div class="c-round-progress-container">
-                                                        <div class="c-round-progress">
-                                                            <div class="progress-circle over50 p99">
-                                                                <span>99%</span>
-                                                                <div class="left-half-clipper">
-                                                                    <div class="first50-bar"></div>
-                                                                    <div class="value-bar"></div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                        <span class="c-round-progress-label">تعهد ارسال</span>
-                                                    </div>
-
-                                                    <div class="c-round-progress-container">
-                                                        <div class="c-round-progress">
-                                                            <div class="progress-circle over50 p93">
-                                                                <span>93%</span>
-                                                                <div class="left-half-clipper">
-                                                                    <div class="first50-bar"></div>
-                                                                    <div class="value-bar"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <span class="c-round-progress-label">بدون ثبت مرجوعی</span>
-                                                    </div>
-
-                                                </div>
+                                                <x-round-rating supplyover50="over50" supplynum="p100" supplyrate="100%"
+                                                                sendover50="over50" sendnum="p99" sendrate="99%"
+                                                                returnover50="over50" returnnum="p93" returnrate="93%"/>
 
                                             </div>
                                         </x-product-info-embeded>
@@ -278,11 +239,16 @@
 
                     </div>
                     <div class="suppliers-list">
-                        <x-supplier />
-                        <x-supplier />
-                        <x-supplier-mobile.supplier-mobile/>
-                        <x-supplier-mobile.supplier-mobile/>
-                        <!-- -->
+                        <x-suppliers seller="ایرانیان قایم همراه کاوش تیم" rate="۴.۴"
+                                    sender="دیجی کالا"  guarantee="گارانتی ۱۸ ماهه کاوش تیم"
+                                    price="۱۳,۵۷۹,۰۰۰" supplyover50="over50" supplynum="p100" supplyrate="100%"
+                                     sendover50="over50" sendnum="p99" sendrate="99%"
+                                     returnover50="over50" returnnum="p93" returnrate="93%"/>
+                        <x-suppliers seller="دیجی کالا" rate="۵"
+                                    sender="دیجی کالا"  guarantee="دیجی کالا"
+                                    price="۱۳,۵۸۵,۰۰۰" supplyover50="over50" supplynum="p80" supplyrate="80%"
+                                     sendover50="over50" sendnum="p98" sendrate="98%"
+                                     returnover50="over50" returnnum="p90" returnrate="90%"/>
                     </div>
                 </div>
                 <div class="carousel-horizontal-general mb-3">
