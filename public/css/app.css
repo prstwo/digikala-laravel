@@ -34488,6 +34488,58 @@ a.product-title-brand-link{
   align-items: center;
 }
 
+.seller-rating-bottom{
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #dfdfdf;
+}
+
+.seller-rating-subtitle{
+  font-size: 12px;
+  font-size: .857rem;
+  line-height: 1.833;
+  color: #81858b;
+}
+
+.seller-rating-bottom .seller-rating-subtitle {
+  margin-bottom: 12px;
+}
+
+.line-graph{
+  position: relative;
+  display: flex;
+  border-radius: 8px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.line-graph-item{
+  position: relative;
+  height: 100%;
+}
+
+.line-graph-item-5{
+  background-color: #00a049;
+}
+
+.line-graph-item-4{
+  background-color: #65aa57;
+}
+
+.line-graph-labels{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.line-graph-label{
+  font-size: 10px;
+  font-size: .714rem;
+  line-height: 2.2;
+  color: #81858b;
+}
+
 @media screen and (min-width: 767px)  {
   .supplier-cell-title{
     min-width: 260px;

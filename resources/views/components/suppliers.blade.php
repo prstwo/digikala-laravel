@@ -41,6 +41,35 @@
                     <x-round-rating :supplyover50="$supplyover50" :supplynum="$supplynum" :supplyrate="$supplyrate"
                                     :sendover50="$sendover50" :sendnum="$sendnum" :sendrate="$sendrate"
                                     :returnover50="$returnover50" :returnnum="$returnnum" :returnrate="$returnrate"/>
+                    <div class="seller-rating-bottom">
+                        <div class="seller-rating-text">
+                            <div class="seller-rating-bold-text">
+                                <label >۹۵</label>٪</div>
+                            <div class="seller-rating-thin-text">
+                                رضایت از کالا
+                            </div>
+                        </div>
+                        <div class="seller-rating-subtitle text-center">
+                            از مجموع<label class="mx-1">۴</label>نفر
+                        </div>
+
+                    </div>
+                    <div class="seller-rating-row-rating">
+                        <div class="line-graph ">
+                            <div class="line-graph-item line-graph-item-5" style="width: 75%">
+                            </div>
+                            <div class="line-graph-item line-graph-item-4" style="width: 25%">
+                            </div>
+                        </div>
+                        <div class="line-graph-labels">
+                            <div class="line-graph-label">
+                                کاملا راضی
+                            </div>
+                            <div class="line-graph-label ">
+                                راضی
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
