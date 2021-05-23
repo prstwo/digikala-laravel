@@ -2,18 +2,10 @@ import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 //swiper customize
 var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 4,
-    spaceBetween: 10,
-    slidesPerGroup: 4,
     breakpoints: {
         320: {
             slidesPerView: 2,
             spaceBetween: 20
-        },
-        900: {
-            slidesPerView: 3,
-            spaceBetween: 10,
-            slidesPerGroup: 3
         },
         1200: {
             slidesPerView: 4,

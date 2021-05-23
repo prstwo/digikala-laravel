@@ -15,18 +15,10 @@ __webpack_require__.r(__webpack_exports__);
  //swiper customize
 
 var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__.default('.swiper-container', {
-  slidesPerView: 4,
-  spaceBetween: 10,
-  slidesPerGroup: 4,
   breakpoints: {
     320: {
       slidesPerView: 2,
       spaceBetween: 20
-    },
-    900: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-      slidesPerGroup: 3
     },
     1200: {
       slidesPerView: 4,
