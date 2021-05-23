@@ -257,7 +257,7 @@
                     <x-head-sec mobileTitle="محصولات مرتبط" title="محصولات مرتبط" headlink=""/>
                     <div class="flex flex-row justify-center content-center overflow-hidden">
                         <div class="swiper-container">
-                            <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3"/>
+                            <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3" countdown="false"/>
                             <div class="swiper-button-next arrow-left-3">
                             </div>
                             <div class="swiper-button-prev arrow-right-3"></div>

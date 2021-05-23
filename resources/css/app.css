@@ -720,6 +720,7 @@ a.nav-link-title{
     color: #81858b;
     font-size: .85rem;
     line-height: 1.833;
+    margin-left: 4px;
 }
 .digiplus-banner{
     border: 1px solid rgba(3,10,22,.02);
@@ -934,6 +935,23 @@ This file can be used as the styllesheet of any bullet slider
 .specials .product-items .product-item-container-3{
     margin: .5%;
     background-color: white;
+}
+.product-countdown{
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    margin-top: 4px;
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
 }
 @media screen and (max-width: 767px){
     /*.product-items{
@@ -1179,15 +1197,24 @@ img.product-img{
 }
 
 .product-price{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: flex-end;
+    align-items: flex-end;
 }
 .product-old-price{
     text-align: left;
 }
 .product-old-price{
     font-size: .8rem;
+}
+.product-old-price del{
+    padding-top: 3px;
+    font-size: 16px;
+    font-size: 1.143rem;
+    line-height: 1.375;
 }
 .old-price-discount{
     width: 60px;
@@ -1196,13 +1223,18 @@ img.product-img{
     color: white;
     padding: 3px;
     margin-right: 3px;
+    font-size: 1rem;
+    line-height: 1.2;
 }
 .product-new-price{
-    text-align: left;
-    line-height: 30px;
-    font-size: 1rem;
+    width: 100%;
+    color: #000;
+    letter-spacing: 0;
     font-weight: 700;
-    color: #232933;
+    font-size: 18px;
+    font-size: 1.1rem;
+    line-height: 1;
+    text-align: left;
 }
 .new-price-currency{
     font-size: .8rem;

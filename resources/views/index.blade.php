@@ -91,13 +91,13 @@
                     <div class="specials">
                         <div class="product-items ">
                             <div class="hidden md:block swiper-container">
-                                <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3"/>
+                                <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3" countdown=true/>
                                 <div class="swiper-button-next arrow-left-3">
                                 </div>
                                 <div class="swiper-button-prev arrow-right-3"></div>
                             </div>
                             <div class="block md:hidden swiper-container-mobile">
-                                <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3"/>
+                                <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3" countdown=true/>
                                 <div class="swiper-button-next arrow-left-3">
                                 </div>
                                 <div class="swiper-button-prev arrow-right-3"></div>
@@ -137,14 +137,14 @@
                         <div class="items">
                             <!-- product item component -->
                             <div class="hidden md:block swiper-container">
-                                <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3"/>
+                                <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3" countdown="false"/>
                                 <div class="swiper-button-next arrow-left-3">
                                 </div>
                                 <div class="swiper-button-prev arrow-right-3"></div>
                             </div>
                             <div class="block md:hidden swiper-container-mobile-2">
                             <div class="block md:hidden swiper-container-mobile-2">
-                                <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3"/>
+                                <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3" countdown="false"/>
                             <!-- Add Pagination -->
                                 <!-- Add Arrows -->
                                 <div class="swiper-button-next arrow-left-3">
@@ -222,7 +222,7 @@
                             <div class="items">
                                 <!-- product item component -->
                                 <div class=" swiper-container ">
-                                    <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3"/>
+                                    <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3" countdown="false"/>
                                     <div class="swiper-button-next arrow-left-3">
                                     </div>
                                     <div class="swiper-button-prev arrow-right-3"></div>
@@ -230,7 +230,7 @@
 
                                 <div class="block md:hidden swiper-container-mobile-2">
                                     <div class="block md:hidden swiper-container-mobile-2">
-                                        <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3"/>
+                                        <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3" countdown="false"/>
                                         <!-- Add Pagination -->
                                         <!-- Add Arrows -->
                                         <div class="swiper-button-next arrow-left-3">
@@ -371,10 +371,12 @@
                         </aside>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
     </main>
     @endsection
+{{-- @section('extra-scripts')
+    incredibleCountDown()
+
+@endsection--}}
+

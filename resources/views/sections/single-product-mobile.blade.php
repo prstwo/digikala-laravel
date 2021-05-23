@@ -222,7 +222,7 @@
                 &zwnj;اند</span>
             <div class="product-row product-row-inner-page">
                 <div class=" swiper-container-mobile3">
-                    <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3"/>
+                    <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3" countdown="false"/>
                 <!-- Add Pagination -->
                     <!-- Add Arrows -->
                     <div class="swiper-button-next arrow-left-3">

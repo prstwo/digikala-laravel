@@ -15,6 +15,7 @@ var swiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    grabCursor:true
 });
 var swiper2 = new Swiper('.swiper-container2', {
     slidesPerView: 5,
@@ -30,6 +31,7 @@ var swiper2 = new Swiper('.swiper-container2', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    grabCursor:true
 });
 var swiperM = new Swiper('.swiper-container-mobile', {
     slidesPerView: 1,
@@ -203,43 +205,27 @@ document.querySelector('.varzesh').addEventListener('mouseover',()=>{
     document.querySelector('.js-varzesh-menu').style.display=''
 });
 
-let due= new Date(2021, 7, 24, 15,30,0);
 
-var second =60;
-var minute = 60;
-var hour=24;
-var day = 60;
-let dayDiv= document.querySelector('.counter-day');
-let hourDiv= document.querySelector('.counter-hour');
-let minuteDiv= document.querySelector('.counter-minute');
-let secondDiv= document.querySelector('.counter-second');
-setInterval(function(){
-    //console.log(`${day}:${hour}:${minute}:${second-=1}-------`);
-    secondDiv.innerText=second--;
-    hourDiv.innerText=hour;
-    dayDiv.innerText=day;
-    minuteDiv.innerText=minute;
+/* countdown*/
+var countDownDate = new Date("Jan 5, 2022 16:37:52").getTime();
 
-    if(second<=0){
-        second=60;
-        minute-=1;
-        minuteDiv.innerText=minute;
+setInterval(function() {
+    var now = new Date().getTime();
+    var timeleft = countDownDate - now;
+    var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+    document.querySelector('.submenu-lists-counter .counter-day').innerText = days
+    document.querySelector('.submenu-lists-counter .counter-hour').innerText = hours
+    document.querySelector('.submenu-lists-counter .counter-minute').innerText = minutes
+    document.querySelector('.submenu-lists-counter .counter-second').innerText = seconds
+}, 1000)
 
-        if(minute<=0){
-            minute=60;
-            hour-=1;
-            hourDiv.innerText=hour;
+/*countdown پیشنهاد شگفت انگیز */
 
 
-            if(hour<=0){
-                hour=24;
-
-                day-=1;
-                dayDiv.innerText=day;
-            }
-        }
-    }
-}, 1000);
+/**/
 
 function addBgWhite(search){
     search.target.parentElement.classList.add('is-active')

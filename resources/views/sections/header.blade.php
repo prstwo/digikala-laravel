@@ -805,19 +805,13 @@
                                             </a>
                                             <!--counter componment-->
                                             <div class="submenu-lists-counter flex flex-row flex-wrap">
-                                                <div class="counter-second ml-2">
-
+                                                <div class="counter-second ml-1">
                                                 </div>
-                                                <div class=" counter-minute ml-2">
-
+                                                <div class=" counter-minute ml-1">
                                                 </div>
-                                                <div class=" counter-hour ml-2">
-
+                                                <div class=" counter-hour ml-1">
                                                 </div>
-
-                                                <div class=" counter-day">
-
-                                                </div>
+                                                <div class=" counter-day"></div>
                                             </div>
                                         </li>
                                     </ul>
