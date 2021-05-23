@@ -33,7 +33,7 @@
                 var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
                 var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
                 document.querySelectorAll('.specials .counter-day').forEach((daysSec)=>{
-                    daysSec.innerText = days;
+                    daysSec.innerText = 2;
                 })
                 document.querySelectorAll('.specials .counter-hour').forEach((hoursSec)=>{
                     hoursSec.innerText = hours;

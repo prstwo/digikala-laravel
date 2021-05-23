@@ -25,9 +25,28 @@
                 </div>
             </div>
             @if($countdown==='true')
-                <div class="product-countdown">
-                    <x-countdown/>
+                @if($productItem3['progressbar']===true)
+                <div class="specials-progressbar">
+                    <progress  value={{$productItem3['progressbar-value']}} min="0" max="100">
+                    </progress>
                 </div>
+                    <div class="w-full flex flex-row justify-between items-center content-center ">
+                        <div class="text-right text-sm flex flex-row text-gray-500">
+                            <span class="text-red-500 text-sm ml-1">{{$productItem3['progressbar-value']}}%</span>
+                        </div>
+                        <div class="product-countdown">
+                            <x-countdown/>
+                        </div>
+                    </div>
+                @else
+                    <div class="product-countdown">
+                        <x-countdown/>
+                    </div>
+
+                @endif
+
+
+
             @endif
 
         </div>

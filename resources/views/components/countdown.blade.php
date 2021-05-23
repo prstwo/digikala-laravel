@@ -1,7 +1,7 @@
-<div class="counter-second ml-1">
+<div class="counter-second ml-px">
 </div>
-<div class=" counter-minute ml-1">
+<div class=" counter-minute ml-px">
 </div>
-<div class=" counter-hour ml-1">
+<div class=" counter-hour ml-px">
 </div>
 <div class=" counter-day"></div>

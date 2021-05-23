@@ -169,7 +169,7 @@ a:hover, a:active{
 }
 .swiper-instant-offers{
     width: 100%;
-    height: 100%;
+    max-height: calc(100% - 57px);
 }
 .c-promo-single-headline:after{
     position: absolute;
@@ -195,6 +195,10 @@ a:hover, a:active{
 }
  .swiper-wrapper{
      box-sizing: border-box;
+}
+.swiper-instant-offers  .swiper-wrapper{
+    height: calc(100% - 57px);
+    max-height: 100%;
 }
 .c-promo-single-img{
     width: 180px;
@@ -720,7 +724,7 @@ a.nav-link-title{
     color: #81858b;
     font-size: .85rem;
     line-height: 1.833;
-    margin-left: 4px;
+    margin-left: 1px;
 }
 .digiplus-banner{
     border: 1px solid rgba(3,10,22,.02);
@@ -936,6 +940,32 @@ This file can be used as the styllesheet of any bullet slider
     margin: .5%;
     background-color: white;
 }
+.specials-progressbar{
+    width: 100%;
+    height: 4px;
+    border-radius: 100px;
+}
+.specials progress {
+    -webkit-appearance: none;
+    appearance: none;
+    direction: ltr;
+    width: 100%;
+    background-color: #e2e2e2;
+    height: 4px;
+    border-radius: 100px;
+}
+.specials  progress[value] {
+background-color: #fb3449;
+}
+.specials progress::-webkit-progress-bar {
+    background-color: #e2e2e2;
+}
+.specials progress::-webkit-progress-value {
+    background-color: #fb3449;
+}
+.specials progress::-moz-progress-bar {
+    background-color: #e2e2e2;
+}
 .product-countdown{
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -989,6 +1019,9 @@ This file can be used as the styllesheet of any bullet slider
     }
     .specials-title-text{
         font-size: .7rem;
+    }
+    .specials-progressbar{
+        margin-top: 13px;
     }
 }
 /*header */
@@ -1290,6 +1323,19 @@ img.product-img{
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
     cursor: pointer;
     border-radius: 16px;
+}
+@media screen and (max-width: 767px) {
+    .product-old-price del{
+        font-size: 0.8rem;
+        line-height: 1.375;
+    }
+    .old-price-discount{
+        font-size: 0.7rem;
+        line-height: 1;
+    }
+    .product-new-price{
+        font-size: 0.9rem;
+    }
 }
 /* category products*/
 
@@ -5648,7 +5694,9 @@ input[type=radio]:checked+.circle-variant-border {
     align-items: center;
     border-radius: 1rem;
 }
-
+.swiper-instant-offers  .swiper-slide{
+    max-height: 100%;
+}
 .swiper-container-mobile-3 .swiper-wrapper{
     overflow-x:hidden;
 }

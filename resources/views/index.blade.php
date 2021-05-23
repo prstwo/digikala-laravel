@@ -97,7 +97,7 @@
                                 <div class="swiper-button-prev arrow-right-3"></div>
                             </div>
                             <div class="block md:hidden swiper-container-mobile">
-                                <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3" countdown=true/>
+                                <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3" countdown=true />
                                 <div class="swiper-button-next arrow-left-3">
                                 </div>
                                 <div class="swiper-button-prev arrow-right-3"></div>
@@ -222,7 +222,7 @@
                             <div class="items">
                                 <!-- product item component -->
                                 <div class=" swiper-container ">
-                                    <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3" countdown="false"/>
+                                    <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3" countdown="false" />
                                     <div class="swiper-button-next arrow-left-3">
                                     </div>
                                     <div class="swiper-button-prev arrow-right-3"></div>
