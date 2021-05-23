@@ -375,8 +375,5 @@
         </div>
     </main>
     @endsection
-{{-- @section('extra-scripts')
-    incredibleCountDown()
 
-@endsection--}}
 

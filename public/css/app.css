@@ -32903,7 +32903,18 @@ This file can be used as the styllesheet of any bullet slider
   display: flex;
   align-items: center;
   position: relative;
-  top: 20px;
+  font-size: 15px;
+  color: #737373;
+}
+
+.product-countdown:after {
+  font-family: FontAwesome;
+  content: "\f017";
+  font-size: 15px;
+  color: #737373;
+  margin-right: 4px;
+  position: relative;
+  top: -1px;
 }
 
 @media screen and (max-width: 767px){
@@ -34573,6 +34584,11 @@ a.product-title-brand-link{
 }
 
 @media screen and (min-width: 767px)  {
+  .specials .product-item{
+    min-height: 385px;
+    justify-content: space-between;
+  }
+
   .supplier-cell-title{
     min-width: 260px;
   }
