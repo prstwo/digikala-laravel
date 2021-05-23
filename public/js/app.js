@@ -38,6 +38,22 @@ var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__.default('.swiper-con
   },
   grabCursor: true
 });
+var carouselSwiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__.default('.swiper-container-carousel', {
+  slidesPerView: 1,
+  spaceBetween: 1,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  grabCursor: true
+});
 var swiper2 = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__.default('.swiper-container2', {
   slidesPerView: 5,
   spaceBetween: 10,
@@ -221,10 +237,10 @@ document.querySelector('.varzesh').addEventListener('mouseover', function () {
 });
 /* countdown*/
 
-var countDownDate = new Date("Jan 5, 2022 16:37:52").getTime();
+var countDate = new Date("Jan 5, 2022 16:37:52").getTime();
 setInterval(function () {
   var now = new Date().getTime();
-  var timeleft = countDownDate - now;
+  var timeleft = countDate - now;
   var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
   var hours = Math.floor(timeleft % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
   var minutes = Math.floor(timeleft % (1000 * 60 * 60) / (1000 * 60));
@@ -234,8 +250,6 @@ setInterval(function () {
   document.querySelector('.submenu-lists-counter .counter-minute').innerText = minutes;
   document.querySelector('.submenu-lists-counter .counter-second').innerText = seconds;
 }, 1000);
-/*countdown پیشنهاد شگفت انگیز */
-
 /**/
 
 function addBgWhite(search) {
@@ -1370,6 +1384,29 @@ m.attach({
   largeWrapper: 'preview',
   zoom: 3
 });
+/*countdown */
+
+var countDownDate = new Date("Jan 5, 2022 16:37:52").getTime();
+setInterval(function () {
+  var now2 = new Date().getTime();
+  var timeleft2 = countDownDate - now2;
+  var days2 = Math.floor(timeleft2 / (1000 * 60 * 60 * 24));
+  var hours2 = Math.floor(timeleft2 % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+  var minutes2 = Math.floor(timeleft2 % (1000 * 60 * 60) / (1000 * 60));
+  var seconds2 = Math.floor(timeleft2 % (1000 * 60) / 1000);
+  document.querySelectorAll('.specials .counter-day').forEach(function (daysSec) {
+    daysSec.innerText = days2;
+  });
+  document.querySelectorAll('.specials .counter-hour').forEach(function (hoursSec) {
+    hoursSec.innerText = hours2;
+  });
+  document.querySelectorAll('.specials .counter-minute').forEach(function (minutesSec) {
+    minutesSec.innerText = minutes2;
+  });
+  document.querySelectorAll('.specials .counter-second').forEach(function (secondsSec) {
+    secondsSec.innerText = seconds2;
+  });
+}, 1000);
 
 /***/ }),
 

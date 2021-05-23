@@ -1180,6 +1180,7 @@ header .fa-search:before {
     -webkit-box-shadow:none;
     box-shadow:none;
 }
+
 .swiper-pagination-product-mobile{
     position: absolute;
     text-align: center;
@@ -4297,7 +4298,7 @@ input.input-filter-toggle:checked + .c-ui-new-switch-slider {
     margin: 10px 0;
     position: relative;
 }
-.swiper-container,.swiper-container-mobile,.swiper-container-mobile3{
+.swiper-container,.swiper-container-mobile,.swiper-container-mobile3,.swiper-container-carousel{
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -5667,7 +5668,7 @@ input[type=radio]:checked+.circle-variant-border {
 }
 
     /*swiper custom */
-.swiper-container,.swiper-container2 , .swiper-container-mobile-2,.swiper-container-mobile3{
+.swiper-container,.swiper-container2 , .swiper-container-mobile-2,.swiper-container-mobile3,.swiper-container-carousel{
     width: 100%;
     height: 100%;
 }
@@ -5693,6 +5694,9 @@ input[type=radio]:checked+.circle-variant-border {
     -webkit-align-items: center;
     align-items: center;
     border-radius: 1rem;
+}
+.swiper-container .swiper-slide{
+
 }
 .swiper-instant-offers  .swiper-slide{
     max-height: 100%;
