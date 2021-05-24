@@ -177,6 +177,17 @@ class SingleProductController extends Controller
                 ,['title'=>'مپنت','icon_class'=>'fas fa-calculator ml-2 text-yellow-500']
                 ,['title'=>'فروشنده شوید','icon_class'=>'fa fa-list-ul ml-2']
             ]
+            ,'categoriesSubmenu'=>[
+                ['cat'=>'کالای دیجیتال','fa-class'=>'fa-laptop','class'=>'kalayeDigital']
+                ,['cat'=>'خودرو، ابزار، تجهیزات صنعتی','fa-class'=>'fa-wrench','class'=>'sanati']
+                ,['cat'=>'مد و پوشاک','fa-class'=>'fa-check','class'=>'mod']
+                ,['cat'=>'اسباب بازی، کودک، نوزاد','class'=>'asbabBazi','fa-class'=>'fa-child']
+                ,['cat'=>'زیبایی و سلامت','class'=>'zibayie','fa-class'=>'fa-heart']
+                ,['cat'=>'خانه و آشپزخانه','class'=>'khane','fa-class'=>'fa-home']
+                ,['cat'=>'کتاب، لوازم تحریر، هنر','class'=>'ketab','fa-class'=>'fa-pencil']
+                ,['cat'=>'ورزش و سفر','class'=>'varzesh','fa-class'=>'fa-tree']
+            ]
+
             ,'mobileMenuCats'=>[
                 ['cat'=>'کالای دیجیتال', 'submenu'=>[
                     ['class'=>'mobile-toggle-li js-mobile-toggle','chevron'=>true, 'title'=>'لوازم جانبی گوشی',
@@ -186,6 +197,7 @@ class SingleProductController extends Controller
                     ,['class'=>'', 'title'=>'واقعیت مجازی','chevron'=>false,
                         'sublists'=>['سامسونگ','هوآوی', ' اپل']]
                 ]],
+
                 ['cat'=>'خودرو، ابزار و تجهیزات صنعتی', 'submenu'=>[
                     ['class'=>'', 'title'=>'خودرو ایرانی و خارجی','chevron'=>false,
                     ]

@@ -1,7 +1,4 @@
-@php
-$mainTopSliders=[['src'=>'images/maintop-1.jpg'],['src'=>'images/maintop-2.jpg'],
-['src'=>'images/maintop-3.jpg'],['src'=>'images/maintop-4.jpg'],['src'=>'images/maintop-5.jpg']]
-@endphp
+@props(['mainTopSliders'])
 <div class="swiper-container-carousel">
     <div class="swiper-wrapper">
         @foreach($mainTopSliders as $mainTopSlider)

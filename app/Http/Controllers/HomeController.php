@@ -46,7 +46,10 @@ class HomeController extends Controller
     public function show()
     {
         return view('index', [
-            'sandwichMenuItemsP1'=>  [
+            'mainTopSliders'=>[['src'=>'images/maintop-1.jpg'],['src'=>'images/maintop-2.jpg'],
+                ['src'=>'images/maintop-3.jpg'],['src'=>'images/maintop-4.jpg'],['src'=>'images/maintop-5.jpg']]
+            ,'mainTopSides'=>[['src'=>'images/maintop-topside.gif'],['src'=>'images/maintop-bottomside.jpg']]
+            ,'sandwichMenuItemsP1'=>  [
                 ['class'=>'"fa fa-list-ul"', 'title'=>'دسته بندی کالاها'],
                 ['class'=>'"fa fa-shopping-basket js-toggle"', 'title'=>'سوپرمارکت'],
                 ['class'=>'"fa fa-percent"', 'title'=>' تخفیف ها و پشنهادها'],
@@ -73,6 +76,15 @@ class HomeController extends Controller
                     'discount'=>' ٪۳۰', 'new-price'=>'۴۵,۵۰۰ ','progressbar'=>false],
                 ['img'=>'images/phone-8.jpg','product-title'=>'کاور جویروم مدل Chi مناسب برای گوشی موبایل اپل iPhone 7 Plus', 'old-price'=>'۳۷,۰۰۰  ',
                     'discount'=>' ٪۵۴', 'new-price'=>'۲۹,۵۰۰ ','progressbar'=>true,'progressbar-value'=>'60']
+            ]
+            ,'productInstantOffers'=>[
+                ['img'=>'images/instant-4.jpg','product-title'=>'لپ تاپ 15 اینچی ایسوس مدل VivoBook R521JP -MR', 'old-price'=>'۹۹,۰۰۰',
+                    'discount'=>'  ٪۳۰', 'new-price'=>'۲۹,۰۰۰'],
+                ['img'=>'images/instant-1.jpg','product-title'=>' نگهدارنده لاک ناخن کد 524 VivoBook R521JP -MR', 'old-price'=>'۹۹,۰۰۰',
+                    'discount'=>'  ٪۳۰', 'new-price'=>'۲۹,۰۰۰'],
+                ['img'=>'images/instant-3.jpg','product-title'=>' نگهدارنده لاک ناخن کد 524 VivoBook R521JP -MR', 'old-price'=>'۹۹,۰۰۰',
+                    'discount'=>'  ٪۳۰', 'new-price'=>'۲۹,۰۰۰'],
+
             ]
             ,'footerAdressImages'=>[
                 ['src'=>'images/google-play.png'],
@@ -156,6 +168,17 @@ class HomeController extends Controller
                 ,['title'=>'مپنت','icon_class'=>'fas fa-calculator ml-2 text-yellow-500']
                 ,['title'=>'فروشنده شوید','icon_class'=>'fa fa-list-ul ml-2']
             ]
+            ,'categoriesSubmenu'=>[
+                ['cat'=>'کالای دیجیتال','fa-class'=>'fa-laptop','class'=>'kalayeDigital']
+                ,['cat'=>'خودرو، ابزار، تجهیزات صنعتی','fa-class'=>'fa-wrench','class'=>'sanati']
+                ,['cat'=>'مد و پوشاک','fa-class'=>'fa-check','class'=>'mod']
+                ,['cat'=>'اسباب بازی، کودک، نوزاد','class'=>'asbabBazi','fa-class'=>'fa-child']
+                ,['cat'=>'زیبایی و سلامت','class'=>'zibayie','fa-class'=>'fa-heart']
+                ,['cat'=>'خانه و آشپزخانه','class'=>'khane','fa-class'=>'fa-home']
+                ,['cat'=>'کتاب، لوازم تحریر، هنر','class'=>'ketab','fa-class'=>'fa-pencil']
+                ,['cat'=>'ورزش و سفر','class'=>'varzesh','fa-class'=>'fa-tree']
+            ]
+
             ,'mobileMenuCats'=>[
                 ['cat'=>'کالای دیجیتال', 'submenu'=>[
                     ['class'=>'mobile-toggle-li js-mobile-toggle','chevron'=>true, 'title'=>'لوازم جانبی گوشی',

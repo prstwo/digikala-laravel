@@ -4,7 +4,7 @@
         <div class="product-item">
             <div class="product-box-img">
                 <a href="#product-page">
-                    <img src={{asset($productItem3['img'])}} alt="a product example" class="product-img">
+                    <img src={{asset($productItem3['img'])}} alt="a-product-example" class="product-img">
                 </a>
             </div>
             <div class="product-title">
@@ -42,13 +42,8 @@
                     <div class="product-countdown">
                         <x-countdown/>
                     </div>
-
                 @endif
-
-
-
             @endif
-
         </div>
     </div>
 </div>

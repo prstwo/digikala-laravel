@@ -88,17 +88,6 @@
                             <div class="submenu top-12 absolute " >
                                 <div class="submenu-titles flex flex-col">
                                     {{--مطلع نیستم که این دیتای گلوبال رو کجا تعریف کنم. احتمال میدم یک layout کنترولر نداره. --}}
-                                    @php
-                                        $categoriesSubmenu = [
-                                                           ['cat'=>'کالای دیجیتال','fa-class'=>'fa-laptop','class'=>'kalayeDigital']
-                                                          ,['cat'=>'خودرو، ابزار، تجهیزات صنعتی','fa-class'=>'fa-wrench','class'=>'sanati']
-                                                          ,['cat'=>'مد و پوشاک','fa-class'=>'fa-check','class'=>'mod']
-                                                          ,['cat'=>'اسباب بازی، کودک، نوزاد','class'=>'asbabBazi','fa-class'=>'fa-child']
-                                                          ,['cat'=>'زیبایی و سلامت','class'=>'zibayie','fa-class'=>'fa-heart']
-                                                          ,['cat'=>'خانه و آشپزخانه','class'=>'khane','fa-class'=>'fa-home']
-                                                          ,['cat'=>'کتاب، لوازم تحریر، هنر','class'=>'ketab','fa-class'=>'fa-pencil']
-                                                          ,['cat'=>'ورزش و سفر','class'=>'varzesh','fa-class'=>'fa-tree'] ]
-                                    @endphp
                                     @foreach($categoriesSubmenu as $categorysubmenu)
                                         <a href="#submenu" class="submenu-title {{$categorysubmenu['class']}}" >
                                             <i class="fa  {!! $categorysubmenu['fa-class']!!}"></i>

@@ -4,5 +4,6 @@
 <div class="swiper-wrapper">
     @foreach($productItemContainer3 as $productItem3 )
         <x-swiper.swiper-slide :productItem3="$productItem3" :countdown="$countdown" />
+        {{-- pass true to countdown if you want a countdown --}}
     @endforeach
 </div>

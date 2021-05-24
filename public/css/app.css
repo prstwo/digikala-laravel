@@ -31984,6 +31984,16 @@ a:hover, a:active{
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, .1);
   border-radius: 5px;
   font-family: inherit;
+  padding:0;
+}
+
+.page-section-standard-no-m{
+  margin: 0;
+}
+
+.page-section-standard-no-mb{
+  margin: 0;
+  box-shadow: none;
 }
 
 .c-box-container{
@@ -32166,6 +32176,12 @@ main{
   margin: 16px 0 0;
   padding: 0 33px 0 33px;
   max-width: 100%;
+}
+
+.page-section-full{
+  margin:  0;
+  padding: 0 ;
+  width: 100%;
 }
 
 .mobile-title{
