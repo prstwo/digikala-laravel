@@ -1,5 +1,5 @@
 @props(['extraClasses'=>'','extraClasses2'=>'','headMobileTitle','headTitle','headlink','link','swiperClass','swiperMobileClass','productItemContainer3'
-,'countdown','swiperMobileClass','mobileCountdown'])
+,'countdown','swiperMobileClass','mobileCountdown','slideDetails'=>'true'])
 <div class=" page-section {{$extraClasses}} relative ">
     <section class="page-section-standard {{$extraClasses2}} relative">
         <div class="products">
@@ -8,11 +8,11 @@
             <div class="boxes static">
                 <div class="items">
                     <div class="hidden md:block {{$swiperClass}}">
-                        <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3" countdown="$countdown"/>
+                        <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3" countdown="$countdown" :slideDetails="$slideDetails"/>
                         <x-swiper.swiper-next-prev/>
                     </div>
                     <div class="block md:hidden {{$swiperMobileClass}}">
-                            <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3" :countdown="$mobileCountdown"/>
+                            <x-swiper.swiper-wrapper :productItemContainer3="$productItemContainer3" :countdown="$mobileCountdown" :slideDetails="$slideDetails"/>
                             <x-swiper.swiper-next-prev/>
                     </div>
                 </div>

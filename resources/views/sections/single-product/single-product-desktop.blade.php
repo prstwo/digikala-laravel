@@ -1,32 +1,5 @@
 <div class="container hidden md:block px-6 py-0 bg-white">
-    <div class="product-breadcrumb flex flex-col items-start justify-between content-center md:items-center sm:flex-row content-center">
-        <nav class="breadcrumb">
-            <ul class="flex flex-row ">
-                <li>
-                    <a href="#digikala">دیجی کالا</a>
-                </li>
-                <li>
-                    <a href="digital-kala">کالای دیجیتال</a>
-                </li>
-                <li>
-                    <a href="#mobile">
-                        موبایل
-                    </a></li>
-                <li>
-                    <a href="#mobile-phone">
-                        گوشی موبایل
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="product-link-ex">
-            <a href="#sell">
-                کالای خود را در دیجی‌کالا
-                بفروشید
-                <i class="fa fa-home ml-2 text-sl"></i>
-            </a>
-        </div>
-    </div>
+    @include('sections.single-product.product-desktop-breadcrumb')
     <article class="bg-white w-full flex flex-col sm:flex-row mb-3 items-start  ">
         <section class="product-gallery pl-4 ml-4 flex flex-col top-28 static sm:sticky">
             <div class="product-gallery-item">
@@ -70,9 +43,7 @@
             <x-product-info-title/>
             <div class="product-attributes flex flex-col sm:flex-row justify-between relative">
                 <div class="product-config flex-shrink-0 relative pt-3 ml-4 border-t border-solid flex flex-col content-between ">
-                                <span class="product-title-english relative bottom-6 right-0 pl-2 bg-white">
-                                    Xiaomi Mi 10T PRO 5G M 2007J3SG Dual SIM 256GB Mobile Phone
-                                </span>
+                    @include('sections.single-product.product-title-english')
                     <div class="product-engagement">
                         <div class="flex items-center">
                             <div class="product-engagement-rating flex items-center">
@@ -651,34 +622,4 @@
     </div>
 
 </div>
-<div class="remodal-gallery remodal-is-closed" >
-    <div class="remodal-top-bar flex flex-row justify-between items-center">
-        <div class="remodal-top-bar-title">
-            تصاویر رسمی
-        </div>
-        <div class="remodal-top-bar-close-btn-container ">
-            <button class="fas fa-times js-remodal-close" ></button>
-        </div>
-    </div>
-    <div class="remodal-images-gallery flex flex-row">
-
-        <div class="remodal-gallery-main-image img-zoom-container relative">
-            <img src="" class="remodal-img-container" id="myimage" style="width: 300px; height: 300px">
-            <div id="myresult" class="img-zoom-result"></div>
-        </div>
-
-        <div class="remodal-gallery-info">
-            <div class="remodal-gallery-thumbs">
-                @foreach($modalGalleryPictures as $modalGalleryPicture)
-                    <div class="remodal-gallery-thumb js-remodal-gallery-thumb" >
-                        <img src={{asset($modalGalleryPicture['img'])}} data-src={{asset( $modalGalleryPicture['data'] )}}
-                            alt="گوشی"
-                             data-type=""
-                             loading="lazy">
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </div>
-
-</div>
+<x-remodal-gallery :modalGalleryPictures="$modalGalleryPictures"/>

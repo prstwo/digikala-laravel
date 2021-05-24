@@ -1,38 +1,12 @@
 <div class="block md:hidden px-2 mobile-container ">
-    <nav class="mobile-breadcrumb-container">
-        <ol class="mobile-breadcrumb">
-            @foreach($breadcrumbs as $breadcrumb )
-                <li>
-                    <a href="#digikala">
-                    <span>
-                        {{$breadcrumb}}
-                    </span>
-                    </a>
-                </li>
-            @endforeach
-
-        </ol>
-    </nav>
+    @include('sections.single-product.product-mobile-breadcrumb')
     <article class="relative">
         <section class="mobile-product-gallery">
             <x-product-info-title/>
-            <span class="product-title-english relative bottom-6 right-0 pl-2 bg-white">
-                    Xiaomi Mi 10T PRO 5G M 2007J3SG Dual SIM 256GB Mobile Phone
-            </span>
+            @include('sections.single-product.product-title-english')
             <div class="swiper-container-mobile">
-                    <div class="swiper-wrapper">
-                        @for($i=0;$i<5;$i++ )
-                            <div class="swiper-slide">
-                                <img src="images/phone-1.jpg">
-                            </div>
-                        @endfor
-                    </div>
-                    <!-- Add Pagination -->
+                    <x-swiper.swiper-wrapper :productItemContainer3='$productItemContainer3' slideDetails="false"/>
                     <div class=" swiper-pagination-product-mobile" id="swiper-pagination-product-mobile"></div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next arrow-left-3">
-                    </div>
-                    <div class="swiper-button-prev arrow-right-3"></div>
                 </div>
             <x-product-mobile.product-jumps>
                 <div class="product-jumps-item">

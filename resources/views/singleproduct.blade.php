@@ -7,8 +7,8 @@
 @section('main-content')
     <main class="w-full">
         <div class="product-whole-content">
-            @include('sections.single-product-desktop')
-            @include('sections.single-product-mobile')
+            @include('sections.single-product.single-product-desktop')
+            @include('sections.single-product.single-product-mobile')
         </div>
     </main>
 @endsection
