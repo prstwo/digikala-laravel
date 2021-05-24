@@ -1,8 +1,3 @@
-@php
-$singleProduct=[
-    ['model'=>'Xiaomi Mi 10T PRO']
-]
-@endphp
 <div class="container hidden md:block px-6 py-0 bg-white">
     @include('sections.single-product.product-desktop-breadcrumb')
     <article class="bg-white w-full flex flex-col sm:flex-row mb-3 items-start  ">
