@@ -2,7 +2,7 @@
     @include('sections.single-product.product-mobile-breadcrumb')
     <article class="relative">
         <section class="mobile-product-gallery">
-            <x-product-info-title/>
+            <x-product-info-title productTitleBrand="شیائومی" productTitleBrandLink="گوشی موبایل شیائومی" productTitle=" گوشی موبایل شیائومی مدل Mi 10T PRO 5G M 2007J3SG دو سیم&zwnj; کارت ظرفیت 256 گیگابای"/>
             @include('sections.single-product.product-title-english')
             <div class="swiper-container-mobile">
                     <x-swiper.swiper-wrapper :productItemContainer3='$productItemContainer3' slideDetails="false"/>
@@ -72,17 +72,7 @@
         </section>
         <section class="my-4">
             <div class="c-product-data ">
-                <div class="c-product-data-section-additional ">
-                    <div class="c-product-data-info-icon"></div>
-                    <span>
-                        هشدار
-                        سامانه همتا: حتما در زمان تحویل دستگاه، به کمک کد فعال&zwnj;سازی چاپ شده
-                        روی جعبه یا کارت
-                        گارانتی، دستگاه را
-                        از طریق #7777*،
-                        برای سیم&zwnj;کارت خود فعال&zwnj;سازی کنید. آموزش تصویری در آدرس اینترنتی hmti.ir/05
-                    </span>
-                </div>
+                @include('sections.single-product.samane-hamta')
             </div>
         </section>
         <section class="my-4">
@@ -301,7 +291,9 @@
                         </div>
                         <span class="c-remodal-seller-rate-title">تعهد ارسال
 
-                        </span></div><div class="c-remodal-seller-rate">
+                        </span>
+                    </div>
+                    <div class="c-remodal-seller-rate">
                         <div class="c-remodal-seller-percent c-remodal-seller-percent-yellow js-seller-return-percentage">
                             ۹۹.۳٪
                         </div>
