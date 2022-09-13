@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', '\App\Http\Controllers\HomeController@show');
-Route::get('/product', '\App\Http\Controllers\SingleProductController@show');
+Route::get('/product-page', '\App\Http\Controllers\SingleProductController@show');
 

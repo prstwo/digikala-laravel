@@ -3,13 +3,13 @@
     <div class="product-item-container-3 rounded-2xl">
         <div class="product-item">
             <div class="product-box-img">
-                <a href="#product-page">
+                <a href="/product-page">
                     <img src={{asset($productItem3['img'])}} alt="a-product-example" class="product-img">
                 </a>
             </div>
             @if($slideDetails ==='true')
                 <div class="product-title">
-                    <a href="#product-page">
+                    <a href="/product">
                         {{$productItem3['product-title']}}
                     </a>
                 </div>

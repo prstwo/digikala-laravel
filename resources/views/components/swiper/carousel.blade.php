@@ -3,7 +3,7 @@
     <div class="swiper-wrapper">
         @foreach($mainTopSliders as $mainTopSlider)
             <div class="swiper-slide">
-                <a href="side product page">
+                <a href="/side-product-page">
                     <img src={{asset($mainTopSlider['src'])}} alt="product-gif">
                 </a>
             </div>

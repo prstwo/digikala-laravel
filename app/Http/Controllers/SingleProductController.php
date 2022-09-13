@@ -187,7 +187,7 @@ class SingleProductController extends Controller
                 ,['cat'=>'کتاب، لوازم تحریر، هنر','class'=>'ketab','fa-class'=>'fa-pencil']
                 ,['cat'=>'ورزش و سفر','class'=>'varzesh','fa-class'=>'fa-tree']
             ]
-            ,'breadcrumb'=>[['cat'=>'دیجی کالا','href'=>'#digikala'],['cat'=>'کالای دیجیتال','href'=>'#digital-kala']
+            ,'breadcrumb'=>[['cat'=>'دیجی کالا','href'=>'/'],['cat'=>'کالای دیجیتال','href'=>'#digital-kala']
                 ,['cat'=>'موبایل','href'=>'#mobile'],['cat'=>' گوشی موبایل','href'=>'#mobile-phone']]
             ,'mobileMenuCats'=>[
                 ['cat'=>'کالای دیجیتال', 'submenu'=>[

@@ -50,7 +50,7 @@
                 <div class="adplacement adplacement-container-row">
 
                     @foreach($sponserBigPics as $sponserBigPic)
-                        <a href="#product_page" class="adplacement-item">
+                        <a href="/sponser-page" class="adplacement-item">
                             <div class="adplacement-sponsored-box">
                                 <img src={{asset($sponserBigPic['src'])}} alt="" class="">
                             </div>
@@ -74,7 +74,7 @@
                             @foreach($swiperBrands as $brand)
                                 <div class="swiper-slide" style="">
                                     <div class="swiper-brands-image-container">
-                                        <a href="#brand-page" class="banner-brand-link">
+                                        <a href="/brand-page" class="banner-brand-link">
                                             <img src={{asset($brand['img'])}} alt="brand">
                                         </a>
                                     </div>
