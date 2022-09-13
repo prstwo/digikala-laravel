@@ -8,6 +8,18 @@
 </p>
 
 ## About Project
+
+Home page:
+
+![Home page of Digikala.com](Screenshot-2022-09-13-142002.png)
+
+Product page:
+
+![Product page of Digikala.com](Screenshot-2022-09-13-160725.png)
+
+
+
+## installation of this Project in your local pc
 before installation:
  - install php & phpstorm & xampp 
  - install mysql & navicat
