@@ -2,7 +2,7 @@
     <div class="content-container flex flex-col p-6">
         <div class="mobile-menu-icon mb-3">
             <div class="digikala-icon-container">
-                <a href="#digikala">
+                <a href="/">
                     <img src={{asset("images/digikala.svg")}} alt="digikala">
                 </a>
             </div>
